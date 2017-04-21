@@ -1,1 +1,3 @@
-
+.game .navbar-fixed-top + .container {
+  margin-top: 75px;
+}
