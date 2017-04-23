@@ -4,6 +4,7 @@ import Text from './Text.js';
 import Crossroads from './Crossroads.js';
 import Funnel from './Funnel.js';
 import { Navbar, Grid, Row, Col } from 'react-bootstrap';
+import ReactDOM from 'react-dom';
 
 class Game extends React.Component {
   constructor(props) {
@@ -78,6 +79,19 @@ class Game extends React.Component {
     return;
   }
 
+  scrollToText = () => {
+    const element = ReactDOM.findDOMNode(this.activeContentRef);
+    if (!element) {
+      return;
+    }
+
+    window.scrollTo(0, element.offsetTop);
+  }
+
+  componentDidUpdate = () => {
+    this.scrollToText();
+  }
+
   render() {
     return (
       <div className="game">
@@ -99,6 +113,7 @@ class Game extends React.Component {
               })}
               <Text
                 content={this.getText(this.state.section, this.state.flags)}
+                ref={(ref) => { this.activeContentRef = ref; }}
               />
             </Col>
           </Row>
