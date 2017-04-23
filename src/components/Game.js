@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Text from './Text.js';
+import Crossroads from './Crossroads.js';
+import Funnel from './Funnel.js';
 import { Navbar, Grid, Row, Col } from 'react-bootstrap';
 
 class Game extends React.Component {
@@ -18,12 +20,16 @@ class Game extends React.Component {
     };
   }
 
-  goToSection = (section, flags = {}) => {
+  goToSection = (section, flags = {}, logs) => {
     this.setState((prevState, props) => {
+      if (!logs) {
+        logs = this.getText(prevState.section, prevState.flags);
+      }
+
       return {
         "section": section,
         "flags": Object.assign({}, prevState.flags, flags),
-        "logs": prevState.logs.concat(this.getText(prevState.section, prevState.flags)),
+        "logs": prevState.logs.concat(logs),
       };
     });
   }
@@ -49,8 +55,27 @@ class Game extends React.Component {
     return this.getSection(sectionKey).text(flags);
   }
 
-  getNext = (sectionKey) => {
-    return this.getSection(sectionKey).next;
+  getNext = (sectionKey, flags) => {
+    const next = this.getSection(sectionKey).next(this.goToSection, flags);
+
+    if (React.isValidElement(next)) {
+      return next;
+    }
+
+    if (Array.isArray(next)) {
+      return (
+        <Crossroads choices={next} />
+      );
+    }
+
+    if ('object' === typeof next && next.text && next.action) {
+      return (
+        <Funnel text={next.text} action={next.action} />
+      );
+    }
+
+    console.error(`Value "next" for section ${sectionKey} is invalid.`);
+    return;
   }
 
   render() {
@@ -72,12 +97,14 @@ class Game extends React.Component {
                   </div>
                 );
               })}
-              <Text content={this.getText(this.state.section, this.state.flags)} />
+              <Text
+                content={this.getText(this.state.section, this.state.flags)}
+              />
             </Col>
           </Row>
           <Row>
             <Col md={8} mdOffset={2}>
-              {this.getNext(this.state.section)(this.goToSection, this.state.flags)}
+              {this.getNext(this.state.section, this.state.flags)}
             </Col>
           </Row>
         </Grid>
