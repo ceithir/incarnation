@@ -28,6 +28,7 @@ class Game extends React.Component {
   getDefaultOptions = () => {
     return {
       "fontSize": 16,
+      "justified": false,
     };
   }
 
@@ -132,7 +133,7 @@ class Game extends React.Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <Grid className={"font-"+this.state.options.fontSize}>
+        <Grid className={"font-"+this.state.options.fontSize + (this.state.options.justified ? " text-justify" : "")}>
           <Row>
             <Col md={8} mdOffset={2}>
               {this.state.logs.map((log, index) => {

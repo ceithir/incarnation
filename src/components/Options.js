@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
+import { FormGroup, ControlLabel, FormControl, Checkbox } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
 class Options extends React.Component {
@@ -15,17 +15,28 @@ class Options extends React.Component {
     return size >= 14 && size <= 20;
   }
 
+  updateForm = (values) => {
+    this.setState((prevState, props) => {
+      return {
+        "form": Object.assign({}, prevState.form, values),
+      };
+    });
+  }
+
   onFontSizeOptionChange = (event) => {
     event.persist();
     const value = event.target.value;
-    this.setState((prevState, props) => {
-      return {
-        "form": Object.assign({}, prevState.form, {"fontSize": value}),
-      };
-    });
+    this.updateForm({"fontSize": value});
     if (this.isFontSizeValid(value)) {
       this.props.update({"fontSize": value});
     }
+  }
+
+  onJustificationChange = (event) => {
+    event.persist();
+    const values = {"justified": event.target.checked};
+    this.updateForm(values);
+    this.props.update(values);
   }
 
   render() {
@@ -35,7 +46,9 @@ class Options extends React.Component {
           controlId="fontSizeOption"
           validationState={ this.isFontSizeValid(this.state.form.fontSize) ? null : 'error' }
         >
-          <ControlLabel>Taille de la police</ControlLabel>
+          <ControlLabel>
+            Taille de la police
+          </ControlLabel>
           <FormControl
             type="number"
             min="14"
@@ -44,6 +57,15 @@ class Options extends React.Component {
             onChange={this.onFontSizeOptionChange}
           />
           <FormControl.Feedback />
+        </FormGroup>
+        <FormGroup
+        >
+          <Checkbox
+            checked={this.state.form.justified}
+            onChange={this.onJustificationChange}
+          >
+            Justifier le texte ?
+          </Checkbox>
         </FormGroup>
       </form>
     );
