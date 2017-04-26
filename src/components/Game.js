@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import Text from './Text.js';
 import Crossroads from './Crossroads.js';
 import Funnel from './Funnel.js';
-import { Navbar, Nav, NavItem, Grid, Row, Col, Modal, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Grid, Row, Col, Modal } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
+import Options from './Options.js';
 
 class Game extends React.Component {
   constructor(props) {
@@ -21,7 +22,6 @@ class Game extends React.Component {
       "logs": currentLogs,
       "showOptions": false,
       "options": options,
-      "optionsForm": {},
     };
   }
 
@@ -99,12 +99,7 @@ class Game extends React.Component {
   }
 
   showOptions = () => {
-    this.setState((prevState, props) => {
-      return {
-        "showOptions": true,
-        "optionsForm": Object.assign({}, prevState.options),
-      };
-    });
+    this.setState({ "showOptions": true });
   }
 
   hideOptions = () => {
@@ -115,19 +110,12 @@ class Game extends React.Component {
     this.scrollToText();
   }
 
-  onFontSizeOptionChange = (event) => {
-    event.persist();
-    const value = event.target.value;
+  updateOptions = (options) => {
     this.setState((prevState, props) => {
       return {
-        "optionsForm": Object.assign({}, prevState.optionsForm, {"fontSize": value}),
-        "options": Object.assign({}, prevState.options, this.isFontSizeValid(value) ? {"fontSize": value} : {}),
+        "options": Object.assign({}, prevState.options, options),
       };
     });
-  }
-
-  isFontSizeValid = (size) => {
-    return size >= 14 && size <= 20;
   }
 
   render() {
@@ -172,23 +160,7 @@ class Game extends React.Component {
             <Modal.Title>Options</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <form onSubmit={(e) => {e.preventDefault()}}>
-
-              <FormGroup
-                controlId="fontSizeOption"
-                validationState={ this.isFontSizeValid(this.state.optionsForm.fontSize) ? null : 'error' }
-              >
-                <ControlLabel>Taille de la police</ControlLabel>
-                <FormControl
-                  type="number"
-                  min="14"
-                  max="20"
-                  value={this.state.optionsForm.fontSize}
-                  onChange={this.onFontSizeOptionChange}
-                />
-                <FormControl.Feedback />
-              </FormGroup>
-            </form>
+            <Options values={this.state.options} update={this.updateOptions} />
           </Modal.Body>
         </Modal>
       </div>
