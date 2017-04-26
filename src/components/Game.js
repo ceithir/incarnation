@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Text from './Text.js';
 import Crossroads from './Crossroads.js';
 import Funnel from './Funnel.js';
-import { Navbar, Nav, NavItem, Grid, Row, Col, Modal } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, MenuItem, Grid, Row, Col, Modal } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 import Settings from './Settings.js';
 
@@ -11,10 +11,12 @@ class Game extends React.Component {
   constructor(props) {
     super(props);
 
-    const currentSection = this.props.startingSection;
-    const currentFlags = this.props.startingFlags;
-    const currentLogs = [];
+    const currentSection = this.props.currentSection || this.props.startingSection;
+    const currentFlags = Object.assign({}, this.props.startingFlags, this.props.currentFlags || {});
+    const currentLogs = this.props.currentLogs || [];
     const settings = Object.assign({}, this.getDefaultSettings(), JSON.parse(window.localStorage.getItem("settings")) || {});
+
+    this.props.saveProgress(currentSection, currentFlags, currentLogs);
 
     this.state = {
       "section": currentSection,
@@ -38,10 +40,15 @@ class Game extends React.Component {
         logs = this.getText(prevState.section, prevState.flags);
       }
 
+      const updatedFlags = Object.assign({}, prevState.flags, flags);
+      const updatedLogs = prevState.logs.concat(logs);
+
+      this.props.saveProgress(section, updatedFlags, updatedLogs);
+
       return {
         "section": section,
-        "flags": Object.assign({}, prevState.flags, flags),
-        "logs": prevState.logs.concat(logs),
+        "flags": updatedFlags,
+        "logs": updatedLogs,
       };
     });
   }
@@ -107,6 +114,10 @@ class Game extends React.Component {
     this.setState({ "showSettings": false });
   }
 
+  componentDidMount = () => {
+    this.scrollToText();
+  }
+
   componentDidUpdate = () => {
     this.scrollToText();
   }
@@ -123,6 +134,19 @@ class Game extends React.Component {
     });
   }
 
+  resetProgress = () => {
+    this.props.saveProgress(
+      this.props.startingSection,
+      this.props.startingFlags,
+      [],
+    );
+    this.setState({
+      "section": this.props.startingSection,
+      "flags": this.props.startingFlags,
+      "logs": [],
+    });
+  }
+
   render() {
     return (
       <div className="game">
@@ -133,7 +157,18 @@ class Game extends React.Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem onSelect={this.showSettings}>Configuration</NavItem>
+              <NavDropdown title={`Options`} id="option-dropdown">
+                <MenuItem onSelect={this.showSettings} key="settings">
+                  {`Configuration`}
+                </MenuItem>
+                <MenuItem divider/>
+                <MenuItem header>
+                  {`Ce jeu sauvegarde automatiquement.`}
+                </MenuItem>
+                <MenuItem onSelect={this.resetProgress} key="reset">
+                  {`Recommencer`}
+                </MenuItem>
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -178,6 +213,10 @@ Game.propTypes = {
   sections: PropTypes.object.isRequired,
   startingSection: PropTypes.string.isRequired,
   startingFlags: PropTypes.object.isRequired,
+  currentSection: PropTypes.string,
+  currentFlags: PropTypes.object,
+  currentLogs: PropTypes.array,
+  saveProgress: React.PropTypes.func.isRequired,
 };
 
 export default Game;

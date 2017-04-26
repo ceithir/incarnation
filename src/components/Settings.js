@@ -47,7 +47,7 @@ class Settings extends React.Component {
           validationState={ this.isFontSizeValid(this.state.form.fontSize) ? null : 'error' }
         >
           <ControlLabel>
-            Taille de la police
+            {`Taille de la police`}
           </ControlLabel>
           <FormControl
             type="number"
@@ -64,7 +64,7 @@ class Settings extends React.Component {
             checked={this.state.form.justified}
             onChange={this.onJustificationChange}
           >
-            Justifier le texte ?
+            {`Justifier le texte ?`}
           </Checkbox>
         </FormGroup>
       </form>

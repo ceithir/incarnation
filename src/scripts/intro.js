@@ -1,7 +1,7 @@
 const intro = {
   "intro" : {
     "text": `
-<p>L’homme a les mains jointes et les yeux clos, comme en prière. Si sa position dans l’espace reste fixe, tout son être est en mouvement, son corps vibrant à un rythme effréné, auréolant sa silhouette d’un halo flou et épuisant l’œil qui voudrait le fixer trop longtemps.</p>
+<p>L’homme a les mains jointes et les yeux clos, comme en prière. Si sa position dans l’espace reste fixe, tout son être est en mouvement, son corps vibrant à un rythme effréné, auréolant sa silhouette d’un halo flou épuisant l’œil qui voudrait le fixer.</p>
 
 <p>Et entre chaque battement de paupière, il change.</p>
 
@@ -26,7 +26,7 @@ const intro = {
 <p>Chaque membre de l’assemblée baisse humblement et silencieusement la tête en entendant cette phrase, faisant totalement disparaître leurs visages sous les capuchons de leurs robes rituelles.</p>
 
 <div class="conversation">
-<p>« Le prix à payer pour ce don unique est celui de la responsabilité. Il nous revient à nous qui possédons le pouvoir de nous assurer qu’il soit employé justement et respectueusement. Pour cela, le conseil est moi-même avons décidé d’imposer deux règles fondamentales.</p>
+<p>— Le prix à payer pour ce don unique est celui de la responsabilité. Il nous revient à nous qui possédons le pouvoir de nous assurer qu’il soit employé justement et respectueusement. Pour cela, le conseil est moi-même avons décidé d’imposer deux règles fondamentales.</p>
 
 <p>« Tout d’abord, aucune invocation ne saurait dorénavant être opérée sans l’accord du conseil. Nous devons tout aux anciens, et la première des politesses consiste à ne pas les importuner pour de triviales raisons. Le conseil seul sera juge si une demande est d’assez d’importance pour le voile de la mort soit soulevé.</p>
 
@@ -38,7 +38,7 @@ const intro = {
 <p>L’orateur incline légèrement le buste en un geste de salut. Le frémissement qui le parcourait se meurt ensuite extrêmement vite, et l’homme retrouve l’apparence qu’il avait au tout début de la cérémonie. Il reprend ensuite la parole, d’une voix toute différente :</p>
 
 <div class="conversation">
-<p>— C’est toujours un honneur pour moi d’accueillir en ma chair Cyrille, premier disciple de Porphyre et fondateur de notre ordre. En vertu de la première règle qu’il a énoncée, cette invocation n’a cependant pas seulement pour but de rappeler le miracle qui nous permet encore aujourd’hui d’entendre la voix non déformée de ceux sans qui tout ceci n’existerait pas.</p>
+<p>— C’est toujours un honneur pour moi d’accueillir en ma chair Cyrille, premier disciple de Porphyre et fondateur de notre ordre. En vertu de la première règle qu’il a énoncée, cette invocation n’a cependant pas seulement pour but de rappeler le miracle qui nous permet encore aujourd’hui d’entendre la voix non déformée de ceux sans qui rien de ceci n’existerait.</p>
 </div>
 
 <p>D’un geste de la main, il englobe la scène sur laquelle il se trouve, les gradins aux rangs parsemés de fidèles qui l’entoure, et le massif bâtiment non loin qui tient lieu de siège à son ordre.</p>
