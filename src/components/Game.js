@@ -14,7 +14,7 @@ class Game extends React.Component {
     const currentSection = this.props.startingSection;
     const currentFlags = this.props.startingFlags;
     const currentLogs = [];
-    const options = this.getDefaultOptions();
+    const options = JSON.parse(window.localStorage.getItem("options")) || this.getDefaultOptions();
 
     this.state = {
       "section": currentSection,
@@ -111,10 +111,14 @@ class Game extends React.Component {
     this.scrollToText();
   }
 
-  updateOptions = (options) => {
+  updateOptions = (values) => {
     this.setState((prevState, props) => {
+      const options = Object.assign({}, prevState.options, values);
+
+      window.localStorage.setItem("options", JSON.stringify(options));
+
       return {
-        "options": Object.assign({}, prevState.options, options),
+        "options": options,
       };
     });
   }
