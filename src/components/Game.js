@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Text from './Text.js';
 import Crossroads from './Crossroads.js';
 import Funnel from './Funnel.js';
-import { Navbar, Grid, Row, Col } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Grid, Row, Col, Modal, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 
 class Game extends React.Component {
@@ -13,11 +13,21 @@ class Game extends React.Component {
     const currentSection = this.props.startingSection;
     const currentFlags = this.props.startingFlags;
     const currentLogs = [];
+    const options = this.getDefaultOptions();
 
     this.state = {
       "section": currentSection,
       "flags": currentFlags,
       "logs": currentLogs,
+      "showOptions": false,
+      "options": options,
+      "optionsForm": {},
+    };
+  }
+
+  getDefaultOptions = () => {
+    return {
+      "fontSize": 16,
     };
   }
 
@@ -88,8 +98,36 @@ class Game extends React.Component {
     window.scrollTo(0, element.offsetTop);
   }
 
+  showOptions = () => {
+    this.setState((prevState, props) => {
+      return {
+        "showOptions": true,
+        "optionsForm": Object.assign({}, prevState.options),
+      };
+    });
+  }
+
+  hideOptions = () => {
+    this.setState({ "showOptions": false });
+  }
+
   componentDidUpdate = () => {
     this.scrollToText();
+  }
+
+  onFontSizeOptionChange = (event) => {
+    event.persist();
+    const value = event.target.value;
+    this.setState((prevState, props) => {
+      return {
+        "optionsForm": Object.assign({}, prevState.optionsForm, {"fontSize": value}),
+        "options": Object.assign({}, prevState.options, this.isFontSizeValid(value) ? {"fontSize": value} : {}),
+      };
+    });
+  }
+
+  isFontSizeValid = (size) => {
+    return size >= 14 && size <= 20;
   }
 
   render() {
@@ -98,9 +136,15 @@ class Game extends React.Component {
         <Navbar fixedTop fluid>
           <Navbar.Header>
             <Navbar.Brand>{this.props.title}</Navbar.Brand>
+            <Navbar.Toggle />
           </Navbar.Header>
+          <Navbar.Collapse>
+            <Nav pullRight>
+              <NavItem onSelect={this.showOptions}>Options</NavItem>
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
-        <Grid>
+        <Grid className={"font-"+this.state.options.fontSize}>
           <Row>
             <Col md={8} mdOffset={2}>
               {this.state.logs.map((log, index) => {
@@ -123,6 +167,30 @@ class Game extends React.Component {
             </Col>
           </Row>
         </Grid>
+        <Modal show={this.state.showOptions} onHide={this.hideOptions}>
+          <Modal.Header closeButton>
+            <Modal.Title>Options</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <form onSubmit={(e) => {e.preventDefault()}}>
+
+              <FormGroup
+                controlId="fontSizeOption"
+                validationState={ this.isFontSizeValid(this.state.optionsForm.fontSize) ? null : 'error' }
+              >
+                <ControlLabel>Taille de la police</ControlLabel>
+                <FormControl
+                  type="number"
+                  min="14"
+                  max="20"
+                  value={this.state.optionsForm.fontSize}
+                  onChange={this.onFontSizeOptionChange}
+                />
+                <FormControl.Feedback />
+              </FormGroup>
+            </form>
+          </Modal.Body>
+        </Modal>
       </div>
     );
   }
