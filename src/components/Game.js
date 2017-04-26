@@ -5,7 +5,7 @@ import Crossroads from './Crossroads.js';
 import Funnel from './Funnel.js';
 import { Navbar, Nav, NavItem, Grid, Row, Col, Modal } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
-import Options from './Options.js';
+import Settings from './Settings.js';
 
 class Game extends React.Component {
   constructor(props) {
@@ -14,18 +14,18 @@ class Game extends React.Component {
     const currentSection = this.props.startingSection;
     const currentFlags = this.props.startingFlags;
     const currentLogs = [];
-    const options = JSON.parse(window.localStorage.getItem("options")) || this.getDefaultOptions();
+    const settings = JSON.parse(window.localStorage.getItem("settings")) || this.getDefaultSettings();
 
     this.state = {
       "section": currentSection,
       "flags": currentFlags,
       "logs": currentLogs,
-      "showOptions": false,
-      "options": options,
+      "showSettings": false,
+      "settings": settings,
     };
   }
 
-  getDefaultOptions = () => {
+  getDefaultSettings = () => {
     return {
       "fontSize": 16,
       "justified": false,
@@ -99,26 +99,26 @@ class Game extends React.Component {
     window.scrollTo(0, element.offsetTop);
   }
 
-  showOptions = () => {
-    this.setState({ "showOptions": true });
+  showSettings = () => {
+    this.setState({ "showSettings": true });
   }
 
-  hideOptions = () => {
-    this.setState({ "showOptions": false });
+  hideSettings = () => {
+    this.setState({ "showSettings": false });
   }
 
   componentDidUpdate = () => {
     this.scrollToText();
   }
 
-  updateOptions = (values) => {
+  updateSettings = (values) => {
     this.setState((prevState, props) => {
-      const options = Object.assign({}, prevState.options, values);
+      const settings = Object.assign({}, prevState.settings, values);
 
-      window.localStorage.setItem("options", JSON.stringify(options));
+      window.localStorage.setItem("settings", JSON.stringify(settings));
 
       return {
-        "options": options,
+        "settings": settings,
       };
     });
   }
@@ -133,11 +133,11 @@ class Game extends React.Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem onSelect={this.showOptions}>Options</NavItem>
+              <NavItem onSelect={this.showSettings}>Configuration</NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <Grid className={"font-"+this.state.options.fontSize + (this.state.options.justified ? " text-justify" : "")}>
+        <Grid className={"font-"+this.state.settings.fontSize + (this.state.settings.justified ? " text-justify" : "")}>
           <Row>
             <Col md={8} mdOffset={2}>
               {this.state.logs.map((log, index) => {
@@ -160,12 +160,12 @@ class Game extends React.Component {
             </Col>
           </Row>
         </Grid>
-        <Modal show={this.state.showOptions} onHide={this.hideOptions}>
+        <Modal show={this.state.showSettings} onHide={this.hideSettings}>
           <Modal.Header closeButton>
-            <Modal.Title>Options</Modal.Title>
+            <Modal.Title>Configuration</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Options values={this.state.options} update={this.updateOptions} />
+            <Settings values={this.state.settings} update={this.updateSettings} />
           </Modal.Body>
         </Modal>
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { FormGroup, ControlLabel, FormControl, Checkbox } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
-class Options extends React.Component {
+class Settings extends React.Component {
   constructor(props) {
     super(props);
 
@@ -72,9 +72,9 @@ class Options extends React.Component {
   }
 }
 
-Options.propTypes = {
+Settings.propTypes = {
   values: PropTypes.object.isRequired,
   update: PropTypes.func.isRequired,
 };
 
-export default Options;
+export default Settings;
