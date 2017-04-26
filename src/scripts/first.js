@@ -1,76 +1,167 @@
-const first = {
-  "first-sacred": {
-    "text": `
-<p>L’invocation est un processus que vous ne sauriez réellement expliquer. C’est un comme le vélo ou la natation : une fois qu’on sait en faire, le corps prend le relais, sans qu’il soit nécessaire de réellement y penser. Et c’est d’autant plus vrai que vous avez appris très jeune, à l’école de l’ordre, dont les méthodes pédagogiques se basent beaucoup sur une répétition sans compréhension.</p>
+import {ionnaFirstSummon, rebeccaFirstSummon, bulletExplanation, awaFirstSummon} from './summons.js';
 
-<p>La seule difficulté est d’établir une connexion avec l’esprit, mais dans le cas de personnalités que vous avez déjà hébergé à plusieurs reprises, c’est chose aisé. Vous vous concentrez sur votre ressenti lors de ces expériences passées, faites remonter les souvenirs, les images, vous renouez le lien avec un autre être, une autre époque, une autre vie.</p>
+const summoningDescription = (summonName) => {
+  return `
+<p>Malgré votre expérience dans le domaine, vous ne sauriez réellement expliquer le fonctionnement d'une invocation. Dès très jeune, l'Ordre vous a fait faire des exercices dont l'intérêt exact ne vous a jamais été expliqué, et, un jour, un professeur vous a dit que vous étiez prête, et effectivement vous l'étiez. C'est un peu comme le vélo ou la natation : un processus peu pédagogique, l'idée d'un coup à prendre, que votre corps sait, que vous n'avez pas besoin de théorie mais seulement de pratique.</p>
 
-<p>Confiance.</p>
+<p>Vous n'êtes d'ailleurs pas sûre que la plupart de vos instructeurs connaissaient eux-même la théorie. Sans doute ne faisaient-ils que répéter ce que leurs parents leur avaient appris.</p>
 
-<p>Vous vous redressez d’un bloc. Il n’y a que devant Dieu que vous vous mettez à genoux, et ce grossier homme n’est clairement ni le divin ni son serviteur. Vous ignorez même en quoi il croit. Peut-être en lui-même, en sa propre importance, en l’adoration que lui doivent ses inférieurs dans la hiérarchie dont il occupe le sommet. Si son ordre n’est théoriquement pas religieux, mais il reprend les codes des cultes et vend ses services à la plupart d’entre eux, et les prêtres d’un grade élevé ont tendance à se confondre avec ce qu’ils sont censés vénérer.</p>
+<p>À votre niveau, la principale difficulté reste d’établir une connexion avec l’esprit. Dans le cas de personnalités que vous avez déjà hébergées à plusieurs reprises, c’est toutefois chose aisée.</p>
 
-<p>Vous n’avez pas cet orgueil. Vous savez simplement que vous avez une mission et que votre cause est juste.</p>
+<p>Vous vous remémorez ce que vous aviez ressenti lors de vos précédents contacts avec ${summonName}. L'état d'esprit est primordial pour une incarnation réussie, plus encore que les souvenirs d'une autre époque, d'une autre vie.</p>
+  `;
+};
 
-<p>L’apparence de votre adversaire se précise. Une armure antique avec un casque à la mode grecque, une cotte à larges mailles, un bouclier allongé dans une main et une lance dans l’autre. La barbe toujours, mais courte et bien taillé. Une peau plus sombre, un visage plus beau, un corps plus grand.</p>
+const makabiDescription = `
+<p>En réaction à votre propre ancrage dans le moment, l’apparence de votre adversaire se précise. Une armure antique avec un casque à la mode grecque, une cotte à larges mailles, un bouclier allongé dans une main et une lance dans l’autre. La barbe toujours, mais courte et bien taillé. Une peau plus sombre, un visage plus beau, un corps plus grand.</p>
 
-<p>Votre propre armure s’est elle aussi matérialisée. Son poids familier vous réconforte. Depuis que votre quête a commencé, il est devenu bien rare qu’un jour complet ne s’écoule sans que vous ne soyez contrainte de la porter. Présentant une avance technologique d’au moins un millénaire sur celle de votre adversaire, elle vous couvre de la tête au pied, et ne doit pourtant guère peser plus lourd.</p>
-
-<p>Le nouvel arrivant brandit son arme et déclare solennellement, d’une voix forte, habituée à commander et à prêcher :</p>
+<p>D'un coup sec, il cogne le sol de la hampe de son arme, provoquant une vague de silence, et déclare solennellement, d’une voix forte, habituée à commander et à prêcher :</p>
 
 <div class="conversation">
-<p>— Je suis Makabi. Le temple a été souillé, et je n’aurai de repos tant qu’il n’aura été purifié.</p>
+<p>— Je suis Makabi, défenseur de la juste foi. Nos croyances, nos usages, nos coutumes, ont été dévoyés par les actes impies d'une barbare qui a autrefois été des nôtres. Encore une fois, il me revient l'honneur de purifier le temple.</p>
 </div>
 
-<p>Vous rabattez votre visière et saisissez votre épée d’une main. Dans un mouvement réflexe, vous resserrez également le poing gauche, mais vous ne rencontrez que l’air.</p>
+<p>Il bascule alors sa lance pour en faire pointer le fer droit vers vous.</p>
+`;
 
-<p>Pendant un fugitif instant, votre personnalité hôte reprend le dessus, alors que vous réalisez que, pour ne pas changer, vous n’avez pas réussi à matérialiser tous les attributs de l’esprit invoqué. Il vous manque probablement aussi des morceaux de sa psyché, mais cela est plus difficile à déterminer.</p>
+const first = {
+  "first-ionna": {
+    "text": `
+${summoningDescription("Ionna")}
 
-<p>Aussitôt votre concentration perdue, votre armure commence à se désagréger. Vous vous efforcez de replonger en transe, de laisser votre invitée s’occuper de la partie martiale.</p>
+${ionnaFirstSummon}
 
-<p>La première attaque de Makabi vous prend par surprise. Le fer de sa lance frappe droit dans l’épaule de votre bras directeur. Votre cuirasse fait heureusement son travail, empêchant la pointe de s’enfoncer dans la chair et réduisant une blessure incapacitante à une conséquente hématome.</p>
+${makabiDescription}
 
-<p>Cependant, si vous continuez à vous montrer aussi distraite, nul doute qu’il va réussir à vous neutraliser, même s’il doit pour cela vous réduire en bouillie à l’intérieur de votre coquille.</p>
+<p>Vous abaissez la visière de votre casque. Faites jouer vos épaules pour vous assurer que vos différentes couches protectrices sont bien agencées. Elles accompagnent votre mouvement sans heurt, se soutenant les unes les autres. La sensation est familière. Depuis que votre quête a commencé, il est devenu bien rare qu’un jour complet ne s’écoule sans que vous ne soyez contrainte de vous harnacher ainsi.</p>
 
-<p>Vous manœuvrez pour lui rendre la pareille mais il pare avec son bouclier et vous esquivez son attaque suivante uniquement car il frappe trop haut, sans doute déconcerté par votre taille modeste par rapport à ses adversaires habituels.</p>
+<div class="conversation">
+<p>— J'ai fait ce que j'ai fait car cela était juste, et jamais je ne le renierai.</p>
+<p>- Il est des saints hommes qui auraient pu te montrer tes erreurs par la seule force leur verbe. Je n'en suis malheureusement pas un, et devrais me contenter de ma colère.</p>
+</div>
 
-<p>Les échanges suivants ne sont pas à votre avantage. Vous affrontez un guerrier bien entraîné, expérimenté, avec une plus grande masse musculaire et une meilleure allonge. Votre seul atout est que vous combattez pour la bonne cause, tandis que lui a pris parti pour la mauvaise. La hampe de sa lance vous frappe à la jambe, tandis que vous ne parvenez qu’à faire une rayure sur son bouclier.</p>
+<p>La première attaque de Makabi est avant tout un coup de semonce, destiné à vous effrayer et à jauger votre niveau. Sa lance vole en une trajectoire prévisible, vous l'esquivez sans mal, et dégainez en réponse.</p>
 
-<p>Vous ne gagnerez pas sur un plan purement physiquement. Aussi entreprenez-vous de faire le vide dans votre esprit, de laisser Dieu guider votre main vers votre juste victoire.</p>
+<p> Vous commencez alors à vous tourner autour.</p>
 
-<p>Vous n’y arrivez pas. Les pensées parasites bourdonnent sous votre crâne. Une seconde voix qui ne partage pas votre inébranlable confiance en vous-même et en Dieu.</p>
+<p>Il a l'avantage de la taille et de l'allonge, mais son équipement a un bon millénaire de retard sur le vôtre, devant peser tout aussi lourd pour protéger moins bien une zone nettement plus réduite du corps. Autant de failles que vous vous ferez un plaisir d'exploiter.</p>
+
+<p>Vous tentez un assaut. Il pare de son bouclier. Riposte. La lance glisse sans dommage sur le flanc de votre jambière. Une estocade haute. Déviée par son bouclier à nouveau. Un contre en pleine épaule. Votre cuirasse arrête la pointe, l'impact vous secoue, il reprend de la distance.</p>
+
+<p>Nouvel échange. Résultat similaire. Vous n'arrivez pas à le toucher, il vous contusionne quelque peu d'un revers de son arme contre votre mollet.</p>
+
+<p>Nouvelle passe d'armes, nouvel échec. Il vous touche encore à la même épaule, et vous commencez à sentir une douleur sourde quand vous bougez le bras.</p>
+
+<p>Il est meilleur que vous. C'est un combattant professionnel, il ne prend pas de risque, garde ses distances, vous épuise et vous blesse peu à peu.</p>
+
+<p>Votre esprit se coupe en deux. Ionna est persuadée qu'elle peut l'emporter, comme elle est toujours persuadée de tout. Misty se rend bien compte que la situation est en sa défaveur.</p>
+
+<p>Et devant ce flagrant conflit, l'incarnation cesse. Vous vous retrouvez avec juste une épaisseur de tissu synthétique et vos petits bras pour votre défendre contre un soldat en armes.</p>
     `,
     "next": (goToSection) => {
-
+      return {
+        "text": `Vous vous préparez au pire.`,
+        "action": () => {
+          goToSection("second-form");
+        }
+      };
     },
   },
-  "first-pirate": {
+  "first-rebecca": {
     "text": `
-<p>[description invocation]</p>
+${summoningDescription("Rebecca")}
 
-<p>Liberté.
+${rebeccaFirstSummon}
 
-<p>Vous repoussez la mèche de cheveux qui vous tombe entre les yeux. Sa couleur moitié brune moitié violette vous rappelle que vous n'avez pas entretenu votre teinture depuis longtemps. Bah, après tout, c'est bien comme ça aussi.</p>
+${makabiDescription}
 
-<p>Vous élaborez aussitôt un plan pour vous sortir d'ici. Il y a des gardes en retrait aux quatre coins de la scène. Leurs vêtements sont parfaitement adaptés pour cacher des armes, vous ne savez donc pas à quoi vous attendre de ce point de vue-là. Dans le doute, au pire. Un fusil-mitrailleur serait trop imposant, mais une arme de poing reste une possibilité non négligeable.</p>
+<p>Sérieux, ce type vous menace avec une lance ? Des siècles et des siècles après l'invention de la poudre à canon ?</p>
 
-<p>Bah, même s'ils n'ont que des matraques, vous ne comptez pas vous les fritter de toute façon. Trop nombreux. Vous portez votre attention vers l'éclairage. Les torches, c'est bien joli, mais ça n'éclaire pas grand chose. Alors en réalité, ce sont de bons gros spots qui font le travail. Si vous pouviez les neutraliser</p>
-
-<p>[apparition de Makabi, nécessiter de la redécouper pour un usage simplifié]</p>
-
-<p>Ah, c'est vrai qu'il est là celui-là. Et bien, s'il insiste pour s'en prendre une, vous n'allez pas l'en priver.</p>
+<p>Il y a le trip nostalgique, et il y a la stupidité dans toute sa splendeur.</p>
 
 <p>Vous faites jaillir le Beretta de son étui et lui collez direct une bastos dans l'épaule, sans préavis. Ça l'arrête net, et sa bouche s'ouvre de façon comique sous l'effet de la surprise. Vous plissez vous-même les yeux d'étonnement car vous lui avez juste roussi le cuir là où il aurait dû y avoir une belle giclée de sang.</p>
 
-<p>Les éléments matérialisés en invoquant des esprits perdent très vite en consistance dès qu'ils s'éloignent de la personne qui leur donne corps. Il ne devait plus rester grand chose de la balle et de sa force cinétique quand elle a atteint sa cible. Toujours assez pour faire du dégât, mais rien de comparable avec ce qu'un calibre de ce genre aurait dû infliger.</p>
+${bulletExplanation}
 
-<p>Cette pensée parasite est bien sûre signée Misty, et non Rebecca. Suite à cette légère perte de concentration, la mèche qui ne cesse de retomber commence déjà à partir en fumée. Vous remarquez que votre adversaire profite de cette opportunité pour changer d'esprit associé.</p>
-
-<p>[offrir la possibilité de se barrer, là, maintenant ?]</p>
-
-<p>[ajouter un texte sur la terreur que provoque l'arme à feu ?]</p>
+<p>Cette pensée parasite est bien sûre signée Misty, et non Rebecca. La dichotomie mentale qu'elle implique vous fige pendant un instant, qu'Eschyle met à profit pour entamer une nouvelle invocation, à la recherche d'une forme plus apte à combattre votre modernité toute relative.</p>
     `,
     "next": (goToSection) => {
+      return [
+        {
+          "text": `Vous l'attendez de pied ferme.`,
+          "action": () => {
+            goToSection("second-rebecca", {"badlyWounded": true});
+          }
+        },
+        {
+          "text": `Vous en profitez pour décamper.`,
+          "action": () => {
+            goToSection("rebecca-escape", {"triedToEscapeAsRebecca": true});
+          }
+        },
+        {
+          "text": `Vous invoquez vous aussi un nouvel esprit.`,
+          "action": () => {
+            goToSection("second-change-rebecca");
+          }
+        },
+      ];
+    },
+  },
+  "first-onawa": {
+    "text": `
+${summoningDescription("Rebecca")}
 
+${rebeccaFirstSummon}
+
+${makabiDescription}
+
+<p>Vous posez les yeux sur sa phallique menace, et basculer la tête dans un geste de dédain complet.</p>
+
+<div class="conversation">
+<p>- Ah, monsieur Makabi. Je suppose que vous êtes un agent du procureur. Je comprends que vous soyez nerveux devant l'excellence de ma défense, mais tout de même, ce n'est parce que j'ai une hortensia derrière l'oreille que vous pouvez m'interrompre.</p>
+</div>
+
+<p>Votre répartie a pour conséquence qu'il tente de vous embrocher de sa lance.</p>
+
+<p>Grossier personnage.</p>
+
+<p>Vous esquivez en vous dérobant sur le côté, sans toutefois réellement creuser la distance vous séparant de votre adversaire. Volontairement. Vous ne pouvez vous permettre de reculer. Vous avez un public à convaincre. Flancher sur le plan physique donnerait l'illusion que vous êtes également faiblarde sur le plan des idées.</p>
+
+<p>Raisonnement stupide, mais humain. Plus vous impressionnerez la salle par vos actes, plus ils seront disposés à entendre vos paroles.</p>
+
+<p>Ce qui implique de continuer à discourir et à flirter avec le danger au même rythme.</p>
+
+<div class="conversation">
+<p>- Je vois que vous restez coi devant ma bonne foi. Initiative que je salue, car votre camp n'a que trop parlé, et le mien pas assez. Beau procès que celui où un seul parti a le droit de s'exprimer.</p>
+<p>« Alors me voilà. Je suis la quintessence de ce que vous craignez. L'esprit désaxé dans toute sa splendeur. Ai-je l'air si terrible ? En dehors de mes goûts vestimentaires...</p>
+</div>
+
+<p>La pique vous frôle de beaucoup trop près à votre goût, créant une pause inopinée dans votre discours.</p>
+
+<div class="conversation">
+<p>-... douteux j'entends. Pour sûr, je ne ressemble pas aux esprits que vous avez l'habitude de voir. Il me manque la barbe déjà. Mais n'est-ce pas là tout le nœud du problème justement ? En vous limitant à un seul schéma type, vous limitez les mauvaises surprises, mais vous vous privez aussi des bonnes. Le monde...</p>
+</div>
+
+<p>Cette fois, il ne vous manque pas. Un bon gros coup sous l'aisselle gauche, bien violent.</p>
+
+<p>Vous vous jetez sur lui. Coup de pied sur son bouclier. Vous agrippez le bouclier à deux mains. Le rejetez sur le côté. Nouveau coup de pied. Votre semelle compensée cogne en plein sternum. Le guerrier encaisse, reculant un peu sous l'impact. Vous repousse en frappant avec le manche de son arme. Le bois heurte l'avant-bras dressé pour protéger le reste de votre corps.</p>
+
+<div class="conversation">
+<p>-C'est vraiment trop te demander que de me laisser parler ?</p>
+</div>
+
+<p>La phrase claque, sèche et déterminée. Malheureusement, Onawa peut faire la fière, façon « quand on me cherche on me trouve », les coups qu'elle a portés ont plus fait trembler votre propre corps que celui de son adversaire, et cette petite saute d'humeur sert surtout à cacher que le gugusse ne vous a vraiment pas raté. Vous avez horriblement mal au flanc, et cela affecte votre concentration.</p>
+
+<p>Vous vous attendez à ce qu'Eschyle remette le couvert aussitôt. Au loin de cela, après vous avoir bien observé sous sa forme de Makabi, il rompt soudainement l'invocation.</p>
+    `,
+    "next": (goToSection) => {
+      return {
+        "text": `À quel jeu joue-t-il ?`,
+        "action": () => {
+          goToSection("second-form-onawa");
+        }
+      };
     },
   },
 };
