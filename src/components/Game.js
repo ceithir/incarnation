@@ -14,7 +14,7 @@ class Game extends React.Component {
     const currentSection = this.props.startingSection;
     const currentFlags = this.props.startingFlags;
     const currentLogs = [];
-    const settings = JSON.parse(window.localStorage.getItem("settings")) || this.getDefaultSettings();
+    const settings = Object.assign({}, this.getDefaultSettings(), JSON.parse(window.localStorage.getItem("settings")) || {});
 
     this.state = {
       "section": currentSection,
