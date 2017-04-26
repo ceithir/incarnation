@@ -27,7 +27,7 @@ class Game extends React.Component {
 
   getDefaultSettings = () => {
     return {
-      "fontSize": 16,
+      "fontSize": 14,
       "justified": false,
     };
   }
