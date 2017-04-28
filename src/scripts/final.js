@@ -81,11 +81,11 @@ ${lowerGround}
 
 <p>Vous vous retournez vers la foule et tirez dedans. Ils sont beaucoup trop loin pour que cela blesse quiconque, votre projectile s’effaçant bien avant de rencontrer quoi que ce soit de solide, mais l’acte lui-même et son bruit provoquent la panique dans l’assemblée jadis disciplinée, déjà électrisée par la manière dont vous avez éclaté leur champion.</p>
 
-<p>Ça se met à courrir dans tous les sens, à se rentrer dedans, bref un magnifique chaos détournant l’attention de vos propres actions. Vous piquez aussitôt un sprint vers l’arrière de la scène, et vous laissez tomber. Vous êtes à deux pas des coulisses, et de gros balourds vous foncent déjà dessus, mais vous repérez ce que vous cherchiez, que Misty avait vu lorsqu’elle était passée par là mais n’avait pas identifié comme important : un gros amas de câbles et de boîtiers, tout un pan de la connectique et de l’alimentation de l’éclairage.</p>
+<p>Ça se met à courir dans tous les sens, à se rentrer dedans, bref un magnifique chaos détournant l’attention de vos propres actions. Vous piquez aussitôt un sprint vers l’arrière de la scène, et vous laissez tomber. Vous êtes à deux pas des coulisses, et de gros balourds vous foncent déjà dessus, mais vous repérez ce que vous cherchiez, que Misty avait vu lorsqu’elle était passée par là mais n’avait pas identifié comme important : un gros amas de câbles et de boîtiers, tout un pan de la connectique et de l’alimentation de l’éclairage.</p>
 
 <p>Vous mettez une balle dans le genou du garde le plus proche alors qu’il sort un taser, quasiment à bout portant, ce qui a enfin l’effet escompté et calme d’un coup tous les autres, et videz la moitié du chargeur dans l’équipement électrique au pif en espérant toucher quelque chose d’important. Ça en revanche, ça n’a à peu près aucun effet. C’était sans doute beaucoup demander à la déesse de la chance que de s’attendre à toucher le centre névralgique de tout ce bazar avec pareille méthode. Vous regrettez de rien avoir d’explosif sous la main, ça vous aurait bien simplifié la vie.</p>
 
-<p>Alors que vous adaptez votre plan à l’évolution de la situation, un anachronisme vivant atterit devant vous.</p>
+<p>Alors que vous adaptez votre plan à l’évolution de la situation, un anachronisme vivant atterrit devant vous.</p>
     `,
     "next": (goToSection) => {
       return {
@@ -96,6 +96,38 @@ ${lowerGround}
       }
     },
   },
+  "surrender": {
+    "text": (flags) => {
+      return `
+<p>Suffit. Vous avez compris. Les dés sont aussi pipés qu'il fallait s'y attendre, vous n'allez pas continuer à prendre des coups juste pour la beauté du geste.</p>
+
+<p>Toujours incapable de parler correctement${(flags.onawaVersusMakabi|flags.onawaVersusBernardo)? ` sans aide extérieure`: ''}, vous vous agenouillez et gargouillez faiblement quelques mots en essayant d'adopter une expression de repentance appropriée. Cela devrait vaguement faire illusion pour un public trop loin pour vous entendre.</p>
+
+<p>Eschyle en tout cas semble satisfait. Il se lance dans une interminable tirade ne faisant que paraphraser son discours d'accueil tandis que vous restez prostrée sur scène en attendant le moment où vous pourrez enfin retourner en coulisses.</p>
+
+<hr/>
+
+<p>Vous listez les points positifs de votre nouvelle situation. Vous êtes en vie. Plus personne ne vous tape dessus.${(flags.lightlyWounded|flags.badlyWounded)? ` Vos blessures ont été soignées.` : ``} Vous avez un toit, et trois repas par jour.</p>
+
+<p>Voilà, le compte doit y être. Pour le reste, la cellule où vous croupissez n'incite pas à l'optimisme.</p>
+
+<p>Officiellement, vous avez de vous-même choisi de vous isoler du monde pour purger votre âme de la corruption qui s'y était installée.</p>
+
+<p>Vous ignorez si cette fable pousse le vice jusqu'à expliquer que c'est vous et vous seule qui avez demandé à être enfermée et avait réclamé ce couple caméra/sprinkler qui permet de vous asperger d'eau glacée au moindre signe que vous pourriez peut-être, éventuellement, être en train d'appeler un esprit non déclaré. Vous avez d'ailleurs été réveillée de cette manière aujourd'hui, sans que vous sachiez si vos mouvements nocturnes aient été réellement suspicieux ou si votre surveillant s'ennuyait simplement.</p>
+
+<p>Oui, vous ne savez plus grand chose. En l'absence de lumière du jour et de montre, votre définition même du temps s'est étiolée. Seuls les repas rythment vos journées. Et encore, vous suspectez qu'ils leur arrivent de vous faire jeûner, sans doute pour votre bien, pour faciliter votre détachement spirituel.</p>
+
+<p>Le pire dans cette affaire reste encore l'ennui. La cellule ne contient que le strict nécessaire pour y vivre, sans la moindre distraction. Vous ne demandez pas Internet ou la télé, mais mêmes papiers et crayons vous ont été refusés. Vous n'avez rien d'autre à faire que de penser. Et quand vous n'en pouvez plus de penser, vos idées tournant vite en ronds en l'absence de stimulus extérieurs, vous vous épuisez par des exercices physiques et retournez vous coucher.</p>
+
+<p>Bien sûr, vous savez ce à quoi vos tourmenteurs souhaitent que vous employiez votre temps libre. Ils vous ont remis un livre, plastifié. Vous l'avez déjà lu, plusieurs fois même, l'ennui étant plus fort que la rancœur. C'est un recueil d'informations sur une liste extrêmement restreinte de « bons esprits », tous anciens membres rigoristes de l'Ordre.</p>
+
+<p>Bien sûr, vous pourriez essayer de communier avec eux. Vous ne doutez pas qu'ils vous permettraient de mieux comprendre pourquoi tout ceci est pour votre bien et celui de la communauté.</p>
+
+<p>Ou vous pourriez continuer à examiner cette tache au plafond.</p>
+      `;
+  },
+    "end": "jail",
+  }
 };
 
 export default final;

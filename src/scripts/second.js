@@ -81,7 +81,7 @@ const second = {
         {
           "text": `Onawa.`,
           "action": () => {
-            goToSection("second-onawa", {"onawaVersusBernardo": true});
+            goToSection("second-onawa", {"onawaVersusBernardo": true, "badlyWounded": true});
           },
         },
       ];
@@ -104,7 +104,7 @@ const second = {
         {
           "text": `Du baroque, avec Onawa.`,
           "action": () => {
-            goToSection("second-onawa", {"onawaVersusBernardo": true});
+            goToSection("second-onawa", {"onawaVersusBernardo": true, "badlyWounded": true});
           },
         },
       ];

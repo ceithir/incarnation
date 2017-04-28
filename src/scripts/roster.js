@@ -61,7 +61,7 @@ const roster = {
         <div>
           {choice("first-ionna", {"ionnaVersusMakabi": true}, "Ionna", ionnaDescription)}
           {choice("first-rebecca", {"rebeccaVersusMakabi": true}, "Rebecca", rebeccaDescription)}
-          {choice("first-onawa", {"onawaVersusMakabi": true, "badlyWounded": true}, "Onawa", onawaDescription)}
+          {choice("first-onawa", {"onawaVersusMakabi": true, "lightlyWounded": true}, "Onawa", onawaDescription)}
         </div>
       );
     },

@@ -3,6 +3,7 @@ const flags = {
   "rebeccaVersusMakabi": false,
   "onawaVersusMakabi": false,
   "triedToEscapeAsRebecca": false,
+  "lightlyWounded": false,
   "badlyWounded": false,
   "onawaVersusBernardo": false,
 };
