@@ -140,7 +140,46 @@ const third = {
     `,
     "next": (goToSection) => {
     },
-  }
+  },
+  "third-ionna": {
+    "text": `
+<p>Vous essayez de vous concentrer. Tâche impossible. Vous avez mal. Vraiment mal. Vous n’êtes même pas sûre de pouvoir utiliser votre jambe. Et même si vous avez du mal à l’accepter, vous êtes terrifiée. Par l’idée que tout ceci puisse encore empirer si vous cherchez encore à vous battre.</p>
+
+<p>La synchronisation avec Ionna s’effectue naturellement. Pas par les sentiments que vous lui prêtez d’habitude, mais par une résonance viscérale.</p>
+
+<p>Vous avez mal. Mal comme jamais. Froid aussi. La terre humide et glacée collait à votre visage. La terre avale le sang coulant lentement de votre cou.</p>
+
+<p>Une flèche chanceuse. Enfin, pas si chanceuse. Vous êtes encore en vie. Enfin, l’êtes-vous vraiment ? Tout votre corps est lourd. Pourrait être la boue. Pourrait être la fatigue des dernières semaines demandant son dû comptant. Pourrait être la vie qui vous quitte.</p>
+
+<p>Vous ne pouvez pas entendre les cris. Mais vous les entendez quand même. Le bruit de la panique dans votre camp. La charge de la victoire dans celui d’en face. Toute cette opération ne tient que par le filet d’espoir que vous représentez pour les uns, et la crainte que vous inspirez aux autres. Vous morte, ou supposée morte, cette bataille est perdue.</p>
+
+<p>Vous pouvez accepter votre mort. Pas celle de l’espoir.</p>
+
+<p>Vous vous relevez.</p>
+
+<p>Votre épée vous sert de cane. Votre armure pèse, mais elle maintient vos différents morceaux en place. Votre blessure hurle, mais elle devra attendre. Vous avez une bataille à gagner.</p>
+
+<p>Vous n’êtes pas Ionna. Vous n’êtes la championne d’aucune cause. Mais vous en avez assez de vous faire cracher dessus. Vous en avez assez que tout un groupe crachent sur des êtres aussi remarquables qu’elle.</p>
+
+<p>Ionna, Rebecca, Onawa, les autres, sont loin d’être parfaites. Mais elles ont toujours été là quand vous aviez besoin d’elles, et ce jour ne fait pas exception. Alors vous n’allez pas les abandonner parce qu’un type mort voilà deux mille ans en a décidé ainsi.</p>
+
+<p>Vous détachez votre arme du sol et la pointez vers votre ennemi. L’avatar d’Eschyle secoue tristement la tête.</p>
+
+<div class="conversation">
+<p>— Je suis tellement déçu mon enfant.</p>
+</div>
+
+<p>Et il change à nouveau d’apparence.</p>
+    `,
+    "next": (goToSection) => {
+      return {
+        "text": `Quoi qu’il vous réserve encore, vous êtes prête.`,
+        "action": () => {
+          goToSection("final-ionna");
+        },
+      };
+    },
+  },
 };
 
 export default third;
