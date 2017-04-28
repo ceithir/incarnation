@@ -6,6 +6,7 @@ import Funnel from './Funnel.js';
 import { Navbar, Nav, NavDropdown, MenuItem, Grid, Row, Col, Modal } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 import Settings from './Settings.js';
+import Ending from './Ending.js';
 
 class Game extends React.Component {
   constructor(props) {
@@ -67,6 +68,7 @@ class Game extends React.Component {
     return {
       "text": 'string' === typeof section.text ? () => {return section.text;} : section.text,
       "next": section.next,
+      "end": section.end,
     };
   }
 
@@ -75,7 +77,12 @@ class Game extends React.Component {
   }
 
   getNext = (sectionKey, flags) => {
-    const next = this.getSection(sectionKey).next(this.goToSection, flags);
+    const section = this.getSection(sectionKey);
+    if (section.end) {
+      return this.endGame(section.end);
+    }
+
+    const next = section.next(this.goToSection, flags, this.endGame);
 
     if (React.isValidElement(next)) {
       return next;
@@ -147,6 +154,32 @@ class Game extends React.Component {
     });
   }
 
+  endGame = (endingKey) => {
+    const endingIndex = this.props.endings.findIndex(
+      (ending) => {
+        return endingKey === ending.key;
+      }
+    );
+    if (-1 === endingIndex) {
+      console.error(`Ending "${endingKey}" is undefined.`);
+      return;
+    }
+
+    const title = this.props.endings[endingIndex]["name"];
+    const subtitle = `Fin ${endingIndex+1} sur ${this.props.endings.length} :`;
+
+    const buttons = [
+      {
+        "text": `Recommencer`,
+        "action": this.resetProgress,
+      },
+    ];
+
+    return (
+      <Ending title={title} subtitle={subtitle} buttons={buttons} />
+    );
+  }
+
   render() {
     return (
       <div className="game">
@@ -197,7 +230,9 @@ class Game extends React.Component {
         </Grid>
         <Modal show={this.state.showSettings} onHide={this.hideSettings}>
           <Modal.Header closeButton>
-            <Modal.Title>Configuration</Modal.Title>
+            <Modal.Title>
+              {`Configuration`}
+            </Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Settings values={this.state.settings} update={this.updateSettings} />
@@ -217,6 +252,7 @@ Game.propTypes = {
   currentFlags: PropTypes.object,
   currentLogs: PropTypes.array,
   saveProgress: React.PropTypes.func.isRequired,
+  endings: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Game;

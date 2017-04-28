@@ -129,18 +129,16 @@ const third = {
 
 <p>Cela ouvre tout un nouveau champ des possibles absolument fascinant.</p>
 
-<p>Et maintenant que votre jambe a presque retrouvé toute sa vigueur, cela vous fournira également un atout de poids pour retrouver votre liberté.</p>
+<p>Et maintenant que votre jambe a presque retrouvé toute sa vigueur, cela vous fournira également un atout de poids pour regagner votre liberté.</p>
       `;
     },
-    "next": (goToSection) => {
-    },
+    "end": "red-eyes",
   },
   "summoning-failure": {
     "text": `
 [Décrire échec de l’invocation et inconscience]
     `,
     "next": (goToSection) => {
-
     },
   }
 };

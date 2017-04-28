@@ -50,3 +50,10 @@
 .font-20 {
   font-size: 20px;
 }
+
+.ending-title {
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
