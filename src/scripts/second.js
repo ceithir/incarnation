@@ -1,9 +1,9 @@
 import {ionnaFirstSummon, rebeccaFirstSummon, bulletExplanation, onawaFirstSummon} from "./summons.js";
 
 const bernardoDescription = `
-<p>Une riche armure d’acier damasquiné. Un manteau d’un rouge écarlate. Une rapière à la lame ondulante. Un masque de fer pour dissimuler le visage.</p>
+<p>Votre nouvel adversaire se matérialise. Une riche armure d’acier damasquiné. Un manteau d’un rouge écarlate. Une rapière à la lame ondulante. Un masque de fer.</p>
 
-<p>Il s’incline légèrement pour vous saluer, relevant sa cape en un mouvement désuet.</p>
+<p>Il s’incline légèrement pour vous saluer, relevant sa cape d’un mouvement désuet.</p>
 
 <div class="conversation">
 <p>— Je m’excuse pour ce qui va suivre. Mais c’est nécessaire, pour votre bien, pour extraire le démon qui est en vous.</p>
@@ -13,12 +13,12 @@ const bernardoDescription = `
 `;
 
 const defeatDescription = `
-<p>Un coup particulièrement réussi à la jambe vous fait tomber sur un genou. Un autre à la joue ne vous inflige pas grand mal mais vous fait goûter votre propre sang. Une troisième à l’épaule rend particulièrement douloureux pour vous d’user de votre bras droit.</p>
+<p>Un coup particulièrement réussi à la jambe vous force à tomber sur un genou. Un autre à la joue ne vous inflige pas grand mal mais vous fait goûter votre propre sang. Une troisième à l’épaule rend particulièrement douloureux pour vous d’user de votre bras droit.</p>
 
 <p>Vous ne pouvez pas maintenir la concentration nécessaire à l’invocation alors que tous les signaux de votre organisme passent au rouge. Vous redevenez Misty, et souffrez d’autant plus que vos perceptions sont maintenant entièrement les vôtres.</p>
 
 <div class="conversation">
-<p>Comme à chaque fois, le mal recule devant la lame de la justice. Ne vous inquiétez sœur Iphigénie, cette épreuve nécessaire est bientôt finie.</p>
+<p>— Comme à chaque fois, le mal recule devant la lame de la justice. Ne vous inquiétez sœur Iphigénie, cette épreuve nécessaire est bientôt finie.</p>
 </div>
 
 <p>Et Eschyle change encore une fois d’esprit.</p>
@@ -58,9 +58,9 @@ const second = {
   },
   "second-form-2": {
     "text": `
-<p>Vous venez d’essuyer un revers mineur. Toutefois, si Eschyle croit que vous allez lâcher ce qui est peut-être votre dernière opportunité de vous sortir de ce guêpier aussi facilement, c’est qu’il est encore plus dénué d’empathie que vous ne le pensiez.</p>
+<p>Vous venez d’essuyer un revers, c’est certain. Toutefois, si Eschyle croit que vous allez lâcher aussi facilement ce qui est peut-être votre dernière opportunité de vous sortir de ce guêpier, c’est qu’il est encore plus dénué d’empathie que vous ne le pensiez.</p>
 
-<p>Vous amorcez une nouvelle invocation. Eschyle ne semble pas déçu de votre décision. Tout au contraire, son sourire malveillant s’élargit encore un peu plus tandis qu’il vous répond en faisant de même.</p>
+<p>Vous amorcez une nouvelle invocation. Votre bourreau ne semble pas déçu de votre décision. Tout au contraire, son sourire malveillant s’élargit encore un peu plus tandis qu’il vous répond en faisant de même.</p>
 
 <p>Vous ne savez pas ce qu’il vous prépare, mais au moins ne l’affronterez-vous pas seule.</p>
     `,
@@ -81,7 +81,7 @@ const second = {
         {
           "text": `Onawa.`,
           "action": () => {
-            goToSection("second-onawa");
+            goToSection("second-onawa", {"onawaVersusBernardo": true});
           },
         },
       ];
@@ -104,7 +104,7 @@ const second = {
         {
           "text": `Du baroque, avec Onawa.`,
           "action": () => {
-            goToSection("second-onawa");
+            goToSection("second-onawa", {"onawaVersusBernardo": true});
           },
         },
       ];
@@ -161,7 +161,7 @@ ${bernardoDescription}
     "next": (goToSection) => {
       return {
         "text": `Quelle qu’elle soit, vous êtes prête à l’accueillir.`,
-        "next": () => {
+        "action": () => {
           goToSection("final-form");
         },
       };
@@ -218,7 +218,7 @@ ${defeatDescription}
     "next": (goToSection) => {
       return {
         "text": `Qu’est-ce qu’il peut encore vous faire subir ?`,
-        "next": () => {
+        "action": () => {
           goToSection("third-form");
         },
       };
@@ -238,11 +238,11 @@ ${onawaFirstSummon}
 
       if (flags.onawaVersusMakabi) {
         summonDescription = `
-<p>Onawa n’a pas réussi à se faire entendre la première fois, mais une seconde chance ne vous semble pas de trop.</p>
+<p>La première tentative d’Onawa d’expliquer vos choix a tourné court. Raison de plus pour remettre le couvert.</p>
         `;
 
         wound = `
-<p>Il dit ça, mais il vous attaque tout de même, vous chatouillant, certainement à dessein, là même où la précédente invocation vous avez doulouresement frappée.</p>
+<p>Il dit ça, mais il vous attaque tout de même, vous chatouillant, certainement à dessein, là même où la précédente invocation vous avez douloureusement frappée.</p>
         `;
       }
 
@@ -251,39 +251,44 @@ ${summonDescription}
 
 ${bernardoDescription}
 
-<p>Vous esquivez d’un pas sur le côté.</p>
+<p>Guère surprise, vous esquivez aussitôt d’un pas sur le côté.</p>
 
 <div class="conversation">
-<p>— Et bien, quel accueil. Serait-ce trop vous demander que de me laisser parler, tous autant que vous êtes ?</p>
+<p>— Et bien, quelle entrée en matière. Serait-ce trop vous demander que de me laisser parler, tous autant que vous êtes ?</p>
 <p>— Si c’est pour entendre ta confession, je n’y vois pas d’inconvénient.</p>
 </div>
 
 ${wound}
 
-<p>Toutefois, le simple fait qu’il vous réponde, et s’en amuse, laisse subsister un espoir de le faire sortir de son terrain pour l’amener sur le vôtre. Surtout que cela détourne également sa propre attention du combat physique.</p>
+<p>Toutefois, le simple fait qu’il vous réponde, et s’en amuse, laisse entrevoir la possibilité de l’amener de son terrain vers le vôtre. Surtout que cela détourne également sa propre attention du combat physique.</p>
 
 <div class="conversation">
-<p>— Si tu pouvais éviter de trop me charcuter, ce serait fantastique. Le sang, c’est vachement dur à nettoyer.</p>
-<p>— Mon enfant, si ce sang a coulé, c’est uniquement en raison de tes pêchés. Tu devrais te repentir et non en rire.</p>
+<p>— Déjà, si tu pouvais éviter de trop me charcuter, ce serait fantastique. Le sang, c’est vachement dur à nettoyer.</p>
+<p>— Mon enfant, tu devrais te repentir et non rire. Si ce sang a coulé, c’est uniquement en raison de tes pêchés.</p>
+<p>— Je sais pas trop. J’ai probablement mangé une religieuse de plus que de raison la dernière fois, mais même si j’avais alors surmonté ce pêché de gourmandise, je pense que ma situation actuelle n’aurait globalement pas changé.</p>
+<p>« En revanche, je suis certaine que si personne ne s’était mis en tête de m’embrocher et de me couper en morceaux aujourd’hui, j’aurais encore toute mon hémoglobine pour moi.</p>
 </div>
 
-<p>Nouvelle attaque. Jambe. Il vise juste, mais ne semble pas déterminé à vous porter le coup de grâce. Il joue avec vous, comme un chat particulièrement peu mignon avec une souris. Aussi pouvez-vous continuer cette petite danse.</p>
+<p>Nouvelle attaque. Aine. Un coup fort et douloureux, mais surtout tremblant de rage.</p>
+
+<p>Il n’en faut pas beaucoup pour le mettre en rogne celui-là.</p>
 
 <div class="conversation">
-<p>— Oh, je ne crois pas aux regrets. Se répéter encore et encore ce qu’on aurait dû faire ne change pas le passé. Je préfère mémoriser les échecs pour l’avenir. La prochaine fois, dans une situation pareille, j’esquiverai par l’autre côté.</p>
-<p>— Quel orgueil ! Tu mets en danger un corps qui n’est pas le tien pour satisfaire tes caprices personnels, et tu oses faire passer cela pour de la vertu ?</p>
-<p>— J’ose à croire que ma responsabilité dans les présentes blessures de ce corps est quelque peu négligeable par rapport à celle incombant à un certain lâche masqué et armé.</p>
+<p>— Ce que tu as mangé ou pas n’a aucun rapport avec la présente situation !</p>
+<p>— Ah ? Mais dans ce cas, que me reproche-t-on exactement ?</p>
+<p>— D’être un esprit impie, malfaisant, tentateur, corrupteur…</p>
+<p>— Oui, oui, je suis extraordinaire, je sais. Mais que me reproche-t-on <em>d’avoir fait</em> ? On ne peut condamner quelqu’un que par rapport à ses actes, pas simplement sur ce qu’il est.</p>
 </div>
 
-[continuer]
+<p>Sa réponse vient sous la forme d’une pluie d’attaques silencieuses. Il ne joue plus, uniquement concentré sur l’idée de vous faire taire.</p>
 
 ${defeatDescription}
       `;
     },
     "next": (goToSection) => {
       return {
-        "text": `Qu’est-ce qu’il peut encore vous faire subir ?`,
-        "next": () => {
+        "text": `Quoi encore ?`,
+        "action": () => {
           goToSection("third-form");
         },
       };
@@ -294,7 +299,7 @@ ${defeatDescription}
 <p>Eschyle s’efforce de prendre un air compatissant, mais n’arrive pas à dissimuler totalement son sourire satisfait.</p>
 
 <div class="conversation">
-<p>— Il ne fait aucun doute que vos esprits sont aussi faibles qu’annoncés. Vous n’avez pas besoin de vous infliger cela sœur Iphigénie. Abandonnez dès maintenant, et votre châtiment ne sera point alourdi.</p>
+<p>— Vos esprits sont aussi faibles qu’il était à craindre sœur Iphigénie. Vous n’avez pas besoin de vous infliger cela. Abandonnez dès maintenant, et votre châtiment ne sera point alourdi.</p>
 </div>
 
 <p>Onawa refuse tout de go. Misty… Misty hésite.</p>
@@ -306,13 +311,13 @@ ${defeatDescription}
     "next": (goToSection) => {
       return [
         {
-          "text": `Vous acceptez son offre.`,
+          "text": `Vous acceptez l’offre d’Eschyle.`,
           "action": () => {
             goToSection("surrender");
           },
         },
         {
-          "text": `Vous invoquez à nouveau.`,
+          "text": `Vous serrez les dents et vous préparez pour la seconde manche.`,
           "action": () => {
             goToSection("second-form-2");
           },

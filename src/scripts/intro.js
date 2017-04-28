@@ -104,7 +104,7 @@ const intro = {
 
 <p>Toutefois, à force d’avoir peur des flammes, on finit par mourir de froid. Leur stupide liste ne contient aucune personne ayant vécu dans les deux derniers siècles, et une poignée seulement pour les trois qui les précèdent. La plupart des esprits officiels sont ainsi bien trop déconnectés de la réalité présente pour être d’une quelconque aide pratique de nos jours.</p>
 
-<p>Et, bien sûr, leur philosophie de vie date elle aussi d’une autre époque. Être une invocatrice, au féminin, et s’en tenir aux bons esprits officiels signifie passer votre vie à tenir la porte à de vieux barbons qui vous font bien comprendre que votre place est en cuisine à élever vos enfants.</p>
+<p>Et, bien sûr, leurs philosophies de vie datent elles aussi d’une autre époque. Être une invocatrice, au féminin, et s’en tenir aux bons esprits officiels signifie passer votre vie à tenir la porte à de vieux barbons qui vous font bien comprendre que votre place est en cuisine à élever vos enfants.</p>
 
 <p>Tout un argumentaire que vous bouillez de ne pas pouvoir exprimer autrement que par des borborygmes.</p>
 

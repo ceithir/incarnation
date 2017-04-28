@@ -38,7 +38,7 @@ export const onawaFirstSummon = `
 <p>Vous <em>adorez</em> faire ce que vous n’êtes pas censée faire. Et encore plus dans un cas de figure comme celui-là. C’est lorsque l’on braque un projecteur sur vous pour vous ridiculiser, vous humilier, vous détruire, que vous brillez plus que jamais.</p>
 
 <div class="conversation">
-<p>— Puisqu’il s’agit d’un jugement et que les chefs d’accusation ont été énoncés, quoi de plus naturel que d’entendre la plaidoirie de la défense ? J’entends qu’on me décrit comme une entité corruptrice. C’est me surestimer. Certes, il m’arrive de craqueler le vernis des préjugés, de ronger les piliers de la pensée commune, d’endommager la glace de l’immobilisme, mais je suis malheureusement encore bien loin de…</p>
+<p>— Puisqu’il s’agit d’un jugement et que les chefs d’accusation ont été énoncés, quoi de plus naturel que d’entendre la plaidoirie de la défense ? J’entends qu’on me décrit comme une entité corruptrice. C’est me surestimer. Certes, il m’arrive de craqueler le vernis des pensées préconçues, de ronger les piliers des idéologies simplistes, de fissurer la glace de l’immobilisme, mais je suis malheureusement encore bien loin de…</p>
 </div>
 
 <p>Vous êtes en train perdre votre auditoire. Votre voix, pas au mieux de sa forme, y est sans doute pour quelque chose. Vous avez la gorge en feu et devez puiser dans toute votre expérience et votre entraînement à vous exprimer distinctement dans les pires conditions pour parvenir à en sortir des mots articulés.</p>

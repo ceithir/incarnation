@@ -4,6 +4,7 @@ const flags = {
   "onawaVersusMakabi": false,
   "triedToEscapeAsRebecca": false,
   "badlyWounded": false,
+  "onawaVersusBernardo": false,
 };
 
 export default flags;

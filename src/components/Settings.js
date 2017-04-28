@@ -58,8 +58,7 @@ class Settings extends React.Component {
           />
           <FormControl.Feedback />
         </FormGroup>
-        <FormGroup
-        >
+        <FormGroup>
           <Checkbox
             checked={this.state.form.justified}
             onChange={this.onJustificationChange}

@@ -140,7 +140,7 @@ ${makabiDescription}
 <p>La pique vous frôle de beaucoup trop près à votre goût, créant une pause inopinée dans votre discours.</p>
 
 <div class="conversation">
-<p>— … douteux j’entends. Pour sûr, je ne ressemble pas aux esprits que vous avez l’habitude de voir. Il me manque la barbe déjà. Mais n’est-ce pas là tout le nœud du problème justement ? En vous limitant à un seul schéma type, vous limitez les mauvaises surprises, mais vous vous privez aussi des bonnes. Le monde…</p>
+<p>— … douteux j’entends. Pour sûr, je ne ressemble pas aux esprits que vous avez l’habitude de voir. Il me manque la barbe déjà. Mais n’est-ce pas là tout le nœud du problème justement ? En vous limitant à un seul schéma type, vous évitez quelques mauvaises surprises, mais vous vous privez aussi des bonnes. Le monde…</p>
 </div>
 
 <p>Cette fois, il ne vous manque pas. Un bon gros coup sous l’aisselle gauche, bien violent.</p>
@@ -151,9 +151,9 @@ ${makabiDescription}
 <p>— C’est vraiment trop te demander que de me laisser parler ?</p>
 </div>
 
-<p>La phrase claque, sèche et déterminée. Malheureusement, Onawa peut faire la fière, façon « quand on me cherche on me trouve », les coups qu’elle a portés ont plus fait trembler votre propre corps que celui de son adversaire, et cette petite saute d’humeur sert surtout à cacher que le gugusse ne vous a vraiment pas raté. Vous avez horriblement mal au flanc, et cela affecte votre concentration.</p>
+<p>La phrase claque, sèche et déterminée. Malheureusement, Onawa a beau faire la fière, façon « quand on me cherche on me trouve », les coups qu’elle a portés ont plus fait trembler votre propre corps que celui de son adversaire, et cette petite saute d’humeur sert surtout à cacher que le gugusse ne vous a vraiment pas raté. Vous avez horriblement mal au flanc, et cela affecte votre concentration.</p>
 
-<p>Vous vous attendez à ce qu’Eschyle remette le couvert aussitôt. Au loin de cela, après vous avoir bien observé sous sa forme de Makabi, il rompt soudainement l’invocation.</p>
+<p>Vous vous attendez à ce qu’Eschyle remette le couvert aussitôt. Au lieu de cela, après vous avoir bien observé sous sa forme de Makabi, il rompt soudainement l’invocation.</p>
     `,
     "next": (goToSection) => {
       return {
