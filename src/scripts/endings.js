@@ -4,6 +4,10 @@ const endings = [
     "name": `Ennui`,
   },
   {
+    "key": "escape-artist",
+    "name": `Combat non requis`,
+  },
+  {
     "key": "blood-pact",
     "name": `Pacte de sang`,
   },

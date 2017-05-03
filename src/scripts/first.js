@@ -96,7 +96,7 @@ ${bulletExplanation}
         {
           "text": `Vous en profitez pour décamper.`,
           "action": () => {
-            goToSection("rebecca-escape", {"triedToEscapeAsRebecca": true});
+            goToSection("rebecca-escape");
           }
         },
         {

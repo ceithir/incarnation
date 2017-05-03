@@ -7,30 +7,6 @@ const musashiboDescription = `
 const final = {
   "final-rebecca": {
     "text": (flags) => {
-      let lowerGround = `
-<p>Sa lame passe un peu trop près de votre visage à votre goût. Vous reculez de quelques pas et vous retrouvez au bord de la scène. Il profite de l’occasion pour réduire la distance et entreprendre de vous fracasser son arme sur le coin du crâne.</p>
-
-<p>Vous vous laissez simplement tomber sur le sol un peu plus bas. Une chute d’un mètre cinquante pour échapper à un coup de boutoir, ce n’est pas cher payé, et tant mieux si le public ne peut plus vous voir. Vous vous attendriez presque à ce qu’il reste là-haut, dépité de votre manque de fair-play, mais il bondit, se révélant plus agile que vous ne l’auriez cru, et atterrit juste devant vous pour vous empêcher de profiter de l’occasion pour filer.</p>
-
-<p>Ce qui faisait effectivement partie du plan il est vrai.</p>
-
-<p>Le plan de secours étant de profiter du fait que ce grand balourd est juste à côté de vous pour lui en remettre une.</p>
-      `;
-
-      if (flags.triedToEscapeAsRebecca) {
-        lowerGround = `
-<p>Sa lame passe un peu trop près de votre visage à votre goût. Vous reculez de quelques pas et manquez de trébucher sur les câbles.</p>
-
-<p>Bon, la plaisanterie a assez duré. Votre objectif n’est pas de sortir triomphante d’un combat loyal ou quelque idiotie de ce genre, mais de vous tirez d’ici.</p>
-
-<p>Vous rompez le duel en sautant au-dessus un enrouleur, courrez vers une des sorties, en ouvrant la voie de quelques tirs bien placés.</p>
-
-<p>Le balourd réagit aussitôt. Bien plus rapide que vous ne l’auriez cru, il se jette entre vous et le couloir que vous aviez choisi. L’espace d’un instant, vous manquez de lui rentrer dedans, mur vivant bloquant tout l’espace à l’aide de son corps et de son arme qu’il tient en diagonale.</p>
-
-<p>L’instant d’après, vous profitez d’être beaucoup trop près pour lui en remettre une.</p>
-        `;
-      }
-
       return `
 ${musashiboDescription}
 
@@ -42,7 +18,13 @@ ${musashiboDescription}
 
 <p>Okay, cette blague commence sérieusement à vous les casser.</p>
 
-${lowerGround}
+<p>Sa lame passe un peu trop près de votre visage à votre goût. Vous reculez de quelques pas et vous retrouvez au bord de la scène. Il profite de l’occasion pour réduire la distance et entreprendre de vous fracasser son arme sur le coin du crâne.</p>
+
+<p>Vous vous laissez simplement tomber sur le sol un peu plus bas. Une chute d’un mètre cinquante pour échapper à un coup de boutoir, ce n’est pas cher payé, et tant mieux si le public ne peut plus vous voir. Vous vous attendriez presque à ce qu’il reste là-haut, dépité de votre manque de fair-play, mais il bondit, se révélant plus agile que vous ne l’auriez cru, et atterrit juste devant vous pour vous empêcher de profiter de l’occasion pour filer.</p>
+
+<p>Ce qui faisait effectivement partie du plan il est vrai.</p>
+
+<p>Le plan de secours étant de profiter du fait que ce grand balourd est juste à côté de vous pour lui en remettre une.</p>
 
 <p>La dernière.</p>
 
@@ -75,24 +57,41 @@ ${lowerGround}
   },
   "rebecca-escape": {
     "text": `
-<p>La fenêtre d’opportunité est ridiculement courte, mais vous avez la surprise pour vous.</p>
+<p>La fenêtre d’opportunité est ridiculement courte, mais vous avez l'avantage de la surprise pour vous.</p>
 
-<p>Vous vous retournez vers la foule et tirez dedans. Ils sont beaucoup trop loin pour que cela blesse quiconque, votre projectile s’effaçant bien avant de rencontrer quoi que ce soit de solide, mais l’acte lui-même et son bruit provoquent la panique dans l’assemblée jadis disciplinée, déjà électrisée par la manière dont vous avez éclaté leur champion.</p>
+<p>Vous vous retournez vers la foule et tirez dedans. Ils sont beaucoup trop loin pour que cela blesse quiconque, votre projectile s’effaçant bien avant de rencontrer quoi que ce soit de solide. Toutefois, leurs petits cerveaux ne réagissent pas de façon aussi rationnelle. Le bruit de la détonation, le canon pointé dans leur direction, le souvenir tout frais de l'humiliante défaite de leur champion, votre air revêche, cela suffit à provoquer une vague de panique.</p>
 
-<p>Ça se met à courir dans tous les sens, à se rentrer dedans, bref un magnifique chaos détournant l’attention de vos propres actions. Vous piquez aussitôt un sprint vers l’arrière de la scène, et vous laissez tomber. Vous êtes à deux pas des coulisses, et de gros balourds vous foncent déjà dessus, mais vous repérez ce que vous cherchiez, que Misty avait vu lorsqu’elle était passée par là mais n’avait pas identifié comme important : un gros amas de câbles et de boîtiers, tout un pan de la connectique et de l’alimentation de l’éclairage.</p>
+<p>Ça se met à crier, à courir dans tous les sens, à se rentrer dedans. Un magnifique chaos détournant l’attention de vos propres actions. Vous piquez aussitôt un sprint vers l’arrière de la scène, vous laissez tomber. Vous êtes à deux pas des coulisses, et de gros balourds vous foncent déjà dessus, mais vous repérez ce que vous cherchiez, que Misty avait vu lorsqu’elle était passée par là mais n’avait pas identifié comme important : un gros amas de câbles et de boîtiers. Un nœud vital de la connectique et de l’alimentation de l’éclairage.</p>
 
-<p>Vous mettez une balle dans le genou du garde le plus proche alors qu’il sort un taser, quasiment à bout portant, ce qui a enfin l’effet escompté et calme d’un coup tous les autres, et videz la moitié du chargeur dans l’équipement électrique au pif en espérant toucher quelque chose d’important. Ça en revanche, ça n’a à peu près aucun effet. C’était sans doute beaucoup demander à la déesse de la chance que de s’attendre à toucher le centre névralgique de tout ce bazar avec pareille méthode. Vous regrettez de rien avoir d’explosif sous la main, ça vous aurait bien simplifié la vie.</p>
+<p>Vous mettez une balle dans le genou du garde le plus proche alors qu’il sort un taser. Vous êtes presque à bout portant, et il déguste sec. Cela calme aussitôt les ardeurs de ses potes. Vous en profitez pour mettre la zone dans le matériel électrique qui vous entoure. Vous n'y connaissez rien, mais balancez d'un coup de pied bien ciblé un truc qui a l'air important sur un autre truc qui a l'air important, et, magie, une partie des lumières s'éteignent dans un grésillement.</p>
 
-<p>Alors que vous adaptez votre plan à l’évolution de la situation, un anachronisme vivant atterrit devant vous.</p>
+<p>Vous y voyez encore trop bien à votre goût et un nouveau larron s'en mêle avant que vous ne puissiez pousser plus loin votre bricolage, s'interposant d'un bon entre vous et vos victimes de cuivre et de plastique.</p>
+
+${musashiboDescription}
+
+<p>Vous n'avez de toute manière aucune envie de l'affronter. Vous vous élancez sur un gradin maintenant déserté et enténébré, passant entre deux gorilles que la présence d'un encore plus gros bonhomme a un peu réveillés. Le nombre jouerait en leur faveur s'ils étaient entraînés en ce sens, mais en l'occurrence ils se gênent mutuellement, vous permettant de grappiller de précieuses secondes d'avance, de sortir de leur champ de vision en plongeant derrière une rangée de sièges.</p>
+
+<p>Leur erreur suivante est de s'aventurer dans l'obscurité à votre poursuite, immédiatement, sans méthode, les nombreux montant au fur et à mesure qu'ils arrivent sans s'attendre, s'éparpillant pour couvrir une plus grande surface. Seul l'avatar d'Eschyle reste en bas, dans la lumière, fouillant du regard la zone où vous vous êtes dissimulée.</p>
+
+<p>Vous n'avez qu'une vague idée de ce qu'il peut bien capter de sa position. Des mouvements grisâtres indistincts entrecoupés de courts flashs lumineux lorsque vos armes font feu. Les cris, les pas précipités, les détonations, les chocs durs, étouffés, métalliques, chair contre chair. Les silhouettes qui s'effondrent les unes après les autres. L'amertume de la défaite.</p>
+
+<p>Lorsque le dernier garde se montre un peu plus malin que les autres et décampe avant de se prendre un coup ou une balle dans son angle mort, votre vieil ennemi hésite sans doute à s'avancer lui-même. À s'enfoncer dans le noir, sur un terrain inégal et inhabituel, pour jouer au chat et à la souris avec vous.</p>
+
+<p>Vous ne lui laissez cependant pas le temps de se décider à pénétrer dans votre monde de ténèbres, d'embuscades, et d'attaques en traître. Pendant qu'il réfléchit, vous vous glissez jusqu'au rebord supérieur des gradins, et entreprenez de descendre le long de leur face extérieure.</p>
+
+<hr/>
+
+<p>Retour à la case départ.</p>
+
+<p>Voilà un peu plus d'un an, vous quittiez l'Ordre subrepticement, avec bien peu d'affaires et d'argent. S'en était suivie une série de galères, jusqu'à ce que vous arriviez à tirer profit de vos facultés spirituelles pour péniblement stabiliser votre situation.</p>
+
+<p>Et voilà que vous devez tout recommencer à zéro. En pire, puisque vous n'avez aucun bagage cette fois-ci, et qu'ils n'attendront pas six mois et un rapport alarmant sur vos pratiques avant d'ouvrir la chasse.</p>
+
+<p>Toutefois, vous n'arrivez pas à vous défaire d'un absurde optimiste. Au cours de votre première année de liberté, vous avez beaucoup appris, sur vous-même et sur le monde, assez pour infliger un surprenant et humiliant revers à vos anciens tourmenteurs. Vous êtes dorénavant capable de faire des choses qu'eux ne sont même capables de concevoir.</p>
+
+<p>Et ce n'est que le commencement. Maintenant que le vent de la liberté souffle de nouveau dans votre dos, vous comptez bien aller plus loin. Beaucoup plus loin.</p>
     `,
-    "next": (goToSection) => {
-      return {
-        "text": `Votre grand ami Eschyle ne sait pas quand il faut abandonner.`,
-        "action": () => {
-          goToSection("final-rebecca");
-        },
-      }
-    },
+    "end": "escape-artist",
   },
   "surrender": {
     "text": (flags) => {
