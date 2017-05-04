@@ -90,7 +90,7 @@ ${bulletExplanation}
         {
           "text": `Vous l’attendez de pied ferme.`,
           "action": () => {
-            goToSection("second-rebecca", {"badlyWounded": true});
+            goToSection("second-rebecca", {"rebeccaVersusBernardo": true, "lightlyWounded": true});
           }
         },
         {

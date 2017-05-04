@@ -93,7 +93,7 @@ const second = {
         {
           "text": `Rebecca.`,
           "action": () => {
-            goToSection("second-rebecca", {"lightlyWounded": true, "badlyWounded": flags.lightlyWounded});
+            goToSection("second-rebecca", {"rebeccaVersusBernardo": true, "lightlyWounded": true, "badlyWounded": flags.lightlyWounded});
           },
         },
         {
