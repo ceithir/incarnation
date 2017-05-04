@@ -12,17 +12,35 @@ const bernardoDescription = `
 <p>Il s’avance au même rythme que les mots sortent de la fente qui lui sert de bouche et frappe en guise de ponctuation.</p>
 `;
 
-const defeatDescription = `
-<p>Un coup particulièrement réussi à la jambe vous force à tomber sur un genou. Un autre à la joue ne vous inflige pas grand mal mais vous fait goûter votre propre sang. Une troisième à l’épaule rend particulièrement douloureux pour vous d’user de votre bras droit.</p>
+const defeatDescription = (flags) => {
+  let text = ``;
 
-<p>Vous ne pouvez pas maintenir la concentration nécessaire à l’invocation alors que tous les signaux de votre organisme passent au rouge. Vous redevenez Misty, et souffrez d’autant plus que vos perceptions sont maintenant entièrement les vôtres.</p>
+  if (flags.lightlyWounded) {
+    text += `
+<p>Il s'acharne sur vos blessures toutes fraîches, prenant un malin plaisir à frapper encore et encore des endroits où vous souffrez déjà. Les coups s'enchaînent sans répit, et vos piètres efforts ne parviennent guère à en atténuer l'impact.</p>
 
+<p>Vous finissez par vous effondrer, à genoux, en sang, ayant mal de partout.</p>
+
+<p>Ne pouvant maintenir la concentration nécessaire à l’invocation alors que tous les signaux de votre organisme passent au rouge, vous redevenez Misty, et ressentez d’autant plus la douleur des nombreuses morsures de l'acier que vos perceptions sont maintenant entièrement les vôtres.</p>
+
+<p>Votre adversaire s'extasie devant votre pitoyable résistance.</p>
+    `;
+  } else {
+    text += `
+<p>Votre adversaire continue à vous aiguillonner prudemment, se refusant à raccourcir la distance en une frappe plus impactante. Il compense cependant par une redoutable précision. Un coup à la joue ne vous fait pas grand mal mais vous oblige à goûter à votre propre sang. Une autre à l’épaule rend douloureux l'usage de votre bras droit. Enfin, un dernier, particulièrement réussi, vous fauche en pleine jambe.</p>
+
+<p>Vous tombez à terre. Vous relevez aussitôt, partiellement, sur un genou, mais cet instant de faiblesse suffit à votre adversaire pour vous prendre encore un peu plus de haut.</p>
+    `;
+  }
+
+  return text += `
 <div class="conversation">
 <p>— Comme à chaque fois, le mal recule devant la lame de la justice. Ne vous inquiétez sœur Iphigénie, cette épreuve nécessaire est bientôt finie.</p>
 </div>
 
 <p>Et Eschyle change encore une fois d’esprit.</p>
-`;
+  `;
+};
 
 const second = {
   "second-form": {
@@ -64,7 +82,7 @@ const second = {
 
 <p>Vous ne savez pas ce qu’il vous prépare, mais au moins ne l’affronterez-vous pas seule.</p>
     `,
-    "next": (goToSection) => {
+    "next": (goToSection, flags) => {
       return [
         {
           "text": `Ionna.`,
@@ -75,13 +93,13 @@ const second = {
         {
           "text": `Rebecca.`,
           "action": () => {
-            goToSection("second-rebecca", {"badlyWounded": true});
+            goToSection("second-rebecca", {"lightlyWounded": true, "badlyWounded": flags.lightlyWounded});
           },
         },
         {
           "text": `Onawa.`,
           "action": () => {
-            goToSection("second-onawa", {"onawaVersusBernardo": true, "badlyWounded": true});
+            goToSection("second-onawa", {"onawaVersusBernardo": true, "lightlyWounded": true, "badlyWounded": flags.lightlyWounded});
           },
         },
       ];
@@ -93,7 +111,7 @@ const second = {
 
 <p>Vous rompez l’invocation de Rebecca, qui vous abandonne avec un détachement proche de l’apathie, et entamez le second morceau de votre répertoire.</p>
     `,
-    "next": (goToSection) => {
+    "next": (goToSection, flags) => {
       return [
         {
           "text": `Du classique, avec Ionna.`,
@@ -104,7 +122,7 @@ const second = {
         {
           "text": `Du baroque, avec Onawa.`,
           "action": () => {
-            goToSection("second-onawa", {"onawaVersusBernardo": true, "badlyWounded": true});
+            goToSection("second-onawa", {"onawaVersusBernardo": true, "lightlyWounded": true, "badlyWounded": flags.lightlyWounded});
           },
         },
       ];
@@ -212,12 +230,12 @@ ${explanation}
 
 <p>Vous essayez de vous rapprocher pour lui mettre une balle de plus près, mais il semble parfaitement conscient de votre faiblesse actuelle et s’assure de garder ses distances, vous aiguillonnant au passage.</p>
 
-${defeatDescription}
+${defeatDescription(flags)}
       `;
     },
     "next": (goToSection) => {
       return {
-        "text": `Qu’est-ce qu’il peut encore vous faire subir ?`,
+        "text": `Quoi encore ?`,
         "action": () => {
           goToSection("third-form");
         },
@@ -282,7 +300,7 @@ ${wound}
 
 <p>Sa réponse vient sous la forme d’une pluie d’attaques silencieuses. Il ne joue plus, uniquement concentré sur l’idée de vous faire taire.</p>
 
-${defeatDescription}
+${defeatDescription(flags)}
       `;
     },
     "next": (goToSection) => {

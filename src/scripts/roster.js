@@ -59,7 +59,7 @@ const roster = {
       }
       return (
         <div>
-          {choice("first-ionna", {"ionnaVersusMakabi": true}, "Ionna", ionnaDescription)}
+          {choice("first-ionna", {"ionnaVersusMakabi": true, "lightlyWounded": true}, "Ionna", ionnaDescription)}
           {choice("first-rebecca", {"rebeccaVersusMakabi": true}, "Rebecca", rebeccaDescription)}
           {choice("first-onawa", {"onawaVersusMakabi": true, "lightlyWounded": true}, "Onawa", onawaDescription)}
         </div>

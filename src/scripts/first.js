@@ -116,7 +116,7 @@ ${onawaFirstSummon}
 
 ${makabiDescription}
 
-<p>Vous posez les yeux sur sa phallique menace, et basculer la tête dans un geste de dédain complet.</p>
+<p>Vous posez les yeux sur sa phallique menace, et basculez la tête dans un geste de dédain complet.</p>
 
 <div class="conversation">
 <p>— Ah, monsieur Makabi. Je suppose que vous êtes un agent du procureur. Je comprends que vous soyez nerveux devant l’excellence de ma défense, mais tout de même, ce n’est parce que j’ai une hortensia derrière l’oreille que vous pouvez m’interrompre.</p>

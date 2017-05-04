@@ -82,7 +82,7 @@ class Game extends React.Component {
       return this.endGame(section.end);
     }
 
-    const next = section.next(this.goToSection, flags, this.endGame);
+    const next = section.next(this.goToSection, flags);
 
     if (React.isValidElement(next)) {
       return next;
