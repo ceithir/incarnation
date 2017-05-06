@@ -62,7 +62,7 @@ ${makabiDescription}
       return {
         "text": `Vous vous préparez au pire.`,
         "action": () => {
-          goToSection("second-form");
+          goToSection("first-surrender-offer-no-summon");
         }
       };
     },
@@ -159,7 +159,7 @@ ${makabiDescription}
       return {
         "text": `À quel jeu joue-t-il ?`,
         "action": () => {
-          goToSection("second-form-onawa");
+          goToSection("first-surrender-offer-onawa");
         }
       };
     },

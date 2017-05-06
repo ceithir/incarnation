@@ -1,4 +1,15 @@
 const third = {
+  "second-surrender-offer-no-summon": {
+  },
+  "second-surrender-offer-onawa": {
+  },
+  "second-surrender-offer-rebecca": {
+  },
+  "role-reversing-ionna": {
+
+  },
+
+
   "third-form": {
     "text": `
 <p>Le dernier esprit d’Eschyle vous a déjà mise à terre, avec le goût de votre propre sang dans votre bouche. Qu’est-ce qu’il va encore bien pouvoir vous sortir ? Un bourreau avec sa hache ?</p>

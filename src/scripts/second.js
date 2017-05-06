@@ -19,7 +19,7 @@ const defeatDescription = (flags) => {
     text += `
 <p>Il s'acharne sur vos blessures toutes fraîches, prenant un malin plaisir à frapper encore et encore des endroits où vous souffrez déjà. Les coups s'enchaînent sans répit, et vos piètres efforts ne parviennent guère à en atténuer l'impact.</p>
 
-<p>Vous finissez par vous effondrer, à genoux, en sang, ayant mal de partout.</p>
+<p>Un coup particulièrement réussi à la jambe sonne le glas de votre fébrile résistance. Vous vous effondrez, à genoux, en sang, ayant mal de partout.</p>
 
 <p>Ne pouvant maintenir la concentration nécessaire à l’invocation alors que tous les signaux de votre organisme passent au rouge, vous redevenez Misty, et ressentez d’autant plus la douleur des nombreuses morsures de l'acier que vos perceptions sont maintenant entièrement les vôtres.</p>
 
@@ -27,9 +27,12 @@ const defeatDescription = (flags) => {
     `;
   } else {
     text += `
-<p>Votre adversaire continue à vous aiguillonner prudemment, se refusant à raccourcir la distance en une frappe plus impactante. Il compense cependant par une redoutable précision. Un coup à la joue ne vous fait pas grand mal mais vous oblige à goûter à votre propre sang. Une autre à l’épaule rend douloureux l'usage de votre bras droit. Enfin, un dernier, particulièrement réussi, vous fauche en pleine jambe.</p>
 
-<p>Vous tombez à terre. Vous relevez aussitôt, partiellement, sur un genou, mais cet instant de faiblesse suffit à votre adversaire pour vous prendre encore un peu plus de haut.</p>
+<p>Votre adversaire continue à vous aiguillonner prudemment, se refusant à raccourcir la distance en une frappe plus impactante. Ce qui n'empêche pas ses frappes d'être nombreuses et sanguinolentes. Vos membres sont rapidement couverts de coupures écarlates. Une lacération à la joue vous fait goûter votre propre sang. Un point rouge en haut à gauche de votre poitrine démontre qu'il aurait pu vous transpercer le coeur eusse-t-il appuyé son geste.</p>
+
+<p>Il se joue de vous comme si vous n'étiez qu'une poupée, contrôlant vos mouvements en vous encageant d'acier, dessinant sur votre corps le symbole de sa victoire.</p>
+
+<p>Il conclut sa prestation d'un touche légère juste entre vos deux yeux. Et se détourne ensuite de vous, se retournant pour saluer son public, tandis que vous vous effondrez comme une marionette désarticulée, vos jambes tétanisées par les efforts désordonnés qu'elles ont dû accomplir pour suivre cette macabre danse.</p>
     `;
   }
 
@@ -43,91 +46,6 @@ const defeatDescription = (flags) => {
 };
 
 const second = {
-  "second-form": {
-    "text": `
-<p>Vous croisez les bras devant votre visage en prévision du prochain assaut. Ce mouvement défensif réflexe représente à peu près à lui seul toute votre expérience en combat réel quand vous n’avez personne pour vous souffler les mouvements.</p>
-
-<p>Autant dire que vous vous attendez à passer un sale quart d’heure.</p>
-
-<p>Toutefois, au lieu de simplement vous battre comme un sac de plâtre, votre adversaire recule. L’instant suivant, le charme est rompu et un sourire torve s’affiche sur le visage d’Eschyle. Il prend le temps de vous détailler du regard, se pourléchant presque les babines.</p>
-
-<div class="conversation">
-<p>— Il ne fait aucun doute que vos esprits sont aussi faibles qu’annoncés. Vous n’avez pas besoin de vous infliger cela sœur Iphigénie. Abandonnez dès maintenant, et votre châtiment ne sera point alourdi.</p>
-</div>
-
-<p>Votre premier réflexe est de rejeter sa proposition en bloc. Toutefois, la situation est effectivement bien mal engagée.</p>
-    `,
-    "next": (goToSection) => {
-      return [
-        {
-          "text": `Vous acceptez son offre.`,
-          "action": () => {
-            goToSection("surrender");
-          },
-        },
-        {
-          "text": `Vous invoquez un autre esprit.`,
-          "action": () => {
-            goToSection("second-form-2");
-          },
-        },
-      ];
-    },
-  },
-  "second-form-2": {
-    "text": `
-<p>Vous venez d’essuyer un revers, c’est certain. Toutefois, si Eschyle croit que vous allez lâcher aussi facilement ce qui est peut-être votre dernière opportunité de vous sortir de ce guêpier, c’est qu’il est encore plus dénué d’empathie que vous ne le pensiez.</p>
-
-<p>Vous amorcez une nouvelle invocation. Votre bourreau ne semble pas déçu de votre décision. Tout au contraire, son sourire malveillant s’élargit encore un peu plus tandis qu’il vous répond en faisant de même.</p>
-
-<p>Vous ne savez pas ce qu’il vous prépare, mais au moins ne l’affronterez-vous pas seule.</p>
-    `,
-    "next": (goToSection, flags) => {
-      return [
-        {
-          "text": `Ionna.`,
-          "action": () => {
-            goToSection("second-ionna");
-          },
-        },
-        {
-          "text": `Rebecca.`,
-          "action": () => {
-            goToSection("second-rebecca", {"rebeccaVersusBernardo": true, "lightlyWounded": true, "badlyWounded": flags.lightlyWounded});
-          },
-        },
-        {
-          "text": `Onawa.`,
-          "action": () => {
-            goToSection("second-onawa", {"onawaVersusBernardo": true, "lightlyWounded": true, "badlyWounded": flags.lightlyWounded});
-          },
-        },
-      ];
-    },
-  },
-  "second-change-rebecca": {
-    "text": `
-<p>Vous avez eu Eschyle par surprise une première fois, et vous comptez bien continuer à lui imposer votre rythme.</p>
-
-<p>Vous rompez l’invocation de Rebecca, qui vous abandonne avec un détachement proche de l’apathie, et entamez le second morceau de votre répertoire.</p>
-    `,
-    "next": (goToSection, flags) => {
-      return [
-        {
-          "text": `Du classique, avec Ionna.`,
-          "action": () => {
-            goToSection("second-ionna");
-          },
-        },
-        {
-          "text": `Du baroque, avec Onawa.`,
-          "action": () => {
-            goToSection("second-onawa", {"onawaVersusBernardo": true, "lightlyWounded": true, "badlyWounded": flags.lightlyWounded});
-          },
-        },
-      ];
-    },
-  },
   "second-ionna": {
     "text": (flags) => {
       let summonDescription = `
@@ -176,11 +94,11 @@ ${bernardoDescription}
 <p>Vous plantez votre épée droite dans le sol entre vos jambes, joignez les mains devant la croix improvisée et remerciez le Seigneur d’avoir soutenu votre bras tandis que votre ennemi prépare sa nouvelle diablerie.</p>
       `;
     },
-    "next": (goToSection) => {
+    "next": (goToSection, flags) => {
       return {
         "text": `Quelle qu’elle soit, vous êtes prête à l’accueillir.`,
         "action": () => {
-          goToSection("final-form");
+          goToSection("role-reversing-ionna");
         },
       };
     },
@@ -237,7 +155,10 @@ ${defeatDescription(flags)}
       return {
         "text": `Quoi encore ?`,
         "action": () => {
-          goToSection("third-form");
+          if (flags.badlyWounded) {
+            return goToSection("second-surrender-offer-no-summon");
+          }
+          goToSection("second-surrender-offer-rebecca");
         },
       };
     },
@@ -307,40 +228,12 @@ ${defeatDescription(flags)}
       return {
         "text": `Quoi encore ?`,
         "action": () => {
-          goToSection("third-form");
+          if (flags.badlyWounded) {
+            return goToSection("second-surrender-offer-no-summon");
+          }
+          goToSection("second-surrender-offer-onawa");
         },
       };
-    },
-  },
-  "second-form-onawa": {
-    "text": `
-<p>Eschyle s’efforce de prendre un air compatissant, mais n’arrive pas à dissimuler totalement son sourire satisfait.</p>
-
-<div class="conversation">
-<p>— Vos esprits sont aussi faibles qu’il était à craindre sœur Iphigénie. Vous n’avez pas besoin de vous infliger cela. Abandonnez dès maintenant, et votre châtiment ne sera point alourdi.</p>
-</div>
-
-<p>Onawa refuse tout de go. Misty… Misty hésite.</p>
-
-<p>Merde à la fin, vous venez de vous manger une lance. Ça fait putain de mal, et ce type est sérieusement assez fou pour ne pas s’arrêter là. Vous n’avez pas signé pour ces conneries, pour réellement mettre votre vie en danger dans des jeux du cirque stupides.</p>
-
-<p>Cet état d’esprit totalement contraire à celui de l’esprit hébergé rompt aussitôt le charme. Onawa vous quitte, sans apporter de réponse à votre dilemme.</p>
-    `,
-    "next": (goToSection) => {
-      return [
-        {
-          "text": `Vous acceptez l’offre d’Eschyle.`,
-          "action": () => {
-            goToSection("surrender");
-          },
-        },
-        {
-          "text": `Vous serrez les dents et vous préparez pour la seconde manche.`,
-          "action": () => {
-            goToSection("second-form-2");
-          },
-        },
-      ];
     },
   },
 };
