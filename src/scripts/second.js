@@ -158,7 +158,7 @@ ${defeatDescription(flags)}
           if (flags.badlyWounded) {
             return goToSection("second-surrender-offer-no-summon");
           }
-          goToSection("second-surrender-offer-rebecca");
+          goToSection("second-surrender-offer");
         },
       };
     },
@@ -231,7 +231,7 @@ ${defeatDescription(flags)}
           if (flags.badlyWounded) {
             return goToSection("second-surrender-offer-no-summon");
           }
-          goToSection("second-surrender-offer-onawa");
+          goToSection("second-surrender-offer");
         },
       };
     },
