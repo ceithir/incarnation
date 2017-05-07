@@ -12,6 +12,10 @@ const endings = [
     "name": `Pacte de sang`,
   },
   {
+    "key": "sacrifice",
+    "name": `Fidèle à son ancien nom`,
+  },
+  {
     "key": "red-eyes",
     "name": `Regard de braise`,
   },

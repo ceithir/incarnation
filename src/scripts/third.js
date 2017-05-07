@@ -35,7 +35,7 @@ ${flags.onawaVersusBernardo? `
       if (flags.rebeccaVersusBernardo) {
         return {
           "text": `Mais bien sûr.`,
-          "action": goToSection("no-surrender-rebecca"),
+          "action": () => {goToSection("no-surrender-rebecca");},
         };
       }
 
@@ -101,7 +101,7 @@ ${batuoOffer}
       return [
         {
           "text": `Ionna`,
-          "action" => () => {},
+          "action" => () => {goToSection("final-ionna");},
         },
         {
           "text": `Rebecca`,
@@ -198,10 +198,14 @@ ${batuoOffer}
 
 <p>Et il change à nouveau d’apparence.</p>
     `,
-    "next": (goToSection) => {
+    "next": (goToSection, flags) => {
       return {
         "text": `Quoi qu’il vous réserve encore, vous êtes prête.`,
         "action": () => {
+          if (flags.onawaVersusMakabi && flags.rebeccaVersusBernardo) {
+            return goToSection("three-as-one");
+          }
+
           goToSection("final-ionna");
         },
       };

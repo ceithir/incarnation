@@ -1,7 +1,7 @@
 const musashiboDescription = `
 <p>La personne qui se tient devant vous est un colosse, votre tête lui arrivant à peine au niveau de la poitrine. Ses amples vêtements ne cachent guère son imposante musculature, ni d’ailleurs l’armure à la japonaise qu’il porte en-dessous. La bande de tissu blanc enroulé autour de sa tête est plus efficace dans cette opération de dissimulation, ne laissant paraître que ses yeux.</p>
 
-<p>Ses deux mains enserrent une arme d’hast se terminant par une imposante lame courbe, avec laquelle il décrit déjà une large arc de cercle pour vous faucher. Vous êtes forcée de reculer d’un pas pour esquiver, ne pouvant juste pas espérer bloquer ou même simplement dévier une attaque de ce type. Entre la différence dans vos poids respectifs et l’effet levier, vous décolleriez du sol si l’envie vous prenez d’essayer.</p>
+<p>Ses deux mains enserrent une arme d’hast se terminant par une imposante lame courbe, avec laquelle il décrit déjà une large arc de cercle pour vous faucher.</p>
 `;
 
 const jailDescription = (flags) => {
@@ -27,12 +27,54 @@ const jailDescription = (flags) => {
 }
 
 const final = {
+  "final-ionna": {
+    "text": (flags) => {
+        return `
+<p>Vous n'avez jamais affronté de dragon, mais Dieu a apparemment décidé qu'il était temps de vous opposer à Goliath.</p>
+
+${musashiboDescription}
+
+<p>Vous êtes forcée de reculer d’un pas pour esquiver, ne pouvant juste pas espérer bloquer ou même simplement dévier une attaque de ce type. Entre la différence dans vos poids respectifs et l’effet levier, vous décolleriez du sol si l’envie vous prenez d’essayer.</p>
+
+<p>Cette première attaque est aussitôt suivie d'une autre, visant vos pieds, pus d'une troisième à destination de votre tête qui se change au dernier moment en rapide estocade en plein ventre. Celle-là, vous ne réussissez pas à l'éviter totalement, et si votre armure absorbe le gros des dommages, l'impact vous coupe le souffle et vous oblige de nouveau à reculer.</p>
+
+<p>Vous avez bien du mal à vous retenir de jurer. En plus d'être massif et costaud, il est rapide et sait se servir de son arme. Que ce soit en terme de technique ou de physique, vous êtes largement surclassée.</p>
+
+<p>Vous disposez toutefois d'un indéniable avantage moral, soutenant une juste cause contrairement à ce guerrier égarré.</p>
+
+<p>Vous saisissez votre arme à deux mains, la tenant devant vous comme en prière. Vous faites le vide dans votre esprit, laissant votre foi vous habiter, le Seigneur guider votre bras.</p>
+
+<p>Et vous vous jetez en avant.</p>
+
+<p>Le premier coup vous cueille à l'épaule. Vous ressentez la morsure de la douleur, mais l'armure tient. Vous progressez d'un pas. Le second touche à la hanche, assez fort pour abîmer quelque chose là-dedans. Votre pas suivant est vacillant mais vous rapproche assez de votre adversaire pour que vous puissiez frapper. Vous abattez votre arme. Cognez contre la hampe de la sienne. Êtes repoussée de force. Titubez. Tombez. Le géant cogne votre poignet. Vous lâchez votre épée. Un coup à la tête. Votre conscience clignote.</p>
+
+<p>Dieu vous a abandonné. Comme il vous avait abandonné à Margny, lorsque vous vous étiez révélée incapable de vous débarrasser des quelques soudards envoyés vous capturer. Auriez-vous abusé de Sa bienveillance ? S'agit-il d'une leçon, Vous rappelle-t-il que vous ne devez pas dépendre de Lui ? Auriez-vous pêché par orgueil et êtes-vous punie pour cela ?</p>
+
+<p>Les doutes d'Ionna rompent l'invocation plus efficacemment que n'importe quelle volonté de votre part en ce sens. Vous redevenez Misty, récupérez le plein usage de vos sens et avec eux la pleine mesure des traumatismes qu'endure votre corps.</p>
+
+<p>Autrement dit, vous douillez grave. Vous avez mal partout, des trucs cassés, ou fêlés, ou on s'en fiche du mot exact, ça fait mal tout pareil, à vous en faire perdre votre vocabulaire.</p>
+
+<p>Vous essayez vaguement, par réflexe, de bouger, mais une douleur fulgurante dans vos membres vous convainc de cesser tout mouvement.</p>
+
+<p>À peine capable de rouler les yeux, vous observez l'absurde masse de la dernière forme qu'a choisie Eschyle se déplacer au-dessus de vous et pointer l'envers de son arme vers votre visage.</p>
+
+<p>Il vous frappe un grand coup en plein nez, et, constatant que vous avez à peine la force de gromeler quelques grossièretés en réponse, reprend son apparence ordinaire pour s'adresser à son public.</p>
+
+<p>Vous n'avez plus la patience ni l'énergie ni l'envie d'écouter son discours. Vous vous contentez de dériver dans un état de semi-conscience que quelqu'un se donne la peine de vous ramasser, de vous brinquebaler jusqu'à un lit et de vous faire boire un médoc à dormir.</p>
+
+<hr/>
+
+${jailDescription(flags)}
+        `;
+    },
+    "end": "jail",
+  },
   "final-rebecca": {
     "text": (flags) => {
       return `
 ${musashiboDescription}
 
-<p>Mais vous n’avez de toute façon pas signé pour un combat au corps à corps.</p>
+<p>Vous esquivez en reculant de quelques pas. Vous n’avez de toute façon pas signé pour un combat au corps à corps.</p>
 
 <p>Vous tirez une première fois. Jambe. Encore ce problème de puissance de feu réduite. À croire que votre arme est chargée avec des munitions d’entraînement.</p>
 
@@ -77,6 +119,63 @@ ${musashiboDescription}
     },
     "end": "blood-pact",
   },
+  "final-onawa": {
+    "text": (flags) => {
+      return `
+${musashiboDescription}
+
+<div class="conversation">
+<p>- Dis-moi Eschyle, c'est un esprit officiel ça ? Dans mes souvenirs, votre fameuse liste ne comportait aucun soldat oriental. Je sais ! Il suffit de vérifier. Ça ira vite, y'a pas plus d'une vingtaine de personnalités agréées en Asie de l'Est. Pour des gens qui prétendent offrir au monde entier la possibilité de communier avec leurs ancêtres, vous vous limitez quand même beaucoup aux grands hommes du pourtour de la Méditerranée.</p>
+<p>« Ah, mais non, suis-je bête. Tu n'as pas besoin de te restreindre à cette liste toi. Tu es dans les hautes sphères, celles où les lois ne s'appliquent plus. Vous avez même rédigé la règle de façon à vous laisser ce droit. À vous et vous seuls bien sûr.</p>
+</div>
+
+<p>Autant le comportement actuel d'Eschyle vous offre un boulevard pour démontrer ses contradictions, autant il vous expose à un danger physique bien réel. Il frappe comme s'il voulait vraiment vous priver de quelques morceaux de vous-même. Votre refus de céder, qui plus est publiquement, devant son jeu de la méchante invocation et de la gentille invocation l'a mis en rogne. Maintenant il veut juste en finir avec ce simulacre de procès avant d'en perdre totalement le contrôle.</p>
+
+<p>Vous n'allez évidemment pas lui laisser ce plaisir.</p>
+
+<div class="conversation">
+<p>- Je n'ai plus vraiment besoin de parler à ce stade. Je le fais pour combler ce sinistre silence, mais un bon accompagnement musical serait beaucoup plus approprié.</p>
+</div>
+
+<p>Vous prenez le risque de vous détourner de lui un instant pour vous adresser à l'audience.</p>
+
+<div class="conversation">
+<p>- Imaginez-vous s'il vous plaît le thème de la gentille qui montre crescendo, annonçant son inéluctable triomphe devant le grand méchant qui lance désespérément ses dernières forces dans la bataille alors que tout le monde a bien compris qu'il avait déjà perdu.</p>
+</div>
+
+<p>Un impact extrêmement violent entre vos omoplates. Vous volez sur quelques mètres.</p>
+
+<p>Ce type n'a pas hésité une seule seconde à vous frapper dans le dos. Vous ne pouvez pas voir la blessure, mais vous pouvez malheureusement la sentir.</p>
+
+<p>Vous pouvez vous estimer heureuse de pouvoir encore vous redresser après cela. Mais inutile de dire que cela handicape d'autant plus vos chances de souplement esquiver ses prochains assauts.</p>
+
+<p>Le tout pour le tout dans ce cas. Si vous tombez maintenant, minablement, l'Ordre vous fera disparaître dans ses efforts pour ne pas ébruiter cette déconvenue. Ils ne vous tueront pas, ce n'est plus l'époque, mais vous ne reverrez pas la lumière du jour. Vous n'avez plus à attendre la moindre pitié d'eux à ce stade.</p>
+
+<p>Et Misty en est bien consciente elle aussi, vous soutenant dans votre folie même si votre plan lui fait serrer les dents si forts que vous les entendriez grincer si elle disposait de son corps physique en ce moment.</p>
+
+<p>Vous vous efforcez de prendre votre air le plus décontracté en dépit de tout.</p>
+
+<div class="conversation">
+<p>- Eschyle, Eschyle, je crois que ce que tu appelles tes frères et sœurs ont compris que tu ne voulais pas que je leur parle. La question qu'ils se posent tous maintenant, c'est pourquoi. Après tout, quels arguments pourrais-je donner qu'un saint homme tel que toi ne serait pas en mesure de réfuter d'un mot bien choisi ? De quel mensonge celui qui possède la vérité peut-il donc avoir peur ? À m...</p>
+</div>
+
+<p>Votre phrase est encore une fois interrompue par une attaque justement destinée à vous faire taire.</p>
+
+<p>Vous ne l'esquivez pas. Vous ne la parez pas. Vous ne la déviez pas. Vous la prenez de plein fouet, comme si vous ne l'aviez pas du tout vu venir.</p>
+
+<p>Il vous embroche littéralement. Sa lance s'enfonce en vous, va tripatouiller des trucs à l'intérieur, et ressort par l'autre côté.</p>
+
+<p>Vous n'avez aucune idée de l'étendue des dégâts. Assez pour vous clore le bec et rompre l'invocation en tout cas. Mais vous avez une vision très précise de l'image qui est en train de s'imprimer dans la rétine de chaque spectateur.</p>
+
+<p>Une jeune fille, certes rebelle mais tout de même définie comme innocente dans la rhétorique même de son accusateur, sauvagement exécutée par une brute masquée et silencieuse alors qu'elle tentait simplement d'expliquer ses actions.</p>
+
+<p>Ce n'est pas forcément la vérité exacte de ce qui vient de se passer, mais c'est celle qui va rester dans les mémoires. En vous portant le coup de grâce à ce moment précis, ce n'est pas tant vous que sa réputation, sa légitimité, sa vision de l'Ordre qu'il vient de réduire en morceaux.</p>
+
+<p>Vous ne savez pas si et quand vous rouvrirez les yeux, mais ce ne sera plus dans un monde où il pourra imposer sa loi.</p>
+      `;
+    },
+    "end": "sacrifice",
+  }
   "rebecca-escape": {
     "text": `
 <p>La fenêtre d’opportunité est ridiculement courte, mais vous avez l'avantage de la surprise pour vous.</p>
@@ -91,7 +190,7 @@ ${musashiboDescription}
 
 ${musashiboDescription}
 
-<p>Vous n'avez de toute manière aucune envie de l'affronter. Vous vous élancez sur un gradin maintenant déserté et enténébré, passant entre deux gorilles que la présence d'un encore plus gros bonhomme a un peu réveillés. Le nombre jouerait en leur faveur s'ils étaient entraînés en ce sens, mais en l'occurrence ils se gênent mutuellement, vous permettant de grappiller de précieuses secondes d'avance, de sortir de leur champ de vision en plongeant derrière une rangée de sièges.</p>
+<p>En réponse, vous prenez aussi le large, vous élançant dans un gradin maintenant déserté et enténébré, passant entre deux gorilles que la présence d'un encore plus gros bonhomme a un peu réveillés. Le nombre jouerait en leur faveur s'ils étaient entraînés en ce sens, mais en l'occurrence ils se gênent mutuellement, vous permettant de grappiller de précieuses secondes d'avance, de sortir de leur champ de vision en plongeant derrière une rangée de sièges.</p>
 
 <p>Leur erreur suivante est de s'aventurer dans l'obscurité à votre poursuite, immédiatement, sans méthode, les nombreux montant au fur et à mesure qu'ils arrivent sans s'attendre, s'éparpillant pour couvrir une plus grande surface. Seul l'avatar d'Eschyle reste en bas, dans la lumière, fouillant du regard la zone où vous vous êtes dissimulée.</p>
 
