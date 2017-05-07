@@ -4,6 +4,28 @@ const musashiboDescription = `
 <p>Ses deux mains enserrent une arme d’hast se terminant par une imposante lame courbe, avec laquelle il décrit déjà une large arc de cercle pour vous faucher. Vous êtes forcée de reculer d’un pas pour esquiver, ne pouvant juste pas espérer bloquer ou même simplement dévier une attaque de ce type. Entre la différence dans vos poids respectifs et l’effet levier, vous décolleriez du sol si l’envie vous prenez d’essayer.</p>
 `;
 
+const jailDescription = (flags) => {
+  return `
+<p>Vous listez les points positifs de votre nouvelle situation. Vous êtes en vie. Plus personne ne vous tape dessus.${(flags.lightlyWounded|flags.badlyWounded)? ` Vos blessures ont été soignées.` : ``} Vous avez un toit, et trois repas par jour.</p>
+
+<p>Voilà, le compte doit y être. Pour le reste, la cellule où vous croupissez n’incite pas à l’optimisme.</p>
+
+<p>Officiellement, vous avez de vous-même choisi de vous isoler du monde pour purger votre âme de la corruption qui s’y était installée.</p>
+
+<p>Vous ignorez si cette fable pousse le vice jusqu’à expliquer que c’est vous et vous seule qui avez demandé à être enfermée et avait réclamé ce couple caméra/sprinkler qui permet de vous asperger d’eau glacée au moindre signe que vous pourriez peut-être, éventuellement, être en train d’appeler un esprit non déclaré. Vous avez d’ailleurs été réveillée de cette manière aujourd’hui, sans que vous sachiez si vos mouvements nocturnes aient été réellement suspicieux ou si votre surveillant s’ennuyait simplement.</p>
+
+<p>Oui, vous ne savez plus grand chose. En l’absence de lumière du jour et de montre, votre définition même du temps s’est étiolée. Seuls les repas rythment vos journées. Et encore, vous suspectez qu’ils leur arrivent de vous faire jeûner, sans doute pour votre bien, pour faciliter votre détachement spirituel.</p>
+
+<p>Le pire dans cette affaire reste encore l’ennui. La cellule ne contient que le strict nécessaire pour y vivre, sans la moindre distraction. Vous ne demandez pas Internet ou la télé, mais mêmes papiers et crayons vous ont été refusés. Vous n’avez rien d’autre à faire que de penser. Et quand vous n’en pouvez plus de penser, vos idées tournant vite en ronds en l’absence de stimulus extérieurs, vous vous épuisez par des exercices physiques et retournez vous coucher.</p>
+
+<p>Bien sûr, vous savez ce à quoi vos tourmenteurs souhaitent que vous employiez votre temps libre. Ils vous ont remis un livre, plastifié. Vous l’avez déjà lu, plusieurs fois même, l’ennui étant plus fort que la rancœur. C’est un recueil d’informations sur une liste extrêmement restreinte de « bons esprits », tous anciens membres rigoristes de l’Ordre.</p>
+
+<p>Bien sûr, vous pourriez essayer de communier avec eux. Vous ne doutez pas qu’ils vous permettraient de mieux comprendre pourquoi tout ceci est pour votre bien et celui de la communauté.</p>
+
+<p>Ou vous pourriez continuer à examiner cette tache au plafond.</p>
+  `;
+}
+
 const final = {
   "final-rebecca": {
     "text": (flags) => {
@@ -104,27 +126,101 @@ ${musashiboDescription}
 
 <hr/>
 
-<p>Vous listez les points positifs de votre nouvelle situation. Vous êtes en vie. Plus personne ne vous tape dessus.${(flags.lightlyWounded|flags.badlyWounded)? ` Vos blessures ont été soignées.` : ``} Vous avez un toit, et trois repas par jour.</p>
-
-<p>Voilà, le compte doit y être. Pour le reste, la cellule où vous croupissez n’incite pas à l’optimisme.</p>
-
-<p>Officiellement, vous avez de vous-même choisi de vous isoler du monde pour purger votre âme de la corruption qui s’y était installée.</p>
-
-<p>Vous ignorez si cette fable pousse le vice jusqu’à expliquer que c’est vous et vous seule qui avez demandé à être enfermée et avait réclamé ce couple caméra/sprinkler qui permet de vous asperger d’eau glacée au moindre signe que vous pourriez peut-être, éventuellement, être en train d’appeler un esprit non déclaré. Vous avez d’ailleurs été réveillée de cette manière aujourd’hui, sans que vous sachiez si vos mouvements nocturnes aient été réellement suspicieux ou si votre surveillant s’ennuyait simplement.</p>
-
-<p>Oui, vous ne savez plus grand chose. En l’absence de lumière du jour et de montre, votre définition même du temps s’est étiolée. Seuls les repas rythment vos journées. Et encore, vous suspectez qu’ils leur arrivent de vous faire jeûner, sans doute pour votre bien, pour faciliter votre détachement spirituel.</p>
-
-<p>Le pire dans cette affaire reste encore l’ennui. La cellule ne contient que le strict nécessaire pour y vivre, sans la moindre distraction. Vous ne demandez pas Internet ou la télé, mais mêmes papiers et crayons vous ont été refusés. Vous n’avez rien d’autre à faire que de penser. Et quand vous n’en pouvez plus de penser, vos idées tournant vite en ronds en l’absence de stimulus extérieurs, vous vous épuisez par des exercices physiques et retournez vous coucher.</p>
-
-<p>Bien sûr, vous savez ce à quoi vos tourmenteurs souhaitent que vous employiez votre temps libre. Ils vous ont remis un livre, plastifié. Vous l’avez déjà lu, plusieurs fois même, l’ennui étant plus fort que la rancœur. C’est un recueil d’informations sur une liste extrêmement restreinte de « bons esprits », tous anciens membres rigoristes de l’Ordre.</p>
-
-<p>Bien sûr, vous pourriez essayer de communier avec eux. Vous ne doutez pas qu’ils vous permettraient de mieux comprendre pourquoi tout ceci est pour votre bien et celui de la communauté.</p>
-
-<p>Ou vous pourriez continuer à examiner cette tache au plafond.</p>
+${jailDescription(flags)}
       `;
   },
     "end": "jail",
   }
+  "red-eyed-onawa": {
+    "text": (flags) => {
+      return `
+<p>Vous essayez d’ignorer la douleur. De vous relever. De vous concentrer.</p>
+
+<p>Vous échouez lamentablement.</p>
+
+<p>Votre nouvel ersatz d’adversaire pose une main sur votre épaule. Vous pouvez sentir sa poigne derrière l’apparente gentillesse du geste.</p>
+
+<div class="conversation">
+<p>— Non mon enfant. Vous devez résister à la tentation.</p>
+</div>
+
+<p>Vous hochez faiblement la tête. Cessez de résister. Il sourit et vous lâche.</p>
+
+<p>C’est là que vous lui mettez un grand coup dans les gencives.</p>
+
+<p>Vous y mettez tellement du cœur que vos phalanges dégustent à l’impact. Mais ça en valait la peine. L’avatar d’Eschyle se tient la mâchoire, une expression stupéfaite sur le visage. Son corps a cependant le réflexe de glisser en arrière pour se prémunir d’un second assaut, se mouvant avec la célérité et la fluidité d’un expert en arts martiaux.</p>
+
+<p>« Gentil chauve » a donc été choisi pour un peu plus que sa bonne bouille. Eschyle devait craindre que vous n’ayez encore un as dans votre manche.</p>
+
+<p>Et d’une certaine façon, il aura eu raison. Vous ne sauriez dire à quel moment vous avez réussi à invoquer Onawa. Il serait probablement plus exact de dire que vous ne l’avez jamais vraiment révoquée depuis le début de l’affrontement, la conservant là, à la lisière de votre conscience, prête à revenir en cas de pépin.</p>
+
+<p>Ce qui est encore le cas maintenant. Vous êtes dans état transitoire, où vous basculez constamment entre Misty et Onawa. Votre physique bouge moins vite que votre esprit, aussi conservez-vous majoritairement le physique de la première, à quelques bricoles près.</p>
+
+<p>Et vous voudriez bien un miroir pour savoir quelle apparence vous avez en ce moment, car elle perturbe Eschyle au point de craqueler la sérénité de son visage actuel. Assez littéralement, puisqu’il perd le contrôle sur sa propre invocation.</p>
+
+<div class="conversation">
+<p>— Sœur Iphigénie, cessez je vous prie. Votre corps ne devrait pas changer comme cela. Vous êtes en train de vous faire du mal.</p>
+</div>
+
+<p>Vous vous relevez. Votre genou vous fait un mal de chien, mais vous ne converserez pas en position d’inférieure.</p>
+
+<div class="conversation">
+<p>— C’est bien humain à toi de t’intéresser à ma santé Eschyle. J’aurais préféré que ce soit un peu plus tôt. Avant que tes hommes ne me trimballent comme un sac de patates, avant le cachot, avant que tu ne cherches à me droguer pour m’empêcher de parler, avant que tu n’appelles des gros bras du passé pour me faire ma fête. Mais c’est gentil quand même.</p>
+</div>
+
+<p>Les mots de Misty jaillissent de vos lèvres avec la voix d’Onawa. Vous vous attendez à ce que Eschyle vous interrompe, violemment, à n’importe quel moment, mais il se contente de vous observer fixement comme une souris devant un cobra. Le public est fasciné de même.</p>
+
+<div class="conversation">
+<p>— Si je me rappelle bien les règles de ton jeu stupide, il me suffit de ne pas flancher pour gagner. Alors, tu dois être satisfait maintenant ? J’ai encaissé, encaissé, et encaissé, avant et pendant, et je suis encore là.</p>
+<p>— Ce… Ce n’est pas simple.</p>
+<p>— Si. Ça l’est.</p>
+</div>
+
+<p>Vous boitez jusqu’à l’escalier qui descend de la scène. Vous boitez à travers le couloir qui sort du théâtre. Vous boitez jusqu’à la route. Vous boitez sur le bitume en direction de la ville au loin.</p>
+
+<hr/>
+
+<p>Vous retomberez dans les griffes de l’Ordre moins de quatre heures plus tard. Avant cela, vous aurez eu le temps d’être pris en stop par un automobiliste suffisamment apitoyé par votre sanglante apparence, d’être déposée à l’hôpital et de recevoir les premiers soins. C’est quelque part vers le petit matin, alors que vous dormiez encore d’un sommeil médicamenteux que les agents de l’Ordre retrouveront votre trace et sécuriseront la zone pour ne pas que vous vous enfuyez. Avec une jambe aussi bien emmaillotée, et peut-être la nécessité d’une rééducation après déballage, ils n’avaient cependant pas besoin d’autant se presser.</p>
+
+<p>Si vous disposez maintenant d’une garde rapprochée filtrant drastiquement les personnes essayant de communiquer avec vous, aucun effort n’est fait dans l’immédiat pour vous ramener dans un local appartenant à l’Ordre. Vous comprenez bien vite que la cause de cette soudaine compassion réside dans les fortes dissensions politiques que votre petit numéro a fait naître, engendrant à son tour une incapacité à décider ce qu’il fallait faire de vous. Si le courant majoritaire veut simplement vous enfermer dans un coin et ne plus entendre parler de toute cette histoire, un autre envisage de restaurer les bûchers rien que pour brûler l’abomination que vous êtes, un troisième suggère que vous repassiez l’exercice avant de prendre une quelconque décision, et vous en avez favorablement intrigué quelques-uns.</p>
+
+<p>Tout ceci, vous l’apprenez principalement par l’intermédiaire d’un de vos gardes qui appartient à la dernière catégorie, et indirectement en observant les tensions entre vos différents surveillants, qui ne sont pas tous de la même obédience.</p>
+
+<p>Bref, votre convalescence se passe tranquillement, même si vous ne savez pas de quoi l’avenir sera fait. Vous profitez également de ce temps pour discrètement vous entraîner à reproduire ce qui s’est passé sur scène. Le processus se révèle pénible et peu gratifiant, vous imposant de désapprendre quelques réflexes induits en vous depuis votre plus jeune âge.</p>
+
+<p>Quand deux yeux écarlates se mettent à vous fixer depuis le miroir, vous savez que vous avez réussi. Et vous arrivez enfin à croire à ce que vos diserts gardiens vous ont raconté. À propos des yeux démoniaques que vous aviez braqués sur l’assistance médusée du jugement des esprits.</p>
+
+<p>Vous ne comprenez toujours pas comment un tel miracle est possible. Certes, une légende urbaine prétend qu’Onawa avait des yeux de démon lorsqu’elle se mettait en colère, mais c’est une légende. Directement entretenue par Onawa elle-même d’ailleurs. Elle n’a jamais, et elle vous le confirme, vraiment eu un pareil regard. Personne d’humain n’a un pareil regard.</p>
+
+<p>Vous avez plein d’hypothèses sur le sujet, toutes très compliquées. Pour faire simple, vous pensez que vous avez été en mesure d’incarner, en usant des mêmes mécaniques de matérialisation, la légende autour d’Onawa plutôt que sa réalité historique.</p>
+
+<p>Cela ouvre tout un nouveau champ des possibles absolument fascinant.</p>
+
+<p>Et maintenant que votre jambe a presque retrouvé toute sa vigueur, cela vous fournira également un atout de poids pour regagner votre liberté.</p>
+      `;
+    },
+    "end": "red-eyes",
+  },
+  "summoning-failure": {
+    "text": (flags) => {
+      return `
+<p>Vous vous concentrez. Tentez de dompter votre respiration saccadée. D'ignorer la douleur. De vous détacher de la présente situation pour ne faire plus qu'un avec l'esprit appelé.</p>
+
+<p>Une bien noble intention. Sauf que vous n'êtes pas une héroïne fictionnelle surentraînée capable de se relever et de repartir comme si de rien n'était après un pareil passage à tabac. Chair et sang limitent vos possibilités.</p>
+
+<p>Vous donneriez beaucoup pour avoir la force d'accomplir un ultime coup d'éclat.</p>
+
+<p>Vous vous contentez de vous relever tant bien que mal et de cracher un gros glaviot coloré dans la direction de ce sombre type.</p>
+
+<p>Puis vous vous écroulez à nouveau, sombrant dans un état de conscience altérée un sourire narquois aux lèvres.</p>
+
+<hr/>
+
+${jailDescription(flags)}
+      `;
+    },
+    "end": "jail",
+  },
 };
 
 export default final;
