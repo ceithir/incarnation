@@ -19,6 +19,14 @@ const endings = [
     "key": "red-eyes",
     "name": `Regard de braise`,
   },
+  {
+    "key": "three-as-one",
+    "name": `Changer les règles`,
+  },
+  {
+    "key": "by-the-rules",
+    "name": `Gagner selon les règles`,
+  },
 ];
 
 export default endings;

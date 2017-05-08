@@ -320,6 +320,123 @@ ${jailDescription(flags)}
     },
     "end": "jail",
   },
+  "legal-victory": {
+    "text": `
+
+    `,
+    "end": "by-the-rules",
+  },
+  "three-as-one": {
+    "text": `
+<p>[Introduction du combat manquante, devrait théoriquement être la même que celle du combat d'Ionna ordinaire]</p>
+
+<p>Si vous continuez ainsi, vous ne pouvez que perdre.</p>
+
+<p>Ionna le sait. Son adversaire la surclasse sur le plan physique et technique et il ne se laisse pas décontenancer par son obstination, par la légende qui l'auréole.</p>
+
+<p>Rebecca partage cet avis. Votre adversaire vous a privé de vos armes propres, vous a attiré sur son terrain, vous oblige à jouer selon ses règles.</p>
+
+<p>Onawa approuve. Les dés sont pipés, persister à vouloir les lancer ne les fera pas tomber sur la bonne face.</p>
+
+<p>Misty est perturbée par cette déferlante de pessimisme. Tout autant que par la présence de trois esprits autres que le sien en simultané sous son crâne.</p>
+
+<p>Vous savez expliquer le phénomène. C'est un problème qui peut se produire si vous invoquez rapidement plusieurs esprits différents sans prendre le temps de nettoyer les traces du précédent. Une empreinte subsiste alors, pas assez forte pour influencer le monde physique, mais assez pour générer des pensées parasites incohérentes. Pour régler ce problème, il suffit simplement de faire le ménage, en procédant à une révocation intégrale en bonne et due forme. Et à faire plus attention la prochaine fois.</p>
+
+<p>Cela ne vous était pas arrivé depuis que vous étiez toute petite. Depuis que vos professeurs d'alors vous ont appris à l'éviter, vous aviez effectivement toujours bien fait attention, avec autant sinon plus de sérieux que vous n'en mettez à vous brosser les dents. C'était devenu un réflexe auquel vous ne réfléchissiez même plus. Il aura fallu des circonstances exceptionnels pour que vous le transgressiez.</p>
+
+<p>Et ce petit détail de rien du tout vous fait réaliser à quel point vous êtes encore assujettie aux enseignements de l'Ordre. Vous invoquez les esprits suivant les méthodes qu'ils vous ont enseignées. Vous les révoquez de même. Vous les <em>considérez</em> à travers le prisme qu'ils ont implanté en vous. Tant de points que vous n'avez jamais remis en question, d'idées, de méthodes, de concepts que vous considérez comme naturels, évidents, logiques, simplement parce que vous avez été élevée au milieu d'eux, au sujet desquels vous n'avez jamais réellement réfléchi.</p>
+
+<p>Ce combat est l'apothéose de votre rébellion de façade. Si vous faites preuve d'une, déjà bienvenue, originalité de façade, avec des invocations sortant pour la plupart des canons établis, vous respectez tout de même la plupart des règles non énoncées du jeu. Vous avez ainsi accepté inconsciemment l'idée qu'il s'agissait forcément d'une série de duels en un contre un, esprit contre esprit, au singulier, juste parce qu'il ne vous ait même pas venu à l'idée que vous pouviez employer plusieurs esprits à la fois.</p>
+
+<p>Tout comme cela n'a pas traversé l'esprit de votre adversaire, aussi empêtré dans ses préjugés que vous. Dans la philosophie de l'Ordre, une invocation, c'est permettre à un unique ancien de s'incarner pleinement dans le présent, copie parfaite de ce qu'il a été, dans ses qualités comme ses défauts. L'idée de mélanger les invocations est donc par nature exclue. Même si dans la pratique, l'invocation est déjà affectée par le corps qu'elle habite et les raisons pour lesquelles elle a été invoquée. Sinon vous ne seriez pas en train de de vous taper dessus par antiquités interposées.</p>
+
+<p>Il se peut que vous soyez en train de broder tout un discours au fond de votre crâne pour vous convaincre vous-même que ce que vous allez faire est la conclusion logique de ce que vous êtes, et pas juste une idée parasite soufflée par Onawa. L'un n'empêche pas l'autre d'ailleurs.</p>
+
+<p>Tout en maintenant votre lien avec Ionna, qui a réussi à piloter votre corps seule alors que votre psyché battait la campagne, et dont la robustesse vous permet encore de tenir debout malgré les blessures et la fatigue, vous laissez Onawa vous imprégner de son essence.</p>
+
+<p>Tous vos réflexes s'opposent à cette cohabitation contre nature de deux, non de trois, Misty se refusant elle aussi à s'effacer, esprits dans un même corps. Ce n'est pas habituel, pas normal, pas naturel.</p>
+
+<p>Et cela vous éclate.</p>
+
+<div class="conversation">
+<p>- Je vous ai manqué ?</p>
+</div>
+
+<p>Votre voix sonne assez étrangement, même en tenant compte de vos problèmes de gorge. Une histoire de caisse de résonance différente sans doute. Bah, vous n'allez pas vous émouvoir pour si peu. Surtout que, même à travers son masque, vous pouvez admirer l'expression incrédule de votre ennemi.</p>
+
+<p>Vous ôtez votre casque. Vous avez encore l'armure et la corpulence d'Ionna, mais en passant la main sur votre visage, vous confirmez que vous avez retrouvé le maquillage d'Onawa. Il vous manque un miroir pour savoir à quoi vous ressemblez exactement, quelle étrange chimère vous êtes devenue.</p>
+
+<div class="conversation">
+<p>- Oui, c'est bien moi. Et moi. Et moi aussi.</p>
+<p>- ... Sa... Sacrilège !</p>
+</div>
+
+<p>Vous esquivez son assaut rageur et précipité sans mal. La colère le fait frapper fort, pas juste. Son cri mal maîtrisé fait écho aux nombreuses exclamations du public, pour la plupart plus déroutées par la tournure des événements que comprenant réellement ce qui se passe.</p>
+
+<p>Mais Eschyle lui a bien réalisé la situation. À son niveau, il peut presque sentir le mélange actif des différentes âmes en vous.</p>
+
+<div class="conversation">
+<p>- Qu'est-ce qui t'énerve le plus Eschyle ? Le fait que je sois en train d'invoquer plusieurs esprits en même temps ? Que je puisse le faire ? Que tu ne puisses pas le faire ? Que tu n'es même pas pensé qu'il était possible de le faire ?</p>
+<p>- Abomination ! Démon !</p>
+</div>
+
+<p>Il frappe, frappe, sans aucune maîtrise. Son contrôle sur son invocation est en train de se fissurer, tout comme son contrôle sur lui-même et la situation. Vous n'êtes pas simplement sortie du rôle qui vous était assignée, vous êtes carrément en train de réécrire la pièce.</p>
+
+<p>Le coup de grâce vient sous la forme d'une balle de neuf millimètres de diamètre le heurtant en pleine poitrine. Enfin, comme pour le combat précédent, la plupart de la  matière s'évanouit entre le canon de l'arme fraîchement matérialisée dans votre main libre. Ce qu'il en reste suffit cependant à briser les dernières résistances du charme d'Eschyle et à l'envoyer voler sous son apparence ordinaire.</p>
+
+<p>Il fait un petit bond d'un mètre, touche le sol le dos en premier, glisse encore un peu pour épuiser l'énergie cinétique, puis s'immobilise. Sa bouche continue à vomir un babil d'imprécations, mais il ne fait pas mine de se relever. En fait, il vous semble même avoir pris un sacré coup de vieux dans cette position peu reluisante.</p>
+
+<p>Vous pouvez déjà voir et entendre la sécurité du site se ruer vers la scène. Vous leur offrez votre meilleur profil, une épée dans une main, un pistolet dans l'autre, une armure sacrément cabossée, une mèche de cheveux colorés qui ne cessent de vous tomber au coin du nez, un sourire ravageur. La combinaison fait son petit épée car ils se contentent d'encercler un peu plus près votre tribune au lieu d'y monter, avec des regards inquiets vers leur hiérarchie.</p>
+
+<p>Eschyle justement se relève, tremblant, les yeux injectés de sang. Il vous contemple encore une fois, puis se met à hurler :</p>
+
+<div class="conversation">
+<p>- Emparez-vous d'elle !</p>
+<p>- Je ne crois pas non. Nous avons un jugement à finir n'est-ce pas Eschyle ? Vous vouliez démontrer que les esprits que je côtoie n'étaient pas dignes d'être appelées.</p>
+<p>- Ce jugement n'a plus de raison d'être. Une telle abomination ne saurait être tolérée.</p>
+<p>- Eschy, Eschy, tu nous as cassé les oreilles avec tes histoires de mauvais esprit qui ne saurait triompher des nobles ancêtres et blablabla, et alors que je t'offre exactement ce que tu veux, le sacrilège sur un plateau, tu te dégonfles ? Comment veux-tu que quiconque te prenne au sérieux après cela ?</p>
+</div>
+
+<p>Vous vous retournez vers le public.</p>
+
+<div class="conversation">
+<p>- Et vous, vous allez le laisser faire ? Vous avez le droit de ne pas être d'accord avec ce que je suis et ce que je fais, mais votre patron avait énoncé des règles claires. Si je lui cassais figure en un contre un, mes péchés seraient absous. Il n'est plus en état de faire quoi que ce soit d'autre que de hurler sa frustration tandis que j'ai encore de la réserve...</p>
+</div>
+
+<p>Vous faites tourner vos deux armes sur elles-mêmes dans un mouvement tape-à-l'œil.</p>
+
+<div class="conversation">
+<p>- ... Aussi l'affaire me semble-t-elle réglée. Alors vous pouvez le laisser se parjurer, et jetez l'opprobre sur vous tous. Ou vous pouvez accepter cette défaite en adultes.</p>
+</div>
+
+<p>Cela discute beaucoup dans le public. L'opinion générale semble négative à votre égard, mais les débats sont passionnés.</p>
+
+<p>Vous rangez vos armes, et ouvrez les bras, vous offrant à la merci de la foule</p>
+
+<p>Et vous vous effondrez.</p>
+
+<hr/>
+
+<p>Vous prenez le temps de vous admirer dans le miroir. Cette bonne vieille Misty vous rend votre regard avec une absence d'enthousiasme qui fait peur. Vous avez les traits tirés de quelqu'un de malade qui n'a pas eu son quota de sommeil. Les multiples pansements et l'attelle ajoutent encore à cette impression que vous êtes au bord de la tombe.</p>
+
+<p>Dans les faits, le pire est passé. Vous avez encore quelques nausées, mal de partout, vous n'arrivez pas à dormir plus de quelques heures sans devoir aller vous vider l'estomac, mais rien de comparable à ce que vous avez ressenti lorsque l'invocation multiple s'est interrompue d'elle-même, votre organisme ayant outrepassé ses limites depuis longtemps. Il n'était pas préparé pour ce que vous lui avez fait subir, et il vous l'a bien fait comprendre. Vous avez bien cru que vous alliez rendre l'âme, là, devant tout le monde.</p>
+
+<p>Mais même vos accusateurs n'ont pas osé vous laisser expirer ainsi. Vous avez été transporté à l'infirmerie, et vos blessures et votre extrême épuisement ont été convenablement traités. Vous avez été placée sous étroite surveillance bien sûr, mais votre garde a aussi la décence de vous laisser tranquille aux toilettes, ce qui vous donne une raison de plus de vous attarder à cet endroit</p>
+
+<p>Vous souriez à pleines dents en songeant que votre petit numéro a semé le chaos dans la hiérarchie de l'Ordre. La rumeur est parvenue jusqu'à votre lit de convalescence, et vous savez qu'Eschyle a perdu sa place, coincé entre les ultras, qui veulent vous voir brûler et lui en veulent d'avoir perdu le contrôle de sa chère cérémonie, et les modérés qui lui reprochent l'emploi de cette justice archaïque.</p>
+
+<p>Ce qui ne veut pas dire qu'ils ne souhaitent pas vous condamner. Juste pas de cette façon, et plus forcément sur les mêmes chefs d'accusation. Ironiquement, vous avez gagné du temps en commettant un crime à leurs yeux plus grands, et surtout, et c'est bien là leur problème, techniquement inédit.</p>
+
+<p>Oh, bien sûr, certains ont sans doute déjà essayés de mélanger des esprits par le passé. Mais personne n'avait réussi jusqu'ici. Du moins pas publiquement. Vous soupçonnez que vous n'êtes vous-même arrivée à vos fins que parce qu'il s'agissait d'une sélection très précise, avec laquelle vous avez beaucoup travaillé et donc chaque membre partage, au milieu d'un océan de différences, des points communs forts avec les autres et avec vous-même.</p> 
+
+<p>Mais maintenant qu'il a été démontré qu'un tel acte était du champ du possible, vous ne doutez pas que d'autres vont s'y essayer.</p>
+
+<p>Vous êtes pire qu'une simple hérétique. Vous êtes la fondatrice d'une nouvelle hérésie.</p>
+
+<p>Et vous comptez bien la propager.</p>
+    `,
+    "end": "three-as-one",
+  },
 };
 
 export default final;
