@@ -322,7 +322,77 @@ ${jailDescription(flags)}
   },
   "legal-victory": {
     "text": `
+<p>Eschyle a décidé d'adopter une forme moins menaçante. Et bien deux peuvent jouer à ce jeu.</p>
 
+<p>Il ne cille pas à l'apparition d'Onawa. Après tout, contrairement à vos deux incarnation précédentes, elle ne porte pas d'arme. Et est de façon générale moins agressive dans son apparence, même si plus délurée.</p>
+
+<p>Son expression se fissure quelque peu quand vous vous mettez à parler.</p>
+
+<div class="conversation">
+<p>- Oh, mais je suis toute prête à accepter une joute oratoire plutôt que physique.</p>
+</div>
+
+<p>Votre adversaire reste coi, se demandant sans doute comment vous arrivez à parler. Difficilement il faut dire. Toutefois, vous avez des années, ou plutôt des décennies, d'expérience dans l'art de faire entendre votre voix dans les pires conditions. Vous vous êtes même spécifiquement beaucoup entraînée pour cela (en partie parce que vous aviez envisagé une carrière dans la chanson à une époque il est vrai, mais il faut savoir tirer ressources de ses échecs aussi).</p>
+
+<div class="conversation">
+<p>- Et bien quoi ? Si on me lance une épée à la figure, je me défends de même. Si on me parle posément, alors j'use de la parole comme arme.</p>
+<p>- Répondre à la violence par plus de violence démontre une immaturité, parvient enfin à lâcher.</p>
+<p>- Refuser de se défendre face à la menace démontre une stupidité.</p>
+<p>- Vous insultez nombre de grands penseurs pacifistes par vos propos.</p>
+<p>- La vie n'est pas faite que de théories. Il y a des fois où il est nécessaire de briser les beaux principes pour parvenir à un résultat. Et la meilleure preuve s'il en est, c'est que tu n'as accepté de discuter qu'après que je t'ai mis ta raclée par deux fois Eschy.</p>
+</div>
+
+<p>Eschyle a bien du mal à garder son calme. Même si l'invocation qu'il a choisie semble d'un naturel placide, la contrariété de son hôte transparaît.</p>
+
+<div class="conversation">
+<p>- Sœur Iphigénie, vous abusez de ma bonté. Je vous offre une énième chance d'abjurer vos fautes plutôt que de souffrir inutilement, et vous préférez m'insulter que de la saisir.</p>
+<p>- Tu ne m'offres rien du tout Eschy. Je t'ai éclaté, une fois, deux fois, et tu flippes que cela continue dans la même veine. Alors tu cherches une échappatoire, quelque chose qui te permettrait d'éviter une nouvelle raclée. Et bien laisse-moi te dire que ta nouvelle raclée, tu es en train de la prendre.</p>
+</div>
+
+<p>Vous effectuez une pirouette pour capter encore un peu plus l'attention du public.</p>
+
+<div class="conversation">
+<p>- Telle que tu me vois, je suis en pleine forme. Peut-être même plus en forme que tu ne l'aurais voulu d'ailleurs. Je n'étais pas censée offrir une vraie résistance après tout. Mais que veux-tu, tu l'as compris, je ne suis pas du genre à me coucher et à laisser le camion me passer dessus. Je t'ai battu Eschy. À chacun de tes nobles esprits, j'ai opposé un des miens, et à chaque fois je l'ai emporté.</p>
+</div>
+
+<p>Vous ne sauriez dire si vous incarnez encore Onawa. Vous utilisez ses capacités vocales certes, mais ce discours devient de plus en plus celui de Misty, et d'ailleurs vous pensez déjà à nouveau pleinement comme Misty. Pourtant le lien ne se rompt pas, probablement car votre état d'esprit actuel est parfaitement cohérent avec celui de votre invocation. Irrévérencieux et déterminé.</p>
+
+<div class="conversation">
+<p>- Alors Eschy, la vraie question est : est-ce que tu admets ta défaite, ou est-ce qu'il faut que j'écrase un par un chaque esprit de ton cher manuel avant cela ?</p>
+</div>
+
+<p>Il ne répond pas. Il est évident que ce n'est pas l'envie qui lui manque, mais il n'ose pas. Il a réellement peur de vous. Chacune de ses tentatives pour prouver sa supériorité sur vous s'est soldée par un lamentable échec, et il en est bien conscient. Que vous n'ayez pas hésité à lui tirer dessus doit aussi attiser ses craintes sur les risques physiques qu'il prendrait à continuer.</p>
+
+<p>Vous décidez de l'ignorer, et vous adresser directement à l'audience.</p>
+
+<div class="conversation">
+<p>- Bon, puisque nous avons apparemment un peu de temps devant nous, j'aimerais vous parler de mon expérience d'invocatrice libre. Tout a commencé alors que...</p>
+<p>- Suffit.</p>
+</div>
+
+<p>Eschyle crache le mot avec rage en reprenant son apparence normale.</p>
+
+<div class="conversation">
+<p>- Tu es libre de partir. Maintenant disparais.</p>
+</div>
+
+<p>Et il fait signe à ses gros bras de vous évacuer manu militari.</p>
+
+<p>Vous avez réellement des tas de choses intéressantes à dire, mais reprendre les hostilités ne serait pas forcément à votre avantage en terme d'image.</p>
+
+<p>Vous rompez le charme et descendez de vous-même de la scène avant que quiconque vous y oblige, marchant vers la sortie la tête haute.</p>
+
+<hr/>
+
+<p>Vous vous écrasez dans le canapé avec délectation.</p>
+
+<p>Vous avez bien galéré pour parvenir jusqu'ici. L'Ordre n'ayant pas eu la gentillesse de vous rendre vos affaires, dont votre argent et les clés de votre chez-vous, et son siège se trouvant au milieu de nulle part, vous avez dû enchaîner marche et stop. C'est finalement un fidèle impressionné par votre performance mais ne sachant trop quoi faire de vous, un syndrome qu'il n'est apparemment pas le seul à partager, qui vous a repéré sur le bas-côté et ramené dans sa voiture jusque chez des amis à même de vous héberger.</p>
+
+<p>Toute cette affaire a des conséquences politiques et théologiques à n'en pas finir. L'Ordre ne va sans doute pas vous lâcher comme cela, et vous vous attendez à tout moment à une nouvelle intervention musclée de votre part. Votre chauffeur vous a également demandé un moyen de vous recontacter pour vous poser de plus amples questions, et vos coordonnées semblent déjà avoir circulé partout.</p>
+
+<p>Dans les jours qui viennent, vous avez sans doute devoir vous battre, encore et encore, au moins sur le terrain des idées. Votre vie va devenir encore plus compliquée maintenant.</p>
+
+<p>Mais vous verrez cela demain. Pour l'heure, vous n'avez qu'une seule volonté. Celle de pouvoir dormir tout votre saoul, et de vous réveiller sous la lumière du soleil.</p>
     `,
     "end": "by-the-rules",
   },
