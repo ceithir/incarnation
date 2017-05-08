@@ -51,8 +51,34 @@ ${flags.onawaVersusBernardo? `
       ];
     },
   },
-  "role-reversing-ionna": {
+  "second-surrender-offer-ionna": {
+    "text": (flags) => {
+      return `
+<p>Un petit gros. Pas tout jeune en plus, le crâne et la barbe rasés, portant une robe de prêtre toute simple et allant pieds nus.</p>
 
+<p>Vous ne sauriez dire à quoi vous vous attendiez, mais en tout cas pas à ça.</p>
+
+${batuoOffer}
+
+<p>Votre instinct est de refuser d'un bloc, mais vous vous forcez à rompre le charme pour pouvoir réfléchir à cette proposition sans que vos pensées ne soient teintées par celles de votre invocation.</p>
+
+<p>Le retour à votre forme normale est l'occasion pour vous de constater que vous avez écopé de quelques belles ecchymoses malgré votre victoire, qui s'ajoutent aux coups reçus lors de votre premier duel. Si la joie intense d'avoir fait reculer Eschyle anesthésie la douleur, vous êtes en réalité en bien piteux état tandis que votre adversaire n'a lui été meurtri que dans son orgueil.</p>
+
+<p>Gardant cela en tête, vous observez la main tendue.</p>
+      `;
+    },
+    "next": (goToSection, flags) => {
+      return [
+        {
+          "text": `Vous la prenez.`,
+          "action": () => {goToSection("surrender");},
+        },
+        {
+          "text": `Vous lui retournez un autre geste que celui attendu.`,
+          "action": () => {goToSection("no-surrender-light-wounds");},
+        }
+      ];
+    },
   },
   "second-surrender-offer-no-summon": {
     "text": `
@@ -109,7 +135,7 @@ ${batuoOffer}
         },
         {
           "text": `Onawa`,
-          "action" => () => {},
+          "action" => () => {goToSection("final-onawa");},
         },
       ];
     },
@@ -210,6 +236,87 @@ ${batuoOffer}
         },
       };
     },
+  },
+  "role-reversing-ionna": {
+    "text": `
+<p>Un petit gros. Pas tout jeune en plus, le crâne et la barbe rasés, portant une robe de prêtre toute simple et allant pieds nus.</p>
+
+<p>Vous ne sauriez dire à quoi vous vous attendiez, mais en tout cas pas à ça.</p>
+
+<p>Contrairement aux deux autres, il cherche pas à vous planter un morceau de métal dans le corps dès son arrivée. Au contraire, il garde ses distances, ouvre grand les bras et s'adresse chaleureusement à vous :</p>
+
+<div class="conversation">
+<p>- Sœur Iphigénie, ces premiers échanges m'ont permis de mieux cerner les problèmes qui vous hantent. J'y ai ressenti beaucoup de rage, de fureur, de colère. Pas tant de la malice comme je l'avais craint, mais une énorme confusion. Les esprits avec lesquels vous avez communiés sont aussi perdus que vous l'êtes, et expriment leur déroute par leur agressivité.</p>
+<p>« Ce recours permanent à la violence peut vous donner l'impression qu'ils sont forts et protecteurs. Mais il n'en est rien. Tout au plus peuvent-ils faire illusions face à d'autres esprits faibles de même nature, ou, dans le cas présent, face à de nobles âmes qui s'efforcent de retenir leur bras pour ne pas meurtrir votre chair plus que nécessaire. Mais si vous persistez dans cette voie, je me verrai obligé de les laisser employer toute leur majesté pour vous empêcher de faire du mal, à vous et aux autres.</p>
+</div>
+
+<p>Vous êtes estomaquée par la mauvaise foi de ce discours, qui ose vous condamner pour avoir rendu les coups, alors que c'est là-même la procédure du jugement. Ainsi, vous défendre fait de vous une aussi parfaite coupable que de tendre l'autre joue.</p>
+
+<p>Ce qui vous désole encore plus, c'est que c'est la seconde fois que vous êtes confrontée à pareille rhétorique judiciaire de l'absurde, capable de se contredire sans vergogne tant que cela satisfait ses intérêts.</p>
+
+<p>La première fois, en dépit de l'absurdité des accusations, cela s'était très mal fini pour vous.</p>
+    `,
+    "next": (goToSection) => {
+      return [
+        {
+          "text": `Vous laissez Ionna en charge.`,
+          "action": () => {goToSection("lawyer-ionna")},
+        },
+        {
+          "text": `Vous basculez vers un esprit plus à même de se défendre.`,
+          "action": () => {goToSection("calling-the-defense")},
+        },
+      ];
+    },
+  },
+  "lawyer-ionna": {
+    "text": `
+<p>Vous essayez de prononcer une réplique bien sentie, mais n'arrivez qu'à éructer quelques pâteuses syllabes, encore sous l'emprise de la maléfique drogue.</p>
+
+<p>De rage, vous vous signez, et pointez un point accusateur vers votre juge corrompu.</p>
+
+<p>Celui-ci pousse un profond soupir.</p>
+
+<div class="conversation">
+<p>- Je ne voulais pas en arriver là, énonce-t-il.</p>
+</div>
+
+<p>S'il dit vrai, ce n'est sans doute pas par compassion, mais plutôt car ce scénario sert moins ses intérêts.</p>
+
+<p>Et il se transforme à nouveau.</p>
+    `,
+    "next": (goToSection) => {
+      return {
+        "text": `Quoi qu'il invoque, vous êtes prête.`,
+        "action": () => {goToSection("final-ionna")}
+      };
+    },
+  },
+  "calling-the-defense": {
+    "text": `
+<p>Songeant qu'un affrontement avec une Ionna furieuse est justement là où Eschyle veut vous entraîner, vous la révoquez au profit d'un esprit plus inattendu.</p>
+    `,
+    "next": (goToSection) => {
+      return [
+        {
+          "text": `Rebecca`,
+          "action": () => {goToSection("lawyer-rebecca")},
+        },
+        {
+          "text": `Onawa`,
+          "action": () => {goToSection("legal-victory")},
+        }
+      ];
+    },
+  },
+  "lawyer-rebecca": {
+    "text": `
+<p>Dès que la forme de Rebecca se précise, Eschyle entame une nouvelle invocation. Le souvenir de son premier échec cuisant contre le miracle de la technologie l'incite clairement à la prudence.</p>
+    `,
+    "next": (goToSection) => {
+      "text": `Et il a bien raison de paniquer.`,
+      "action": () => {goToSection("final-rebecca")},
+    }
   },
 };
 

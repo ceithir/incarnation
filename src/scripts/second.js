@@ -98,7 +98,11 @@ ${bernardoDescription}
       return {
         "text": `Quelle qu’elle soit, vous êtes prête à l’accueillir.`,
         "action": () => {
-          goToSection("role-reversing-ionna");
+          if (!flags.lightlyWounded) {
+            return goToSection("role-reversing-ionna");
+          }
+
+          goToSection("second-surrender-offer-ionna");
         },
       };
     },
