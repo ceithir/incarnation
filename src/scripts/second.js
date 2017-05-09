@@ -17,22 +17,22 @@ const defeatDescription = (flags) => {
 
   if (flags.lightlyWounded) {
     text += `
-<p>Il s'acharne sur vos blessures toutes fraîches, prenant un malin plaisir à frapper encore et encore des endroits où vous souffrez déjà. Les coups s'enchaînent sans répit, et vos piètres efforts ne parviennent guère à en atténuer l'impact.</p>
+<p>Il s’acharne sur vos blessures toutes fraîches, prenant un malin plaisir à frapper encore et encore des endroits où vous souffrez déjà. Les coups s’enchaînent sans répit, et vos piètres efforts ne parviennent guère à en atténuer l’impact.</p>
 
 <p>Un coup particulièrement réussi à la jambe sonne le glas de votre fébrile résistance. Vous vous effondrez, à genoux, en sang, ayant mal de partout.</p>
 
-<p>Ne pouvant maintenir la concentration nécessaire à l’invocation alors que tous les signaux de votre organisme passent au rouge, vous redevenez Misty, et ressentez d’autant plus la douleur des nombreuses morsures de l'acier que vos perceptions sont maintenant entièrement les vôtres.</p>
+<p>Ne pouvant maintenir la concentration nécessaire à l’invocation alors que tous les signaux de votre organisme passent au rouge, vous redevenez Misty, et ressentez d’autant plus la douleur des nombreuses morsures de l’acier que vos perceptions sont maintenant entièrement les vôtres.</p>
 
-<p>Votre adversaire s'extasie devant votre pitoyable résistance.</p>
+<p>Votre adversaire s’extasie devant votre pitoyable résistance.</p>
     `;
   } else {
     text += `
 
-<p>Votre adversaire continue à vous aiguillonner prudemment, se refusant à raccourcir la distance en une frappe plus impactante. Ce qui n'empêche pas ses frappes d'être nombreuses et sanguinolentes. Vos membres sont rapidement couverts de coupures écarlates. Une lacération à la joue vous fait goûter votre propre sang. Un point rouge en haut à gauche de votre poitrine démontre qu'il aurait pu vous transpercer le coeur eusse-t-il appuyé son geste.</p>
+<p>Votre adversaire continue à vous aiguillonner prudemment, se refusant à raccourcir la distance en une frappe plus impactante. Ce qui n’empêche pas ses frappes d’être nombreuses et sanguinolentes. Vos membres sont rapidement couverts de coupures écarlates. Une lacération à la joue vous fait goûter votre propre sang. Un point rouge en haut à gauche de votre poitrine démontre qu’il aurait pu vous transpercer le coeur eusse-t-il appuyé son geste.</p>
 
-<p>Il se joue de vous comme si vous n'étiez qu'une poupée, contrôlant vos mouvements en vous encageant d'acier, dessinant sur votre corps le symbole de sa victoire.</p>
+<p>Il se joue de vous comme si vous n’étiez qu’une poupée, contrôlant vos mouvements en vous encageant d’acier, dessinant sur votre corps le symbole de sa victoire.</p>
 
-<p>Il conclut sa prestation d'un touche légère juste entre vos deux yeux. Et se détourne ensuite de vous, se retournant pour saluer son public, tandis que vous vous effondrez comme une marionette désarticulée, vos jambes tétanisées par les efforts désordonnés qu'elles ont dû accomplir pour suivre cette macabre danse.</p>
+<p>Il conclut sa prestation d’un touche légère juste entre vos deux yeux. Et se détourne ensuite de vous, se retournant pour saluer son public, tandis que vous vous effondrez comme une marionette désarticulée, vos jambes tétanisées par les efforts désordonnés qu’elles ont dû accomplir pour suivre cette macabre danse.</p>
     `;
   }
 
