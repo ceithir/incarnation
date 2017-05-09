@@ -175,7 +175,7 @@ ${musashiboDescription}
       `;
     },
     "end": "sacrifice",
-  }
+  },
   "rebecca-escape": {
     "text": `
 <p>La fenêtre d’opportunité est ridiculement courte, mais vous avez l'avantage de la surprise pour vous.</p>
@@ -227,9 +227,9 @@ ${musashiboDescription}
 
 ${jailDescription(flags)}
       `;
-  },
+    },
     "end": "jail",
-  }
+  },
   "red-eyed-onawa": {
     "text": (flags) => {
       return `
@@ -497,7 +497,7 @@ ${jailDescription(flags)}
 
 <p>Ce qui ne veut pas dire qu'ils ne souhaitent pas vous condamner. Juste pas de cette façon, et plus forcément sur les mêmes chefs d'accusation. Ironiquement, vous avez gagné du temps en commettant un crime à leurs yeux plus grands, et surtout, et c'est bien là leur problème, techniquement inédit.</p>
 
-<p>Oh, bien sûr, certains ont sans doute déjà essayés de mélanger des esprits par le passé. Mais personne n'avait réussi jusqu'ici. Du moins pas publiquement. Vous soupçonnez que vous n'êtes vous-même arrivée à vos fins que parce qu'il s'agissait d'une sélection très précise, avec laquelle vous avez beaucoup travaillé et donc chaque membre partage, au milieu d'un océan de différences, des points communs forts avec les autres et avec vous-même.</p> 
+<p>Oh, bien sûr, certains ont sans doute déjà essayés de mélanger des esprits par le passé. Mais personne n'avait réussi jusqu'ici. Du moins pas publiquement. Vous soupçonnez que vous n'êtes vous-même arrivée à vos fins que parce qu'il s'agissait d'une sélection très précise, avec laquelle vous avez beaucoup travaillé et donc chaque membre partage, au milieu d'un océan de différences, des points communs forts avec les autres et avec vous-même.</p>
 
 <p>Mais maintenant qu'il a été démontré qu'un tel acte était du champ du possible, vous ne doutez pas que d'autres vont s'y essayer.</p>
 

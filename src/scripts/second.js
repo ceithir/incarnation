@@ -155,7 +155,7 @@ ${explanation}
 ${defeatDescription(flags)}
       `;
     },
-    "next": (goToSection) => {
+    "next": (goToSection, flags) => {
       return {
         "text": `Quoi encore ?`,
         "action": () => {
@@ -228,7 +228,7 @@ ${wound}
 ${defeatDescription(flags)}
       `;
     },
-    "next": (goToSection) => {
+    "next": (goToSection, flags) => {
       return {
         "text": `Quoi encore ?`,
         "action": () => {

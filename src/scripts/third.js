@@ -127,15 +127,15 @@ ${batuoOffer}
       return [
         {
           "text": `Ionna`,
-          "action" => () => {goToSection("final-ionna");},
+          "action": () => {goToSection("final-ionna");},
         },
         {
           "text": `Rebecca`,
-          "action" => () => {goToSection("final-rebecca");},
+          "action": () => {goToSection("final-rebecca");},
         },
         {
           "text": `Onawa`,
-          "action" => () => {goToSection("final-onawa");},
+          "action": () => {goToSection("final-onawa");},
         },
       ];
     },
@@ -159,7 +159,7 @@ ${batuoOffer}
     "next": (goToSection) => {
       return {
         "text": `Mais cette fois, ce sera la dernière.`,
-        "action" => () => {goToSection("final-rebecca");},
+        "action": () => {goToSection("final-rebecca");},
       };
     },
   },
@@ -314,8 +314,10 @@ ${batuoOffer}
 <p>Dès que la forme de Rebecca se précise, Eschyle entame une nouvelle invocation. Le souvenir de son premier échec cuisant contre le miracle de la technologie l'incite clairement à la prudence.</p>
     `,
     "next": (goToSection) => {
-      "text": `Et il a bien raison de paniquer.`,
-      "action": () => {goToSection("final-rebecca")},
+      return {
+        "text": `Et il a bien raison de paniquer.`,
+        "action": () => {goToSection("final-rebecca")},
+      };
     }
   },
 };
