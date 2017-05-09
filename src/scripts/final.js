@@ -6,19 +6,19 @@ const musashiboDescription = `
 
 const jailDescription = (flags) => {
   return `
-<p>Vous listez les points positifs de votre nouvelle situation. Vous êtes en vie. Plus personne ne vous tape dessus.${(flags.lightlyWounded|flags.badlyWounded)? ` Vos blessures ont été soignées.` : ``} Vous avez un toit, et trois repas par jour.</p>
+<p>Vous listez les points positifs de votre nouvelle situation. Vous êtes en vie. Plus personne ne vous tape dessus.${(flags.lightlyWounded|flags.badlyWounded)? ` Vos blessures ont été soignées.` : ``} Vous avez le gîte et le couvert gracieusement offerts.</p>
 
 <p>Voilà, le compte doit y être. Pour le reste, la cellule où vous croupissez n’incite pas à l’optimisme.</p>
 
 <p>Officiellement, vous avez de vous-même choisi de vous isoler du monde pour purger votre âme de la corruption qui s’y était installée.</p>
 
-<p>Vous ignorez si cette fable pousse le vice jusqu’à expliquer que c’est vous et vous seule qui avez demandé à être enfermée et avait réclamé ce couple caméra/sprinkler qui permet de vous asperger d’eau glacée au moindre signe que vous pourriez peut-être, éventuellement, être en train d’appeler un esprit non déclaré. Vous avez d’ailleurs été réveillée de cette manière aujourd’hui, sans que vous sachiez si vos mouvements nocturnes aient été réellement suspicieux ou si votre surveillant s’ennuyait simplement.</p>
+<p>Vous ignorez si cette fable pousse le vice jusqu’à expliquer que c’est vous et vous seule qui avez demandé à être enfermée et avait réclamé ce couple caméra/sprinkler qui permet de vous asperger d’eau glacée au moindre signe que vous pourriez peut-être, éventuellement, potentiellement, être en train d’appeler un esprit non déclaré. Vous avez d’ailleurs été réveillée de cette manière aujourd’hui même, sans que vous sachiez si vos mouvements nocturnes aient été réellement suspicieux ou si votre surveillant s’ennuyait simplement.</p>
 
-<p>Oui, vous ne savez plus grand chose. En l’absence de lumière du jour et de montre, votre définition même du temps s’est étiolée. Seuls les repas rythment vos journées. Et encore, vous suspectez qu’ils leur arrivent de vous faire jeûner, sans doute pour votre bien, pour faciliter votre détachement spirituel.</p>
+<p>C’est loin d’être la seule chose que vous ignorez. En l’absence de lumière du jour et de montre, votre définition même du temps s’est étiolée. Seuls les repas rythment vos journées. Et encore, vous suspectez qu’ils leur arrivent de vous faire jeûner, sans doute pour faciliter votre détachement spirituel.</p>
 
 <p>Le pire dans cette affaire reste encore l’ennui. La cellule ne contient que le strict nécessaire pour y vivre, sans la moindre distraction. Vous ne demandez pas Internet ou la télé, mais mêmes papiers et crayons vous ont été refusés. Vous n’avez rien d’autre à faire que de penser. Et quand vous n’en pouvez plus de penser, vos idées tournant vite en ronds en l’absence de stimulus extérieurs, vous vous épuisez par des exercices physiques et retournez vous coucher.</p>
 
-<p>Bien sûr, vous savez ce à quoi vos tourmenteurs souhaitent que vous employiez votre temps libre. Ils vous ont remis un livre, plastifié. Vous l’avez déjà lu, plusieurs fois même, l’ennui étant plus fort que la rancœur. C’est un recueil d’informations sur une liste extrêmement restreinte de « bons esprits », tous anciens membres rigoristes de l’Ordre.</p>
+<p>Bien sûr, vous savez ce à quoi vos tourmenteurs souhaiteraient que vous employiez votre temps libre. Ils vous ont remis un livre, plastifié, plutôt joli. Vous l’avez déjà lu, plusieurs fois même, l’ennui étant plus fort que la rancœur. C’est un recueil d’informations sur une liste extrêmement restreinte de « bons esprits », tous anciens membres rigoristes de l’Ordre.</p>
 
 <p>Bien sûr, vous pourriez essayer de communier avec eux. Vous ne doutez pas qu’ils vous permettraient de mieux comprendre pourquoi tout ceci est pour votre bien et celui de la communauté.</p>
 

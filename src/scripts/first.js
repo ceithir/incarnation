@@ -4,9 +4,9 @@ const summoningDescription = (summonName) => {
   return `
 <p>Malgré votre expérience dans le domaine, vous ne sauriez réellement expliquer le fonctionnement d’une invocation. Dès très jeune, l’Ordre vous a fait faire des exercices dont l’intérêt exact ne vous a jamais été expliqué, et, un jour, un professeur vous a dit que vous étiez prête, et effectivement vous l’étiez. C’est un peu comme le vélo ou la natation : un processus peu pédagogique, l’idée d’un coup à prendre, que votre corps sait, que vous n’avez pas besoin de théorie mais seulement de pratique.</p>
 
-<p>Vous n’êtes d’ailleurs pas sûre que la plupart de vos instructeurs connaissaient eux-même la théorie. Sans doute ne faisaient-ils que répéter ce que leurs parents leur avaient appris.</p>
+<p>Vous soupçonnez d’ailleurs que vos instructeurs, pour la plupart, ne comprenaient pas non plus la logique derrière ce qu’ils racontaient. Sans doute ne faisaient-ils que répéter ce que leurs parents et professeurs leur avaient enseigné en leur temps.</p>
 
-<p>À votre niveau, la principale difficulté reste d’établir une connexion avec l’esprit. Dans le cas de personnalités que vous avez déjà hébergées à plusieurs reprises, c’est toutefois chose aisée.</p>
+<p>À votre niveau, la seule véritable difficulté reste d’établir une connexion avec l’esprit. Dans le cas de personnalités que vous avez déjà hébergées à plusieurs reprises, c’est toutefois chose aisée.</p>
 
 <p>Vous vous remémorez ce que vous aviez ressenti lors de vos précédents contacts avec ${summonName}. L’état d’esprit est primordial pour une incarnation réussie, plus encore que les souvenirs d’une autre époque, d’une autre vie.</p>
   `;
@@ -18,7 +18,7 @@ const makabiDescription = `
 <p>D’un coup sec, il cogne le sol de la hampe de son arme, provoquant une vague de silence, et déclare solennellement, d’une voix forte, habituée à commander et à prêcher :</p>
 
 <div class="conversation">
-<p>— Je suis Makabi, défenseur de la juste foi. Nos croyances, nos usages, nos coutumes, ont été dévoyés par les actes impies d’une barbare qui a autrefois été des nôtres. Encore une fois, il me revient l’honneur de purifier le temple.</p>
+<p>— Je suis le défenseur de la juste foi. Nos croyances, nos usages, nos coutumes, ont été dévoyés par les actes impies d’une barbare qui a autrefois été des nôtres. Encore une fois, il me revient l’honneur de purifier le temple.</p>
 </div>
 
 <p>Il bascule alors sa lance pour en faire pointer le fer droit vers vous.</p>
@@ -83,7 +83,7 @@ ${makabiDescription}
 
 ${bulletExplanation}
 
-<p>Cette pensée parasite est bien sûre signée Misty, et non Rebecca. La dichotomie mentale qu’elle implique vous fige pendant un instant, qu’Eschyle met à profit pour entamer une nouvelle invocation, à la recherche d’une forme plus apte à combattre votre modernité toute relative.</p>
+<p>Cette réflexion est entièrement propre à Misty, et brise quelque peu l’immersion que vous partagez avec Rebecca. La dichotomie mentale vous fige pendant un instant, qu’Eschyle met à profit pour entamer une nouvelle invocation, à la recherche d’une forme plus apte à combattre votre modernité toute relative.</p>
     `,
     "next": (goToSection) => {
       return [
@@ -110,7 +110,7 @@ ${bulletExplanation}
   },
   "first-onawa": {
     "text": `
-${summoningDescription("Rebecca")}
+${summoningDescription("Onawa")}
 
 ${onawaFirstSummon}
 
@@ -119,10 +119,11 @@ ${makabiDescription}
 <p>Vous posez les yeux sur sa phallique menace, et basculez la tête dans un geste de dédain complet.</p>
 
 <div class="conversation">
-<p>— Ah, monsieur Makabi. Je suppose que vous êtes un agent du procureur. Je comprends que vous soyez nerveux devant l’excellence de ma défense, mais tout de même, ce n’est parce que j’ai une hortensia derrière l’oreille que vous pouvez m’interrompre.</p>
+<p>— Ah. Je suppose que vous êtes un agent du procureur. J’assurerai quant à moi la plaidoirie de la défense. Les chefs d’accusation ayant été, fort longuement, énoncés, il est plus que temps pour moi de m’exprimer.</p>
+<p>— Aucun mot ne saurait défendre ton sacrilège.</p>
 </div>
 
-<p>Votre répartie a pour conséquence qu’il tente de vous embrocher de sa lance.</p>
+<p>Et il tente aussitôt de vous embrocher de sa lance.</p>
 
 <p>Grossier personnage.</p>
 
@@ -133,11 +134,11 @@ ${makabiDescription}
 <p>Ce qui implique de continuer à discourir et à flirter avec le danger au même rythme.</p>
 
 <div class="conversation">
-<p>— Je vois que vous restez coi devant ma bonne foi. Initiative que je salue, car votre camp n’a que trop parlé, et le mien pas assez. Beau procès que celui où un seul parti a le droit de s’exprimer.</p>
-<p>« Alors me voilà. Je suis la quintessence de ce que vous craignez. L’esprit désaxé dans toute sa splendeur. Ai-je l’air si terrible ? En dehors de mes goûts vestimentaires…</p>
+<p>— Et bien. Beau procès que celui où un seul parti a le droit de s’exprimer. Craignez-vous à ce point mes paroles ? Pensez-vous donc que je suis sirène, que le simple son de ma voix suffit à faire perdre toute intelligence à ceux qui l’entendent ?</p>
+<p>« Et bien si c’est le cas, observez-moi attentivement. Je suis ce fameux esprit tentateur dont vous avez tant entendu parler. Ai-je donc l’air du monstre qui vous a été dépeint ? En dehors de mes goûts vestimentaires…</p>
 </div>
 
-<p>La pique vous frôle de beaucoup trop près à votre goût, créant une pause inopinée dans votre discours.</p>
+<p>La pique vous frôle de beaucoup trop près, créant une pause inopinée dans votre discours.</p>
 
 <div class="conversation">
 <p>— … douteux j’entends. Pour sûr, je ne ressemble pas aux esprits que vous avez l’habitude de voir. Il me manque la barbe déjà. Mais n’est-ce pas là tout le nœud du problème justement ? En vous limitant à un seul schéma type, vous évitez quelques mauvaises surprises, mais vous vous privez aussi des bonnes. Le monde…</p>

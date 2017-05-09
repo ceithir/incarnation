@@ -40,9 +40,9 @@ const transitionBetweenFirstAndSecond = {
 
 <p>Onawa refuse tout de go. Misty… Misty hésite.</p>
 
-<p>Merde à la fin, vous venez de vous manger une lance. Ça fait putain de mal, et ce type est sérieusement assez fou pour ne pas s’arrêter là. Vous n’avez pas signé pour ces conneries, pour réellement mettre votre vie en danger dans des jeux du cirque stupides.</p>
+<p>Parce qu’il faut bien le reconnaître, vous venez de vous manger une lance. Et ça fait sacrément mal. Et ce type est sérieusement assez fou pour ne pas s’arrêter là. Vous n’avez pas signé pour réellement mettre votre vie en danger dans des jeux du cirque reconstitués.</p>
 
-<p>Cet état d’esprit totalement contraire à celui de l’esprit hébergé rompt aussitôt le charme. Onawa vous quitte, sans apporter de réponse à votre dilemme.</p>
+<p>Votre état d’esprit, aussi humain soit-il, s’oppose tellement à la détermination presque enragée d’Onawa que le charme se rompt. L’invocation se termine et l’esprit vous abandonne, sans apporter de réponse à votre dilemme.</p>
     `,
     "next": (goToSection) => {
       return [

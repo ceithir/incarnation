@@ -189,6 +189,14 @@ ${onawaFirstSummon}
         `;
       }
 
+      if (flags.rebeccaVersusMakabi) {
+        summonDescription = `
+<p>Le changement de personnalité est brusque. Rebecca est plutôt du genre à briser les vagues qui arrivent sur elle. Votre nouvelle alliée aime à être la source des tempêtes.</p>
+
+${onawaFirstSummon}
+        `;
+      }
+
       return `
 ${summonDescription}
 

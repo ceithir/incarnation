@@ -1,5 +1,5 @@
 export const ionnaFirstSummon = `
-<p>La <strong>confiance</strong>, en soi et en un pouvoir supérieur. La certitude que le chemin choisi est le bon. Telle est la clé pour comprendre Ionna.</p>
+<p>La confiance, en soi et en un pouvoir supérieur. La certitude que le chemin choisi est le bon. Telle est la clé pour comprendre Ionna.</p>
 
 <p>Vous vous remettez bien droite, la tête haute et le dos raide. Il n’y a que devant Dieu que vous courbez l’échine, et ce grossier homme n’est clairement ni le divin ni son serviteur. Votre armure lustrée rutile sous les puissantes lumières, comme il se doit, pour que votre radiance puisse montrer la voie à ceux qui vous suivent.</p>
 
@@ -7,19 +7,13 @@ export const ionnaFirstSummon = `
 `;
 
 export const rebeccaFirstSummon = `
-<p>Le refus de l’autorité, des règles et des lois. Vous ferez ce que vous voudrez quand vous le voudrez et rien d’autre. La <strong>liberté</strong> ou la mort dans son concept le plus épuré.</p>
+<p>Le refus de l’autorité, des règles et des lois. Vous ferez ce que vous voudrez quand vous le voudrez et rien d’autre. La liberté ou la mort dans son concept le plus épuré.</p>
 
 <p>Vous repoussez la mèche de cheveux qui vous tombe entre les yeux. Sa couleur moitié brune moitié violette vous rappelle que vous n’avez pas entretenu votre teinture depuis longtemps. Bah, après tout, c’est bien comme ça aussi.</p>
 
-<p>Vous cessez de vous intéresser à l’autre imbécile et à son petit jeu et commencez à élaborer un plan pour vous sortir d’ici. Il y a des gardes en retrait à chaque entrée des coulisses et dans les couloirs des spectateurs. Leurs vêtements bien couvrants sont parfaitement adaptés pour cacher des armes, vous ne savez donc pas à quoi vous attendre de ce point de vue-là. Dans le doute, au pire. Un fusil-mitrailleur est peu probable, trop imposant, mais une arme de poing reste une possibilité non négligeable.</p>
+<p>Vous cessez de vous intéresser à l’autre imbécile et à son petit jeu et commencez à élaborer un plan pour vous sortir d’ici. Il y a des gardes légèrement en retrait à chaque entrée des coulisses et dans les couloirs d’accès des spectateurs. Plus potentiellement d’autres hors de vue. L’éclairage est principalement assuré par quelques gros projecteurs surélevés avec les moyens du bord, l’un posé sur une antique colonne décapitée, l’autre au sommet d’un des gradins et ainsi de suite dans une maladroite intégration avec le site historique existant. Les murs antiques sont d’ailleurs si riches en prises que même une grimpeuse médiocre pourrait les escalader sans mal.</p>
 
-<p>Bah, même s’ils n’ont que des matraques, vous ne comptez de toute façon pas vous les fritter. Trop nombreux.</p>
-
-<p>Vous portez ensuite votre attention vers l’éclairage. La scène elle-même est principalement éclairée par quelques gros projecteurs surélevés avec les moyens du bord, l’un posé sur une antique colonne décapitée, l’autre au sommet d’un des gradins et ainsi de suite dans une maladroite intégration avec le site historique existant.</p>
-
-<p>Si vous pouviez les neutraliser, la nuit au-dessus de votre tête reprendrait ses droits à quelques lumières d’appoint près. Une pénombre bien propice à une fuite, avec ou sans castagne.</p>
-
-<p>Castagne qui vient à vous alors même que vous refusiez d’aller à elle.</p>
+<p>Votre analyze de la situation est interrompue par l’arrivée du bonhomme que vous êtes supposée affronter.</p>
 `;
 
 export const bulletExplanation = `
@@ -27,21 +21,19 @@ export const bulletExplanation = `
 `;
 
 export const onawaFirstSummon = `
-<p>Le chaos. Le chaos originel. Le chaos créatif. La tempête du <strong>changement</strong>.</p>
+<p>Le chaos. Le chaos originel. Le chaos créatif. La tempête du changement.</p>
 
 <div class="conversation">
 <p>— Cher public, bonsoir ! Et un grand merci à vous pour avoir m’accueilli ce soir sur votre scène. Vous êtes adorables.</p>
 </div>
 
-<p>Grincements de dents généralisés. Vous n’êtes pas censée interpeller directement l’assemblée. Ce duel est supposé être un tête-à-tête public entre vous et votre accusateur.</p>
+<p>Articuler proprement cette phrase vous a demandé beaucoup plus d’efforts que vous ne l’auriez souhaité, et votre voix est plus rauque et faible qu’à votre habitude. Toutefois, vos années d’expérience à discourir dans les pires conditions, et l’entraînement de votre carrière avortée dans la chanson, vous donnent les ressources nécessaires pour contourner le gros de l’aphonie que vos accusateurs ont tenté de vous imposer.</p>
 
-<p>Vous <em>adorez</em> faire ce que vous n’êtes pas censée faire. Et encore plus dans un cas de figure comme celui-là. C’est lorsque l’on braque un projecteur sur vous pour vous ridiculiser, vous humilier, vous détruire, que vous brillez plus que jamais.</p>
+<p>Les grincements de dents que vous entendez en réponse valent bien ces quelques efforts. Votre aparté déplaie. Vous n’êtes pas censée interpeller directement l’assemblée. Ce duel est supposé être un tête-à-tête public entre vous et votre accusateur.</p>
 
-<div class="conversation">
-<p>— Puisqu’il s’agit d’un jugement et que les chefs d’accusation ont été énoncés, quoi de plus naturel que d’entendre la plaidoirie de la défense ? J’entends qu’on me décrit comme une entité corruptrice. C’est me surestimer. Certes, il m’arrive de craqueler le vernis des pensées préconçues, de ronger les piliers des idéologies simplistes, de fissurer la glace de l’immobilisme, mais je suis malheureusement encore bien loin de…</p>
-</div>
+<p>Vous <em>adorez</em> faire ce que vous n’êtes pas censée faire.</p>
 
-<p>Vous êtes en train perdre votre auditoire. Votre voix, pas au mieux de sa forme, y est sans doute pour quelque chose. Vous avez la gorge en feu et devez puiser dans toute votre expérience et votre entraînement à vous exprimer distinctement dans les pires conditions pour parvenir à en sortir des mots articulés.</p>
+<p>Et encore plus dans une situation comme celle-là. C’est lorsque l’on braque un projecteur sur vous pour vous ridiculiser, vous humilier, vous détruire, que vous brillez plus que jamais.</p>
 
-<p>Mais surtout, l’autre invité de ce show vient de daigner se montrer.</p>
+<p>Mais il y a quelqu’un d’autre, désireux de vous piquer la vedette, sur cette scène.</p>
 `;
