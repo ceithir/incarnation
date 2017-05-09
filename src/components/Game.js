@@ -15,7 +15,7 @@ class Game extends React.Component {
     const currentSection = this.props.currentSection || this.props.startingSection;
     const currentFlags = Object.assign({}, this.props.startingFlags, this.props.currentFlags || {});
     const currentLogs = this.props.currentLogs || [];
-    const settings = Object.assign({}, this.getDefaultSettings(), JSON.parse(window.localStorage.getItem("settings")) || {});
+    const settings = Object.assign({}, this.getDefaultSettings(), this.props.settings || {});
 
     this.props.saveProgress(currentSection, currentFlags, currentLogs);
 
@@ -133,7 +133,7 @@ class Game extends React.Component {
     this.setState((prevState, props) => {
       const settings = Object.assign({}, prevState.settings, values);
 
-      window.localStorage.setItem("settings", JSON.stringify(settings));
+      props.saveSettings(settings);
 
       return {
         "settings": settings,
@@ -253,6 +253,8 @@ Game.propTypes = {
   currentLogs: PropTypes.array,
   saveProgress: React.PropTypes.func.isRequired,
   endings: PropTypes.arrayOf(PropTypes.object).isRequired,
+  settings: PropTypes.object,
+  saveSettings: React.PropTypes.func.isRequired,
 };
 
 export default Game;

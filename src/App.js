@@ -9,6 +9,26 @@ import endings from './scripts/endings.js';
 const title = `Incarnation`;
 const startingSection = "intro";
 
+const storageKey = window.location.host+window.location.pathname;
+const getWarehouse = () => {
+  return JSON.parse(window.localStorage.getItem(storageKey)) || {};
+}
+const load = (key) => {
+  return getWarehouse()[key];
+}
+const save = (key, value) => {
+  window.localStorage.setItem(
+    storageKey,
+    JSON.stringify(Object.assign(
+      {},
+      getWarehouse(),
+      {[key]: value},
+    ))
+  );
+}
+
+const settings = load("settings");
+
 class App extends Component {
   loadProgress = () => {
     return Object.assign(
@@ -18,23 +38,23 @@ class App extends Component {
         "flags": flags,
         "logs": [],
       },
-      JSON.parse(window.localStorage.getItem("progress")) || {}
+      load("progress") || {}
     );
   }
 
   saveProgress = (section, flags, logs) => {
-    window.localStorage.setItem(
+    save(
       "progress",
-      JSON.stringify({
+      {
         "section": section,
         "flags": flags,
         "logs": logs,
-      })
+      }
     );
   }
 
-  clearProgress = () => {
-    window.localStorage.removeItem("progress");
+  saveSettings = (settings) => {
+    save("settings", settings);
   }
 
   render() {
@@ -51,6 +71,8 @@ class App extends Component {
         currentLogs={progress.logs}
         saveProgress={this.saveProgress}
         endings={endings}
+        settings={settings}
+        saveSettings={this.saveSettings}
       />
     );
   }
