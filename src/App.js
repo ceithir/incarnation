@@ -9,7 +9,7 @@ import endings from './scripts/endings.js';
 const title = `Incarnation`;
 const startingSection = "intro";
 
-const storageKey = window.location.host+window.location.pathname;
+const storageKey = (parent !== window) ? document.referrer : document.location;
 const getWarehouse = () => {
   return JSON.parse(window.localStorage.getItem(storageKey)) || {};
 }
