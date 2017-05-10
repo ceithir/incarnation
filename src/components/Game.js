@@ -17,7 +17,7 @@ class Game extends React.Component {
     const currentLogs = this.props.currentLogs || [];
     const settings = Object.assign({}, this.getDefaultSettings(), this.props.settings || {});
 
-    this.props.saveProgress(currentSection, currentFlags, currentLogs);
+    this.saveProgress(currentSection, currentFlags, currentLogs);
 
     this.state = {
       "section": currentSection,
@@ -44,7 +44,7 @@ class Game extends React.Component {
       const updatedFlags = Object.assign({}, prevState.flags, flags);
       const updatedLogs = prevState.logs.concat(logs);
 
-      this.props.saveProgress(section, updatedFlags, updatedLogs);
+      this.saveProgress(section, updatedFlags, updatedLogs);
 
       return {
         "section": section,
@@ -133,7 +133,9 @@ class Game extends React.Component {
     this.setState((prevState, props) => {
       const settings = Object.assign({}, prevState.settings, values);
 
-      props.saveSettings(settings);
+      if (props.saveSettings) {
+        props.saveSettings(settings);
+      }
 
       return {
         "settings": settings,
@@ -141,8 +143,20 @@ class Game extends React.Component {
     });
   }
 
-  resetProgress = () => {
+  saveProgress = (section, flags, logs) => {
+    if (!this.props.saveProgress) {
+      return;
+    }
+
     this.props.saveProgress(
+      section,
+      flags,
+      logs,
+    );
+  }
+
+  resetProgress = () => {
+    this.saveProgress(
       this.props.startingSection,
       this.props.startingFlags,
       [],
@@ -251,10 +265,10 @@ Game.propTypes = {
   currentSection: PropTypes.string,
   currentFlags: PropTypes.object,
   currentLogs: PropTypes.array,
-  saveProgress: React.PropTypes.func.isRequired,
+  saveProgress: React.PropTypes.func,
   endings: PropTypes.arrayOf(PropTypes.object).isRequired,
   settings: PropTypes.object,
-  saveSettings: React.PropTypes.func.isRequired,
+  saveSettings: React.PropTypes.func,
 };
 
 export default Game;

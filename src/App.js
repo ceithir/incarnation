@@ -13,20 +13,8 @@ const title = `Incarnation`;
 const startingSection = "intro";
 
 class App extends Component {
-  loadSettings = ()=> {
-    return storage.load("settings");
-  }
-
   loadProgress = () => {
-    return Object.assign(
-      {},
-      {
-        "section": startingSection,
-        "flags": flags,
-        "logs": [],
-      },
-      storage.load("progress") || {}
-    );
+    return storage.load("progress") || {};
   }
 
   saveProgress = (section, flags, logs) => {
@@ -38,6 +26,10 @@ class App extends Component {
         "logs": logs,
       }
     );
+  }
+
+  loadSettings = ()=> {
+    return storage.load("settings") || {};
   }
 
   saveSettings = (settings) => {
