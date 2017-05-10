@@ -12,14 +12,19 @@ class Storage {
   }
 
   save(key, value) {
-    window.localStorage.setItem(
-      this.storageKey,
-      JSON.stringify(Object.assign(
-        {},
-        this._loadWarehouse(),
-        {[key]: value},
-      ))
-    );
+    try {
+      window.localStorage.setItem(
+        this.storageKey,
+        JSON.stringify(Object.assign(
+          {},
+          this._loadWarehouse(),
+          {[key]: value},
+        ))
+      );
+    } catch(e) {
+      // Prevent any kind of exception on save to break about everything
+      console.error(e);
+    }
   }
 }
 
