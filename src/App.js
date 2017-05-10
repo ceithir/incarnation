@@ -5,31 +5,18 @@ import Game from './components/Game.js';
 import sections from './scripts/script.js';
 import flags from './scripts/flags.js';
 import endings from './scripts/endings.js';
+import Storage from './Storage.js';
+
+const storage = new Storage("rEcqfXCg9717KmMVWkBVNa4pvv0aiE3L");
 
 const title = `Incarnation`;
 const startingSection = "intro";
 
-const storageKey = "J4mMGGcdZ4ecrCxm";
-const getWarehouse = () => {
-  return JSON.parse(window.localStorage.getItem(storageKey)) || {};
-}
-const load = (key) => {
-  return getWarehouse()[key];
-}
-const save = (key, value) => {
-  window.localStorage.setItem(
-    storageKey,
-    JSON.stringify(Object.assign(
-      {},
-      getWarehouse(),
-      {[key]: value},
-    ))
-  );
-}
-
-const settings = load("settings");
-
 class App extends Component {
+  loadSettings = ()=> {
+    return storage.load("settings");
+  }
+
   loadProgress = () => {
     return Object.assign(
       {},
@@ -38,12 +25,12 @@ class App extends Component {
         "flags": flags,
         "logs": [],
       },
-      load("progress") || {}
+      storage.load("progress") || {}
     );
   }
 
   saveProgress = (section, flags, logs) => {
-    save(
+    storage.save(
       "progress",
       {
         "section": section,
@@ -54,7 +41,7 @@ class App extends Component {
   }
 
   saveSettings = (settings) => {
-    save("settings", settings);
+    storage.save("settings", settings);
   }
 
   render() {
@@ -71,7 +58,7 @@ class App extends Component {
         currentLogs={progress.logs}
         saveProgress={this.saveProgress}
         endings={endings}
-        settings={settings}
+        settings={this.loadSettings()}
         saveSettings={this.saveSettings}
       />
     );
