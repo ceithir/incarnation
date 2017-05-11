@@ -209,9 +209,9 @@ class Game extends React.Component {
                   {`Configuration`}
                 </MenuItem>
                 <MenuItem divider/>
-                <MenuItem header>
+                {this.props.saveProgress && <MenuItem header>
                   {`Ce jeu sauvegarde automatiquement.`}
-                </MenuItem>
+                </MenuItem>}
                 <MenuItem onSelect={this.resetProgress} key="reset">
                   {`Recommencer`}
                 </MenuItem>
