@@ -74,7 +74,7 @@ ${batuoOffer}
           "action": () => {goToSection("surrender");},
         },
         {
-          "text": `Vous lui retournez un autre geste que celui attendu.`,
+          "text": `Vous la laissez pendre.`,
           "action": () => {goToSection("no-surrender-light-wounds");},
         }
       ];

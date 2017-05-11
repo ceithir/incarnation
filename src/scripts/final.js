@@ -1,5 +1,7 @@
+import {rebeccaFirstSummon, bulletExplanation} from "./summons.js";
+
 const musashiboDescription = `
-<p>La personne qui se tient devant vous est un colosse, votre tête lui arrivant à peine au niveau de la poitrine. Ses amples vêtements ne cachent guère son imposante musculature, ni d’ailleurs l’armure à la japonaise qu’il porte en-dessous. La bande de tissu blanc enroulé autour de sa tête est plus efficace dans cette opération de dissimulation, ne laissant paraître que ses yeux.</p>
+<p>La personne qui se tient maintenant devant vous est un colosse, votre tête lui arrivant à peine au niveau de la poitrine. Ses amples vêtements ne cachent guère son imposante musculature, ni d’ailleurs l’armure à la japonaise qu’il porte en-dessous. La bande de tissu blanc enroulé autour de sa tête réussit en revanche à dissimuler son visage, ne laissant paraître que ses yeux.</p>
 
 <p>Ses deux mains enserrent une arme d’hast se terminant par une imposante lame courbe, avec laquelle il décrit déjà une large arc de cercle pour vous faucher.</p>
 `;
@@ -71,12 +73,34 @@ ${jailDescription(flags)}
   },
   "final-rebecca": {
     "text": (flags) => {
+      const neverSummonedRebeccaBefore = !flags.rebeccaVersusMakabi && !flags.rebeccaVersusBernardo;
+
+      let summoning = ``;
+
+      if (neverSummonedRebeccaBefore) {
+        summoning = `
+<p>Vous faites le vide dans votre esprit, puis le plongez dans l’état nécessaire à invoquer Rebecca.</p>
+
+${rebeccaFirstSummon}
+        `;
+      }
+
       return `
+${summoning}
+
 ${musashiboDescription}
 
 <p>Vous esquivez en reculant de quelques pas. Vous n’avez de toute façon pas signé pour un combat au corps à corps.</p>
 
-<p>Vous tirez une première fois. Jambe. Encore ce problème de puissance de feu réduite. À croire que votre arme est chargée avec des munitions d’entraînement.</p>
+<p>Vous tirez une première fois. Jambe. ${neverSummonedRebeccaBefore? `Votre tir touche de plein fouet, mais se contente de roussir sa protection au lieu de la transpercer.`: `Encore ce problème de puissance de feu réduite. À croire que votre arme est chargée avec des munitions d’entraînement.`}</p>
+
+${neverSummonedRebeccaBefore? `
+<p>C’est le prix à payer pour user du souvenir matérialisé d’une arme plutôt que d’un véritable pistolet physique.</p>
+
+${bulletExplanation}
+
+<p>Et bien, vous allez devoir faire avec ce handicap.</p>
+`: ""}
 
 <p>Le mastoc vous fonce dessus. Vous lui en mettez une deuxième en plein ventre. Un morceau de la plaque de métal qui protège ses organes à cet endroit vole mais il ne s’arrête pas. Deux tirs consécutifs dans la même zone finissent par le stopper, mais le sang se refuse toujours à couler, et il se reprend aussitôt.</p>
 
@@ -108,7 +132,7 @@ ${musashiboDescription}
 
 <p>Vous extraire des griffes de l’Ordre n’a pas été très difficile. Ils n’avaient rien de prévu contre une arme à feu moderne. Il n’a même pas dû leur venir à l’idée qu’il était possible d’en invoquer une, ni que vous n’hésiteriez pas à l’utiliser contre ceux qui vous avaient supposément élevée.</p>
 
-<p>C’est après que la situation s’est compliquée. Non seulement vous avez été officiellement déclarée ennemie public numméro 1 pour l’Ordre, mais les dégâts que vous avez infligé là-bas vous ont également fait remarquer des autorités séculières de ce pays. Si le fait que vous aviez été enlevée, enfermée et contrainte à combattre pour votre liberté ne les a apparemment pas marquées, le meurtre du grand prêtre de l’Ordre les a pas mal secouées.</p>
+<p>C’est après que la situation s’est compliquée. Non seulement vous avez été officiellement déclarée ennemie public numéro 1 de l’Ordre, mais les dégâts que vous avez infligés là-bas vous ont également fait remarquer des autorités séculières de ce pays. Si le fait que vous aviez été enlevée, enfermée et contrainte à combattre pour votre liberté ne les a apparemment pas marquées, le meurtre du grand prêtre de l’Ordre les a en revanche pas mal secouées.</p>
 
 <p>Et vous aussi il faut bien dire. Vous n’arrivez pas encore à bien réaliser. Cela s’est passé dans le feu du moment, sous l’influence de Rebecca, et Eschyle n’est pas vraiment quelqu’un que vous connaissiez en tant que personne. À vos yeux, c’était plutôt une sorte d’incarnation de l’Ordre dans toute sa rigidité.</p>
 
@@ -180,21 +204,21 @@ ${musashiboDescription}
     "text": `
 <p>La fenêtre d’opportunité est ridiculement courte, mais vous avez l’avantage de la surprise pour vous.</p>
 
-<p>Vous vous retournez vers la foule et tirez dedans. Ils sont beaucoup trop loin pour que cela blesse quiconque, votre projectile s’effaçant bien avant de rencontrer quoi que ce soit de solide. Toutefois, leurs petits cerveaux ne réagissent pas de façon aussi rationnelle. Le bruit de la détonation, le canon pointé dans leur direction, le souvenir tout frais de l’humiliante défaite de leur champion, votre air revêche, cela suffit à provoquer une vague de panique.</p>
+<p>Vous vous retournez vers la foule et tirez dedans. Ils sont beaucoup trop loin pour que cela blesse quiconque, votre projectile s’effaçant bien avant de rencontrer quoi que ce soit de solide. Toutefois, leurs petits cerveaux ne réagissent pas de façon aussi rationnelle. Le bruit de la détonation, le canon pointé dans leur direction, le souvenir tout frais de l’humiliante retraite de leur champion, votre air revêche, cela suffit à provoquer une vague de panique.</p>
 
 <p>Ça se met à crier, à courir dans tous les sens, à se rentrer dedans. Un magnifique chaos détournant l’attention de vos propres actions. Vous piquez aussitôt un sprint vers l’arrière de la scène, vous laissez tomber. Vous êtes à deux pas des coulisses, et de gros balourds vous foncent déjà dessus, mais vous repérez ce que vous cherchiez, que Misty avait vu lorsqu’elle était passée par là mais n’avait pas identifié comme important : un gros amas de câbles et de boîtiers. Un nœud vital de la connectique et de l’alimentation de l’éclairage.</p>
 
-<p>Vous mettez une balle dans le genou du garde le plus proche alors qu’il sort un taser. Vous êtes presque à bout portant, et il déguste sec. Cela calme aussitôt les ardeurs de ses potes. Vous en profitez pour mettre la zone dans le matériel électrique qui vous entoure. Vous n’y connaissez rien, mais balancez d’un coup de pied bien ciblé un truc qui a l’air important sur un autre truc qui a l’air important, et, magie, une partie des lumières s’éteignent dans un grésillement.</p>
+<p>Vous mettez une balle dans le genou du garde le plus proche alors qu’il sort un taser. Vous êtes presque à bout portant, et il déguste sec. Cela calme aussitôt les ardeurs de ses potes. Vous en profitez pour mettre la zone dans le matériel électrique qui vous entoure. Vous n’y connaissez rien, mais vous balancez d’un coup de pied bien ciblé un truc qui a l’air important sur un autre truc qui a l’air important, et, magie, une partie des lumières s’éteignent dans un grésillement.</p>
 
-<p>Vous y voyez encore trop bien à votre goût et un nouveau larron s’en mêle avant que vous ne puissiez pousser plus loin votre bricolage, s’interposant d’un bon entre vous et vos victimes de cuivre et de plastique.</p>
+<p>Vous y voyez encore trop bien à votre goût et un nouveau larron s’en mêle avant que vous ne puissiez pousser plus loin votre bricolage, s’interposant d’un bond entre vous et vos victimes de cuivre et de plastique.</p>
 
 ${musashiboDescription}
 
-<p>En réponse, vous prenez aussi le large, vous élançant dans un gradin maintenant déserté et enténébré, passant entre deux gorilles que la présence d’un encore plus gros bonhomme a un peu réveillés. Le nombre jouerait en leur faveur s’ils étaient entraînés en ce sens, mais en l’occurrence ils se gênent mutuellement, vous permettant de grappiller de précieuses secondes d’avance, de sortir de leur champ de vision en plongeant derrière une rangée de sièges.</p>
+<p>En réponse, vous prenez aussi le large, vous élançant dans un gradin maintenant déserté et enténébré, passant entre deux gorilles que la présence d’un encore plus gros bonhomme a un peu réveillés. Le nombre jouerait en leur faveur s’ils étaient entraînés en ce sens, mais en l’occurrence ils se gênent mutuellement, vous permettant de grappiller de précieuses secondes d’avance et de sortir de leur champ de vision en plongeant derrière une rangée de sièges.</p>
 
-<p>Leur erreur suivante est de s’aventurer dans l’obscurité à votre poursuite, immédiatement, sans méthode, les nombreux montant au fur et à mesure qu’ils arrivent sans s’attendre, s’éparpillant pour couvrir une plus grande surface. Seul l’avatar d’Eschyle reste en bas, dans la lumière, fouillant du regard la zone où vous vous êtes dissimulée.</p>
+<p>Leur erreur suivante est de s’aventurer dans l’obscurité à votre poursuite, immédiatement, sans méthode, les escaladant au fur et à mesure qu’ils arrivent sans s’attendre, s’éparpillant pour couvrir une plus grande surface. Seul l’avatar d’Eschyle reste en bas, dans la lumière, fouillant du regard la zone où vous vous êtes dissimulée.</p>
 
-<p>Vous n’avez qu’une vague idée de ce qu’il peut bien capter de sa position. Des mouvements grisâtres indistincts entrecoupés de courts flashs lumineux lorsque vos armes font feu. Les cris, les pas précipités, les détonations, les chocs durs, étouffés, métalliques, chair contre chair. Les silhouettes qui s’effondrent les unes après les autres. L’amertume de la défaite.</p>
+<p>Vous n’avez qu’une vague idée de ce qu’il peut bien apercevoir de sa position. Des mouvements grisâtres indistincts entrecoupés de courts flashs lumineux lorsque vos armes font feu. Les cris, les pas précipités, les détonations, les chocs durs, étouffés, métalliques, chair contre chair. Les silhouettes qui s’effondrent les unes après les autres. L’amertume de la défaite.</p>
 
 <p>Lorsque le dernier garde se montre un peu plus malin que les autres et décampe avant de se prendre un coup ou une balle dans son angle mort, votre vieil ennemi hésite sans doute à s’avancer lui-même. À s’enfoncer dans le noir, sur un terrain inégal et inhabituel, pour jouer au chat et à la souris avec vous.</p>
 

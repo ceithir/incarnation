@@ -1,7 +1,10 @@
 import {ionnaFirstSummon, rebeccaFirstSummon, bulletExplanation, onawaFirstSummon} from "./summons.js";
 
-const bernardoDescription = `
-<p>Votre nouvel adversaire se matérialise. Une riche armure d’acier damasquiné. Un manteau d’un rouge écarlate. Une rapière à la lame ondulante. Un masque de fer.</p>
+const bernardoDescription = (flags) => {
+  const changedSummon = !flags.rebeccaVersusMakabi && !flags.rebeccaVersusBernardo;
+
+  return `
+<p>Votre nouvel adversaire se matérialise${changedSummon? ` également`: ""}. Une riche armure d’acier damasquiné. Un manteau d’un rouge écarlate. Une rapière à la lame ondulante. Un masque de fer.</p>
 
 <p>Il s’incline légèrement pour vous saluer, relevant sa cape d’un mouvement désuet.</p>
 
@@ -10,7 +13,8 @@ const bernardoDescription = `
 </div>
 
 <p>Il s’avance au même rythme que les mots sortent de la fente qui lui sert de bouche et frappe en guise de ponctuation.</p>
-`;
+  `;
+}
 
 const defeatDescription = (flags) => {
   let text = ``;
@@ -63,21 +67,23 @@ ${ionnaFirstSummon}
       return `
 ${summonDescription}
 
-${bernardoDescription}
+${bernardoDescription(flags)}
 
-<p>Vous parez avec votre propre arme. Votre lame glisse sur la forme inhabituelle de l’autre, finit détournée par la garde ouvragée. Cela lui offre une ouverture, qu’il exploite en rappant votre hanche.</p>
+<p>Vous parez avec votre propre arme. Votre lame glisse sur la forme inhabituelle de l’autre, finit détournée par la garde ouvragée. Cela lui offre une ouverture, qu’il exploite en portant un coup latéral au niveau de votre hanche.</p>
 
-<p>Cela a pour seul effet de laisser une trace disgracieuse sur votre armure.</p>
+<p>Avec pour seul effet de laisser une trace disgracieuse sur votre armure.</p>
 
 <p>L’échange de coups qui s’ensuit se révèle tout aussi maladroit.</p>
 
-<p>Sur le papier, l’avantage est pour lui. Vous avez été quelque peu rossée à l’affrontement précédent alors qu’il est encore indemne, votre équipement est bien plus grossier que le sien, plus lourd, moins bien articulé. Les gantelets en sont les meilleurs exemples : les siens sont finement ouvragés, avec des doigts séparés, tandis que vous ne disposez que de demi-moufles métalliques ne couvrant que la face extérieure de vos mains.</p>
+<p>Sur le papier, l’avantage est pour lui.${!flags.rebeccaVersusMakabi? ` Vous avez été quelque peu rossée lors l’affrontement précédent alors qu’il est encore indemne.`: ""} Votre équipement est bien plus grossier que le sien, plus lourd, moins bien articulé. Les gantelets en sont les meilleurs exemples : les siens sont finement ouvragés, avec des doigts séparés, tandis que vous ne disposez que de demi-moufles métalliques ne couvrant que la face extérieure de vos mains.</p>
 
-<p>Cela lui ouvre les portes à tout un panel de techniques contre lesquelles vous luttez difficilement, lui permettant de vous toucher sans que vous soyez capable de lui rendre la pareille. Il virevolte, dévie votre lame en la saisissant entre le pouce et l’index, fait onduler quelque peu la sienne pour frapper en courbe.</p>
+<p>Cela lui ouvre les portes à tout un panel de techniques contre lesquelles vous luttez difficilement, lui permettant de vous toucher à répétition sans que vous soyez capable de lui rendre la pareille. Il virevolte, dévie votre lame en la saisissant entre le pouce et l’index, fait onduler quelque peu la sienne pour frapper en courbe.</p>
 
 <p>Sauf que dans la pratique toutes ses attaques ricochent piteusement sur votre armure.</p>
 
-<p>Ce n’est pas une question d’arme inadaptée ou de force. C’est simplement qu’il ne frappe que par pointes rapides et légères sur des zones sensibles du corps. Une technique de duels de cour, idéale pour faire rapidement couler le sang et humilier son adversaire.</p>
+<p>Ce n’est pas une question d’arme inadaptée ou de force musculaire. C’est simplement qu’il ne frappe que par pointes rapides et légères sur des zones sensibles du corps. Une technique de duels de cour, entre gentilshommes en chemise, idéale pour faire rapidement couler le sang et humilier son adversaire.</p>
+
+<p>Mais totalement inadaptée à la présente situation.</p>
 
 <p>Aussi, entre ratages complets et touches pauvres, en êtes-vous toujours au même point après une bonne minute de ferraillage.</p>
 
@@ -85,7 +91,7 @@ ${bernardoDescription}
 
 <p>Jusqu’à ce que votre épée s’abatte en plein sur son visage.</p>
 
-<p>Le masque encaisse, même s’il vole au passage, révélant un visage tout à fait quelconque avec une petite barbichette brune. Son propriétaire fait cependant un sacré bon en arrière.</p>
+<p>Le masque encaisse, même s’il vole au passage, révélant un visage tout à fait quelconque avec une petite barbichette brune. Son propriétaire fait cependant un sacré bond en arrière.</p>
 
 <p>Et s’efface. Tout son être devient flou alors qu’Eschyle change brutalement de stratégie et d’invocation.</p>
 
@@ -132,7 +138,7 @@ ${bulletExplanation}
       return `
 ${summonDescription}
 
-${bernardoDescription}
+${bernardoDescription(flags)}
 
 <p>Vous lui répondez d’une balle en pleine poitrine.</p>
 
@@ -200,7 +206,7 @@ ${onawaFirstSummon}
       return `
 ${summonDescription}
 
-${bernardoDescription}
+${bernardoDescription(flags)}
 
 <p>Guère surprise, vous esquivez aussitôt d’un pas sur le côté.</p>
 

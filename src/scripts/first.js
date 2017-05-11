@@ -154,7 +154,7 @@ ${makabiDescription}
 
 <p>La phrase claque, sèche et déterminée. Malheureusement, Onawa a beau faire la fière, façon « quand on me cherche on me trouve », les coups qu’elle a portés ont plus fait trembler votre propre corps que celui de son adversaire, et cette petite saute d’humeur sert surtout à cacher que le gugusse ne vous a vraiment pas raté. Vous avez horriblement mal au flanc, et cela affecte votre concentration.</p>
 
-<p>Vous vous attendez à ce qu’Eschyle remette le couvert aussitôt. Au lieu de cela, après vous avoir bien observé sous sa forme de Makabi, il rompt soudainement l’invocation.</p>
+<p>Vous vous attendez à ce qu’Eschyle remette le couvert aussitôt. Au lieu de cela, après vous avoir bien observé sous sa forme actuelle, il rompt l’invocation.</p>
     `,
     "next": (goToSection) => {
       return {

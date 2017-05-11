@@ -24,7 +24,7 @@ export const onawaFirstSummon = `
 <p>Le chaos. Le chaos originel. Le chaos créatif. La tempête du changement.</p>
 
 <div class="conversation">
-<p>— Cher public, bonsoir ! Et un grand merci à vous pour avoir m’accueilli ce soir sur votre scène. Vous êtes adorables.</p>
+<p>— Cher public, bonsoir !</p>
 </div>
 
 <p>Articuler proprement cette phrase vous a demandé beaucoup plus d’efforts que vous ne l’auriez souhaité, et votre voix est plus rauque et faible qu’à votre habitude. Toutefois, vos années d’expérience à discourir dans les pires conditions, et l’entraînement de votre carrière avortée dans la chanson, vous donnent les ressources nécessaires pour contourner le gros de l’aphonie que vos accusateurs ont tenté de vous imposer.</p>
