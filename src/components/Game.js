@@ -222,14 +222,16 @@ class Game extends React.Component {
         <Grid className={"font-"+this.state.settings.fontSize + (this.state.settings.justified ? " text-justify" : "")}>
           <Row>
             <Col md={8} mdOffset={2}>
-              {this.state.logs.map((log, index) => {
-                return (
-                  <div key={index.toString()}>
-                    <Text content={log} />
-                    <hr/>
-                  </div>
-                );
-              })}
+              <div className="logs">
+                {this.state.logs.map((log, index) => {
+                  return (
+                    <div key={index.toString()}>
+                      <Text content={log} />
+                      <hr/>
+                    </div>
+                  );
+                })}
+              </div>
               <Text
                 content={this.getText(this.state.section, this.state.flags)}
                 ref={(ref) => { this.activeContentRef = ref; }}
