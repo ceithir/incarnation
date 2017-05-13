@@ -30,7 +30,7 @@ class Game extends React.Component {
 
   getDefaultSettings = () => {
     return {
-      "fontSize": 14,
+      "fontSize": 15,
       "justified": false,
     };
   }
