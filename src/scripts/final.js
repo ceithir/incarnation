@@ -18,20 +18,20 @@ const jailDescription = (flags) => {
 
 <p>C’est loin d’être la seule chose que vous ignorez. En l’absence de lumière du jour et de montre, votre définition même du temps s’est étiolée. Seuls les repas rythment vos journées. Et encore, vous suspectez qu’ils leur arrivent de vous faire jeûner, sans doute pour faciliter votre détachement spirituel.</p>
 
-<p>Le pire dans cette affaire reste encore l’ennui. La cellule ne contient que le strict nécessaire pour y vivre, sans la moindre distraction. Vous ne demandez pas Internet ou la télé, mais mêmes papiers et crayons vous ont été refusés. Vous n’avez rien d’autre à faire que de penser. Et quand vous n’en pouvez plus de penser, vos idées tournant vite en ronds en l’absence de stimulus extérieurs, vous vous épuisez par des exercices physiques et retournez vous coucher.</p>
+<p>Le pire dans cette affaire reste encore l’ennui. La cellule ne contient que le strict nécessaire pour y vivre, sans la moindre distraction. Vous ne demandez pas Internet ou la télé, mais mêmes papiers et crayons vous ont été refusés.</p>
+
+<p>Vous n’avez ainsi rien d’autre à faire que de penser. Et quand vous n’en pouvez plus de penser, vos idées tournant vite en ronds en l’absence de stimulus extérieurs, vous vous épuisez par des exercices physiques et retournez vous coucher.</p>
 
 <p>Bien sûr, vous savez ce à quoi vos tourmenteurs souhaiteraient que vous employiez votre temps libre. Ils vous ont remis un livre, plastifié, plutôt joli. Vous l’avez déjà lu, plusieurs fois même, l’ennui étant plus fort que la rancœur. C’est un recueil d’informations sur une liste extrêmement restreinte de « bons esprits », tous anciens membres rigoristes de l’Ordre.</p>
 
-<p>Bien sûr, vous pourriez essayer de communier avec eux. Vous ne doutez pas qu’ils vous permettraient de mieux comprendre pourquoi tout ceci est pour votre bien et celui de la communauté.</p>
+<p>Vous pourriez essayer de communier avec eux. Vous ne doutez pas qu’ils vous permettraient de mieux comprendre pourquoi tout ceci est pour votre bien et celui de la communauté.</p>
 
 <p>Ou vous pourriez continuer à examiner cette tache au plafond.</p>
   `;
 }
 
-const final = {
-  "final-ionna": {
-    "text": (flags) => {
-        return `
+const ionnaFirstHalf = (flags) => {
+  return `
 <p>Vous n’avez jamais affronté de dragon, mais Dieu a apparemment décidé qu’il était temps de vous opposer à Goliath.</p>
 
 ${musashiboDescription}
@@ -41,6 +41,14 @@ ${musashiboDescription}
 <p>Cette première attaque est aussitôt suivie d’une autre, visant vos pieds, pus d’une troisième à destination de votre tête qui se change au dernier moment en rapide estocade en plein ventre. Celle-là, vous ne réussissez pas à l’éviter totalement, et si votre armure absorbe le gros des dommages, l’impact vous coupe le souffle et vous oblige de nouveau à reculer.</p>
 
 <p>Vous avez bien du mal à vous retenir de jurer. En plus d’être massif et costaud, il est rapide et sait se servir de son arme. Que ce soit en terme de technique ou de physique, vous êtes largement surclassée.</p>
+  `;
+}
+
+const final = {
+  "final-ionna": {
+    "text": (flags) => {
+        return `
+${ionnaFirstHalf(flags)}
 
 <p>Vous disposez toutefois d’un indéniable avantage moral, soutenant une juste cause contrairement à ce guerrier égarré.</p>
 
@@ -132,11 +140,11 @@ ${bulletExplanation}
 
 <p>Vous extraire des griffes de l’Ordre n’a pas été très difficile. Ils n’avaient rien de prévu contre une arme à feu moderne. Il n’a même pas dû leur venir à l’idée qu’il était possible d’en invoquer une, ni que vous n’hésiteriez pas à l’utiliser contre ceux qui vous avaient supposément élevée.</p>
 
-<p>C’est après que la situation s’est compliquée. Non seulement vous avez été officiellement déclarée ennemie public numéro 1 de l’Ordre, mais les dégâts que vous avez infligés là-bas vous ont également fait remarquer des autorités séculières de ce pays. Si le fait que vous aviez été enlevée, enfermée et contrainte à combattre pour votre liberté ne les a apparemment pas marquées, le meurtre du grand prêtre de l’Ordre les a en revanche pas mal secouées.</p>
+<p>C’est après que la situation s’est compliquée. Non seulement vous avez été officiellement déclarée ennemie public numéro 1 de l’Ordre, mais les dégâts que vous avez infligés là-bas vous ont également fait remarquer des autorités séculières de ce pays. Si celles-ci n’avaient pas bronché lorsque vous aviez été enlevée, enfermée et contrainte à combattre pour votre liberté, le meurtre du grand prêtre de l’Ordre les a en revanche pas mal secouées.</p>
 
 <p>Et vous aussi il faut bien dire. Vous n’arrivez pas encore à bien réaliser. Cela s’est passé dans le feu du moment, sous l’influence de Rebecca, et Eschyle n’est pas vraiment quelqu’un que vous connaissiez en tant que personne. À vos yeux, c’était plutôt une sorte d’incarnation de l’Ordre dans toute sa rigidité.</p>
 
-<p>En fait, vous essayez d’éviter de trop penser à ce qui s’est passé alors, et ce que cela implique pour vous. C’est peut-être aussi pour cela que vous laissez beaucoup les rênes à Rebecca en ce moment.</p>
+<p>Pour être parfaitement honnête, vous essayez d’éviter au maximum de penser à ce qui s’est passé alors, et ce que cela implique pour vous. C’est peut-être aussi pour cela que vous laissez beaucoup les rênes à Rebecca en ce moment.</p>
 
 <p>Elle, ce crime, elle s’en fiche comme de sa dernière couleur de cheveux.</p>
       `;
@@ -261,7 +269,7 @@ ${jailDescription(flags)}
 
 <p>Vous échouez lamentablement.</p>
 
-<p>Votre nouvel ersatz d’adversaire pose une main sur votre épaule. Vous pouvez sentir sa poigne derrière l’apparente gentillesse du geste.</p>
+<p>d’Eschyle pose une main sur votre épaule, faussement compatissant.</p>
 
 <div class="conversation">
 <p>— Non mon enfant. Vous devez résister à la tentation.</p>
@@ -271,15 +279,13 @@ ${jailDescription(flags)}
 
 <p>C’est là que vous lui mettez un grand coup dans les gencives.</p>
 
-<p>Vous y mettez tellement du cœur que vos phalanges dégustent à l’impact. Mais ça en valait la peine. L’avatar d’Eschyle se tient la mâchoire, une expression stupéfaite sur le visage. Son corps a cependant le réflexe de glisser en arrière pour se prémunir d’un second assaut, se mouvant avec la célérité et la fluidité d’un expert en arts martiaux.</p>
-
-<p>« Gentil chauve » a donc été choisi pour un peu plus que sa bonne bouille. Eschyle devait craindre que vous n’ayez encore un as dans votre manche.</p>
+<p>Vous y mettez tellement du cœur que vos phalanges dégustent à l’impact. Mais ça en valait la peine. Eschyle recule, se couvrant la mâchoire d’une main, une expression stupéfaite sur le visage. Il était persuadé que vous n’aviez pas la force de bouger, et encore moins d’appeler un esprit.</p>
 
 <p>Et d’une certaine façon, il aura eu raison. Vous ne sauriez dire à quel moment vous avez réussi à invoquer Onawa. Il serait probablement plus exact de dire que vous ne l’avez jamais vraiment révoquée depuis le début de l’affrontement, la conservant là, à la lisière de votre conscience, prête à revenir en cas de pépin.</p>
 
 <p>Ce qui est encore le cas maintenant. Vous êtes dans état transitoire, où vous basculez constamment entre Misty et Onawa. Votre physique bouge moins vite que votre esprit, aussi conservez-vous majoritairement le physique de la première, à quelques bricoles près.</p>
 
-<p>Et vous voudriez bien un miroir pour savoir quelle apparence vous avez en ce moment, car elle perturbe Eschyle au point de craqueler la sérénité de son visage actuel. Assez littéralement, puisqu’il perd le contrôle sur sa propre invocation.</p>
+<p>Vous voudriez bien un miroir pour savoir quelle apparence vous arborez présentement, car elle perturbe Eschyle au point de craqueler la sérénité qu’il s’efforce d’afficher depuis le début de cette représentation.</p>
 
 <div class="conversation">
 <p>— Sœur Iphigénie, cessez je vous prie. Votre corps ne devrait pas changer comme cela. Vous êtes en train de vous faire du mal.</p>
@@ -295,15 +301,15 @@ ${jailDescription(flags)}
 
 <div class="conversation">
 <p>— Si je me rappelle bien les règles de ton jeu stupide, il me suffit de ne pas flancher pour gagner. Alors, tu dois être satisfait maintenant ? J’ai encaissé, encaissé, et encaissé, avant et pendant, et je suis encore là.</p>
-<p>— Ce… Ce n’est pas simple.</p>
+<p>— Ce… Ce n’est pas si simple.</p>
 <p>— Si. Ça l’est.</p>
 </div>
 
-<p>Vous boitez jusqu’à l’escalier qui descend de la scène. Vous boitez à travers le couloir qui sort du théâtre. Vous boitez jusqu’à la route. Vous boitez sur le bitume en direction de la ville au loin.</p>
+<p>Vous boitez jusqu’à l’escalier qui descend de la scène. Personne cherche à vous en empêcher. Vous clopinez le long du couloir sortant du théâtre. L’assistance est toujours figée de même. Vous finissez par atteindre la route, et vous engagez sur le bitume en direction de la ville au loin.</p>
 
 <hr/>
 
-<p>Vous retomberez dans les griffes de l’Ordre moins de quatre heures plus tard. Avant cela, vous aurez eu le temps d’être pris en stop par un automobiliste suffisamment apitoyé par votre sanglante apparence, d’être déposée à l’hôpital et de recevoir les premiers soins. C’est quelque part vers le petit matin, alors que vous dormiez encore d’un sommeil médicamenteux que les agents de l’Ordre retrouveront votre trace et sécuriseront la zone pour ne pas que vous vous enfuyez. Avec une jambe aussi bien emmaillotée, et peut-être la nécessité d’une rééducation après déballage, ils n’avaient cependant pas besoin d’autant se presser.</p>
+<p>Vous retomberez dans les griffes de l’Ordre moins de quatre heures plus tard. Avant cela, vous aurez eu le temps d’être prise en stop par un automobiliste suffisamment apitoyé par votre sanglante apparence, d’être déposée à l’hôpital et de recevoir les premiers soins. C’est quelque part vers le petit matin, alors que vous dormiez encore d’un sommeil médicamenteux que les agents de l’Ordre retrouveront votre trace et sécuriseront la zone pour ne pas que vous vous enfuyez. Avec une jambe aussi bien emmaillotée, et peut-être la nécessité d’une rééducation après déballage, ils n’avaient cependant pas besoin d’autant se presser.</p>
 
 <p>Si vous disposez maintenant d’une garde rapprochée filtrant drastiquement les personnes essayant de communiquer avec vous, aucun effort n’est fait dans l’immédiat pour vous ramener dans un local appartenant à l’Ordre. Vous comprenez bien vite que la cause de cette soudaine compassion réside dans les fortes dissensions politiques que votre petit numéro a fait naître, engendrant à son tour une incapacité à décider ce qu’il fallait faire de vous. Si le courant majoritaire veut simplement vous enfermer dans un coin et ne plus entendre parler de toute cette histoire, un autre envisage de restaurer les bûchers rien que pour brûler l’abomination que vous êtes, un troisième suggère que vous repassiez l’exercice avant de prendre une quelconque décision, et vous en avez favorablement intrigué quelques-uns.</p>
 
@@ -311,7 +317,7 @@ ${jailDescription(flags)}
 
 <p>Bref, votre convalescence se passe tranquillement, même si vous ne savez pas de quoi l’avenir sera fait. Vous profitez également de ce temps pour discrètement vous entraîner à reproduire ce qui s’est passé sur scène. Le processus se révèle pénible et peu gratifiant, vous imposant de désapprendre quelques réflexes induits en vous depuis votre plus jeune âge.</p>
 
-<p>Quand deux yeux écarlates se mettent à vous fixer depuis le miroir, vous savez que vous avez réussi. Et vous arrivez enfin à croire à ce que vos diserts gardiens vous ont raconté. À propos des yeux démoniaques que vous aviez braqués sur l’assistance médusée du jugement des esprits.</p>
+<p>Quand deux yeux écarlates se mettent à vous fixer depuis le miroir, vous savez que vous avez réussi. Et vous arrivez enfin à croire à ce que vos diserts gardiens vous ont raconté. À propos du regard démoniaque que vous aviez braqué sur l’assistance médusée lors de votre épreuve.</p>
 
 <p>Vous ne comprenez toujours pas comment un tel miracle est possible. Certes, une légende urbaine prétend qu’Onawa avait des yeux de démon lorsqu’elle se mettait en colère, mais c’est une légende. Directement entretenue par Onawa elle-même d’ailleurs. Elle n’a jamais, et elle vous le confirme, vraiment eu un pareil regard. Personne d’humain n’a un pareil regard.</p>
 
@@ -356,11 +362,11 @@ ${jailDescription(flags)}
 <p>— Oh, mais je suis toute prête à accepter une joute oratoire plutôt que physique.</p>
 </div>
 
-<p>Votre adversaire reste coi, se demandant sans doute comment vous arrivez à parler. Difficilement il faut dire. Toutefois, vous avez des années, ou plutôt des décennies, d’expérience dans l’art de faire entendre votre voix dans les pires conditions. Vous vous êtes même spécifiquement beaucoup entraînée pour cela (en partie parce que vous aviez envisagé une carrière dans la chanson à une époque il est vrai, mais il faut savoir tirer ressources de ses échecs aussi).</p>
+<p>Votre adversaire reste coi, se demandant sans doute comment vous arrivez à parler. Difficilement il faut dire. Toutefois, vous avez des années, ou plutôt des décennies, d’expérience dans l’art de vous faire entendre dans les pires conditions. Votre carrière avortée dans la chanson aide aussi, vous ayant apporté les clés d’une certaine maîtrise vocale.</p>
 
 <div class="conversation">
 <p>— Et bien quoi ? Si on me lance une épée à la figure, je me défends de même. Si on me parle posément, alors j’use de la parole comme arme.</p>
-<p>— Répondre à la violence par plus de violence démontre une immaturité, parvient enfin à lâcher.</p>
+<p>— Répondre à la violence par plus de violence démontre une immaturité, parvient à lâcher Eschyle une fois la surprise surmontée.</p>
 <p>— Refuser de se défendre face à la menace démontre une stupidité.</p>
 <p>— Vous insultez nombre de grands penseurs pacifistes par vos propos.</p>
 <p>— La vie n’est pas faite que de théories. Il y a des fois où il est nécessaire de briser les beaux principes pour parvenir à un résultat. Et la meilleure preuve s’il en est, c’est que tu n’as accepté de discuter qu’après que je t’ai mis ta raclée par deux fois Eschy.</p>
@@ -370,7 +376,7 @@ ${jailDescription(flags)}
 
 <div class="conversation">
 <p>— Sœur Iphigénie, vous abusez de ma bonté. Je vous offre une énième chance d’abjurer vos fautes plutôt que de souffrir inutilement, et vous préférez m’insulter que de la saisir.</p>
-<p>— Tu ne m’offres rien du tout Eschy. Je t’ai éclaté, une fois, deux fois, et tu flippes que cela continue dans la même veine. Alors tu cherches une échappatoire, quelque chose qui te permettrait d’éviter une nouvelle raclée. Et bien laisse-moi te dire que ta nouvelle raclée, tu es en train de la prendre.</p>
+<p>— Tu ne m’offres rien du tout Eschy. Je t’ai éclaté, une fois, deux fois, et tu flippes que cela continue dans la même veine. Alors tu te cherches une échappatoire, quelque chose qui te permettrait d’éviter une nouvelle raclée. Et bien laisse-moi te dire que ta nouvelle raclée, tu es en train de te la prendre.</p>
 </div>
 
 <p>Vous effectuez une pirouette pour capter encore un peu plus l’attention du public.</p>
@@ -402,9 +408,11 @@ ${jailDescription(flags)}
 
 <p>Et il fait signe à ses gros bras de vous évacuer manu militari.</p>
 
-<p>Vous avez réellement des tas de choses intéressantes à dire, mais reprendre les hostilités ne serait pas forcément à votre avantage en terme d’image.</p>
+<p>Vous avez réellement des tas de choses intéressantes à dire. Mais reprendre les hostilités dès à présent ne serait pas forcément à votre avantage. Le public est frivole, et s’il est pour l’heure conquis, vous montrer mauvaise gagnante pourrait bien le retourner contre vous.</p>
 
-<p>Vous rompez le charme et descendez de vous-même de la scène avant que quiconque vous y oblige, marchant vers la sortie la tête haute.</p>
+<p>Tout comme Eschyle pourrait changer d’avis à tout moment.</p>
+
+<p>Aussi rompez-vous le charme et descendez-vous de vous-même de la scène avant que quiconque ne vous y oblige, marchant vers la sortie la tête haute.</p>
 
 <hr/>
 
@@ -421,8 +429,9 @@ ${jailDescription(flags)}
     "end": "by-the-rules",
   },
   "three-as-one": {
-    "text": `
-<p>[Introduction du combat manquante, devrait théoriquement être la même que celle du combat d’Ionna ordinaire]</p>
+    "text": (flags) => {
+      return `
+${ionnaFirstHalf(flags)}
 
 <p>Si vous continuez ainsi, vous ne pouvez que perdre.</p>
 
@@ -436,15 +445,17 @@ ${jailDescription(flags)}
 
 <p>Vous savez expliquer le phénomène. C’est un problème qui peut se produire si vous invoquez rapidement plusieurs esprits différents sans prendre le temps de nettoyer les traces du précédent. Une empreinte subsiste alors, pas assez forte pour influencer le monde physique, mais assez pour générer des pensées parasites incohérentes. Pour régler ce problème, il suffit simplement de faire le ménage, en procédant à une révocation intégrale en bonne et due forme. Et à faire plus attention la prochaine fois.</p>
 
-<p>Cela ne vous était pas arrivé depuis que vous étiez toute petite. Depuis que vos professeurs d’alors vous ont appris à l’éviter, vous aviez effectivement toujours bien fait attention, avec autant sinon plus de sérieux que vous n’en mettez à vous brosser les dents. C’était devenu un réflexe auquel vous ne réfléchissiez même plus. Il aura fallu des circonstances exceptionnels pour que vous le transgressiez.</p>
+<p>Cela ne vous était pas arrivé depuis que vous étiez toute petite. Depuis que vos professeurs d’alors vous ont appris à l’éviter, vous aviez effectivement toujours bien fait attention, avec autant sinon plus de sérieux que vous n’en mettez à vous brosser les dents. C’était devenu un réflexe auquel vous ne réfléchissiez même plus. Il aura fallu des circonstances exceptionnelles pour que vous le transgressiez.</p>
 
-<p>Et ce petit détail de rien du tout vous fait réaliser à quel point vous êtes encore assujettie aux enseignements de l’Ordre. Vous invoquez les esprits suivant les méthodes qu’ils vous ont enseignées. Vous les révoquez de même. Vous les <em>considérez</em> à travers le prisme qu’ils ont implanté en vous. Tant de points que vous n’avez jamais remis en question, d’idées, de méthodes, de concepts que vous considérez comme naturels, évidents, logiques, simplement parce que vous avez été élevée au milieu d’eux, au sujet desquels vous n’avez jamais réellement réfléchi.</p>
+<p>Et ce petit détail de rien du tout vous fait réaliser à quel point vous êtes encore assujettie aux enseignements de l’Ordre. Vous invoquez les esprits suivant les méthodes qu’ils vous ont enseignées. Vous les révoquez de même. Vous les <em>considérez</em> à travers le prisme qu’ils ont implanté en vous. Tant de points que vous n’avez jamais remis en question, d’idées, de méthodes, de concepts que vous considérez comme naturels, évidents, logiques, simplement parce que vous avez été élevée au milieu d’eux.</p>
 
-<p>Ce combat est l’apothéose de votre rébellion de façade. Si vous faites preuve d’une, déjà bienvenue, originalité de façade, avec des invocations sortant pour la plupart des canons établis, vous respectez tout de même la plupart des règles non énoncées du jeu. Vous avez ainsi accepté inconsciemment l’idée qu’il s’agissait forcément d’une série de duels en un contre un, esprit contre esprit, au singulier, juste parce qu’il ne vous ait même pas venu à l’idée que vous pouviez employer plusieurs esprits à la fois.</p>
+<p>Ce combat est l’apothéose de cette superficielle rébellion. Si vous faites preuve d’une, déjà bienvenue, originalité de façade, avec des invocations sortant pour la plupart des canons établis, vous respectez tout de même la plupart des règles non énoncées du jeu. Vous avez ainsi accepté inconsciemment l’idée qu’il s’agissait forcément d’une série de duels en un contre un, esprit contre esprit, au singulier, juste parce qu’il ne vous est même pas venu à l’idée que vous pouviez employer plusieurs esprits à la fois.</p>
 
-<p>Tout comme cela n’a pas traversé l’esprit de votre adversaire, aussi empêtré dans ses préjugés que vous. Dans la philosophie de l’Ordre, une invocation, c’est permettre à un unique ancien de s’incarner pleinement dans le présent, copie parfaite de ce qu’il a été, dans ses qualités comme ses défauts. L’idée de mélanger les invocations est donc par nature exclue. Même si dans la pratique, l’invocation est déjà affectée par le corps qu’elle habite et les raisons pour lesquelles elle a été invoquée. Sinon vous ne seriez pas en train de de vous taper dessus par antiquités interposées.</p>
+<p>Tout comme cela n’a pas traversé l’esprit de votre adversaire, aussi empêtré dans ses préjugés que vous. Dans la philosophie de l’Ordre, une invocation, c’est permettre à un unique ancien de s’incarner pleinement dans le présent, copie parfaite de ce qu’il a été, dans ses qualités comme ses défauts.</p>
 
-<p>Il se peut que vous soyez en train de broder tout un discours au fond de votre crâne pour vous convaincre vous-même que ce que vous allez faire est la conclusion logique de ce que vous êtes, et pas juste une idée parasite soufflée par Onawa. L’un n’empêche pas l’autre d’ailleurs.</p>
+<p>L’idée de mélanger les invocations est donc par nature exclue. Même si dans la pratique, l’invocation est déjà affectée par le corps qu’elle habite et par les raisons pour lesquelles elle a été invoquée. La meilleure preuve en est le présent combat, où des fantômes acceptent sans rechigner de s’affronter pour une cause qui leur est étrangère.</p>
+
+<p>Il se peut que vous soyez en train de broder tout un discours au fond de votre crâne pour vous convaincre vous-même que ce que vous allez faire est la conclusion logique de ce que vous êtes, et pas juste une idée absolument horrifiante. L’un n’empêche pas l’autre d’ailleurs.</p>
 
 <p>Tout en maintenant votre lien avec Ionna, qui a réussi à piloter votre corps seule alors que votre psyché battait la campagne, et dont la robustesse vous permet encore de tenir debout malgré les blessures et la fatigue, vous laissez Onawa vous imprégner de son essence.</p>
 
@@ -476,19 +487,19 @@ ${jailDescription(flags)}
 
 <p>Il frappe, frappe, sans aucune maîtrise. Son contrôle sur son invocation est en train de se fissurer, tout comme son contrôle sur lui-même et la situation. Vous n’êtes pas simplement sortie du rôle qui vous était assignée, vous êtes carrément en train de réécrire la pièce.</p>
 
-<p>Le coup de grâce vient sous la forme d’une balle de neuf millimètres de diamètre le heurtant en pleine poitrine. Enfin, comme pour le combat précédent, la plupart de la  matière s’évanouit entre le canon de l’arme fraîchement matérialisée dans votre main libre. Ce qu’il en reste suffit cependant à briser les dernières résistances du charme d’Eschyle et à l’envoyer voler sous son apparence ordinaire.</p>
+<p>Le coup de grâce vient sous la forme d’une balle de neuf millimètres de diamètre le heurtant en pleine poitrine. Enfin, comme pour le combat précédent, la plupart de la  matière s’évanouit sitôt sortie du canon de l’arme à l’instant matérialisée dans votre main libre. Ce qu’il en reste suffit cependant à briser les dernières résistances du charme d’Eschyle et à l’envoyer voler sous son apparence ordinaire.</p>
 
-<p>Il fait un petit bond d’un mètre, touche le sol le dos en premier, glisse encore un peu pour épuiser l’énergie cinétique, puis s’immobilise. Sa bouche continue à vomir un babil d’imprécations, mais il ne fait pas mine de se relever. En fait, il vous semble même avoir pris un sacré coup de vieux dans cette position peu reluisante.</p>
+<p>Il fait un petit bond d’un mètre, touche le sol le dos en premier, glisse encore un peu le temps d’épuiser l’énergie cinétique, puis s’immobilise. Sa bouche continue à vomir un babil d’imprécations, mais il ne fait pas mine de se relever. En fait, il vous semble même avoir pris un sacré coup de vieux dans cette position peu reluisante.</p>
 
-<p>Vous pouvez déjà voir et entendre la sécurité du site se ruer vers la scène. Vous leur offrez votre meilleur profil, une épée dans une main, un pistolet dans l’autre, une armure sacrément cabossée, une mèche de cheveux colorés qui ne cessent de vous tomber au coin du nez, un sourire ravageur. La combinaison fait son petit épée car ils se contentent d’encercler un peu plus près votre tribune au lieu d’y monter, avec des regards inquiets vers leur hiérarchie.</p>
+<p>Vous pouvez déjà voir et entendre la sécurité du site se ruer vers la scène. Vous leur offrez votre meilleur profil, une épée dans une main, un pistolet dans l’autre, une armure sacrément cabossée sur le dos, une mèche de cheveux colorés qui ne cesse de vous tomber au coin du nez, et un sourire ravageur juste en-dessous. La combinaison fait son petit effet car ils se contentent d’encercler un peu plus près votre tribune au lieu d’y monter, avec des regards inquiets vers leur hiérarchie.</p>
 
 <p>Eschyle justement se relève, tremblant, les yeux injectés de sang. Il vous contemple encore une fois, puis se met à hurler :</p>
 
 <div class="conversation">
 <p>— Emparez-vous d’elle !</p>
-<p>— Je ne crois pas non. Nous avons un jugement à finir n’est-ce pas Eschyle ? Vous vouliez démontrer que les esprits que je côtoie n’étaient pas dignes d’être appelées.</p>
+<p>— Je ne crois pas non, l’interrompez-vous immédiatemment, d’une voix qui reporte aussitôt l’attention de tous sur vous. Nous avons un jugement à finir n’est-ce pas Eschyle ? Vous vouliez démontrer que les esprits que je côtoie n’étaient pas dignes d’être appelées.</p>
 <p>— Ce jugement n’a plus de raison d’être. Une telle abomination ne saurait être tolérée.</p>
-<p>— Eschy, Eschy, tu nous as cassé les oreilles avec tes histoires de mauvais esprit qui ne saurait triompher des nobles ancêtres et blablabla, et alors que je t’offre exactement ce que tu veux, le sacrilège sur un plateau, tu te dégonfles ? Comment veux-tu que quiconque te prenne au sérieux après cela ?</p>
+<p>— Eschy, Eschy, tu nous as cassé les oreilles avec tes histoires de mauvais esprit qui ne sauraient triompher des nobles ancêtres et blablabla, et alors que je t’offre exactement ce que tu veux, le sacrilège sur un plateau, tu te dégonfles ? Comment veux-tu que quiconque te prenne au sérieux après cela ?</p>
 </div>
 
 <p>Vous vous retournez vers le public.</p>
@@ -515,20 +526,21 @@ ${jailDescription(flags)}
 
 <p>Dans les faits, le pire est passé. Vous avez encore quelques nausées, mal de partout, vous n’arrivez pas à dormir plus de quelques heures sans devoir aller vous vider l’estomac, mais rien de comparable à ce que vous avez ressenti lorsque l’invocation multiple s’est interrompue d’elle-même, votre organisme ayant outrepassé ses limites depuis longtemps. Il n’était pas préparé pour ce que vous lui avez fait subir, et il vous l’a bien fait comprendre. Vous avez bien cru que vous alliez rendre l’âme, là, devant tout le monde.</p>
 
-<p>Mais même vos accusateurs n’ont pas osé vous laisser expirer ainsi. Vous avez été transporté à l’infirmerie, et vos blessures et votre extrême épuisement ont été convenablement traités. Vous avez été placée sous étroite surveillance bien sûr, mais votre garde a aussi la décence de vous laisser tranquille aux toilettes, ce qui vous donne une raison de plus de vous attarder à cet endroit</p>
+<p>Mais même vos accusateurs n’ont pas osé vous laisser expirer ainsi. Vous avez été transportée à l’infirmerie, et vos blessures ainsi que votre extrême épuisement ont été convenablement traités. Vous avez été placée sous étroite surveillance bien sûr, mais votre garde a aussi la décence de vous laisser tranquille aux toilettes, ce qui vous donne une raison de plus de vous attarder à cet endroit</p>
 
 <p>Vous souriez à pleines dents en songeant que votre petit numéro a semé le chaos dans la hiérarchie de l’Ordre. La rumeur est parvenue jusqu’à votre lit de convalescence, et vous savez qu’Eschyle a perdu sa place, coincé entre les ultras, qui veulent vous voir brûler et lui en veulent d’avoir perdu le contrôle de sa chère cérémonie, et les modérés qui lui reprochent l’emploi de cette justice archaïque.</p>
 
-<p>Ce qui ne veut pas dire qu’ils ne souhaitent pas vous condamner. Juste pas de cette façon, et plus forcément sur les mêmes chefs d’accusation. Ironiquement, vous avez gagné du temps en commettant un crime à leurs yeux plus grands, et surtout, et c’est bien là leur problème, techniquement inédit.</p>
+<p>Ce qui ne veut pas dire qu’ils ne souhaitent pas vous condamner. Juste pas de cette façon, et plus forcément sur les mêmes chefs d’accusation. Ironiquement, vous avez gagné du temps en commettant un crime  plus grand à leurs yeux, et surtout, et c’est bien là leur problème, techniquement inédit.</p>
 
-<p>Oh, bien sûr, certains ont sans doute déjà essayés de mélanger des esprits par le passé. Mais personne n’avait réussi jusqu’ici. Du moins pas publiquement. Vous soupçonnez que vous n’êtes vous-même arrivée à vos fins que parce qu’il s’agissait d’une sélection très précise, avec laquelle vous avez beaucoup travaillé et donc chaque membre partage, au milieu d’un océan de différences, des points communs forts avec les autres et avec vous-même.</p>
+<p>Oh, bien sûr, certains ont sans doute déjà essayés de mélanger des esprits par le passé. Mais personne n’avait réussi jusqu’ici. Du moins pas publiquement. Vous soupçonnez que vous n’êtes vous-même arrivée à vos fins que parce qu’il s’agissait d’une sélection très précise, avec laquelle vous avez une affinité forte et beaucoup d’expérience, et donc chaque membre partage, au milieu d’un océan de différences, des points communs fondamentaux avec les autres et avec vous-même.</p>
 
 <p>Mais maintenant qu’il a été démontré qu’un tel acte était du champ du possible, vous ne doutez pas que d’autres vont s’y essayer.</p>
 
 <p>Vous êtes pire qu’une simple hérétique. Vous êtes la fondatrice d’une nouvelle hérésie.</p>
 
 <p>Et vous comptez bien la propager.</p>
-    `,
+      `;
+    },
     "end": "three-as-one",
   },
 };

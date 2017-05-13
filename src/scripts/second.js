@@ -1,7 +1,7 @@
 import {ionnaFirstSummon, rebeccaFirstSummon, bulletExplanation, onawaFirstSummon} from "./summons.js";
 
 const bernardoDescription = (flags) => {
-  const changedSummon = !flags.rebeccaVersusMakabi && !flags.rebeccaVersusBernardo;
+  const changedSummon = !flags.rebeccaVersusMakabi;
 
   return `
 <p>Votre nouvel adversaire se matérialise${changedSummon? ` également`: ""}. Une riche armure d’acier damasquiné. Un manteau d’un rouge écarlate. Une rapière à la lame ondulante. Un masque de fer.</p>
@@ -19,7 +19,7 @@ const bernardoDescription = (flags) => {
 const defeatDescription = (flags) => {
   let text = ``;
 
-  if (flags.lightlyWounded) {
+  if (flags.badlyWounded) {
     text += `
 <p>Il s’acharne sur vos blessures toutes fraîches, prenant un malin plaisir à frapper encore et encore des endroits où vous souffrez déjà. Les coups s’enchaînent sans répit, et vos piètres efforts ne parviennent guère à en atténuer l’impact.</p>
 
@@ -31,7 +31,6 @@ const defeatDescription = (flags) => {
     `;
   } else {
     text += `
-
 <p>Votre adversaire continue à vous aiguillonner prudemment, se refusant à raccourcir la distance en une frappe plus impactante. Ce qui n’empêche pas ses frappes d’être nombreuses et sanguinolentes. Vos membres sont rapidement couverts de coupures écarlates. Une lacération à la joue vous fait goûter votre propre sang. Un point rouge en haut à gauche de votre poitrine démontre qu’il aurait pu vous transpercer le coeur eusse-t-il appuyé son geste.</p>
 
 <p>Il se joue de vous comme si vous n’étiez qu’une poupée, contrôlant vos mouvements en vous encageant d’acier, dessinant sur votre corps le symbole de sa victoire.</p>
@@ -42,10 +41,10 @@ const defeatDescription = (flags) => {
 
   return text += `
 <div class="conversation">
-<p>— Comme à chaque fois, le mal recule devant la lame de la justice. Ne vous inquiétez sœur Iphigénie, cette épreuve nécessaire est bientôt finie.</p>
+<p>— Comme à chaque fois, le mal recule devant la lame de la justice. Ne vous inquiétez cependant pas sœur Iphigénie, cette épreuve nécessaire est bientôt finie.</p>
 </div>
 
-<p>Et Eschyle change encore une fois d’esprit.</p>
+<p>${flags.badlyWounded? `Et Eschyle rompt l’invocation.`: `Et Eschyle change encore une fois d’esprit.`}</p>
   `;
 };
 
@@ -127,11 +126,11 @@ ${bulletExplanation}
 
       if (flags.rebeccaVersusMakabi) {
         summonDescription = `
-<p>Vous ne changez pas une recette gagnante, vous préparant à faire feu à nouveau.</p>
+<p>Ne voyant pas d’intérêt à changer une recette gagnante, vous vous préparez à faire feu à nouveau.</p>
         `;
 
         explanation = `
-<p>Comme dans votre duel précédent de fait. Si ce n’est que vous ne faites maintenant face à un adversaire adapté à la situation.</p>
+<p>Comme dans votre duel précédent certes. Mais vous faites maintenant face à un adversaire qui sait s’adapter à une telle situation.</p>
         `;
       }
 
@@ -142,7 +141,7 @@ ${bernardoDescription(flags)}
 
 <p>Vous lui répondez d’une balle en pleine poitrine.</p>
 
-<p>Qui n’a aucun effet, qu’il soit physiologique ou psychologique. Son armure bombée arrête ce qu’il reste de votre projectile sans difficulté, et il ne dévie pas son attaque d’un pouce, vous éraflant le bras au passage.</p>
+<p>Qui n’a aucun effet, qu’il soit physiologique ou psychologique. Son armure bombée arrête ce qu’il reste de votre projectile sans difficulté, et il ne dévie pas son attaque d’un pouce. Sa lame vous érafle le bras, y laissant une mince ligne rouge.</p>
 
 <p>L’instant suivant, il a ramené son pied en arrière, creusant à nouveau la distance.</p>
 
@@ -221,8 +220,8 @@ ${wound}
 
 <div class="conversation">
 <p>— Déjà, si tu pouvais éviter de trop me charcuter, ce serait fantastique. Le sang, c’est vachement dur à nettoyer.</p>
-<p>— Mon enfant, tu devrais te repentir et non rire. Si ce sang a coulé, c’est uniquement en raison de tes pêchés.</p>
-<p>— Je sais pas trop. J’ai probablement mangé une religieuse de plus que de raison la dernière fois, mais même si j’avais alors surmonté ce pêché de gourmandise, je pense que ma situation actuelle n’aurait globalement pas changé.</p>
+<p>— Mon enfant, tu devrais te repentir et non rire. Si ce sang a coulé, c’est uniquement en raison de tes péchés.</p>
+<p>— Je sais pas trop. J’ai probablement mangé une religieuse de plus que de raison la dernière fois, mais même si j’avais alors surmonté ce péché de gourmandise, je pense que ma situation actuelle n’aurait globalement pas changé.</p>
 <p>« En revanche, je suis certaine que si personne ne s’était mis en tête de m’embrocher et de me couper en morceaux aujourd’hui, j’aurais encore toute mon hémoglobine pour moi.</p>
 </div>
 

@@ -2,7 +2,7 @@ import {ionnaFirstSummon, rebeccaFirstSummon, bulletExplanation, onawaFirstSummo
 
 const summoningDescription = (summonName) => {
   return `
-<p>Malgré votre expérience dans le domaine, vous ne sauriez réellement expliquer le fonctionnement d’une invocation. Dès très jeune, l’Ordre vous a fait faire des exercices dont l’intérêt exact ne vous a jamais été expliqué, et, un jour, un professeur vous a dit que vous étiez prête, et effectivement vous l’étiez. C’est un peu comme le vélo ou la natation : un processus peu pédagogique, l’idée d’un coup à prendre, que votre corps sait, que vous n’avez pas besoin de théorie mais seulement de pratique.</p>
+<p>Malgré votre expérience dans le domaine, vous ne sauriez réellement expliquer le fonctionnement d’une invocation. Dès très jeune, l’Ordre vous a fait faire des exercices dont l’intérêt exact ne vous a jamais été expliqué, et, un jour, un professeur vous a dit que vous étiez prête, et effectivement vous l’étiez. C’est un peu comme le vélo ou la natation : un processus souvent peu pédagogique, l’idée d’un coup à prendre, que votre corps sait, que vous n’avez pas besoin de théorie mais seulement de pratique.</p>
 
 <p>Vous soupçonnez d’ailleurs que vos instructeurs, pour la plupart, ne comprenaient pas non plus la logique derrière ce qu’ils racontaient. Sans doute ne faisaient-ils que répéter ce que leurs parents et professeurs leur avaient enseigné en leur temps.</p>
 
@@ -40,7 +40,7 @@ ${makabiDescription}
 <p>— Il est des saints hommes qui auraient pu te montrer tes erreurs par la seule force leur verbe. Je n’en suis malheureusement pas un, et devrais me contenter de ma colère.</p>
 </div>
 
-<p>La première attaque de Makabi est avant tout un coup de semonce, destiné à vous effrayer et à jauger votre niveau. Sa lance vole en une trajectoire prévisible, vous l’esquivez sans mal, et dégainez en réponse.</p>
+<p>La première attaque du prêcheur armé est avant tout un coup de semonce, destiné à vous effrayer et à jauger votre niveau. Sa lance vole en une trajectoire prévisible, vous l’esquivez sans mal, et dégainez en réponse.</p>
 
 <p> Vous commencez alors à vous tourner autour.</p>
 
@@ -54,9 +54,9 @@ ${makabiDescription}
 
 <p>Il est meilleur que vous. C’est un combattant professionnel, il ne prend pas de risque, garde ses distances, vous épuise et vous blesse peu à peu.</p>
 
-<p>Votre esprit se coupe en deux. Ionna est persuadée qu’elle peut l’emporter, comme elle est toujours persuadée de tout. Misty se rend bien compte que la situation est en sa défaveur.</p>
+<p>Votre esprit se coupe en deux. Ionna est persuadée qu’elle peut l’emporter, comme elle est toujours persuadée de tout. Misty est incapable de partager sa ferveur, se rend bien compte que la situation est en sa défaveur et craint pour sa résolution.</p>
 
-<p>Et devant ce flagrant conflit, l’incarnation cesse. Vous vous retrouvez avec juste une épaisseur de tissu synthétique et vos petits bras pour votre défendre contre un soldat en armes.</p>
+<p>Devant ce flagrant conflit, l’incarnation cesse. Vous vous retrouvez avec juste une épaisseur de tissu synthétique et vos petits bras pour votre défendre contre un soldat en armes.</p>
     `,
     "next": (goToSection) => {
       return {
@@ -83,7 +83,7 @@ ${makabiDescription}
 
 ${bulletExplanation}
 
-<p>Cette réflexion est entièrement propre à Misty, et brise quelque peu l’immersion que vous partagez avec Rebecca. La dichotomie mentale vous fige pendant un instant, qu’Eschyle met à profit pour entamer une nouvelle invocation, à la recherche d’une forme plus apte à combattre votre modernité toute relative.</p>
+<p>Ce grand écart entre ce que l’invocateur sait et ce que l’invocation rejette vous fige pendant un instant, qu’Eschyle met à profit pour entamer une nouvelle invocation, à la recherche d’une forme plus apte à combattre votre modernité toute relative.</p>
     `,
     "next": (goToSection) => {
       return [
@@ -146,7 +146,7 @@ ${makabiDescription}
 
 <p>Cette fois, il ne vous manque pas. Un bon gros coup sous l’aisselle gauche, bien violent.</p>
 
-<p>Vous vous jetez sur lui. Coup de pied sur son bouclier. Vous agrippez le bouclier à deux mains. Le rejetez sur le côté. Nouveau coup de pied. Votre semelle compensée cogne en plein sternum. Le guerrier encaisse, reculant un peu sous l’impact. Vous repousse en frappant avec le manche de son arme. Le bois heurte l’avant-bras dressé pour protéger le reste de votre corps.</p>
+<p>Vous vous jetez sur lui. Coup de pied sur son bouclier. Vous agrippez la planche de bois à deux mains. La rejetez sur le côté. Nouveau coup de pied. Votre semelle compensée cogne en plein sternum. Le guerrier encaisse, reculant un peu sous l’impact. Vous repousse en frappant avec le manche de son arme. Le bois heurte l’avant-bras dressé pour protéger le reste de votre corps.</p>
 
 <div class="conversation">
 <p>— C’est vraiment trop te demander que de me laisser parler ?</p>

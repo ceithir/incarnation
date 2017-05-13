@@ -10,7 +10,7 @@ const third = {
   "second-surrender-offer": {
     "text": (flags) => {
       return `
-<p>Vous vous relevez péniblement, épuisée et endolorie. Vos multiples coupures vous démangent. Dans le meilleur des cas. La Misty au fond de a beau savoir que les blessures ainsi reçues vont en partie se résorber lorsque vous romprez l’invocation, emportées avec vos autres modifications physiques temporaires, cela ne change rien à votre état de délabrement actuel.</p>
+<p>Vous vous relevez péniblement, épuisée et endolorie. Vos multiples coupures vous démangent même quand vous ne bougez pas, et la douleur empire dès que vous vous excitez. La Misty au fond de vous a beau savoir que les blessures ainsi reçues vont en partie se résorber lorsque vous romprez l’invocation, emportées avec vos autres modifications physiques temporaires, cela ne change rien à votre état de délabrement actuel.</p>
 
 <p>Même si en tant ${flags.rebeccaVersusBernardo? `que Rebecca`: `qu’Onawa`} vous avez connu pire, il ne s’agit pas du genre d’expérience que vous aimez reproduire.</p>
 
@@ -18,7 +18,9 @@ ${flags.onawaVersusBernardo? `<p>De savoir la guérison très incomplète déman
 
 <p>Toutefois, vous serrez les dents et vous vous préparez à accueillir la nouvelle diablerie d’d’Eschyle comme il se doit.</p>
 
-<p>Dont le nouvel avatar s’avère être un petit gros. Pas tout jeune en plus, le crâne et la barbe rasés, portant une robe de prêtre toute simple et allant pieds nus.</p>
+<p>Et elle parvient à vous surprendre malgré cela.</p>
+
+<p>Son nouvel avatar se révèle en effet être un petit gros. Pas tout jeune en plus, le crâne et la barbe rasés, portant une robe de prêtre toute simple et allant pieds nus.</p>
 
 ${batuoOffer}
 
@@ -82,15 +84,9 @@ ${batuoOffer}
   },
   "second-surrender-offer-no-summon": {
     "text": `
-<p>Le dernier esprit d’Eschyle vous a déjà mise à terre, avec le goût de votre propre sang dans votre bouche. Qu’est-ce qu’il va encore bien pouvoir vous sortir ? Un bourreau avec sa hache ?</p>
-
-<p>Un petit gros.</p>
-
-<p>Un petit gros. Pas tout jeune, le crâne et la barbe rasés, portant une robe de prêtre toute simple et allant pieds nus.</p>
+<p>Eschyle a repris son apparence normale. Il s’efforce de conserver un air grave et digne pour son public, mais vous qui le voyez de près ne pouvait manquer de remarquer qu’il exulte devant votre pitoyable état.</p>
 
 ${batuoOffer}
-
-<p>Évidemment. Cette démonstration ne pouvait se finir sans votre repentance publique.</p>
     `,
     "next": (goToSection) => {
       return [
@@ -146,7 +142,7 @@ ${batuoOffer}
 
 <p>Il s’y attendait et se met en mouvement avant même la détonation, esquivant votre tir avec une souplesse et des réflexes démontrant une pratique avancée des arts martiaux.</p>
 
-<p>Vous vous attendiez un peu à une blague du genre. Il y a être sûr de soi, et il y a se ramener sans défense devant un flingue. Apparemment, Eschyle n’a pas encore basculé dans la seconde catégorie.</p>
+<p>Vous vous attendiez un peu à une blague de ce genre. Il y a être sûr de soi, et il y a se ramener sans défense devant un flingue. Apparemment, Eschyle n’a pas encore basculé dans la seconde catégorie.</p>
 
 <p>Il affiche cependant une expression contrariée, nerveuse.</p>
 
@@ -154,11 +150,11 @@ ${batuoOffer}
 <p>— Ainsi soit-il, déclare-t-il en entamant une nouvelle invocation.</p>
 </div>
 
-<p>Vous lui en remettez une durant le processus, mais votre éphèmère projectile se dissout dans les méandres de sa chaotique transformation, aussi brutale que fugace. Vous ne couperez pas à une nouvelle surprise.</p>
+<p>Vous lui en remettez une durant le processus, mais votre éphèmère projectile se dissout dans les méandres de sa chaotique transformation, aussi brutale que fugace.</p>
     `,
     "next": (goToSection) => {
       return {
-        "text": `Mais cette fois, ce sera la dernière.`,
+        "text": `Un nouvel acte dans son petit jeu. Mais cette fois, ce sera le dernier.`,
         "action": () => {goToSection("final-rebecca");},
       };
     },
@@ -172,7 +168,7 @@ ${batuoOffer}
         {
           "text": `Ionna`,
           "action": () => {
-            goToSection("iron-ionna");
+            goToSection("iron-ionna", {"ionnaLastHour": true});
           }
         },
         {
@@ -200,7 +196,7 @@ ${batuoOffer}
 
 <p>La synchronisation avec Ionna s’effectue naturellement. Pas par les sentiments que vous lui prêtez d’habitude, mais par une résonance viscérale.</p>
 
-<p>Vous avez mal. Mal comme jamais. Froid aussi. La terre humide et glacée collait à votre visage. La terre avale le sang coulant lentement de votre cou.</p>
+<p>Vous avez mal. Mal comme jamais. Froid aussi. La terre humide et glacée colle à votre visage. La terre avale le sang coulant lentement de votre cou.</p>
 
 <p>Une flèche chanceuse. Enfin, pas si chanceuse. Vous êtes encore en vie. Enfin, l’êtes-vous vraiment ? Tout votre corps est lourd. Pourrait être la boue. Pourrait être la fatigue des dernières semaines demandant son dû comptant. Pourrait être la vie qui vous quitte.</p>
 
@@ -212,9 +208,9 @@ ${batuoOffer}
 
 <p>Votre épée vous sert de cane. Votre armure pèse, mais elle maintient vos différents morceaux en place. Votre blessure hurle, mais elle devra attendre. Vous avez une bataille à gagner.</p>
 
-<p>Vous n’êtes pas Ionna. Vous n’êtes la championne d’aucune cause. Mais vous en avez assez de vous faire cracher dessus. Vous en avez assez que tout un groupe crachent sur des êtres aussi remarquables qu’elle.</p>
+<p>Vous n’êtes pas Ionna. Vous n’êtes la championne d’aucune cause. Mais vous en avez assez de vous faire cracher dessus. Vous en avez assez que toute une foule déverse son mépris sur des êtres aussi remarquables qu’elle.</p>
 
-<p>Ionna, Rebecca, Onawa, les autres, sont loin d’être parfaites. Mais elles ont toujours été là quand vous aviez besoin d’elles, et ce jour ne fait pas exception. Alors vous n’allez pas les abandonner parce qu’un type mort voilà deux mille ans en a décidé ainsi.</p>
+<p>Ionna, Rebecca, Onawa, les autres, sont loin d’être parfaites. Mais elles ont toujours été là quand vous aviez besoin d’elles, et ce jour ne fait pas exception. Alors vous n’allez pas les abandonner parce qu’un type mort voilà deux millénaires en a décidé ainsi.</p>
 
 <p>Vous détachez votre arme du sol et la pointez vers votre ennemi. L’avatar d’Eschyle secoue tristement la tête.</p>
 
@@ -243,14 +239,14 @@ ${batuoOffer}
 
 <p>Vous ne sauriez dire à quoi vous vous attendiez, mais en tout cas pas à ça.</p>
 
-<p>Contrairement aux deux autres, il cherche pas à vous planter un morceau de métal dans le corps dès son arrivée. Au contraire, il garde ses distances, ouvre grand les bras et s’adresse chaleureusement à vous :</p>
+<p>Contrairement aux deux autres, il ne cherche pas à vous planter un morceau de métal dans le corps dès son arrivée. Au contraire, il garde ses distances, ouvre grand les bras et s’adresse chaleureusement à vous :</p>
 
 <div class="conversation">
 <p>— Sœur Iphigénie, ces premiers échanges m’ont permis de mieux cerner les problèmes qui vous hantent. J’y ai ressenti beaucoup de rage, de fureur, de colère. Pas tant de la malice comme je l’avais craint, mais une énorme confusion. Les esprits avec lesquels vous avez communiés sont aussi perdus que vous l’êtes, et expriment leur déroute par leur agressivité.</p>
 <p>« Ce recours permanent à la violence peut vous donner l’impression qu’ils sont forts et protecteurs. Mais il n’en est rien. Tout au plus peuvent-ils faire illusions face à d’autres esprits faibles de même nature, ou, dans le cas présent, face à de nobles âmes qui s’efforcent de retenir leur bras pour ne pas meurtrir votre chair plus que nécessaire. Mais si vous persistez dans cette voie, je me verrai obligé de les laisser employer toute leur majesté pour vous empêcher de faire du mal, à vous et aux autres.</p>
 </div>
 
-<p>Vous êtes estomaquée par la mauvaise foi de ce discours, qui ose vous condamner pour avoir rendu les coups, alors que c’est là-même la procédure du jugement. Ainsi, vous défendre fait de vous une aussi parfaite coupable que de tendre l’autre joue.</p>
+<p>Vous êtes estomaquée par la mauvaise foi de ce discours, qui ose vous condamner pour avoir rendu les coups, alors que c’est là la procédure même du jugement. Ainsi, vous défendre fait de vous une aussi parfaite coupable que de tendre l’autre joue.</p>
 
 <p>Ce qui vous désole encore plus, c’est que c’est la seconde fois que vous êtes confrontée à pareille rhétorique judiciaire de l’absurde, capable de se contredire sans vergogne tant que cela satisfait ses intérêts.</p>
 

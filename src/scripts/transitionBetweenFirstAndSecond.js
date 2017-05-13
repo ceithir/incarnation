@@ -11,7 +11,7 @@ const transitionBetweenFirstAndSecond = {
 <p>— Il ne fait aucun doute que vos esprits sont aussi faibles qu’annoncés. Vous n’avez pas besoin de vous infliger cela sœur Iphigénie. Abandonnez dès maintenant, et votre châtiment ne sera point alourdi.</p>
 </div>
 
-<p>Votre premier réflexe est de rejeter sa proposition en bloc. Toutefois, la situation est effectivement bien mal engagée.</p>
+<p>Votre premier réflexe est de rejeter sa proposition en bloc. Toutefois, la situation est effectivement bien mal engagée. Et si vous saviez que vous alliez devoir vous battre, ce n’est que maintenant que vous réalisez ce que cela signifie vraiment, que vous comprenez qu’Eschyle est réellement préparé, et même plutôt enjoué, à l’idée de vous faire physiquement du mal.</p>
     `,
     "next": (goToSection) => {
       return [
@@ -63,7 +63,7 @@ const transitionBetweenFirstAndSecond = {
   },
   "second-summon": {
     "text": `
-<p>Vous venez d’essuyer un revers, c’est certain. Toutefois, si Eschyle croit que vous allez lâcher aussi facilement ce qui est peut-être votre dernière opportunité de vous sortir de ce guêpier, c’est qu’il est encore plus dénué d’empathie que vous ne le pensiez.</p>
+<p>Vous venez d’essuyer un revers, c’est certain. Toutefois, si Eschyle croit que vous allez abandonner aussi facilement ce qui est peut-être votre dernière opportunité de vous sortir de ce guêpier, c’est qu’il est encore plus dénué d’empathie que vous ne le pensiez.</p>
 
 <p>Vous amorcez une nouvelle invocation. Votre bourreau ne semble pas déçu de votre décision. Tout au contraire, son sourire malveillant s’élargit encore un peu plus tandis qu’il vous répond en faisant de même.</p>
 

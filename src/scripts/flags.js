@@ -6,6 +6,7 @@ const flags = {
   "badlyWounded": false,
   "rebeccaVersusBernardo": false,
   "onawaVersusBernardo": false,
+  "ionnaLastHour": false,
 };
 
 export default flags;

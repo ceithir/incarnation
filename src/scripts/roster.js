@@ -17,7 +17,7 @@ const ionnaDescription = `
 `;
 
 const rebeccaDescription = `
-<p>De son vivant, Rebecca participait à des activités illégales sur les mers dans un but financier en usant parfois de violence.</p>
+<p>De son vivant, Rebecca participait à des activités illégales sur les mers dans un but d’enrichissement personnel en usant parfois de violence.</p>
 
 <p>C’est sans aucun doute la personnalité la plus discutable avec qui vous vous soyez jamais associée. Si elle a des qualités tout à fait honorables, elle reste avant tout une hors-la-loi avec du sang sur les mains. Ainsi, vous ne vous rachèterez certainement pas une réputation en la révélant au grand jour.</p>
 

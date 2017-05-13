@@ -20,12 +20,12 @@ const endings = [
     "name": `Regard de braise`,
   },
   {
-    "key": "three-as-one",
-    "name": `Changer les règles`,
-  },
-  {
     "key": "by-the-rules",
     "name": `Gagner selon les règles`,
+  },
+  {
+    "key": "three-as-one",
+    "name": `Changer les règles`,
   },
 ];
 
