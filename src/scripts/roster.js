@@ -3,7 +3,7 @@ import React from "react";
 const rosterIntroduction = `
 <p>Eschyle s’est plongé en transe, mais n’a pour l’instant invoqué aucun esprit précis. D’après les instructions sommaires que vous avez reçues avant cette mascarade, vous êtes censés abattre vos cartes tous deux en même temps, sans savoir ce que l’autre vous prépare. Pour que le spectacle ne soit pas trop court, il vous a quand même été indiqué que vous aviez intérêt à balancer ce que vous avez de plus costaud dès le départ.</p>
 
-<p>Ce qui limite fortement vos possibilités. Même si les accusations à votre encontre sont assez vagues pour laisser supposer que vous avez pactisé avec la moitié de l’enfer, la vérité est bien plus modeste. La plupart des esprits avec qui vous avez tenté de communier n’ont tout simplement pas répondu à votre appel, et pour d’autres la première incarnation s’est si mal passée que vous ne les avez plus jamais recontactés. Au final ne reste qu’une petite douzaine de personnes en qui vous avez confiance et que vous savez pouvoir invoquer de façon fiable.</p>
+<p>Ce qui limite fortement vos possibilités. Même si les accusations à votre encontre sont assez vagues pour laisser supposer que vous avez pactisé avec la moitié de l’enfer, la vérité est bien plus modeste. La plupart des esprits originaux avec qui vous avez tenté de communier n’ont tout simplement pas répondu à votre appel, et pour d’autres la première incarnation s’est si mal passée que vous ne les avez plus jamais recontactés. Au final ne reste qu’une petite douzaine de personnes en qui vous avez confiance et que vous savez pouvoir invoquer de façon fiable.</p>
 
 <p>Et parmi eux, rares sont ceux susceptibles de vous aider dans la présente situation. Vous avez beau adorer les livres de Wisp, ce n’est pas sa plume qui va vous protéger de l’épée d’Eschyle.</p>
 
@@ -11,9 +11,9 @@ const rosterIntroduction = `
 `;
 
 const ionnaDescription = `
-<p>De tous les membres de votre limité arsenal, c’est celle qui s’approche le plus des canons recherchés par l’Ordre. Elle a vécu à une époque très éloignée, était dévote, intransigeante, conservatrice, et a laissé des traces dans l’imaginaire collectif. Selon vous, une seule raison explique qu’elle se soit retrouvée du mauvais côté de la liste : une tendance marquée à remettre en place ses supposés supérieurs hiérarchiques quand leurs décisions lui déplaisaient.</p>
+<p>De tous les membres de votre limité arsenal, c’est celle qui s’approche le plus des canons recherchés par l’Ordre. Elle a vécu à une époque très éloignée, était dévote, intransigeante, conservatrice, et a laissé des traces dans l’imaginaire collectif. Selon vous, une seule raison explique qu’elle se soit retrouvée du mauvais côté de la liste : une tendance marquée à remettre en place ceux qui pensaient être ses supérieurs hiérarchiques quand leurs décisions lui déplaisaient.</p>
 
-<p>C’est également une combattante à l’ancienne, habituée à cogner dur avec toutes sortes d’objets souvent métalliques, et à subir de même en retour.</p>
+<p>C’est également une combattante à l’ancienne, habituée à cogner dur avec toutes sortes d’objets métalliques, et à subir de même en retour.</p>
 `;
 
 const rebeccaDescription = `

@@ -1,10 +1,8 @@
 import {ionnaFirstSummon, rebeccaFirstSummon, bulletExplanation, onawaFirstSummon} from "./summons.js";
 
 const bernardoDescription = (flags) => {
-  const changedSummon = !flags.rebeccaVersusMakabi;
-
   return `
-<p>Votre nouvel adversaire se matérialise${changedSummon? ` également`: ""}. Une riche armure d’acier damasquiné. Un manteau d’un rouge écarlate. Une rapière à la lame ondulante. Un masque de fer.</p>
+<p>Votre nouvel adversaire se matérialise. Une riche armure d’acier damasquiné. Un manteau d’un rouge écarlate. Une rapière à la lame ondulante. Un masque de fer.</p>
 
 <p>Il s’incline légèrement pour vous saluer, relevant sa cape d’un mouvement désuet.</p>
 
@@ -196,7 +194,7 @@ ${onawaFirstSummon}
 
       if (flags.rebeccaVersusMakabi) {
         summonDescription = `
-<p>Le changement de personnalité est brusque. Rebecca est plutôt du genre à briser les vagues qui arrivent sur elle. Votre nouvelle alliée aime à être la source des tempêtes.</p>
+<p>Le changement de personnalité est brusque. Rebecca est plutôt du genre à briser les vagues qui déferlent sur elle. Votre nouvelle alliée est elle de celles qui génèrent de tels brisants.</p>
 
 ${onawaFirstSummon}
         `;

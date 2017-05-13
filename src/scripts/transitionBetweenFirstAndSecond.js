@@ -22,7 +22,7 @@ const transitionBetweenFirstAndSecond = {
           },
         },
         {
-          "text": `Vous invoquez un autre esprit.`,
+          "text": `Vous invoquez à nouveau.`,
           "action": () => {
             goToSection("second-summon");
           },
@@ -74,7 +74,7 @@ const transitionBetweenFirstAndSecond = {
         {
           "text": `Ionna.`,
           "action": () => {
-            goToSection("second-ionna");
+            goToSection("second-ionna", {"ionnaVersusBernardo": true});
           },
         },
         {
@@ -103,7 +103,7 @@ const transitionBetweenFirstAndSecond = {
         {
           "text": `Du classique, avec Ionna.`,
           "action": () => {
-            goToSection("second-ionna");
+            goToSection("second-ionna", {"ionnaVersusBernardo": true});
           },
         },
         {

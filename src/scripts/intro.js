@@ -64,7 +64,7 @@ const intro = {
 
 <p>Vous placez une main au-dessus de vos yeux pour vous protéger, profitant de la chaleur du spot pour vous réchauffer quelque peu. Votre tenue n’est pas adapté à cette fraîche nuit d’automne, mais là encore, vous n’avez pas eu le choix. Pour que vous puissiez offrir votre plus beau profil de terrible rebelle ce soir, on vous a forcée à remettre les vêtements (lavés) que vous portiez lors de votre capture.</p>
 
-<p>Enfin, il n’y a vraiment qu’ici, au milieu de toutes ces robes violettes identiques ou peu s’en faut, que votre T-shirt peut choquer qui que ce soit.</p>
+<p>Enfin, il n’y a vraiment qu’ici, au milieu de toutes ces robes violettes identiques que votre T-shirt peut choquer qui que ce soit.</p>
 
 <div class="conversation">
 <p>— Sœur Iphigénie ! Je vous en prie, avancez.</p>
@@ -80,12 +80,12 @@ const intro = {
 
 <p>Enfin, telle est la phrase que vous aviez formulée dans votre tête, et telle qu’elle aurait dû résonner haut et fort. En pratique, c’est un minable gargouillis à peine intelligible qui s’est extirpé de votre gorge à grand renfort de raclements.</p>
 
-<p>Vous lâchez quelques insanités, mais là aussi les mots tombent sans force. Vous qui vous demandiez comment l’ordre allait vous empêcher d’exprimer des opinions et des faits peu à leur goût une fois sur scène, et vous avez votre réponse. Vous ne savez pas exactement quelle saleté ils vous ont fait avaler pour vous mettre dans un état pareil ni quand, mais les occasions n’ont pas manqué.</p>
+<p>Vous lâchez quelques insanités, mais là aussi vos mots tombent sans force. Vous qui vous demandiez comment l’Ordre allait vous empêcher d’exprimer des opinions et des faits peu à leur goût une fois sur scène, vous avez votre réponse. Vous ne savez pas exactement quelle saleté ils vous ont fait avaler pour vous mettre dans un état pareil ni même quand, mais les occasions n’ont pas manqué.</p>
 
-<p>Devant vos pitoyables efforts, pour vous exprimer, Eschyle affiche un large sourire paternaliste, comme si vous étiez un bébé perdu ayant besoin d’aide, parfaitement théâtral et donc à sa place dans cette farce, et se retourne vers la foule pour continuer son monologue.</p>
+<p>Devant vos pitoyables efforts, pour vous exprimer, Eschyle affiche un large sourire paternaliste, comme si vous étiez un bébé perdu ayant besoin d’aide, expression parfaitement théâtrale et donc à sa place dans cette farce, et se retourne vers la foule pour continuer son monologue.</p>
 
 <div class="conversation">
-<p>— Sœur Iphigénie nous a brutalement quitté voilà plus d’un an, abandonnant son titre, son nom et sa place dans l’Ordre au profit d’un retour à la vie temporelle. Un choix que nous respectons même si nous aurions aimé qu’il se déroule dans de meilleures circonstances.</p>
+<p>— Sœur Iphigénie nous a brutalement quittés voilà plus d’un an, abandonnant son titre, son nom et sa place dans l’Ordre au profit d’un retour à la vie temporelle. Un choix que nous respectons même si nous aurions aimé qu’il se déroule dans de meilleures circonstances.</p>
 </div>
 
 <p>Vous aimeriez beaucoup pouvoir évoquer le mois de pénitence qui avait été la seule réponse à votre première demande polie de partir. Évidemment qu’après pareil traitement, votre seconde tentative s’est effectuée en douce après avoir piqué un maximum de liquide parmi les offrandes.</p>
@@ -109,7 +109,7 @@ const intro = {
 <p>Tout un argumentaire que vous bouillez de ne pas pouvoir exprimer autrement que par des borborygmes.</p>
 
 <div class="conversation">
-<p>— À crime exceptionnel, procédure exceptionnelle. La jurisprudence de l’Ordre est limpide sur de tels sujets. Sœur Iphigénie a le droit d’essayer de démontrer que les esprits avec qui elle s’est acoquinée sont dignes de cette confiance. Si elle y parvient, elle ne sera condamnée que sur sa désobéissance à la première règle et ses compagnons spirituels seront officiellement ajoutés à la liste. Si elle échoue, elle subira l’intégralité du blâme.</p>
+<p>— À crime exceptionnel, procédure exceptionnelle. La jurisprudence de l’Ordre est limpide sur de tels sujets. Sœur Iphigénie a le droit d’essayer de démontrer que les esprits avec qui elle s’est acoquinée sont dignes de cette confiance. Si elle y parvient, elle ne sera condamnée que sur sa désobéissance à la première règle et le conseil de l’Ordre se penchera sur la possibilité d’ajouter ses compagnons spirituels à la liste officielle. Si elle échoue, elle subira l’intégralité du blâme.</p>
 </div>
 
 <p>Si vous gagnez, vous serez exécutée avec une épée effilée, sinon ce sera la hache. Belle consolation. En réalité, vous n’avez accepté de participer à cette mascarade que parce qu’elle vous offrait plus de possibilités de vous en sortir que de simplement rester enfermée dans votre cellule à l’isolement.</p>
@@ -119,9 +119,9 @@ const intro = {
 <p>« Les esprits mauvais, sous leur masque d’arrogance, sont faibles et fragiles, tandis que les bons sont forts et endurants. Si les esprits de sœur Iphigénie en sont dignes, ils résisteront aux coups de ceux dont la pureté est inattaquable. Si à l’inverse ils laissent leur hôte subir pour se protéger eux, alors leur vilenie sera démontrée.</p>
 </div>
 
-<p>Vous avez été briefée sur le sujet de façon un peu moins emphatique. Dans la pratique, Eschyle va invoquer des gros bras du passé, et vous allez devoir faire votre possible pour rester en un seul morceau. C’est une procédure qui date d’une époque où les duels et guerres judiciaires étaient monnaie courante, et qui ne volent donc pas très haut.</p>
+<p>Vous avez été briefée sur le sujet de façon un peu moins emphatique. Dans la pratique, Eschyle va invoquer des gros bras du passé, et vous allez devoir faire votre possible pour rester en un seul morceau. C’est une procédure qui date d’une époque où les duels et guerres judiciaires étaient monnaie courante, et qui ne vole donc pas très haut.</p>
 
-<p>Dans les jours qui précédent, vous vous êtes d’ailleurs beaucoup interrogée sur les raisons qui ont poussé l’ordre à déterrer une méthode de jugement pareil. Maintenant que vous êtes dans l’arène, face à de nombreux fidèles qui boivent les paroles de leur maître à penser, vous vous dites que c’est justement pour cela. L’occasion rêvée d’organiser une grande messe, de rappeler les racines de l’Ordre, la force de ses traditions et le châtiment qui attend ceux qui s’y opposent.</p>
+<p>Dans les jours qui précédent, vous vous êtes d’ailleurs beaucoup interrogée sur les raisons qui ont poussé l’ordre à déterrer une méthode de jugement pareil. Maintenant que vous êtes dans l’arène, face à de nombreux fidèles qui boivent les paroles de leur maître à penser, vous vous dites que c’est justement pour cela. L’occasion rêvée d’organiser une grande messe, de rappeler les racines de l’Ordre, la force de ses traditions et le châtiment qui attend ceux et celles qui s’y opposent.</p>
 
 <p>Il abandonne enfin son public pour se tourner vers vous. Le silence se fait dans la foule, remplacé par une tension électrique. Ne pouvant plus reculer, vous avancez vers le centre de la scène, bien en vue de tous, vous mettant face à votre bourreau. Il joint les mains, dans le geste aussi ritualisé que techniquement inutile indiquant qu’il va à nouveau invoquer un esprit.</p>
 

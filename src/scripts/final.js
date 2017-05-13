@@ -1,4 +1,4 @@
-import {rebeccaFirstSummon, bulletExplanation} from "./summons.js";
+import {ionnaFirstSummon, rebeccaFirstSummon, bulletExplanation, onawaFirstSummon} from "./summons.js";
 
 const musashiboDescription = `
 <p>La personne qui se tient maintenant devant vous est un colosse, votre tête lui arrivant à peine au niveau de la poitrine. Ses amples vêtements ne cachent guère son imposante musculature, ni d’ailleurs l’armure à la japonaise qu’il porte en-dessous. La bande de tissu blanc enroulé autour de sa tête réussit en revanche à dissimuler son visage, ne laissant paraître que ses yeux.</p>
@@ -31,8 +31,24 @@ const jailDescription = (flags) => {
 }
 
 const ionnaFirstHalf = (flags) => {
-  return `
+  const neverSummonedIonnaBefore = !flags.ionnaVersusMakabi && !flags.ionnaVersusBernardo && !flags.ionnaLastHour;
+
+  let intro = `
 <p>Vous n’avez jamais affronté de dragon, mais Dieu a apparemment décidé qu’il était temps de vous opposer à Goliath.</p>
+  `;
+
+  if (neverSummonedIonnaBefore) {
+    intro = `
+<p>Vous décidez de combattre le feu par le feu, et faites naître en vous les sentiments nécessaires à l’invocation d’Ionna.</p>
+
+${ionnaFirstSummon}
+
+<p>Si vous n’avez jamais affronté de dragon, Il a apparemment décidé qu’il était temps de vous opposer à Goliath.</p>
+    `;
+  }
+
+  return `
+${intro}
 
 ${musashiboDescription}
 
@@ -52,25 +68,25 @@ ${ionnaFirstHalf(flags)}
 
 <p>Vous disposez toutefois d’un indéniable avantage moral, soutenant une juste cause contrairement à ce guerrier égarré.</p>
 
-<p>Vous saisissez votre arme à deux mains, la tenant devant vous comme en prière. Vous faites le vide dans votre esprit, laissant votre foi vous habiter, le Seigneur guider votre bras.</p>
+<p>Vous saisissez votre arme à deux mains, la tenant devant vous comme une relique. Vous faites le vide dans votre esprit, laissant votre foi vous habiter, le Seigneur guider votre bras.</p>
 
 <p>Et vous vous jetez en avant.</p>
 
 <p>Le premier coup vous cueille à l’épaule. Vous ressentez la morsure de la douleur, mais l’armure tient. Vous progressez d’un pas. Le second touche à la hanche, assez fort pour abîmer quelque chose là-dedans. Votre pas suivant est vacillant mais vous rapproche assez de votre adversaire pour que vous puissiez frapper. Vous abattez votre arme. Cognez contre la hampe de la sienne. Êtes repoussée de force. Titubez. Tombez. Le géant cogne votre poignet. Vous lâchez votre épée. Un coup à la tête. Votre conscience clignote.</p>
 
-<p>Dieu vous a abandonné. Comme il vous avait abandonné à Margny, lorsque vous vous étiez révélée incapable de vous débarrasser des quelques soudards envoyés vous capturer. Auriez-vous abusé de Sa bienveillance ? S’agit-il d’une leçon, Vous rappelle-t-il que vous ne devez pas dépendre de Lui ? Auriez-vous pêché par orgueil et êtes-vous punie pour cela ?</p>
+<p>Vous avez perdu. Dieu vous a abandonné. Comme il vous avait abandonné à Margny, lorsque vous vous étiez révélée incapable de vous débarrasser des quelques soudards envoyés vous capturer. Auriez-vous abusé de Sa bienveillance ? S’agit-il d’une leçon, Vous rappelle-t-il que vous ne devez pas dépendre de Lui ? Auriez-vous pêché par orgueil et êtes-vous punie pour cela ?</p>
 
 <p>Les doutes d’Ionna rompent l’invocation plus efficacemment que n’importe quelle volonté de votre part en ce sens. Vous redevenez Misty, récupérez le plein usage de vos sens et avec eux la pleine mesure des traumatismes qu’endure votre corps.</p>
 
 <p>Autrement dit, vous douillez grave. Vous avez mal partout, des trucs cassés, ou fêlés, ou on s’en fiche du mot exact, ça fait mal tout pareil, à vous en faire perdre votre vocabulaire.</p>
 
-<p>Vous essayez vaguement, par réflexe, de bouger, mais une douleur fulgurante dans vos membres vous convainc de cesser tout mouvement.</p>
+<p>Vous essayez vaguement, par réflexe, de bouger, mais une douleur fulgurante dans vos membres vous convainc net de cesser tout mouvement.</p>
 
 <p>À peine capable de rouler les yeux, vous observez l’absurde masse de la dernière forme qu’a choisie Eschyle se déplacer au-dessus de vous et pointer l’envers de son arme vers votre visage.</p>
 
-<p>Il vous frappe un grand coup en plein nez, et, constatant que vous avez à peine la force de gromeler quelques grossièretés en réponse, reprend son apparence ordinaire pour s’adresser à son public.</p>
+<p>Il vous frappe un grand coup en plein nez, et, constatant que vous avez à peine la force de grommeler quelques grossièretés en réponse, reprend son apparence ordinaire pour s’adresser à son public.</p>
 
-<p>Vous n’avez plus la patience ni l’énergie ni l’envie d’écouter son discours. Vous vous contentez de dériver dans un état de semi-conscience que quelqu’un se donne la peine de vous ramasser, de vous brinquebaler jusqu’à un lit et de vous faire boire un médoc à dormir.</p>
+<p>Vous n’avez plus la patience ni l’énergie ni l’envie d’écouter son discours. Vous vous contentez de dériver dans un état de semi-conscience jusqu’à ce que quelqu’un se donne la peine de vous ramasser, de vous trimbaler jusqu’à un lit et de vous faire boire un médoc à dormir.</p>
 
 <hr/>
 
@@ -153,15 +169,29 @@ ${bulletExplanation}
   },
   "final-onawa": {
     "text": (flags) => {
+      const neverSummonedOnawaBefore = !flags.onawaVersusMakabi && !flags.onawaVersusBernardo;
+
+      let intro = ``;
+
+      if (neverSummonedOnawaBefore) {
+        intro = `
+<p>Vous aviez gardé votre joker en réserve jusqu’ici, mais voilà venu le moment de l’abattre. Une stratégie risquée, mais collant bien avec le caractère d’Onawa.</p>
+
+${onawaFirstSummon}
+        `;
+      }
+
       return `
+${intro}
+
 ${musashiboDescription}
 
 <div class="conversation">
 <p>— Dis-moi Eschyle, c’est un esprit officiel ça ? Dans mes souvenirs, votre fameuse liste ne comportait aucun soldat oriental. Je sais ! Il suffit de vérifier. Ça ira vite, y’a pas plus d’une vingtaine de personnalités agréées en Asie de l’Est. Pour des gens qui prétendent offrir au monde entier la possibilité de communier avec leurs ancêtres, vous vous limitez quand même beaucoup aux grands hommes du pourtour de la Méditerranée.</p>
-<p>« Ah, mais non, suis-je bête. Tu n’as pas besoin de te restreindre à cette liste toi. Tu es dans les hautes sphères, celles où les lois ne s’appliquent plus. Vous avez même rédigé la règle de façon à vous laisser ce droit. À vous et vous seuls bien sûr.</p>
+<p>« Ah, mais non, suis-je bête. Tu n’as pas besoin de te restreindre à cette liste toi. Tu es dans les hautes sphères, celles où les lois ne s’appliquent plus. La règle est même rédigée de façon à vous laisser explicitement ce droit exclusif.</p>
 </div>
 
-<p>Autant le comportement actuel d’Eschyle vous offre un boulevard pour démontrer ses contradictions, autant il vous expose à un danger physique bien réel. Il frappe comme s’il voulait vraiment vous priver de quelques morceaux de vous-même. Votre refus de céder, qui plus est publiquement, devant son jeu de la méchante invocation et de la gentille invocation l’a mis en rogne. Maintenant il veut juste en finir avec ce simulacre de procès avant d’en perdre totalement le contrôle.</p>
+<p>Autant le comportement actuel d’Eschyle vous offre un boulevard pour démontrer ses contradictions, autant il vous expose à un danger physique bien réel. Il frappe comme s’il voulait vraiment vous priver de quelques morceaux de vous-même. Votre refus de céder, qui plus est devant un large public, face à son jeu de la méchante invocation et de la gentille invocation l’a mis en rogne. Maintenant il veut juste en finir avec ce simulacre de procès avant d’en perdre totalement le contrôle.</p>
 
 <p>Vous n’allez évidemment pas lui laisser ce plaisir.</p>
 
@@ -179,7 +209,7 @@ ${musashiboDescription}
 
 <p>Ce type n’a pas hésité une seule seconde à vous frapper dans le dos. Vous ne pouvez pas voir la blessure, mais vous pouvez malheureusement la sentir.</p>
 
-<p>Vous pouvez vous estimer heureuse de pouvoir encore vous redresser après cela. Mais inutile de dire que cela handicape d’autant plus vos chances de souplement esquiver ses prochains assauts.</p>
+<p>Vous vous estimez heureuse de pouvoir encore vous redresser après un coup pareil. Mais inutile de dire que cela handicape d’autant plus vos chances de souplement esquiver ses prochains assauts.</p>
 
 <p>Le tout pour le tout dans ce cas. Si vous tombez maintenant, minablement, l’Ordre vous fera disparaître dans ses efforts pour ne pas ébruiter cette déconvenue. Ils ne vous tueront pas, ce n’est plus l’époque, mais vous ne reverrez pas la lumière du jour. Vous n’avez plus à attendre la moindre pitié d’eux à ce stade.</p>
 
@@ -199,7 +229,7 @@ ${musashiboDescription}
 
 <p>Vous n’avez aucune idée de l’étendue des dégâts. Assez pour vous clore le bec et rompre l’invocation en tout cas. Mais vous avez une vision très précise de l’image qui est en train de s’imprimer dans la rétine de chaque spectateur.</p>
 
-<p>Une jeune fille, certes rebelle mais tout de même définie comme innocente dans la rhétorique même de son accusateur, sauvagement exécutée par une brute masquée et silencieuse alors qu’elle tentait simplement d’expliquer ses actions.</p>
+<p>Une jeune fille, certes rebelle mais tout de même définie comme innocente dans la rhétorique même de son accusateur, sauvagement exécutée par une brute masquée et silencieuse alors qu’elle tentait simplement de s’expliquer.</p>
 
 <p>Ce n’est pas forcément la vérité exacte de ce qui vient de se passer, mais c’est celle qui va rester dans les mémoires. En vous portant le coup de grâce à ce moment précis, ce n’est pas tant vous que sa réputation, sa légitimité, sa vision de l’Ordre qu’il vient de réduire en morceaux.</p>
 
