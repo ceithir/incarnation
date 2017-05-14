@@ -7,7 +7,7 @@ const endings = [
   {
     "key": "escape-artist",
     "name": `Combat non requis`,
-    "hint": `Ouvrez le bal avec Rebecca, et n'accordez qu'une seule danse.`,
+    "hint": `Ouvrez le bal avec Rebecca, et n’accordez qu’une seule danse.`,
   },
   {
     "key": "blood-pact",
@@ -17,7 +17,7 @@ const endings = [
   {
     "key": "sacrifice",
     "name": `Fidèle à son ancien nom`,
-    "hint": `Remportez l'un des deux premiers duels et concluez avec Onawa.`,
+    "hint": `Remportez l’un des deux premiers duels et concluez avec Onawa.`,
   },
   {
     "key": "red-eyes",
@@ -27,7 +27,7 @@ const endings = [
   {
     "key": "by-the-rules",
     "name": `Gagner selon les règles`,
-    "hint": `N'essuyez aucune défaite (nécessite d'invoquer exactement une fois chaque esprit, dans un ordre précis).`,
+    "hint": `N’essuyez aucune défaite (nécessite d’invoquer exactement une fois chaque esprit, dans un ordre précis).`,
   },
   {
     "key": "three-as-one",

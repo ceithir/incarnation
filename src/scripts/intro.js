@@ -3,7 +3,7 @@ const intro = {
     "text": (flags, skip) => {
       if (skip) {
         return `
-<p>Eschyle vient de terminer son très long et très ennuyeux discours. Vous n'en avez pas écouté le moindre mot. Inutile de vous infliger pareil somnifère, vous savez parfaitement pourquoi vous êtes là et ce qu'il vous reste à faire.</p>
+<p>Eschyle vient de terminer son très long et très ennuyeux discours. Vous n’en avez pas écouté le moindre mot. Inutile de vous infliger pareil somnifère, vous savez parfaitement pourquoi vous êtes là et ce qu’il vous reste à faire.</p>
 
 <p>Alors autant entrer tout de suite dans le vif du sujet.</p>
         `;
