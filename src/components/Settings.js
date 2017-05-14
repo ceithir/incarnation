@@ -73,14 +73,14 @@ class Settings extends React.Component {
             {`Justifier le texte ?`}
           </Checkbox>
         </FormGroup>
-        <FormGroup>
+        {this.props.showPostGameOptions && <FormGroup>
           <Checkbox
             checked={this.state.form.skip}
             onChange={this.onSkipChange}
           >
-            {`Sauter l’introduction et la présentation des esprits ?`}
+            {`Relecture rapide (ôte l’introduction et la présentation des esprits) ?`}
           </Checkbox>
-        </FormGroup>
+        </FormGroup>}
       </form>
     );
   }
@@ -89,6 +89,7 @@ class Settings extends React.Component {
 Settings.propTypes = {
   values: PropTypes.object.isRequired,
   update: PropTypes.func.isRequired,
+  showPostGameOptions: PropTypes.bool,
 };
 
 export default Settings;

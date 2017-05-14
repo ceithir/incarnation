@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Navbar, Nav, NavDropdown, MenuItem, Modal } from 'react-bootstrap';
-import Settings from './Settings.js';
 
 class Menu extends React.Component {
   constructor(props) {
@@ -57,7 +56,7 @@ class Menu extends React.Component {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Settings values={this.props.settings} update={this.props.updateSettings} />
+            {this.props.settings}
           </Modal.Body>
         </Modal>
       </div>
@@ -67,8 +66,7 @@ class Menu extends React.Component {
 
 Menu.propTypes = {
   title: PropTypes.string.isRequired,
-  settings: PropTypes.object.isRequired,
-  updateSettings: PropTypes.func.isRequired,
+  settings: PropTypes.element.isRequired,
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 

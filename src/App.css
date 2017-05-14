@@ -87,3 +87,7 @@ a.hint {
 h2 {
   font-size: 2em;
 }
+
+p.tips {
+  font-style: italic;
+}
