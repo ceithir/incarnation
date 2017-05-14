@@ -5,8 +5,7 @@ import Crossroads from './Crossroads.js';
 class Ending extends React.Component {
   render() {
     return (
-      <div>
-        <hr/>
+      <div className="ending">
         <div className="ending-title">
           {this.props.subtitle && <small>{this.props.subtitle} </small>}
           {this.props.title}
