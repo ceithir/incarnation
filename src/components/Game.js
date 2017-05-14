@@ -34,6 +34,7 @@ class Game extends React.Component {
     return {
       "fontSize": 15,
       "justified": false,
+      "skip": false,
     };
   }
 
@@ -118,7 +119,7 @@ class Game extends React.Component {
   }
 
   getText = (sectionKey, flags) => {
-    return this.getSection(sectionKey).text(flags);
+    return this.getSection(sectionKey).text(flags, this.state.settings.skip);
   }
 
   getNext = (sectionKey, flags) => {
@@ -127,7 +128,7 @@ class Game extends React.Component {
       return this.endGame(section.end);
     }
 
-    const next = section.next(this.goToSection, flags);
+    const next = section.next(this.goToSection, flags, this.state.settings.skip);
 
     if (React.isValidElement(next)) {
       return next;

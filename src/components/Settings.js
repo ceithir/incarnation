@@ -39,6 +39,13 @@ class Settings extends React.Component {
     this.props.update(values);
   }
 
+  onSkipChange = (event) => {
+    event.persist();
+    const values = {"skip": event.target.checked};
+    this.updateForm(values);
+    this.props.update(values);
+  }
+
   render() {
     return (
       <form onSubmit={(e) => {e.preventDefault()}}>
@@ -64,6 +71,14 @@ class Settings extends React.Component {
             onChange={this.onJustificationChange}
           >
             {`Justifier le texte ?`}
+          </Checkbox>
+        </FormGroup>
+        <FormGroup>
+          <Checkbox
+            checked={this.state.form.skip}
+            onChange={this.onSkipChange}
+          >
+            {`Sauter l’introduction et la présentation des esprits ?`}
           </Checkbox>
         </FormGroup>
       </form>

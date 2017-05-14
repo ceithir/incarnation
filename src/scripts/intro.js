@@ -1,6 +1,15 @@
 const intro = {
   "intro" : {
-    "text": `
+    "text": (flags, skip) => {
+      if (skip) {
+        return `
+<p>Eschyle vient de terminer son très long et très ennuyeux discours. Vous n'en avez pas écouté le moindre mot. Inutile de vous infliger pareil somnifère, vous savez parfaitement pourquoi vous êtes là et ce qu'il vous reste à faire.</p>
+
+<p>Alors autant entrer tout de suite dans le vif du sujet.</p>
+        `;
+      }
+
+      return `
 <p>L’homme a les mains jointes et les yeux clos, comme en prière. Si sa position dans l’espace reste fixe, tout son être est en mouvement, son corps vibrant à un rythme effréné, auréolant sa silhouette d’un halo flou épuisant l’œil qui voudrait le fixer.</p>
 
 <p>Et entre chaque battement de paupière, il change.</p>
@@ -46,9 +55,27 @@ const intro = {
 <div class="conversation">
 <p>— Non, si des règles aussi fondamentales ont dû être rappelées, c’est parce qu’elles ont été transgressées.</p>
 </div>
-    `,
-    "next": (goToSection) => {
-     return {
+      `;
+    },
+    "next": (goToSection, flags, skip) => {
+      if (skip) {
+        return [
+          {
+            "text": `Ionna`,
+            "action": () => {goToSection("first-ionna", {"ionnaVersusMakabi": true, "lightlyWounded": true})},
+          },
+          {
+            "text": `Rebecca`,
+            "action": () => {goToSection("first-rebecca", {"rebeccaVersusMakabi": true})},
+          },
+          {
+            "text": `Onawa`,
+            "action": () => {goToSection("first-onawa", {"onawaVersusMakabi": true, "lightlyWounded": true})}
+          },
+        ];
+      }
+
+      return {
         "text": `En coulisses, quelqu’un vous ôte enfin votre bâillon et vos menottes.`,
         "action": () => {
           goToSection("intro-2");
