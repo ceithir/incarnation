@@ -24,8 +24,9 @@ class Game extends React.Component {
       "flags": currentFlags,
       "logs": currentLogs,
       "settings": settings,
-      "display": "core",
       "meta": meta,
+      "display": "core",
+      "snap": "top",
     };
   }
 
@@ -36,8 +37,8 @@ class Game extends React.Component {
     };
   }
 
-  backToCore = () => {
-    this.setState({"display": "core"});
+  backToCoreBottom = () => {
+    this.setState({"display": "core", "snap": "bottom"});
   }
 
   showEndings = () => {
@@ -185,6 +186,7 @@ class Game extends React.Component {
       "flags": this.props.startingFlags,
       "logs": [],
       "display": "core",
+      "snap": "top",
     });
   }
 
@@ -260,11 +262,12 @@ class Game extends React.Component {
                 text={this.getText(this.state.section, this.state.flags)}
                 next={this.getNext(this.state.section, this.state.flags)}
                 logs={this.state.logs}
+                snap={this.state.snap}
               />}
               {("endings" === this.state.display) && <Endings
                 title={`Fins découvertes`}
                 endings={this.props.endings}
-                exit={this.backToCore}
+                exit={this.backToCoreBottom}
                 unlocked={this.state.meta.unlockedEndings}
               />}
             </Col>

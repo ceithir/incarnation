@@ -13,12 +13,26 @@ class Core extends React.Component {
     window.scrollTo(0, element.offsetTop);
   }
 
+  scrollToBottom = () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+
+  scroll = () => {
+    if ("top" === this.props.snap) {
+      this.scrollToText();
+    }
+
+    if ("bottom" === this.props.snap) {
+      this.scrollToBottom();
+    }
+  }
+
   componentDidMount = () => {
-    this.scrollToText();
+    this.scroll();
   }
 
   componentDidUpdate = () => {
-    this.scrollToText();
+    this.scroll();
   }
 
   render() {
@@ -45,6 +59,7 @@ Core.propTypes = {
   text: PropTypes.string.isRequired,
   next: PropTypes.element.isRequired,
   logs: PropTypes.arrayOf(PropTypes.string).isRequired,
+  snap: PropTypes.oneOf(['top', 'bottom']),
 };
 
 export default Core;
