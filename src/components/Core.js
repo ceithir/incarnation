@@ -23,7 +23,7 @@ class Core extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="core">
         <div className="logs">
           {this.props.logs.map((log, index) => {
             return (

@@ -5,6 +5,7 @@ import Funnel from './Funnel.js';
 import Menu from './Menu.js';
 import Core from './Core.js';
 import { Grid, Row, Col } from 'react-bootstrap';
+import Endings from './Endings.js';
 
 class Game extends React.Component {
   constructor(props) {
@@ -22,6 +23,8 @@ class Game extends React.Component {
       "flags": currentFlags,
       "logs": currentLogs,
       "settings": settings,
+      "display": "core",
+      "unlocked": Object.assign({}, {"endings": []}),
     };
   }
 
@@ -30,6 +33,14 @@ class Game extends React.Component {
       "fontSize": 15,
       "justified": false,
     };
+  }
+
+  backToCore = () => {
+    this.setState({"display": "core"});
+  }
+
+  showEndings = () => {
+    this.setState({"display": "endings"});
   }
 
   goToSection = (section, flags = {}, log) => {
@@ -45,6 +56,19 @@ class Game extends React.Component {
         "logs": updatedLogs,
       };
     });
+
+    const ending = this.getSection(section)['end'];
+    if (ending) {
+      this.setState((prevState, props) => {
+        if (prevState.unlocked.endings.includes(ending)) {
+          return;
+        }
+
+        return {
+          "unlocked": Object.assign({}, prevState.unlocked, {"endings": prevState.unlocked.endings.concat([ending])}),
+        };
+      });
+    }
   }
 
   getSection = (sectionKey) => {
@@ -147,6 +171,7 @@ class Game extends React.Component {
       "section": this.props.startingSection,
       "flags": this.props.startingFlags,
       "logs": [],
+      "display": "core",
     });
   }
 
@@ -168,6 +193,10 @@ class Game extends React.Component {
       {
         "text": `Recommencer`,
         "action": this.resetProgress,
+      },
+      {
+        "text": `Voir toutes les fins découvertes`,
+        "action": this.showEndings,
       },
     ];
 
@@ -214,11 +243,17 @@ class Game extends React.Component {
         <Grid className={"font-"+this.state.settings.fontSize + (this.state.settings.justified ? " text-justify" : "")}>
           <Row>
             <Col md={8} mdOffset={2}>
-              <Core
+              {("core" === this.state.display) && <Core
                 text={this.getText(this.state.section, this.state.flags)}
                 next={this.getNext(this.state.section, this.state.flags)}
                 logs={this.state.logs}
-              />
+              />}
+              {("endings" === this.state.display) && <Endings
+                title={`Fins découvertes`}
+                endings={this.props.endings}
+                exit={this.backToCore}
+                unlocked={this.state.unlocked.endings}
+              />}
             </Col>
           </Row>
         </Grid>
