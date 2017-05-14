@@ -4,6 +4,7 @@ import Crossroads from './Crossroads.js';
 import Funnel from './Funnel.js';
 import Menu from './Menu.js';
 import Core from './Core.js';
+import { Grid, Row, Col } from 'react-bootstrap';
 
 class Game extends React.Component {
   constructor(props) {
@@ -171,7 +172,7 @@ class Game extends React.Component {
     ];
 
     return (
-      <div className="ending-wrapper">
+      <div>
         <div className="ending">
           <small>{subtitle}</small> {title}
         </div>
@@ -210,12 +211,17 @@ class Game extends React.Component {
           updateSettings={this.updateSettings}
           items={this.getMenuItems()}
         />
-        <Core
-          text={this.getText(this.state.section, this.state.flags)}
-          next={this.getNext(this.state.section, this.state.flags)}
-          logs={this.state.logs}
-          settings={this.state.settings}
-        />
+        <Grid className={"font-"+this.state.settings.fontSize + (this.state.settings.justified ? " text-justify" : "")}>
+          <Row>
+            <Col md={8} mdOffset={2}>
+              <Core
+                text={this.getText(this.state.section, this.state.flags)}
+                next={this.getNext(this.state.section, this.state.flags)}
+                logs={this.state.logs}
+              />
+            </Col>
+          </Row>
+        </Grid>
       </div>
     );
   }
