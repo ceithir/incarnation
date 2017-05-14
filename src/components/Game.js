@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import Text from './Text.js';
 import Crossroads from './Crossroads.js';
 import Funnel from './Funnel.js';
-import { Navbar, Nav, NavDropdown, MenuItem, Grid, Row, Col, Modal } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
-import Settings from './Settings.js';
+import Menu from './Menu.js';
 
 class Game extends React.Component {
   constructor(props) {
@@ -22,7 +22,6 @@ class Game extends React.Component {
       "section": currentSection,
       "flags": currentFlags,
       "logs": currentLogs,
-      "showSettings": false,
       "settings": settings,
     };
   }
@@ -122,14 +121,6 @@ class Game extends React.Component {
     window.scrollTo(0, element.offsetTop);
   }
 
-  showSettings = () => {
-    this.setState({ "showSettings": true });
-  }
-
-  hideSettings = () => {
-    this.setState({ "showSettings": false });
-  }
-
   componentDidMount = () => {
     this.scrollToText();
   }
@@ -210,31 +201,34 @@ class Game extends React.Component {
     );
   }
 
+  getMenuItems = () => {
+    const items = [];
+
+    if (this.props.saveProgress) {
+      items.push({
+        "key": "autosave",
+        "text": `Ce jeu sauvegarde automatiquement.`,
+      });
+    }
+
+    items.push({
+      "key": "reset",
+      "text": `Recommencer`,
+      "action": this.resetProgress,
+    });
+
+    return items;
+  }
+
   render() {
     return (
       <div className="game">
-        <Navbar fixedTop fluid>
-          <Navbar.Header>
-            <Navbar.Brand>{this.props.title}</Navbar.Brand>
-            <Navbar.Toggle />
-          </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav pullRight>
-              <NavDropdown title={`Options`} id="option-dropdown">
-                <MenuItem onSelect={this.showSettings} key="settings">
-                  {`Configuration`}
-                </MenuItem>
-                <MenuItem divider/>
-                {this.props.saveProgress && <MenuItem header>
-                  {`Ce jeu sauvegarde automatiquement.`}
-                </MenuItem>}
-                <MenuItem onSelect={this.resetProgress} key="reset">
-                  {`Recommencer`}
-                </MenuItem>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
+        <Menu
+          title={this.props.title}
+          settings={this.state.settings}
+          updateSettings={this.updateSettings}
+          items={this.getMenuItems()}
+        />
         <Grid className={"font-"+this.state.settings.fontSize + (this.state.settings.justified ? " text-justify" : "")}>
           <Row>
             <Col md={8} mdOffset={2}>
@@ -260,16 +254,6 @@ class Game extends React.Component {
             </Col>
           </Row>
         </Grid>
-        <Modal show={this.state.showSettings} onHide={this.hideSettings}>
-          <Modal.Header closeButton>
-            <Modal.Title>
-              {`Configuration`}
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Settings values={this.state.settings} update={this.updateSettings} />
-          </Modal.Body>
-        </Modal>
       </div>
     );
   }
@@ -283,10 +267,10 @@ Game.propTypes = {
   currentSection: PropTypes.string,
   currentFlags: PropTypes.object,
   currentLogs: PropTypes.array,
-  saveProgress: React.PropTypes.func,
+  saveProgress: PropTypes.func,
   endings: PropTypes.arrayOf(PropTypes.object).isRequired,
   settings: PropTypes.object,
-  saveSettings: React.PropTypes.func,
+  saveSettings: PropTypes.func,
 };
 
 export default Game;
