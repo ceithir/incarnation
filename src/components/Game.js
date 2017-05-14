@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Text from './Text.js';
 import Crossroads from './Crossroads.js';
 import Funnel from './Funnel.js';
-import { Grid, Row, Col } from 'react-bootstrap';
-import ReactDOM from 'react-dom';
 import Menu from './Menu.js';
+import Core from './Core.js';
 
 class Game extends React.Component {
   constructor(props) {
@@ -112,23 +110,6 @@ class Game extends React.Component {
     return;
   }
 
-  scrollToText = () => {
-    const element = ReactDOM.findDOMNode(this.activeContentRef);
-    if (!element) {
-      return;
-    }
-
-    window.scrollTo(0, element.offsetTop);
-  }
-
-  componentDidMount = () => {
-    this.scrollToText();
-  }
-
-  componentDidUpdate = () => {
-    this.scrollToText();
-  }
-
   updateSettings = (values) => {
     this.setState((prevState, props) => {
       const settings = Object.assign({}, prevState.settings, values);
@@ -229,31 +210,12 @@ class Game extends React.Component {
           updateSettings={this.updateSettings}
           items={this.getMenuItems()}
         />
-        <Grid className={"font-"+this.state.settings.fontSize + (this.state.settings.justified ? " text-justify" : "")}>
-          <Row>
-            <Col md={8} mdOffset={2}>
-              <div className="logs">
-                {this.state.logs.map((log, index) => {
-                  return (
-                    <div key={index.toString()}>
-                      <Text content={log} />
-                      <hr/>
-                    </div>
-                  );
-                })}
-              </div>
-              <Text
-                content={this.getText(this.state.section, this.state.flags)}
-                ref={(ref) => { this.activeContentRef = ref; }}
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col md={8} mdOffset={2}>
-              {this.getNext(this.state.section, this.state.flags)}
-            </Col>
-          </Row>
-        </Grid>
+        <Core
+          text={this.getText(this.state.section, this.state.flags)}
+          next={this.getNext(this.state.section, this.state.flags)}
+          logs={this.state.logs}
+          settings={this.state.settings}
+        />
       </div>
     );
   }
