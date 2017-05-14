@@ -6,7 +6,6 @@ import Funnel from './Funnel.js';
 import { Navbar, Nav, NavDropdown, MenuItem, Grid, Row, Col, Modal } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 import Settings from './Settings.js';
-import Ending from './Ending.js';
 
 class Game extends React.Component {
   constructor(props) {
@@ -200,7 +199,14 @@ class Game extends React.Component {
     ];
 
     return (
-      <Ending title={title} subtitle={subtitle} buttons={buttons} />
+      <div className="ending-wrapper">
+        <div className="ending">
+          <small>{subtitle}</small> {title}
+        </div>
+        <div className="lead text-center">
+          <Crossroads choices={buttons} />
+        </div>
+      </div>
     );
   }
 

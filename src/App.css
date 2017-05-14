@@ -51,13 +51,6 @@
   font-size: 20px;
 }
 
-.ending-title {
-  font-size: larger;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 .logs > div {
   opacity: 0.6;
 }
@@ -80,5 +73,12 @@ p.summon-spirit {
 }
 
 .ending {
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ending-wrapper {
   margin-top: 10px;
 }
