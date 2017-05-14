@@ -36,6 +36,14 @@ class App extends Component {
     storage.save("settings", settings);
   }
 
+  loadMeta = ()=> {
+    return storage.load("meta") || {};
+  }
+
+  saveMeta = (meta) => {
+    storage.save("meta", meta);
+  }
+
   render() {
     const progress = this.loadProgress();
 
@@ -52,6 +60,8 @@ class App extends Component {
         endings={endings}
         settings={this.loadSettings()}
         saveSettings={this.saveSettings}
+        meta={this.loadMeta()}
+        saveMeta={this.saveMeta}
       />
     );
   }

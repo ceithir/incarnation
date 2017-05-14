@@ -15,6 +15,7 @@ class Game extends React.Component {
     const currentFlags = Object.assign({}, this.props.startingFlags, this.props.currentFlags || {});
     const currentLogs = this.props.currentLogs || [];
     const settings = Object.assign({}, this.getDefaultSettings(), this.props.settings || {});
+    const meta =  Object.assign({}, {"unlockedEndings": []}, this.props.meta || {});
 
     this.saveProgress(currentSection, currentFlags, currentLogs);
 
@@ -24,7 +25,7 @@ class Game extends React.Component {
       "logs": currentLogs,
       "settings": settings,
       "display": "core",
-      "unlocked": Object.assign({}, {"endings": []}),
+      "meta": meta,
     };
   }
 
@@ -41,6 +42,14 @@ class Game extends React.Component {
 
   showEndings = () => {
     this.setState({"display": "endings"});
+  }
+
+  saveMeta = (meta) => {
+    if (!this.props.saveMeta) {
+      return;
+    }
+
+    this.props.saveMeta(meta);
   }
 
   goToSection = (section, flags = {}, log) => {
@@ -60,12 +69,16 @@ class Game extends React.Component {
     const ending = this.getSection(section)['end'];
     if (ending) {
       this.setState((prevState, props) => {
-        if (prevState.unlocked.endings.includes(ending)) {
+        if (prevState.meta.unlockedEndings.includes(ending)) {
           return;
         }
 
+        const meta = Object.assign({}, prevState.meta.unlockedEndings, {"unlockedEndings": prevState.meta.unlockedEndings.concat([ending])});
+
+        this.saveMeta(meta);
+
         return {
-          "unlocked": Object.assign({}, prevState.unlocked, {"endings": prevState.unlocked.endings.concat([ending])}),
+          "meta": meta,
         };
       });
     }
@@ -252,7 +265,7 @@ class Game extends React.Component {
                 title={`Fins découvertes`}
                 endings={this.props.endings}
                 exit={this.backToCore}
-                unlocked={this.state.unlocked.endings}
+                unlocked={this.state.meta.unlockedEndings}
               />}
             </Col>
           </Row>
@@ -274,6 +287,8 @@ Game.propTypes = {
   endings: PropTypes.arrayOf(PropTypes.object).isRequired,
   settings: PropTypes.object,
   saveSettings: PropTypes.func,
+  meta: PropTypes.object,
+  saveMeta: PropTypes.func,
 };
 
 export default Game;
