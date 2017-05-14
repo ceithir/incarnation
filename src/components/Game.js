@@ -161,6 +161,8 @@ class Game extends React.Component {
 
       return {
         "settings": settings,
+        // Hack to force bottom snapping when in a dead end
+        "snap": this.getSection(prevState.section)["end"] ? "bottom": prevState.snap,
       };
     });
   }
@@ -208,7 +210,7 @@ class Game extends React.Component {
 
     const buttons = [
       {
-        "text": `Recommencer`,
+        "text": `Recommencer ${this.state.settings.skip? ` (retourne au premier choix)`: ` (retourne à l’introduction)`}`,
         "action": this.resetProgress,
       },
       {
