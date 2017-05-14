@@ -35,17 +35,10 @@ class Game extends React.Component {
     };
   }
 
-  goToSection = (section, flags = {}, logs) => {
+  goToSection = (section, flags = {}, log) => {
     this.setState((prevState, props) => {
-      const text = this.getText(prevState.section, prevState.flags);
-      if (!logs) {
-        logs = text;
-      } else if ('function' === typeof logs) {
-        logs = logs(text);
-      }
-
       const updatedFlags = Object.assign({}, prevState.flags, flags);
-      const updatedLogs = prevState.logs.concat(logs);
+      const updatedLogs = prevState.logs.concat(this.getLog(prevState.section, prevState.flags, log));
 
       this.saveProgress(section, updatedFlags, updatedLogs);
 
@@ -73,6 +66,20 @@ class Game extends React.Component {
       "next": section.next,
       "end": section.end,
     };
+  }
+
+  getLog = (sectionKey, flags, override) => {
+    if ('string' === typeof override) {
+      return override;
+    }
+
+    const text = this.getText(sectionKey, flags);
+
+    if ('function' === typeof override) {
+      return override(text);
+    }
+
+    return text;
   }
 
   getText = (sectionKey, flags) => {
