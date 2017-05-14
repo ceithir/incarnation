@@ -23,7 +23,7 @@ class Crossroads extends React.Component {
 }
 
 Crossroads.propTypes = {
-  choices: PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  choices: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Crossroads;
