@@ -37,8 +37,11 @@ class Game extends React.Component {
 
   goToSection = (section, flags = {}, logs) => {
     this.setState((prevState, props) => {
+      const text = this.getText(prevState.section, prevState.flags);
       if (!logs) {
-        logs = this.getText(prevState.section, prevState.flags);
+        logs = text;
+      } else if ('function' === typeof logs) {
+        logs = logs(text);
       }
 
       const updatedFlags = Object.assign({}, prevState.flags, flags);
