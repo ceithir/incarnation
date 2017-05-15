@@ -1,10 +1,28 @@
 import {ionnaFirstSummon, rebeccaFirstSummon, bulletExplanation, onawaFirstSummon} from "./summons.js";
+import {shortener} from "./helpers.js";
 
-const musashiboDescription = `
+const musashiboDescription = (flags, skip) => {
+  const description = `
 <p>La personne qui se tient maintenant devant vous est un colosse, votre tête lui arrivant à peine au niveau de la poitrine. Ses amples vêtements ne cachent guère son imposante musculature, ni d’ailleurs l’armure à la japonaise qu’il porte en-dessous. La bande de tissu blanc enroulé autour de sa tête réussit en revanche à dissimuler son visage, ne laissant paraître que ses yeux.</p>
 
 <p>Ses deux mains enserrent une arme d’hast se terminant par une imposante lame courbe, avec laquelle il décrit déjà une large arc de cercle pour vous faucher.</p>
-`;
+  `;
+
+  let summary = `
+<p>Eschyle revient aux valeurs sûres, optant pour une invocation guerrière d’avant l’invention de la poudre.</p>
+  `;
+  if (flags.badlyWounded) {
+    summary = `
+<p>Eschyle reste fidèle à sa stratégie à base d’armes tranchantes et d’armures antiques.</p>
+    `;
+  }
+
+  summary += `
+<p>L’esprit choisi est cependant nettement plus massif et agressif, frappant en guise d’introduction.</p>
+  `;
+
+  return shortener(summary, description, skip);
+}
 
 const jailDescription = (flags) => {
   return `
@@ -30,7 +48,7 @@ const jailDescription = (flags) => {
   `;
 }
 
-const ionnaFirstHalf = (flags) => {
+const ionnaFirstHalf = (flags, skip) => {
   const neverSummonedIonnaBefore = !flags.ionnaVersusMakabi && !flags.ionnaVersusBernardo && !flags.ionnaLastHour;
 
   let intro = `
@@ -41,7 +59,7 @@ const ionnaFirstHalf = (flags) => {
     intro = `
 <p>Vous décidez de combattre le feu par le feu, et faites naître en vous les sentiments nécessaires à l’invocation d’Ionna.</p>
 
-${ionnaFirstSummon}
+${shortener(`<p>Face au danger, elle répond à vos appels. C’est avec son regard que vous contemplez votre nouvel ennemi.</p>`, ionnaFirstSummon, skip)}
 
 <p>Si vous n’avez jamais affronté de dragon, Il a apparemment décidé qu’il était temps de vous opposer à Goliath.</p>
     `;
@@ -50,7 +68,7 @@ ${ionnaFirstSummon}
   return `
 ${intro}
 
-${musashiboDescription}
+${musashiboDescription(flags, skip)}
 
 <p>Vous êtes forcée de reculer d’un pas pour esquiver, ne pouvant juste pas espérer bloquer ou même simplement dévier une attaque de ce type. Entre la différence dans vos poids respectifs et l’effet levier, vous décolleriez du sol si l’envie vous prenez d’essayer.</p>
 
@@ -62,9 +80,9 @@ ${musashiboDescription}
 
 const final = {
   "final-ionna": {
-    "text": (flags) => {
+    "text": (flags, skip) => {
         return `
-${ionnaFirstHalf(flags)}
+${ionnaFirstHalf(flags, skip)}
 
 <p>Vous disposez toutefois d’un indéniable avantage moral, soutenant une juste cause contrairement à ce guerrier égarré.</p>
 
@@ -96,23 +114,23 @@ ${jailDescription(flags)}
     "end": "jail",
   },
   "final-rebecca": {
-    "text": (flags) => {
+    "text": (flags, skip) => {
       const neverSummonedRebeccaBefore = !flags.rebeccaVersusMakabi && !flags.rebeccaVersusBernardo;
 
       let summoning = ``;
 
       if (neverSummonedRebeccaBefore) {
         summoning = `
-<p>Vous faites le vide dans votre esprit, puis le plongez dans l’état nécessaire à invoquer Rebecca.</p>
+<p>Vous faites le vide dans votre esprit, puis le plongez dans l’état nécessaire pour invoquer Rebecca.</p>
 
-${rebeccaFirstSummon}
+${shortener(`<p>Sa rage de vivre vous soutient face au péril qui s’annonce.</p>`, rebeccaFirstSummon, skip)}
         `;
       }
 
       return `
 ${summoning}
 
-${musashiboDescription}
+${musashiboDescription(flags, skip)}
 
 <p>Vous esquivez en reculant de quelques pas. Vous n’avez de toute façon pas signé pour un combat au corps à corps.</p>
 
@@ -121,7 +139,7 @@ ${musashiboDescription}
 ${neverSummonedRebeccaBefore? `
 <p>C’est le prix à payer pour user du souvenir matérialisé d’une arme plutôt que d’un véritable pistolet physique.</p>
 
-${bulletExplanation}
+${shortener(`<p>Un phénomène récurrent, mais que Rebecca se refuse à intérioriser.</p>`, bulletExplanation, skip)}
 
 <p>Et bien, vous allez devoir faire avec ce handicap.</p>
 `: ""}
@@ -168,7 +186,7 @@ ${bulletExplanation}
     "end": "blood-pact",
   },
   "final-onawa": {
-    "text": (flags) => {
+    "text": (flags, skip) => {
       const neverSummonedOnawaBefore = !flags.onawaVersusMakabi && !flags.onawaVersusBernardo;
 
       let intro = ``;
@@ -177,14 +195,14 @@ ${bulletExplanation}
         intro = `
 <p>Vous aviez gardé votre joker en réserve jusqu’ici, mais voilà venu le moment de l’abattre. Une stratégie risquée, mais collant bien avec le caractère d’Onawa.</p>
 
-${onawaFirstSummon}
+${shortener(`<p>Sa témérité s’unit naturellement à la vôtre.</p>`, onawaFirstSummon, skip)}
         `;
       }
 
       return `
 ${intro}
 
-${musashiboDescription}
+${musashiboDescription(flags, skip)}
 
 <div class="conversation">
 <p>— Dis-moi Eschyle, c’est un esprit officiel ça ? Dans mes souvenirs, votre fameuse liste ne comportait aucun soldat oriental. Je sais ! Il suffit de vérifier. Ça ira vite, y’a pas plus d’une vingtaine de personnalités agréées en Asie de l’Est. Pour des gens qui prétendent offrir au monde entier la possibilité de communier avec leurs ancêtres, vous vous limitez quand même beaucoup aux grands hommes du pourtour de la Méditerranée.</p>
@@ -459,9 +477,9 @@ ${jailDescription(flags)}
     "end": "by-the-rules",
   },
   "three-as-one": {
-    "text": (flags) => {
+    "text": (flags, skip) => {
       return `
-${ionnaFirstHalf(flags)}
+${ionnaFirstHalf(flags, skip)}
 
 <p>Si vous continuez ainsi, vous ne pouvez que perdre.</p>
 

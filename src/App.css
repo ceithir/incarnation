@@ -91,3 +91,28 @@ h2 {
 p.tips {
   font-style: italic;
 }
+
+a.skip {
+  cursor: pointer;
+  color: #333;
+}
+
+a.skip > div:first-child > *:first-child::before {
+  content: "↪ ";
+}
+
+a.skip > div:nth-child(2) > *:last-child::after {
+  content: " ↩";
+}
+
+a.skip > div:nth-child(2) {
+  display: none;
+}
+
+a.skip.unfold > div:first-child {
+  display: none;
+}
+
+a.skip.unfold > div:nth-child(2) {
+  display: block;
+}

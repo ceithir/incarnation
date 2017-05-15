@@ -1,7 +1,8 @@
 import {ionnaFirstSummon, rebeccaFirstSummon, bulletExplanation, onawaFirstSummon} from "./summons.js";
+import {shortener} from "./helpers.js";
 
-const bernardoDescription = (flags) => {
-  return `
+const bernardoDescription = (flags, skip) => {
+  const description = `
 <p>Votre nouvel adversaire se matérialise. Une riche armure d’acier damasquiné. Un manteau d’un rouge écarlate. Une rapière à la lame ondulante. Un masque de fer.</p>
 
 <p>Il s’incline légèrement pour vous saluer, relevant sa cape d’un mouvement désuet.</p>
@@ -12,6 +13,14 @@ const bernardoDescription = (flags) => {
 
 <p>Il s’avance au même rythme que les mots sortent de la fente qui lui sert de bouche et frappe en guise de ponctuation.</p>
   `;
+
+  const summary = `
+<p>Eschyle reste fidèle à son thème d’acier et d’arme blanche, évoluant simplement du péplum au spectacle de cape et d’épée.</p>
+
+<p>Il conclut d’ailleurs son introduction à la pointe de son arme, bien décidé à vous marquer d’une zébrure écarlate.</p>
+  `;
+
+  return shortener(summary, description, skip);
 }
 
 const defeatDescription = (flags) => {
@@ -48,11 +57,11 @@ const defeatDescription = (flags) => {
 
 const second = {
   "second-ionna": {
-    "text": (flags) => {
+    "text": (flags, skip) => {
       let summonDescription = `
 <p>Vous décidez de changer de fusil d’épaule, et en appelez à Ionna cette fois-ci. Il vous faut une certaine gymnastique mentale pour réussir à vous plonger dans l’état d’esprit particulier dans lequel celle-ci peut s’épanouir, bien différent de celui de votre précédente alliée.</p>
 
-${ionnaFirstSummon}
+${shortener(`<p>Vous lui accordez votre confiance, et Ionna s’incarne en vous.</p>`, ionnaFirstSummon, skip)}
       `;
 
       if (flags.ionnaVersusMakabi) {
@@ -64,7 +73,7 @@ ${ionnaFirstSummon}
       return `
 ${summonDescription}
 
-${bernardoDescription(flags)}
+${bernardoDescription(flags, skip)}
 
 <p>Vous parez avec votre propre arme. Votre lame glisse sur la forme inhabituelle de l’autre, finit détournée par la garde ouvragée. Cela lui offre une ouverture, qu’il exploite en portant un coup latéral au niveau de votre hanche.</p>
 
@@ -111,15 +120,15 @@ ${bernardoDescription(flags)}
     },
   },
   "second-rebecca": {
-    "text": (flags) => {
+    "text": (flags, skip) => {
       let summonDescription = `
 <p>Votre premier essai n’ayant guère été couronné de succès, vous vous plongez dans l’état d’esprit nécessaire à invoquer la plus controversée des esprits à votre disposition.</p>
 
-${rebeccaFirstSummon}
+${shortener(`<p>Vous lâchez la bride à vos envies et ne faites plus qu’une avec Rebecca.</p>`, rebeccaFirstSummon, skip)}
       `;
 
       let explanation = `
-${bulletExplanation}
+${shortener(`<p>Misty comprend ce qui se passe. Rebecca rejette ce rappel à sa condition spectrale.</p>`, bulletExplanation, skip)}
       `;
 
       if (flags.rebeccaVersusMakabi) {
@@ -135,7 +144,7 @@ ${bulletExplanation}
       return `
 ${summonDescription}
 
-${bernardoDescription(flags)}
+${bernardoDescription(flags, skip)}
 
 <p>Vous lui répondez d’une balle en pleine poitrine.</p>
 
@@ -171,11 +180,11 @@ ${defeatDescription(flags)}
     },
   },
   "second-onawa": {
-    "text": (flags) => {
+    "text": (flags, skip) => {
       let summonDescription = `
-<p>Votre premier essai n’ayant guère été couronné de succès, vous vous décidez à abattre votre joker, et vous concentrez pour synchroniser votre personnalité sur la sienne.</p>
+<p>Votre premier essai n’ayant guère été couronné de succès, vous vous décidez à abattre votre joker, et vous concentrez pour synchroniser votre personnalité avec celle d’Onawa.</p>
 
-${onawaFirstSummon}
+${shortener(`<p>Votre position précaire facilite l’invocation plus qu’elle ne la contrarit.</p>`, onawaFirstSummon, skip)}
       `;
 
       let wound = `
@@ -194,16 +203,16 @@ ${onawaFirstSummon}
 
       if (flags.rebeccaVersusMakabi) {
         summonDescription = `
-<p>Le changement de personnalité est brusque. Rebecca est plutôt du genre à briser les vagues qui déferlent sur elle. Votre nouvelle alliée est elle de celles qui génèrent de tels brisants.</p>
+<p>Le changement de personnalité est brusque. Rebecca est plutôt du genre à briser les vagues qui déferlent sur elle. Votre nouvelle alliée est quant à elle de celles qui génèrent de tels brisants.</p>
 
-${onawaFirstSummon}
+${shortener(`<p>Vous vous laissez emporter par le courant.</p>`, onawaFirstSummon, skip)}
         `;
       }
 
       return `
 ${summonDescription}
 
-${bernardoDescription(flags)}
+${bernardoDescription(flags, skip)}
 
 <p>Guère surprise, vous esquivez aussitôt d’un pas sur le côté.</p>
 

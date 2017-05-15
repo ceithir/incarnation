@@ -1,4 +1,5 @@
 import {ionnaFirstSummon, rebeccaFirstSummon, bulletExplanation, onawaFirstSummon} from "./summons.js";
+import {shortener} from "./helpers.js";
 
 const summoningDescription = (summonName) => {
   return `
@@ -24,14 +25,19 @@ const makabiDescription = `
 <p>Il bascule alors sa lance pour en faire pointer le fer droit vers vous.</p>
 `;
 
+const introSummary = (summonName) => {
+  return `
+<p>Vous invoquez ${summonName} sans coup férir, habituée que vous êtes à lui donner corps. Votre adversaire n’est pas en reste, lancier armuré venu d’un lointain passé.</p>
+  `;
+};
+
 const first = {
   "first-ionna": {
-    "text": `
-${summoningDescription("Ionna")}
+    "text": (flags, skip) => {
+      const introFull = summoningDescription("Ionna")+ionnaFirstSummon+makabiDescription;
 
-${ionnaFirstSummon}
-
-${makabiDescription}
+      return `
+${shortener(introSummary("Ionna"), introFull, skip)}
 
 <p>Vous abaissez la visière de votre casque. Faites jouer vos épaules pour vous assurer que vos différentes couches protectrices sont bien agencées. Elles accompagnent votre mouvement sans heurt, se soutenant les unes les autres. La sensation est familière. Depuis que votre quête a commencé, il est devenu bien rare qu’un jour complet ne s’écoule sans que vous ne soyez contrainte de vous harnacher ainsi.</p>
 
@@ -57,7 +63,8 @@ ${makabiDescription}
 <p>Votre esprit se coupe en deux. Ionna est persuadée qu’elle peut l’emporter, comme elle est toujours persuadée de tout. Misty est incapable de partager sa ferveur, se rend bien compte que la situation est en sa défaveur et craint pour sa résolution.</p>
 
 <p>Devant ce flagrant conflit, l’incarnation cesse. Vous vous retrouvez avec juste une épaisseur de tissu synthétique et vos petits bras pour votre défendre contre un soldat en armes.</p>
-    `,
+      `;
+    },
     "next": (goToSection) => {
       return {
         "text": `Vous vous préparez au pire.`,
@@ -68,12 +75,11 @@ ${makabiDescription}
     },
   },
   "first-rebecca": {
-    "text": `
-${summoningDescription("Rebecca")}
+    "text": (flags, skip) => {
+      const introFull = summoningDescription("Rebecca")+rebeccaFirstSummon+makabiDescription;
 
-${rebeccaFirstSummon}
-
-${makabiDescription}
+      return `
+${shortener(introSummary("Rebecca"), introFull, skip)}
 
 <p>Sérieux, ce type vous menace avec une lance ? Des siècles et des siècles après l’invention de la poudre à canon ?</p>
 
@@ -81,10 +87,11 @@ ${makabiDescription}
 
 <p>Vous faites jaillir le Beretta de son étui et lui collez direct une bastos dans l’épaule, sans préavis. Ça l’arrête net, et sa bouche s’ouvre de façon comique sous l’effet de la surprise. Vous plissez vous-même les yeux d’étonnement car vous lui avez juste roussi le cuir là où il aurait dû y avoir une belle giclée de sang.</p>
 
-${bulletExplanation}
+${shortener(`<p>Phénomène que Misty comprend mais que Rebecca rejette.</p>`, bulletExplanation, skip)}
 
 <p>Ce grand écart entre ce que l’invocateur sait et ce que l’invocation rejette vous fige pendant un instant, qu’Eschyle met à profit pour entamer une nouvelle invocation, à la recherche d’une forme plus apte à combattre votre modernité toute relative.</p>
-    `,
+      `;
+    },
     "next": (goToSection) => {
       return [
         {
@@ -109,12 +116,11 @@ ${bulletExplanation}
     },
   },
   "first-onawa": {
-    "text": `
-${summoningDescription("Onawa")}
+    "text": (flags, skip) => {
+      const introFull = summoningDescription("Onawa")+onawaFirstSummon+makabiDescription;
 
-${onawaFirstSummon}
-
-${makabiDescription}
+      return `
+${shortener(introSummary("Onawa"), introFull, skip)}
 
 <p>Vous posez les yeux sur sa phallique menace, et basculez la tête dans un geste de dédain complet.</p>
 
@@ -155,7 +161,8 @@ ${makabiDescription}
 <p>La phrase claque, sèche et déterminée. Malheureusement, Onawa a beau faire la fière, façon « quand on me cherche on me trouve », les coups qu’elle a portés ont plus fait trembler votre propre corps que celui de son adversaire, et cette petite saute d’humeur sert surtout à cacher que le gugusse ne vous a vraiment pas raté. Vous avez horriblement mal au flanc, et cela affecte votre concentration.</p>
 
 <p>Vous vous attendez à ce qu’Eschyle remette le couvert aussitôt. Au lieu de cela, après vous avoir bien observé sous sa forme actuelle, il rompt l’invocation.</p>
-    `,
+      `;
+    },
     "next": (goToSection) => {
       return {
         "text": `À quel jeu joue-t-il ?`,
