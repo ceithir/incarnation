@@ -210,7 +210,7 @@ class Game extends React.Component {
 
     const buttons = [
       {
-        "text": `Recommencer ${this.state.settings.skip? ` (retourne au premier choix)`: ` (retourne à l’introduction)`}`,
+        "text": `Recommencer ${this.state.settings.skip? ` (au premier choix)`: ` (à l’introduction)`}`,
         "action": this.resetProgress,
       },
       {
