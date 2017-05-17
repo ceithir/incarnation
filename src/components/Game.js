@@ -72,7 +72,8 @@ class Game extends React.Component {
     const ending = this.getSection(section)['end'];
     if (ending) {
       this.setState((prevState, props) => {
-        if (prevState.meta.unlockedEndings.includes(ending)) {
+        console.log(prevState.meta.unlockedEndings.indexOf(ending));
+        if (-1 !== prevState.meta.unlockedEndings.indexOf(ending)) {
           return;
         }
 

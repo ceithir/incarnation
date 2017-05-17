@@ -11,7 +11,7 @@ class Endings extends React.Component {
         <h2>{this.props.title}</h2>
         <ol>
           {this.props.endings.map((ending) => {
-            if (this.props.unlocked.includes(ending.key)) {
+            if (-1 !== this.props.unlocked.indexOf(ending.key)) {
               return (
                 <Ending key={ending.key} name={ending.name}/>
               );
