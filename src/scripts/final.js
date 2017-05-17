@@ -257,7 +257,7 @@ ${musashiboDescription(flags, skip)}
     "end": "sacrifice",
   },
   "rebecca-escape": {
-    "text": `
+    "text": (flags, skip) => `
 <p>La fenêtre d’opportunité est ridiculement courte, mais vous avez l’avantage de la surprise pour vous.</p>
 
 <p>Vous vous retournez vers la foule et tirez dedans. Ils sont beaucoup trop loin pour que cela blesse quiconque, votre projectile s’effaçant bien avant de rencontrer quoi que ce soit de solide. Toutefois, leurs petits cerveaux ne réagissent pas de façon aussi rationnelle. Le bruit de la détonation, le canon pointé dans leur direction, le souvenir tout frais de l’humiliante retraite de leur champion, votre air revêche, cela suffit à provoquer une vague de panique.</p>
@@ -268,7 +268,7 @@ ${musashiboDescription(flags, skip)}
 
 <p>Vous y voyez encore trop bien à votre goût et un nouveau larron s’en mêle avant que vous ne puissiez pousser plus loin votre bricolage, s’interposant d’un bond entre vous et vos victimes de cuivre et de plastique.</p>
 
-${musashiboDescription}
+${musashiboDescription(flags, skip)}
 
 <p>En réponse, vous prenez aussi le large, vous élançant dans un gradin maintenant déserté et enténébré, passant entre deux gorilles que la présence d’un encore plus gros bonhomme a un peu réveillés. Le nombre jouerait en leur faveur s’ils étaient entraînés en ce sens, mais en l’occurrence ils se gênent mutuellement, vous permettant de grappiller de précieuses secondes d’avance et de sortir de leur champ de vision en plongeant derrière une rangée de sièges.</p>
 
