@@ -226,7 +226,7 @@ class Game extends React.Component {
           <small>{subtitle}</small> {title}
         </div>
         {!this.state.settings.skip && <p className="tips">
-          {`Astuce : Vous pouvez dorénavant activer la fonctionnalité de relecture rapide depuis les options. Elle retira du texte tous les éléments que vous connaissez déjà et qui se répètent à chaque parcours. Cette option peut être désactivée à tout moment.`}
+          {`Astuce : Vous pouvez dorénavant activer la fonctionnalité de relecture rapide depuis le panneau de configuration. Elle retira du texte tous les éléments que vous connaissez déjà et qui se répètent à chaque parcours. Cette option peut être désactivée à tout moment.`}
         </p>}
         <div className="lead text-center">
           <Crossroads choices={buttons} />
