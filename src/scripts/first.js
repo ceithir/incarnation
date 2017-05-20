@@ -3,20 +3,20 @@ import {shortener} from "./helpers.js";
 
 const summoningDescription = (summonName) => {
   return `
-<p>Malgré votre expérience dans le domaine, vous ne sauriez réellement expliquer le fonctionnement d’une invocation. Dès très jeune, l’Ordre vous a fait faire des exercices dont l’intérêt exact ne vous a jamais été expliqué, et, un jour, un professeur vous a dit que vous étiez prête, et effectivement vous l’étiez. C’est un peu comme le vélo ou la natation : un processus souvent peu pédagogique, l’idée d’un coup à prendre, que votre corps sait, que vous n’avez pas besoin de théorie mais seulement de pratique.</p>
+<p>Malgré votre expérience dans le domaine, vous ne sauriez réellement expliquer le fonctionnement d’une invocation. Dès votre plus jeune âge, l’Ordre vous a fait faire des exercices dont l’intérêt exact ne vous a jamais été expliqué, et, un jour, un professeur vous a dit que vous étiez prête, et effectivement vous l’étiez. C’est un peu comme le vélo ou la natation : un processus souvent peu pédagogique, l’idée d’un coup à prendre, que votre corps sait, que vous n’avez pas besoin de théorie mais seulement de pratique.</p>
 
 <p>Vous soupçonnez d’ailleurs que vos instructeurs, pour la plupart, ne comprenaient pas non plus la logique derrière ce qu’ils racontaient. Sans doute ne faisaient-ils que répéter ce que leurs parents et professeurs leur avaient enseigné en leur temps.</p>
 
-<p>À votre niveau, la seule véritable difficulté reste d’établir une connexion avec l’esprit. Dans le cas de personnalités que vous avez déjà hébergées à plusieurs reprises, c’est toutefois chose aisée.</p>
+<p>À votre niveau, la seule véritable difficulté reste d’établir une connexion avec l’esprit. Une fois lié à lui, votre corps adoptera naturellement une forme proche de celle qu'avait la personne appelée de son vivant. La transformation n'est cependant pas totale ni parfaite, de même que vos pensées ne seront pas totalement chassées par celles de votre invité. Disons qu'une fois l'invocation terminée, vous serez aux trois quarts ${summonName} et à un quart Misty, aussi bien sur le plan physique que moral.</p>
 
-<p>Vous vous remémorez ce que vous aviez ressenti lors de vos précédents contacts avec ${summonName}. L’état d’esprit est primordial pour une incarnation réussie, plus encore que les souvenirs d’une autre époque, d’une autre vie.</p>
+<p>Vous expirez, inspirez, sur un rythme régulier, hypnotique. Vous vous détachez de la situation présente. Vous vous immergez dans les sentiments que vous aviez perçus lors de vos précédents contacts avec ${summonName}. L’état d’esprit est primordial pour une incarnation réussie, plus encore que les souvenirs d’une autre époque, d’une autre vie. Vous devez vous aligner avec son essence profonde, pas avec de simples détails historiques.</p>
   `;
 };
 
 const makabiDescription = `
-<p>En réaction à votre propre ancrage dans le moment, l’apparence de votre adversaire se précise. Une armure antique avec un casque à la mode grecque, une cotte à larges mailles, un bouclier allongé dans une main et une lance dans l’autre. La barbe toujours, mais courte et bien taillé. Une peau plus sombre, un visage plus beau, un corps plus grand.</p>
+<p>Un coup sec tout proche attire votre attention, ainsi que celle du public. Vous vous tournez dans sa direction, et découvrez un nouvel homme, plus grand, à la peau plus sombre, au visage plus beau. La barbe toujours, mais courte et bien taillée. Il porte une armure antique, avec un casque à la mode grecque et une cotte à larges mailles, tient un bouclier allongé dans une main et une lance dans l’autre.</p>
 
-<p>D’un coup sec, il cogne le sol de la hampe de son arme, provoquant une vague de silence, et déclare solennellement, d’une voix forte, habituée à commander et à prêcher :</p>
+<p>Il cogne deux nouvelles fois avec la hampe de celle-ci contre le sol, en un rythme lent et solennel, puis déclare d’une voix forte, habituée à commander et à prêcher :</p>
 
 <div class="conversation">
 <p>— Je suis le défenseur de la juste foi. Nos croyances, nos usages, nos coutumes, ont été dévoyés par les actes impies d’une barbare qui a autrefois été des nôtres. Encore une fois, il me revient l’honneur de purifier le temple.</p>

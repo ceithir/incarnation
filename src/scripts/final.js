@@ -3,7 +3,7 @@ import {shortener} from "./helpers.js";
 
 const musashiboDescription = (flags, skip) => {
   const description = `
-<p>La personne qui se tient maintenant devant vous est un colosse, votre tête lui arrivant à peine au niveau de la poitrine. Ses amples vêtements ne cachent guère son imposante musculature, ni d’ailleurs l’armure à la japonaise qu’il porte en-dessous. La bande de tissu blanc enroulé autour de sa tête réussit en revanche à dissimuler son visage, ne laissant paraître que ses yeux.</p>
+<p>La personne qui vous fait dorénavant face est un colosse, votre tête lui arrivant à peine au niveau de la poitrine. Ses amples vêtements ne cachent guère son imposante musculature, ni d’ailleurs l’armure à la japonaise qu’il porte en-dessous. La bande de tissu blanc enroulé autour de sa tête réussit en revanche à dissimuler son visage, ne laissant paraître que ses yeux.</p>
 
 <p>Ses deux mains enserrent une arme d’hast se terminant par une imposante lame courbe, avec laquelle il décrit déjà une large arc de cercle pour vous faucher.</p>
   `;
@@ -262,17 +262,17 @@ ${musashiboDescription(flags, skip)}
 
 <p>Vous vous retournez vers la foule et tirez dedans. Ils sont beaucoup trop loin pour que cela blesse quiconque, votre projectile s’effaçant bien avant de rencontrer quoi que ce soit de solide. Toutefois, leurs petits cerveaux ne réagissent pas de façon aussi rationnelle. Le bruit de la détonation, le canon pointé dans leur direction, le souvenir tout frais de l’humiliante retraite de leur champion, votre air revêche, cela suffit à provoquer une vague de panique.</p>
 
-<p>Ça se met à crier, à courir dans tous les sens, à se rentrer dedans. Un magnifique chaos détournant l’attention de vos propres actions. Vous piquez aussitôt un sprint vers l’arrière de la scène, vous laissez tomber. Vous êtes à deux pas des coulisses, et de gros balourds vous foncent déjà dessus, mais vous repérez ce que vous cherchiez, que Misty avait vu lorsqu’elle était passée par là mais n’avait pas identifié comme important : un gros amas de câbles et de boîtiers. Un nœud vital de la connectique et de l’alimentation de l’éclairage.</p>
+<p>Ça se met à crier, à courir dans tous les sens, à se rentrer dedans. Un magnifique chaos détournant l’attention de vos propres actions. Vous piquez aussitôt un sprint vers l’arrière de la scène et vous laissez tomber. Vous êtes à deux pas des coulisses, et de gros balourds vous foncent déjà dessus, mais vous repérez ce que vous cherchiez, que Misty avait vu lorsqu’elle était passée par là mais n’avait pas identifié comme important : un gros amas de câbles et de boîtiers. Un nœud vital de la connectique et de l’alimentation de l’éclairage.</p>
 
-<p>Vous mettez une balle dans le genou du garde le plus proche alors qu’il sort un taser. Vous êtes presque à bout portant, et il déguste sec. Cela calme aussitôt les ardeurs de ses potes. Vous en profitez pour mettre la zone dans le matériel électrique qui vous entoure. Vous n’y connaissez rien, mais vous balancez d’un coup de pied bien ciblé un truc qui a l’air important sur un autre truc qui a l’air important, et, magie, une partie des lumières s’éteignent dans un grésillement.</p>
+<p>Vous mettez une balle dans le genou du garde le plus proche alors qu’il sort un taser. Vous êtes presque à bout portant, et il déguste sec. Cela calme aussitôt les ardeurs de ses potes. Vous en profitez pour mettre la zone dans le matériel électrique qui vous entoure. Vous n’y connaissez rien, mais vous balancez d’un coup de pied bien ciblé un truc dans un autre, en supposant qu'ils ne servent pas qu'à la décoration, et, magie, une partie des lumières s’éteignent dans un grésillement.</p>
 
 <p>Vous y voyez encore trop bien à votre goût et un nouveau larron s’en mêle avant que vous ne puissiez pousser plus loin votre bricolage, s’interposant d’un bond entre vous et vos victimes de cuivre et de plastique.</p>
 
 ${musashiboDescription(flags, skip)}
 
-<p>En réponse, vous prenez aussi le large, vous élançant dans un gradin maintenant déserté et enténébré, passant entre deux gorilles que la présence d’un encore plus gros bonhomme a un peu réveillés. Le nombre jouerait en leur faveur s’ils étaient entraînés en ce sens, mais en l’occurrence ils se gênent mutuellement, vous permettant de grappiller de précieuses secondes d’avance et de sortir de leur champ de vision en plongeant derrière une rangée de sièges.</p>
+<p>En réponse, vous prenez aussitôt le large, vous élançant dans un gradin maintenant déserté et enténébré, passant entre deux gorilles que la présence d’un encore plus gros bonhomme a un peu réveillés. Le nombre jouerait en leur faveur s’ils étaient entraînés en ce sens, mais en l’occurrence ils se gênent mutuellement, vous permettant de grappiller de précieuses secondes d’avance et de sortir de leur champ de vision en plongeant derrière une rangée de sièges.</p>
 
-<p>Leur erreur suivante est de s’aventurer dans l’obscurité à votre poursuite, immédiatement, sans méthode, les escaladant au fur et à mesure qu’ils arrivent sans s’attendre, s’éparpillant pour couvrir une plus grande surface. Seul l’avatar d’Eschyle reste en bas, dans la lumière, fouillant du regard la zone où vous vous êtes dissimulée.</p>
+<p>Leur erreur suivante est de s’aventurer dans l’obscurité à votre poursuite, immédiatement, sans méthode, les escaladant au fur et à mesure qu’ils arrivent, sans s’attendre, s’éparpillant pour couvrir une plus grande surface. Seul l’avatar d’Eschyle reste en bas, dans la lumière, fouillant du regard la zone où vous vous êtes dissimulée.</p>
 
 <p>Vous n’avez qu’une vague idée de ce qu’il peut bien apercevoir de sa position. Des mouvements grisâtres indistincts entrecoupés de courts flashs lumineux lorsque vos armes font feu. Les cris, les pas précipités, les détonations, les chocs durs, étouffés, métalliques, chair contre chair. Les silhouettes qui s’effondrent les unes après les autres. L’amertume de la défaite.</p>
 

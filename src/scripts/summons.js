@@ -12,8 +12,6 @@ export const rebeccaFirstSummon = `
 <p>Vous repoussez la mèche de cheveux qui vous tombe entre les yeux. Sa couleur moitié brune moitié violette vous rappelle que vous n’avez pas entretenu votre teinture depuis longtemps. Bah, après tout, c’est bien comme ça aussi.</p>
 
 <p>Vous cessez de vous intéresser à l’autre imbécile et à son petit jeu et commencez à élaborer un plan pour vous sortir d’ici. Il y a des gardes légèrement en retrait à chaque entrée des coulisses et dans les couloirs d’accès des spectateurs. Plus potentiellement d’autres hors de vue. L’éclairage est principalement assuré par quelques gros projecteurs surélevés avec les moyens du bord, l’un posé sur une antique colonne décapitée, l’autre au sommet d’un des gradins et ainsi de suite dans une maladroite intégration avec le site historique existant. Les murs antiques sont d’ailleurs si riches en prises que même une grimpeuse médiocre pourrait les escalader sans mal.</p>
-
-<p>Votre analyze de la situation est interrompue par l’arrivée du bonhomme que vous êtes supposée affronter.</p>
 `;
 
 export const bulletExplanation = `
@@ -34,6 +32,4 @@ export const onawaFirstSummon = `
 <p>Vous <em>adorez</em> faire ce que vous n’êtes pas censée faire.</p>
 
 <p>Et encore plus dans une situation comme celle-là. C’est lorsque l’on braque un projecteur sur vous pour vous ridiculiser, vous humilier, vous détruire, que vous brillez plus que jamais.</p>
-
-<p>Mais il y a quelqu’un d’autre, désireux de vous piquer la vedette, sur cette scène.</p>
 `;

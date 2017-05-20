@@ -18,7 +18,9 @@ const intro = {
 
 <p>Il ouvre les yeux. Contemple l’assemblée en silence.</p>
 
-<p>Les secondes s’écoulent alors que les derniers bruits se meurent. Si l’être est toujours au cœur d’un déconcertant maelström, il n’évolue désormais plus. Chacun retient son souffle. Enfin, il prend la parole :</p>
+<p>Les secondes s’écoulent alors que les derniers bruits se meurent. Si l’être est toujours au cœur d’un déconcertant maelström, il n’évolue désormais plus. Chacun retient son souffle.</p>
+
+<p>Enfin, il prend la parole :</p>
 
 <div class="conversation">
 <p>— Comme nous tous, Porphyre le fondateur a grandi bercé par les exploits des plus grands héros de l’ancien temps. Parvenu à l’âge adulte, il entreprit un pèlerinage sur les traces de ces grands hommes. Il trouva des monuments à leur gloire, il découvrit des reliques, il consigna des récits qui lui avait échappés jusque là. Mais Porphyre comprit bientôt que cela ne constituait que des témoignages indirects et partiels de la grandeur de ces hommes, et que le seul moyen de jamais réellement appréhender leur courage, leur génie, leur charisme serait de les rencontrer en personne.</p>
@@ -27,12 +29,12 @@ const intro = {
 
 <p>« Alors il abaissa ses défenses et appela à lui, en lui, l’âme d’Utnapishtim le sage. Et le miracle s’accomplit, et il devint Utnapishtim.</p>
 
-<p>« Cette première union fut aussi éphémère que révélatrice. Porphyre cisela ensuite sa technique durant de longues années, jusqu’à être en mesure de pouvoir incarner en lui l’esprit de n’importe quel mort pour la durée qu’il désirait. Grâce à ce don, il put conseiller rois et princes comme s’il était leurs plus valeureux ancêtres. Car il l’était.</p>
+<p>« Cette première communion fut aussi éphémère que révélatrice. Porphyre cisela ensuite sa technique durant de longues années, jusqu’à être en mesure de pouvoir incarner en lui l’esprit de n’importe quel mort pour la durée qu’il désirait. Grâce à ce don, il put conseiller rois et princes comme s’il était leurs plus valeureux ancêtres. Car il l’était.</p>
 
 <p>« Porphyre ne pouvant être partout où ses services étaient requis, et étant le premier conscient du fléau de la mortalité, il forma des disciples. Disciples qui à sa mort en formèrent à leur tour d’autres, jusqu’à ce que bientôt leur nombre se compte en centaines. Des êtres d’exception, ayant consacrés leur vie à établir un pont entre les morts et les vivants. Je parle bien sûr de vous, mes très chers frères, mes très chères sœurs.</p>
 </div>
 
-<p>Chaque membre de l’assemblée baisse humblement et silencieusement la tête en entendant cette phrase, faisant totalement disparaître leurs visages sous les capuchons de leurs robes rituelles.</p>
+<p>Chaque membre de l’assemblée baisse humblement et silencieusement la tête en entendant cette phrase. Leurs visages disparaissent ainsi entièrement sous les capuchons de leurs robes rituelles.</p>
 
 <div class="conversation">
 <p>— Le prix à payer pour ce don unique est celui de la responsabilité. Il nous revient à nous qui possédons le pouvoir de nous assurer qu’il soit employé justement et respectueusement. Pour cela, le conseil est moi-même avons décidé d’imposer deux règles fondamentales.</p>
@@ -44,7 +46,7 @@ const intro = {
 <p>« Et cela suppose des châtiments appropriés si ces règles venaient à être transgressées.</p>
 </div>
 
-<p>L’orateur incline légèrement le buste en un geste de salut. Le frémissement qui le parcourait se meurt ensuite extrêmement vite, et l’homme retrouve l’apparence qu’il avait au tout début de la cérémonie. Il reprend ensuite la parole, d’une voix toute différente :</p>
+<p>L’orateur incline légèrement le buste en un geste de salut. Le frémissement qui le parcourait se meurt alors extrêmement vite, et l’homme retrouve l’apparence qu’il avait au tout début de la cérémonie. Lorsqu'il reprend la parole, c'est d’une voix toute différente :</p>
 
 <div class="conversation">
 <p>— C’est toujours un honneur pour moi d’accueillir en ma chair Cyrille, premier disciple de Porphyre et fondateur de notre ordre. En vertu de la première règle qu’il a énoncée, cette invocation n’a cependant pas seulement pour but de rappeler le miracle qui nous permet encore aujourd’hui d’entendre la voix non déformée de ceux sans qui rien de ceci n’existerait.</p>
@@ -87,9 +89,9 @@ const intro = {
     "text":`
 <p>Vous avez été libérée de vos entraves, mais c’est bien là la seule liberté qu’on vous offre. Deux malabars sont là pour s’assurer que vous n’empruntiez pas un autre chemin que celui menant à la scène, et l’un d’eux s’avance déjà pour vous y pousser de force. Vous le devancez, fatiguée d’être brinquebalée comme un sac de patates.</p>
 
-<p>La lumière des projecteurs vous éblouie. L’Ordre de Ceux qui Transmettent l’Antique Sagesse est aussi vieux jeu que son nom est suranné, mais même eux ont franchi le cap de l’électricité.</p>
+<p>La lumière des projecteurs vous éblouit. L’Ordre de Ceux qui Transmettent l’Antique Sagesse a beau être aussi vieux jeu que son nom est suranné, même eux ont, difficilement, accepté que torches et bougies n'éclairent pas grand chose et franchi le cap de l'électricité.</p>
 
-<p>Vous placez une main au-dessus de vos yeux pour vous protéger, profitant de la chaleur du spot pour vous réchauffer quelque peu. Votre tenue n’est pas adapté à cette fraîche nuit d’automne, mais là encore, vous n’avez pas eu le choix. Pour que vous puissiez offrir votre plus beau profil de terrible rebelle ce soir, on vous a forcée à remettre les vêtements (lavés) que vous portiez lors de votre capture.</p>
+<p>Vous placez une main au-dessus de vos yeux pour vous protéger, profitant de la chaleur du spot pour vous réchauffer quelque peu. Votre tenue n’est pas adaptée à cette fraîche nuit d’automne, mais, là encore, vous n’avez pas eu le choix. Pour que vous puissiez offrir votre plus beau profil de terrible rebelle en ce soir, on vous a forcée à remettre les vêtements (lavés) que vous portiez lors de votre capture.</p>
 
 <p>Enfin, il n’y a vraiment qu’ici, au milieu de toutes ces robes violettes identiques que votre T-shirt peut choquer qui que ce soit.</p>
 
@@ -105,23 +107,27 @@ const intro = {
 <p>— Sœur Iphigénie n’existe plus depuis un bail. Pas sûr qu’elle ait jamais existé d’ailleurs. C’est Misty maintenant.</p>
 </div>
 
-<p>Enfin, telle est la phrase que vous aviez formulée dans votre tête, et telle qu’elle aurait dû résonner haut et fort. En pratique, c’est un minable gargouillis à peine intelligible qui s’est extirpé de votre gorge à grand renfort de raclements.</p>
+<p>Enfin, telle est la phrase que vous aviez formulée dans votre tête. Et telle qu’elle aurait dû résonner haut et fort. En pratique, c’est un minable gargouillis à peine intelligible qui s’est extirpé de votre gorge à grand renfort de raclements.</p>
 
-<p>Vous lâchez quelques insanités, mais là aussi vos mots tombent sans force. Vous qui vous demandiez comment l’Ordre allait vous empêcher d’exprimer des opinions et des faits peu à leur goût une fois sur scène, vous avez votre réponse. Vous ne savez pas exactement quelle saleté ils vous ont fait avaler pour vous mettre dans un état pareil ni même quand, mais les occasions n’ont pas manqué.</p>
+<p>Vous lâchez quelques insanités, mais là aussi vos mots tombent sans force. Vous qui vous demandiez comment l’Ordre allait vous empêcher d’exprimer des opinions et des faits peu à leur goût une fois sur scène, vous avez votre réponse.</p>
 
-<p>Devant vos pitoyables efforts, pour vous exprimer, Eschyle affiche un large sourire paternaliste, comme si vous étiez un bébé perdu ayant besoin d’aide, expression parfaitement théâtrale et donc à sa place dans cette farce, et se retourne vers la foule pour continuer son monologue.</p>
+<p>De même, vous connaissez maintenant les effets de la saleté huileuse que vos cerbères vous ont forcé à avaler peu de temps avant le début de ce cirque. Sur le coup, vous aviez supposé un simple calmant, pour que vous n'offriez pas trop de résistance, mais c'était sous-estimer leur perversité.</p>
+
+<p>Devant vos pitoyables efforts, pour vous exprimer, Eschyle affiche un large sourire paternaliste, comme si vous étiez un bébé perdu ayant besoin d’aide, expression  éminemment théâtrale, et donc parfaitement à sa place dans cette farce.</p>
+
+<p>Il se retourne ensuite vers la foule pour continuer son monologue :</p>
 
 <div class="conversation">
 <p>— Sœur Iphigénie nous a brutalement quittés voilà plus d’un an, abandonnant son titre, son nom et sa place dans l’Ordre au profit d’un retour à la vie temporelle. Un choix que nous respectons même si nous aurions aimé qu’il se déroule dans de meilleures circonstances.</p>
 </div>
 
-<p>Vous aimeriez beaucoup pouvoir évoquer le mois de pénitence qui avait été la seule réponse à votre première demande polie de partir. Évidemment qu’après pareil traitement, votre seconde tentative s’est effectuée en douce après avoir piqué un maximum de liquide parmi les offrandes.</p>
+<p>Vous aimeriez beaucoup pouvoir évoquer le mois de pénitence qui avait été la seule réponse à votre première demande polie de partir. Évidemment qu’après pareil traitement, votre seconde tentative s’est effectuée en douce après avoir piqué un maximum de liquidités parmi les offrandes.</p>
 
 <div class="conversation">
 <p>— Cependant, durant son séjour dans le monde, elle commit l’irréparable à de nombreuses reprises, usant des talents qu’elle avait développé en notre sein sans le consentement de l’Ordre dans un but de gain matériel…</p>
 </div>
 
-<p>Oh, vous auriez bien voulu mettre à profit toutes les autres compétences que vous avez apprises en ces lieux. Sauf qu’après des années d’une éducation uniquement tournée vers l’idée de faire de vous un parfait petit réceptacle à esprits, vous n’aviez besoin que d’un doigt pour compter les cordes de votre arc, et que cet arc-là sous la main pour vous procurer de quoi manger.</p>
+<p>Oh, vous auriez bien voulu mettre à profit toutes les autres compétences que vous avez apprises en ces lieux. Sauf qu’après des années d’une éducation uniquement tournée vers l’idée de faire de vous un parfait petit réceptacle à esprits, vous n’aviez besoin que d’un doigt pour compter les cordes de votre arc, et que cet arc-là pour vous procurer de quoi manger.</p>
 
 <div class="conversation">
 <p>— … et qui plus est en invoquant régulièrement des esprits dont la pureté n’a pas été confirmée par l’Ordre.</p>
@@ -131,7 +137,7 @@ const intro = {
 
 <p>Toutefois, à force d’avoir peur des flammes, on finit par mourir de froid. Leur stupide liste ne contient aucune personne ayant vécu dans les deux derniers siècles, et une poignée seulement pour les trois qui les précèdent. La plupart des esprits officiels sont ainsi bien trop déconnectés de la réalité présente pour être d’une quelconque aide pratique de nos jours.</p>
 
-<p>Et, bien sûr, leurs philosophies de vie datent elles aussi d’une autre époque. Être une invocatrice, au féminin, et s’en tenir aux bons esprits officiels signifie passer votre vie à tenir la porte à de vieux barbons qui vous font bien comprendre que votre place est en cuisine à élever vos enfants.</p>
+<p>Et, bien sûr, leurs philosophies de vie datent elles aussi d’une autre époque. Être une invocatrice, au féminin, et s’en tenir aux bons esprits officiels, signifie passer votre existence à tenir la porte à de vieux barbons qui vous font bien comprendre que votre place est au gynécée à pondre la génération suivante.</p>
 
 <p>Tout un argumentaire que vous bouillez de ne pas pouvoir exprimer autrement que par des borborygmes.</p>
 
@@ -150,7 +156,9 @@ const intro = {
 
 <p>Dans les jours qui précédent, vous vous êtes d’ailleurs beaucoup interrogée sur les raisons qui ont poussé l’ordre à déterrer une méthode de jugement pareil. Maintenant que vous êtes dans l’arène, face à de nombreux fidèles qui boivent les paroles de leur maître à penser, vous vous dites que c’est justement pour cela. L’occasion rêvée d’organiser une grande messe, de rappeler les racines de l’Ordre, la force de ses traditions et le châtiment qui attend ceux et celles qui s’y opposent.</p>
 
-<p>Il abandonne enfin son public pour se tourner vers vous. Le silence se fait dans la foule, remplacé par une tension électrique. Ne pouvant plus reculer, vous avancez vers le centre de la scène, bien en vue de tous, vous mettant face à votre bourreau. Il joint les mains, dans le geste aussi ritualisé que techniquement inutile indiquant qu’il va à nouveau invoquer un esprit.</p>
+<p>Eschyle abandonne enfin son public pour se tourner vers vous. Le silence se fait dans la foule, remplacé par une tension électrique. Ne pouvant plus reculer, vous avancez vers le centre de la scène, bien en vue de tous, faisant face à votre bourreau.</p>
+
+<p>Il joint les mains, dans le geste aussi ritualisé que techniquement inutile indiquant qu’il va à nouveau invoquer un esprit, et déclare officiellement le début des hostilités :</p>
 
 <div class="conversation">
 <p>— Bien. Les enjeux ont été rappelés, le jugement proprement dit peut commencer.</p>
