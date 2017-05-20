@@ -1,5 +1,5 @@
 export const ionnaFirstSummon = `
-<p class="summon-spirit">La confiance, en soi et en un pouvoir supérieur. La certitude que le chemin choisi est le bon. Telle est la clé de voûte de la pensée d’Ionna.</p>
+<p class="summon-spirit">Vous avancez sans crainte car vous avez la certitude que le chemin que vous empruntez est le bon. Votre foi en un pouvoir supérieur est la clé de voûte de votre confiance en vous-même.</p>
 
 <p>Vous vous remettez bien droite, la tête haute et le dos raide. Il n’y a que devant Dieu que vous courbez l’échine, et ce grossier homme n’est clairement ni le divin ni son serviteur. Votre armure lustrée rutile sous les puissantes lumières, comme il se doit, pour que votre radiance puisse montrer la voie à ceux qui vous suivent.</p>
 
@@ -22,12 +22,12 @@ export const onawaFirstSummon = `
 <p class="summon-spirit">Vous rejetez toutes vos préconceptions, et laissez le chaos vous envahir. Le chaos originel. Le chaos créatif. La tempête du changement.</p>
 
 <div class="conversation">
-<p>— Cher public, bonsoir !</p>
+<p>— Bonjour tout le monde !</p>
 </div>
 
-<p>Articuler proprement cette phrase vous a demandé beaucoup plus d’efforts que vous ne l’auriez souhaité, et votre voix est plus rauque et faible qu’à votre habitude. Toutefois, vos années d’expérience à discourir dans les pires conditions, et l’entraînement de votre carrière avortée dans la chanson, vous donnent les ressources nécessaires pour contourner le gros de l’aphonie que vos accusateurs ont tenté de vous imposer.</p>
+<p>Articuler proprement cette simple phrase vous a demandé beaucoup plus d’efforts que vous ne l’auriez souhaité. En dépit d'années passées à faire entendre votre voix dans les pires conditions, ainsi que de l’entraînement d'une carrière avortée dans la chanson, vous n'arrivez qu'à contourner partiellement le bâillon chimique de vos accusateurs. Assez pour parler distinctement, mais pas assez pour que chacun de vos mots résonne comme un roulement de tonnerre.</p>
 
-<p>Les grincements de dents que vous entendez en réponse valaient bien ces quelques efforts. Votre aparté déplaie. Vous n’êtes pas censée interpeller directement l’assemblée. Ce duel est supposé être un tête-à-tête public entre vous et votre accusateur.</p>
+<p>Mais même si vous êtes personnellement déçue de la platitude de votre introduction, elle provoque moult grincements de dents dans le public. Votre aparté déplaît. Vous n’êtes pas censée interpeller directement l’assemblée. Ce duel est supposé être un tête-à-tête public entre vous et votre accusateur.</p>
 
 <p>Vous <em>adorez</em> faire ce que vous n’êtes pas censée faire.</p>
 

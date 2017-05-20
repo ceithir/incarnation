@@ -7,16 +7,16 @@ const summoningDescription = (summonName) => {
 
 <p>Vous soupçonnez d’ailleurs que vos instructeurs, pour la plupart, ne comprenaient pas non plus la logique derrière ce qu’ils racontaient. Sans doute ne faisaient-ils que répéter ce que leurs parents et professeurs leur avaient enseigné en leur temps.</p>
 
-<p>À votre niveau, la seule véritable difficulté reste d’établir une connexion avec l’esprit. Une fois lié à lui, votre corps adoptera naturellement une forme proche de celle qu'avait la personne appelée de son vivant. La transformation n'est cependant pas totale ni parfaite, de même que vos pensées ne seront pas totalement chassées par celles de votre invité. Disons qu'une fois l'invocation terminée, vous serez aux trois quarts ${summonName} et à un quart Misty, aussi bien sur le plan physique que moral.</p>
+<p>À votre niveau, la seule véritable difficulté reste d’établir une connexion avec l’esprit. Une fois lié à lui, votre corps adoptera naturellement une forme proche de celle qu'avait la personne appelée de son vivant. Proche, mais pas parfaitement identique, de même que vos pensées ne seront pas totalement chassées par celles de votre invité. Disons qu'une fois l'invocation terminée, vous serez aux trois quarts ${summonName} et à un quart Misty, aussi bien sur le plan physique que moral.</p>
 
-<p>Vous expirez, inspirez, sur un rythme régulier, hypnotique. Vous vous détachez de la situation présente. Vous vous immergez dans les sentiments que vous aviez perçus lors de vos précédents contacts avec ${summonName}. L’état d’esprit est primordial pour une incarnation réussie, plus encore que les souvenirs d’une autre époque, d’une autre vie. Vous devez vous aligner avec son essence profonde, pas avec de simples détails historiques.</p>
+<p>Vous expirez, inspirez, sur un rythme régulier, hypnotique. Vous vous détachez de la situation présente. Vous vous immergez dans les sentiments que vous aviez perçus lors de vos précédents contacts avec ${summonName}. L’état d’esprit est primordial pour une incarnation réussie, bien plus que les souvenirs d’une autre époque, d’une autre vie. Vous fondez votre caractère dans celui de votre alliée, acceptez sa vision du monde. Vous...</p>
   `;
 };
 
 const makabiDescription = `
 <p>Un coup sec tout proche attire votre attention, ainsi que celle du public. Vous vous tournez dans sa direction, et découvrez un nouvel homme, plus grand, à la peau plus sombre, au visage plus beau. La barbe toujours, mais courte et bien taillée. Il porte une armure antique, avec un casque à la mode grecque et une cotte à larges mailles, tient un bouclier allongé dans une main et une lance dans l’autre.</p>
 
-<p>Il cogne deux nouvelles fois avec la hampe de celle-ci contre le sol, en un rythme lent et solennel, puis déclare d’une voix forte, habituée à commander et à prêcher :</p>
+<p>Il cogne à nouveau par deux fois avec la hampe de son arme contre le sol, en un rythme lent et solennel, puis déclare d’une voix forte, habituée à commander et à prêcher :</p>
 
 <div class="conversation">
 <p>— Je suis le défenseur de la juste foi. Nos croyances, nos usages, nos coutumes, ont été dévoyés par les actes impies d’une barbare qui a autrefois été des nôtres. Encore une fois, il me revient l’honneur de purifier le temple.</p>
@@ -43,24 +43,22 @@ ${shortener(introSummary("Ionna"), introFull, skip)}
 
 <div class="conversation">
 <p>— J’ai fait ce que j’ai fait car cela était juste, et jamais je ne le renierai.</p>
-<p>— Il est des saints hommes qui auraient pu te montrer tes erreurs par la seule force leur verbe. Je n’en suis malheureusement pas un, et devrais me contenter de ma colère.</p>
+<p>— Il est des saints hommes qui auraient pu te montrer tes erreurs par la seule force de leur verbe. Je n’en suis malheureusement pas un, et devrai me contenter de ma colère.</p>
 </div>
 
-<p>La première attaque du prêcheur armé est avant tout un coup de semonce, destiné à vous effrayer et à jauger votre niveau. Sa lance vole en une trajectoire prévisible, vous l’esquivez sans mal, et dégainez en réponse.</p>
+<p>La première attaque du prêcheur armé est avant tout un coup de semonce, une frappe brutale destinée à vous effrayer et à jauger votre niveau. Sa lance vole en une trajectoire prévisible, vous l’esquivez sans mal, et dégainez en réponse.</p>
 
-<p> Vous commencez alors à vous tourner autour.</p>
+<p>Vous commencez alors à vous tourner autour, silencieusement, chacun guettant une faille dans la garde de l'autre.</p>
 
-<p>Il a l’avantage de la taille et de l’allonge, mais son équipement a un bon millénaire de retard sur le vôtre, devant peser tout aussi lourd pour protéger moins bien une zone nettement plus réduite du corps. Autant de failles que vous vous ferez un plaisir d’exploiter.</p>
-
-<p>Vous tentez un assaut. Il pare de son bouclier. Riposte. La lance glisse sans dommage sur le flanc de votre jambière. Une estocade haute. Déviée par son bouclier à nouveau. Un contre en pleine épaule. Votre cuirasse arrête la pointe, l’impact vous secoue, il reprend de la distance.</p>
+<p>Vous êtes la première à tenter une attaque. Il pare de son bouclier. Riposte. La lance glisse sans dommage sur le flanc de votre jambière. Estocade haute. Déviée par son bouclier, encore. Contre en pleine épaule. Votre cuirasse arrête la pointe, l’impact vous secoue, il reprend de la distance.</p>
 
 <p>Nouvel échange. Résultat similaire. Vous n’arrivez pas à le toucher, il vous contusionne quelque peu d’un revers de son arme contre votre mollet.</p>
 
-<p>Nouvelle passe d’armes, nouvel échec. Il vous touche encore à la même épaule, et vous commencez à sentir une douleur sourde quand vous bougez le bras.</p>
+<p>Nouvelle passe d’armes. Nouvel échec. Il vous touche encore à la même épaule, et vous commencez à sentir une douleur sourde quand vous bougez le bras.</p>
 
-<p>Il est meilleur que vous. C’est un combattant professionnel, il ne prend pas de risque, garde ses distances, vous épuise et vous blesse peu à peu.</p>
+<p>Vous réalisez qu'il est meilleur que vous. C’est un combattant professionnel, il ne prend pas de risques, garde ses distances, profite de son allonge supérieure, vous épuise et vous endommage lentement mais sûrement.</p>
 
-<p>Votre esprit se coupe en deux. Ionna est persuadée qu’elle peut l’emporter, comme elle est toujours persuadée de tout. Misty est incapable de partager sa ferveur, se rend bien compte que la situation est en sa défaveur et craint pour sa résolution.</p>
+<p>Votre esprit se coupe en deux. Ionna est persuadée qu’elle peut l’emporter en dépit de ces circonstances défavorables, comme elle est toujours persuadée de tout. Misty est incapable de partager cette ferveur qui s'oppose aux faits.</p>
 
 <p>Devant ce flagrant conflit, l’incarnation cesse. Vous vous retrouvez avec juste une épaisseur de tissu synthétique et vos petits bras pour votre défendre contre un soldat en armes.</p>
       `;
@@ -122,7 +120,7 @@ ${shortener(`<p>Phénomène que Misty comprend mais que Rebecca rejette.</p>`, b
       return `
 ${shortener(introSummary("Onawa"), introFull, skip)}
 
-<p>Vous posez les yeux sur sa phallique menace, et basculez la tête dans un geste de dédain complet.</p>
+<p>Vous posez les yeux sur sa phallique menace, et basculez la tête dans un geste de complet dédain.</p>
 
 <div class="conversation">
 <p>— Ah. Je suppose que vous êtes un agent du procureur. J’assurerai quant à moi la plaidoirie de la défense. Les chefs d’accusation ayant été, fort longuement, énoncés, il est plus que temps pour moi de m’exprimer.</p>
@@ -152,13 +150,13 @@ ${shortener(introSummary("Onawa"), introFull, skip)}
 
 <p>Cette fois, il ne vous manque pas. Un bon gros coup sous l’aisselle gauche, bien violent.</p>
 
-<p>Vous vous jetez sur lui. Coup de pied sur son bouclier. Vous agrippez la planche de bois à deux mains. La rejetez sur le côté. Nouveau coup de pied. Votre semelle compensée cogne en plein sternum. Le guerrier encaisse, reculant un peu sous l’impact. Vous repousse en frappant avec le manche de son arme. Le bois heurte l’avant-bras dressé pour protéger le reste de votre corps.</p>
+<p>Vous vous jetez sur lui. Coup de pied sur son bouclier. Sans effet. Vous agrippez à deux mains cette planche de bois qui vous gêne, la déplacez sur le côté, frappez à nouveau. Votre semelle compensée cogne en plein sternum. Le guerrier encaisse, impassible. Il vous repousse sans ménagement avec le manche de son arme. Le bois heurte l’avant-bras dressé pour protéger le reste de votre corps.</p>
 
 <div class="conversation">
 <p>— C’est vraiment trop te demander que de me laisser parler ?</p>
 </div>
 
-<p>La phrase claque, sèche et déterminée. Malheureusement, Onawa a beau faire la fière, façon « quand on me cherche on me trouve », les coups qu’elle a portés ont plus fait trembler votre propre corps que celui de son adversaire, et cette petite saute d’humeur sert surtout à cacher que le gugusse ne vous a vraiment pas raté. Vous avez horriblement mal au flanc, et cela affecte votre concentration.</p>
+<p>La phrase claque, sèche et déterminée. Malheureusement, Onawa a beau faire la fière, façon « quand on me cherche on me trouve », le coups qu’elle a porté a plus fait trembler votre propre corps que celui de son adversaire, et cette petite saute d’humeur sert surtout à cacher que le gugusse ne vous a vraiment pas raté. Vous avez horriblement mal au flanc, et cela affecte votre concentration.</p>
 
 <p>Vous vous attendez à ce qu’Eschyle remette le couvert aussitôt. Au lieu de cela, après vous avoir bien observé sous sa forme actuelle, il rompt l’invocation.</p>
       `;
