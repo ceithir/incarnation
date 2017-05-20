@@ -195,6 +195,10 @@ class Game extends React.Component {
     });
   }
 
+  shouldShowPostGame = () => {
+    return this.state.meta.unlockedEndings.length >= 2;
+  }
+
   endGame = (endingKey) => {
     const endingIndex = this.props.endings.findIndex(
       (ending) => {
@@ -211,7 +215,7 @@ class Game extends React.Component {
 
     const buttons = [
       {
-        "text": `Recommencer ${this.state.settings.skip? ` (au premier choix)`: ` (à l’introduction)`}`,
+        "text": `Recommencer ${this.state.settings.skip? ` (au premier choix)`: ``}`,
         "action": this.resetProgress,
       },
       {
@@ -225,7 +229,7 @@ class Game extends React.Component {
         <div className="ending">
           <small>{subtitle}</small> {title}
         </div>
-        {!this.state.settings.skip && <p className="tips">
+        {this.shouldShowPostGame() && !this.state.settings.skip && <p className="tips">
           {`Astuce : Vous pouvez dorénavant activer la fonctionnalité de relecture rapide depuis le panneau de configuration. Elle retira du texte tous les éléments que vous connaissez déjà et qui se répètent à chaque parcours. Cette option peut être désactivée à tout moment.`}
         </p>}
         <div className="lead text-center">
@@ -259,7 +263,7 @@ class Game extends React.Component {
       <Settings
         values={this.state.settings}
         update={this.updateSettings}
-        showPostGameOptions={this.state.meta.unlockedEndings.length > 0}
+        showPostGameOptions={this.shouldShowPostGame()}
       />
     );
   }
