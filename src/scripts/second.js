@@ -3,9 +3,11 @@ import {shortener} from "./helpers.js";
 
 const bernardoDescription = (flags, skip) => {
   const description = `
-<p>Votre nouvel adversaire se matérialise. Une riche armure d’acier damasquiné. Un manteau d’un rouge écarlate. Une rapière à la lame ondulante. Un masque de fer.</p>
+<p>Vous entendez un froissement de tissu, comme un rideau qu'on écarte. Votre nouvel adversaire se dévoile à grands renforts de mouvements exagérés.</p>
 
-<p>Il s’incline légèrement pour vous saluer, relevant sa cape d’un mouvement désuet.</p>
+<p>Il ouvre d'un geste ample son manteau d’un rouge écarlate, exposant une riche armure d’acier damasquiné, rabat sa capuche pour mieux montrer le masque de fer qui cache son visage, fait jaillir de son fourreau sa rapière à la lame ondulante avec un sifflement calculé.</p>
+
+<p>Et de conclure en s’inclinant légèrement pour vous saluer, relevant sa cape d’un mouvement désuet.</p>
 
 <div class="conversation">
 <p>— Je m’excuse pour ce qui va suivre. Mais c’est nécessaire, pour votre bien, pour extraire le démon qui est en vous.</p>
@@ -28,21 +30,23 @@ const defeatDescription = (flags) => {
 
   if (flags.badlyWounded) {
     text += `
-<p>Il s’acharne sur vos blessures toutes fraîches, prenant un malin plaisir à frapper encore et encore des endroits où vous souffrez déjà. Les coups s’enchaînent sans répit, et vos piètres efforts ne parviennent guère à en atténuer l’impact.</p>
+<p>Il prend un malin plaisir à frapper là où vous avez déjà été touchée lors de l'affrontement précédent, à raviver la douleur que vous employiez à ignorer. Les coups s’enchaînent sans répit, et vos piètres efforts ne parviennent guère à en atténuer l’impact.</p>
 
-<p>Un coup particulièrement réussi à la jambe sonne le glas de votre fébrile résistance. Vous vous effondrez, à genoux, en sang, ayant mal de partout.</p>
+<p>Une violente estocade à la jambe sonne le glas de votre fébrile résistance. Vous vous effondrez, à genoux, en sang, ayant mal de partout.</p>
 
-<p>Ne pouvant maintenir la concentration nécessaire à l’invocation alors que tous les signaux de votre organisme passent au rouge, vous redevenez Misty, et ressentez d’autant plus la douleur des nombreuses morsures de l’acier que vos perceptions sont maintenant entièrement les vôtres.</p>
+<p>Ne pouvant maintenir la concentration nécessaire à l’invocation alors que tous les signaux de votre organisme passent au rouge, vous redevenez Misty.</p>
+
+<p>Vos blessures se résorbent quelque peu avec la fin de l'invocation, s'évanouissant en partie avec les autres changements de votre morphologie, mais l'amélioration reste superficielle, et vous ressentez pleinement leur souffrance maintenant que vos perceptions sont à nouveau pleinement les vôtres.</p>
 
 <p>Votre adversaire s’extasie devant votre pitoyable résistance.</p>
     `;
   } else {
     text += `
-<p>Votre adversaire continue à vous aiguillonner prudemment, se refusant à raccourcir la distance en une frappe plus impactante. Ce qui n’empêche pas ses frappes d’être nombreuses et sanguinolentes. Vos membres sont rapidement couverts de coupures écarlates. Une lacération à la joue vous fait goûter votre propre sang. Un point rouge en haut à gauche de votre poitrine démontre qu’il aurait pu vous transpercer le coeur eusse-t-il appuyé son geste.</p>
+<p>Il continue à vous aiguillonner prudemment, se refusant à risquer le retour de flamme d'une imparfaite attaque en profondeur. Ce qui n’empêche pas ses frappes d’être nombreuses et sanguinolentes. Vos membres sont rapidement couverts de coupures écarlates. Une lacération à la joue vous fait goûter votre propre sang. Un point rouge en haut à gauche de votre poitrine démontre qu’il aurait pu vous transpercer le cœur eusse-t-il appuyé son geste.</p>
 
 <p>Il se joue de vous comme si vous n’étiez qu’une poupée, contrôlant vos mouvements en vous encageant d’acier, dessinant sur votre corps le symbole de sa victoire.</p>
 
-<p>Il conclut sa prestation d’un touche légère juste entre vos deux yeux. Et se détourne ensuite de vous, se retournant pour saluer son public, tandis que vous vous effondrez comme une marionette désarticulée, vos jambes tétanisées par les efforts désordonnés qu’elles ont dû accomplir pour suivre cette macabre danse.</p>
+<p>Il conclut sa prestation d’un touche légère juste entre vos deux yeux. Et se détourne ensuite de vous, se retournant pour saluer son public, tandis que vous vous effondrez comme une marionnette désarticulée, vos jambes tétanisées par les efforts désordonnés qu’elles ont dû accomplir pour suivre cette macabre danse.</p>
     `;
   }
 
@@ -133,7 +137,11 @@ ${shortener(`<p>Misty comprend ce qui se passe. Rebecca rejette ce rappel à sa 
 
       if (flags.rebeccaVersusMakabi) {
         summonDescription = `
-<p>Ne voyant pas d’intérêt à changer une recette gagnante, vous vous préparez à faire feu à nouveau.</p>
+<p>Vous n'attendez pas qu'il soit prêt et appuyez à nouveau sur la détente. Votre projectile affaibli se perd dans le tourbillon spectral qui entoure Eschyle, sa matière spirituelle subsistante dévorée dans la tempête métamorphique, digérée pour contribuer à la transformation physique liée à l'invocation.</p>
+
+<p>Rebecca fait la sourde oreille à cette savante explication. Elle parvient toutefois à comprendre, péniblement, que si elle se rapproche suffisamment près, ses balles conserveront assez de leur intégrité pour être efficaces.</p>
+
+<p>Une réalisation une seconde trop tardive.</p>
         `;
 
         explanation = `
@@ -162,7 +170,7 @@ ${bernardoDescription(flags, skip)}
 
 ${explanation}
 
-<p>Vous essayez de vous rapprocher pour lui mettre une balle de plus près, mais il semble parfaitement conscient de votre faiblesse actuelle et s’assure de garder ses distances, vous aiguillonnant au passage.</p>
+<p>Vous essayez de vous rapprocher pour lui mettre une balle de plus près, mais il est parfaitement conscient de votre faiblesse actuelle et s’assure de garder ses distances, ne s'exposant que le temps d'éphémères bottes.</p>
 
 ${defeatDescription(flags)}
       `;
@@ -228,7 +236,7 @@ ${wound}
 <div class="conversation">
 <p>— Déjà, si tu pouvais éviter de trop me charcuter, ce serait fantastique. Le sang, c’est vachement dur à nettoyer.</p>
 <p>— Mon enfant, tu devrais te repentir et non rire. Si ce sang a coulé, c’est uniquement en raison de tes péchés.</p>
-<p>— Je sais pas trop. J’ai probablement mangé une religieuse de plus que de raison la dernière fois, mais même si j’avais alors surmonté ce péché de gourmandise, je pense que ma situation actuelle n’aurait globalement pas changé.</p>
+<p>— Je sais pas trop. J’ai probablement mangé une religieuse de plus que de raison lors de mon dernier gueuleton, mais même si j’avais alors surmonté ce terrible péché de gourmandise, j'ai l'audace de penser que cela n'aurait rien changé à mes problèmes actuels.</p>
 <p>« En revanche, je suis certaine que si personne ne s’était mis en tête de m’embrocher et de me couper en morceaux aujourd’hui, j’aurais encore toute mon hémoglobine pour moi.</p>
 </div>
 

@@ -134,7 +134,7 @@ ${musashiboDescription(flags, skip)}
 
 <p>Vous esquivez en reculant de quelques pas. Vous n’avez de toute façon pas signé pour un combat au corps à corps.</p>
 
-<p>Vous tirez une première fois. Jambe. ${neverSummonedRebeccaBefore? `Votre tir touche de plein fouet, mais se contente de roussir sa protection au lieu de la transpercer.`: `Encore ce problème de puissance de feu réduite. À croire que votre arme est chargée avec des munitions d’entraînement.`}</p>
+<p>Vous tirez une première fois. Jambe. Votre tir touche de plein fouet, mais se contente de roussir sa protection au lieu de la transpercer.</p>
 
 ${neverSummonedRebeccaBefore? `
 <p>C’est le prix à payer pour user du souvenir matérialisé d’une arme plutôt que d’un véritable pistolet physique.</p>
@@ -142,7 +142,7 @@ ${neverSummonedRebeccaBefore? `
 ${shortener(`<p>Un phénomène récurrent, mais que Rebecca se refuse à intérioriser.</p>`, bulletExplanation, skip)}
 
 <p>Et bien, vous allez devoir faire avec ce handicap.</p>
-`: ""}
+`: `<p>Toujours cet insupportable problème de puissance de feu réduite qui se joue de vos réflexes, de votre désir profond de garder vos distances.</p>`}
 
 <p>Le mastoc vous fonce dessus. Vous lui en mettez une deuxième en plein ventre. Un morceau de la plaque de métal qui protège ses organes à cet endroit vole mais il ne s’arrête pas. Deux tirs consécutifs dans la même zone finissent par le stopper, mais le sang se refuse toujours à couler, et il se reprend aussitôt.</p>
 
@@ -150,7 +150,9 @@ ${shortener(`<p>Un phénomène récurrent, mais que Rebecca se refuse à intéri
 
 <p>Sa lame passe un peu trop près de votre visage à votre goût. Vous reculez de quelques pas et vous retrouvez au bord de la scène. Il profite de l’occasion pour réduire la distance et entreprendre de vous fracasser son arme sur le coin du crâne.</p>
 
-<p>Vous vous laissez simplement tomber sur le sol un peu plus bas. Une chute d’un mètre cinquante pour échapper à un coup de boutoir, ce n’est pas cher payé, et tant mieux si le public ne peut plus vous voir. Vous vous attendriez presque à ce qu’il reste là-haut, dépité de votre manque de fair-play, mais il bondit, se révélant plus agile que vous ne l’auriez cru, et atterrit juste devant vous pour vous empêcher de profiter de l’occasion pour filer.</p>
+<p>Vous vous laissez simplement tomber sur le sol un peu plus bas. Une chute d’un mètre cinquante pour échapper à un coup de boutoir, ce n’est pas cher payé, et tant mieux si le public ne peut plus vous voir.</p>
+
+<p>Vous vous attendriez presque à ce qu’Eschyle reste là-haut, dépité de votre manque de fair-play, mais il bondit, se révélant plus agile que vous ne l’auriez cru, et atterrit juste devant vous pour vous empêcher de profiter de l’occasion pour filer.</p>
 
 <p>Ce qui faisait effectivement partie du plan il est vrai.</p>
 
@@ -160,7 +162,9 @@ ${shortener(`<p>Un phénomène récurrent, mais que Rebecca se refuse à intéri
 
 <p>Vous pointez votre arme droit vers sa tête et tirez.</p>
 
-<p>L’extrémité du canon est à moins de trente centimètres du visage de votre ennemi au moment où vous pressez la détente. C’est déjà assez pour que le projectile perde la moitié de sa matière avant de toucher. La moitié restante est largement suffisante pour faire le travail.</p>
+<p>L’extrémité du canon est à moins de trente centimètres du visage de votre ennemi au moment où vous pressez la détente. C’est déjà assez pour que le projectile perde la moitié de sa matière avant de toucher.</p>
+
+<p>La moitié restante est largement suffisante pour faire le travail.</p>
 
 <p>Cette fois, vous voyez enfin le sang gicler.</p>
 
@@ -168,7 +172,7 @@ ${shortener(`<p>Un phénomène récurrent, mais que Rebecca se refuse à intéri
 
 <p>Vous soupesez l’arme dans votre main. Bien plus lourde que vous ne l’auriez imaginée, surtout chargée.</p>
 
-<p>C’est une vraie cette fois, pas une simple projection spirituelle d’une arme ayant jadis existé. Les balles qu’elles tirent ont une portée et une destructivité infiniment supérieure à la médiocre copie avec laquelle vous deviez vous débrouiller jusque là. Rebecca vient de la tester et de l’approuver.</p>
+<p>C’est une vraie cette fois, pas une simple projection spirituelle d’une arme ayant jadis existé. Les balles qu’elles tirent ont une portée et une destructivité infiniment supérieures à la médiocre copie avec laquelle vous deviez vous débrouiller jusque là. Rebecca vient de la tester et de l’approuver.</p>
 
 <p>Vous passez énormément de temps habitée par Rebecca dernièrement. Vous avez constamment besoin de son aide pour échapper aux ennuis ou vous préparer à affronter les suivants.</p>
 
@@ -317,7 +321,7 @@ ${jailDescription(flags)}
 
 <p>Vous échouez lamentablement.</p>
 
-<p>d’Eschyle pose une main sur votre épaule, faussement compatissant.</p>
+<p>Eschyle pose une main sur votre épaule, faussement compatissant.</p>
 
 <div class="conversation">
 <p>— Non mon enfant. Vous devez résister à la tentation.</p>
@@ -325,15 +329,15 @@ ${jailDescription(flags)}
 
 <p>Vous hochez faiblement la tête. Cessez de résister. Il sourit et vous lâche.</p>
 
-<p>C’est là que vous lui mettez un grand coup dans les gencives.</p>
+<p>C’est là que vous lui envoyez un grand coup dans les gencives.</p>
 
 <p>Vous y mettez tellement du cœur que vos phalanges dégustent à l’impact. Mais ça en valait la peine. Eschyle recule, se couvrant la mâchoire d’une main, une expression stupéfaite sur le visage. Il était persuadé que vous n’aviez pas la force de bouger, et encore moins d’appeler un esprit.</p>
 
 <p>Et d’une certaine façon, il aura eu raison. Vous ne sauriez dire à quel moment vous avez réussi à invoquer Onawa. Il serait probablement plus exact de dire que vous ne l’avez jamais vraiment révoquée depuis le début de l’affrontement, la conservant là, à la lisière de votre conscience, prête à revenir en cas de pépin.</p>
 
-<p>Ce qui est encore le cas maintenant. Vous êtes dans état transitoire, où vous basculez constamment entre Misty et Onawa. Votre physique bouge moins vite que votre esprit, aussi conservez-vous majoritairement le physique de la première, à quelques bricoles près.</p>
+<p>Ce qui est encore le cas maintenant. Vous êtes dans état transitoire, où vous basculez constamment entre Misty et Onawa. Votre physique bouge moins vite que votre esprit, aussi conservez-vous majoritairement le physique de la première.</p>
 
-<p>Vous voudriez bien un miroir pour savoir quelle apparence vous arborez présentement, car elle perturbe Eschyle au point de craqueler la sérénité qu’il s’efforce d’afficher depuis le début de cette représentation.</p>
+<p>À quelques bricoles près du moins, car votre apparence actuelle perturbe Eschyle au point de craqueler la sérénité qu’il s’efforce d’afficher depuis le début de cette représentation.</p>
 
 <div class="conversation">
 <p>— Sœur Iphigénie, cessez je vous prie. Votre corps ne devrait pas changer comme cela. Vous êtes en train de vous faire du mal.</p>
@@ -345,7 +349,7 @@ ${jailDescription(flags)}
 <p>— C’est bien humain à toi de t’intéresser à ma santé Eschyle. J’aurais préféré que ce soit un peu plus tôt. Avant que tes hommes ne me trimballent comme un sac de patates, avant le cachot, avant que tu ne cherches à me droguer pour m’empêcher de parler, avant que tu n’appelles des gros bras du passé pour me faire ma fête. Mais c’est gentil quand même.</p>
 </div>
 
-<p>Les mots de Misty jaillissent de vos lèvres avec la voix d’Onawa. Vous vous attendez à ce que Eschyle vous interrompe, violemment, à n’importe quel moment, mais il se contente de vous observer fixement comme une souris devant un cobra. Le public est fasciné de même.</p>
+<p>Les mots de Misty jaillissent de vos lèvres avec la voix d’Onawa. Vous vous attendez à ce que Eschyle vous interrompe, violemment, à n’importe quel moment, mais il se contente de vous observer fixement comme une souris devant un cobra. Le public est pareillement fasciné.</p>
 
 <div class="conversation">
 <p>— Si je me rappelle bien les règles de ton jeu stupide, il me suffit de ne pas flancher pour gagner. Alors, tu dois être satisfait maintenant ? J’ai encaissé, encaissé, et encaissé, avant et pendant, et je suis encore là.</p>
@@ -353,7 +357,11 @@ ${jailDescription(flags)}
 <p>— Si. Ça l’est.</p>
 </div>
 
-<p>Vous boitez jusqu’à l’escalier qui descend de la scène. Personne cherche à vous en empêcher. Vous clopinez le long du couloir sortant du théâtre. L’assistance est toujours figée de même. Vous finissez par atteindre la route, et vous engagez sur le bitume en direction de la ville au loin.</p>
+<p>Vous boitez jusqu’à l’escalier qui descend de la scène. Personne ne cherche à vous en empêcher.</p>
+
+<p>Vous clopinez le long du couloir sortant du théâtre. L’assistance demeure figée.</p>
+
+<p>Vous atteignez la route, et vous engagez sur le bitume en direction de la ville au loin.</p>
 
 <hr/>
 
@@ -385,7 +393,7 @@ ${jailDescription(flags)}
 
 <p>Une bien noble intention. Sauf que vous n’êtes pas une héroïne fictionnelle surentraînée capable de se relever et de repartir comme si de rien n’était après un pareil passage à tabac. Chair et sang limitent vos possibilités.</p>
 
-<p>Vous donneriez beaucoup pour avoir la force d’accomplir un ultime coup d’éclat.</p>
+<p>Vous donneriez beaucoup pour avoir la force d’accomplir un ultime coup d’éclat véritablement mémorable.</p>
 
 <p>Vous vous contentez de vous relever tant bien que mal et de cracher un gros glaviot coloré dans la direction de ce sombre type.</p>
 

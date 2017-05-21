@@ -42,9 +42,9 @@ const transitionBetweenFirstAndSecond = {
 
 <p>Parce qu’il faut bien le reconnaître, vous venez de vous manger une lance. Et ça fait sacrément mal. Et ce type est sérieusement assez fou pour ne pas s’arrêter là. Vous n’avez pas signé pour réellement mettre votre vie en danger dans des jeux du cirque reconstitués.</p>
 
-<p>Ne pouvant réfléchir pleinement alors que la plupart de vos ressources mentales sont occupées par Onawa, vous rompez l'invocation. Votre alliée vous quitte et votre corps retrouve son aspect ordinaire, à une grosse blessure toute fraîche près.</p>
+<p>Ne pouvant réfléchir sereinement alors que la plupart de vos ressources mentales sont occupées par Onawa, vous rompez l'invocation. Votre alliée vous quitte et votre corps retrouve son aspect ordinaire, à une grosse blessure toute fraîche près.</p>
 
-<p>Si elle n'est pas aussi terrible que l'instant d'auparavant, une partie des dégâts subis s'étant évanouis avec les autres modifications temporaires de votre corps, elle n'en reste pas moins pas belle à voir, et vos doutes persistent.</p>
+<p>Si elle n'est pas aussi terrible que l'instant d'auparavant, une partie des dégâts subis s'étant évanouis avec les autres modifications temporaires de votre corps, elle n'en reste peu moins pas belle à voir, et vos doutes persistent.</p>
     `,
     "next": (goToSection) => {
       return [

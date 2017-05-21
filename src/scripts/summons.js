@@ -22,7 +22,7 @@ export const onawaFirstSummon = `
 <p class="summon-spirit">Vous rejetez toutes vos préconceptions, et laissez le chaos vous envahir. Le chaos originel. Le chaos créatif. La tempête du changement.</p>
 
 <div class="conversation">
-<p>— Bonjour tout le monde !</p>
+<p>— Bonjour le monde !</p>
 </div>
 
 <p>Articuler proprement cette simple phrase vous a demandé beaucoup plus d’efforts que vous ne l’auriez souhaité. En dépit d'années passées à faire entendre votre voix dans les pires conditions, ainsi que de l’entraînement d'une carrière avortée dans la chanson, vous n'arrivez qu'à contourner partiellement le bâillon chimique de vos accusateurs. Assez pour parler distinctement, mais pas assez pour que chacun de vos mots résonne comme un roulement de tonnerre.</p>

@@ -56,7 +56,7 @@ ${shortener(introSummary("Ionna"), introFull, skip)}
 
 <p>Nouvelle passe d’armes. Nouvel échec. Il vous touche encore à la même épaule, et vous commencez à sentir une douleur sourde quand vous bougez le bras.</p>
 
-<p>Vous réalisez qu'il est meilleur que vous. C’est un combattant professionnel, il ne prend pas de risques, garde ses distances, profite de son allonge supérieure, vous épuise et vous endommage lentement mais sûrement.</p>
+<p>Vous réalisez qu'il est meilleur que vous. C’est un combattant professionnel, il ne prend pas de risques, garde ses distances, profite de son allonge supérieure, vous épuise lentement mais sûrement. Les coups qu'il vous porte peuvent sembler peu impressionnants, leur gravité réelle dissimulée sous l'armure, mais ils vous endommagent efficacement et en profondeur.</p>
 
 <p>Votre esprit se coupe en deux. Ionna est persuadée qu’elle peut l’emporter en dépit de ces circonstances défavorables, comme elle est toujours persuadée de tout. Misty est incapable de partager cette ferveur qui s'oppose aux faits.</p>
 
@@ -93,7 +93,7 @@ ${shortener(`<p>Phénomène que Misty comprend mais que Rebecca rejette.</p>`, b
     "next": (goToSection) => {
       return [
         {
-          "text": `Vous l’attendez de pied ferme.`,
+          "text": `Vous faites feu à nouveau.`,
           "action": () => {
             goToSection("second-rebecca", {"rebeccaVersusBernardo": true, "lightlyWounded": true});
           }
@@ -150,7 +150,7 @@ ${shortener(introSummary("Onawa"), introFull, skip)}
 
 <p>Cette fois, il ne vous manque pas. Un bon gros coup sous l’aisselle gauche, bien violent.</p>
 
-<p>Vous vous jetez sur lui. Coup de pied sur son bouclier. Sans effet. Vous agrippez à deux mains cette planche de bois qui vous gêne, la déplacez sur le côté, frappez à nouveau. Votre semelle compensée cogne en plein sternum. Le guerrier encaisse, impassible. Il vous repousse sans ménagement avec le manche de son arme. Le bois heurte l’avant-bras dressé pour protéger le reste de votre corps.</p>
+<p>Vous vous jetez sur lui. Coup de pied sur son bouclier. Sans effet. Vous agrippez à deux mains cette planche bombée qui vous gêne, la déplacez sur le côté, frappez à nouveau. Votre semelle compensée cogne en plein sternum. Le guerrier encaisse, impassible. Il vous repousse sans ménagement avec le manche de son arme. Le bois heurte l’avant-bras dressé pour protéger le reste de votre corps.</p>
 
 <div class="conversation">
 <p>— C’est vraiment trop te demander que de me laisser parler ?</p>

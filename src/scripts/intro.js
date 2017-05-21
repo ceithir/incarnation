@@ -89,7 +89,7 @@ const intro = {
     "text":`
 <p>Vous avez été libérée de vos entraves, mais c’est bien là la seule liberté qu’on vous offre. Deux malabars sont là pour s’assurer que vous n’empruntiez pas un autre chemin que celui menant à la scène, et l’un d’eux s’avance déjà pour vous y pousser de force. Vous le devancez, fatiguée d’être brinquebalée comme un sac de patates.</p>
 
-<p>La lumière des projecteurs vous éblouit. L’Ordre de Ceux qui Transmettent l’Antique Sagesse a beau être aussi vieux jeu que son nom est suranné, même eux ont, difficilement, accepté que torches et bougies n'éclairent pas grand chose et franchi le cap de l'électricité.</p>
+<p>La lumière des projecteurs vous éblouit. L’Ordre de Ceux qui Transmettent l’Antique Sagesse a beau être aussi vieux jeu que son nom est suranné, même eux ont franchi, à regret, le cap de l'électricité.</p>
 
 <p>Vous placez une main au-dessus de vos yeux pour vous protéger, profitant de la chaleur du spot pour vous réchauffer quelque peu. Votre tenue n’est pas adaptée à cette fraîche nuit d’automne, mais, là encore, vous n’avez pas eu le choix. Pour que vous puissiez offrir votre plus beau profil de terrible rebelle en ce soir, on vous a forcée à remettre les vêtements (lavés) que vous portiez lors de votre capture.</p>
 
@@ -109,9 +109,7 @@ const intro = {
 
 <p>Enfin, telle est la phrase que vous aviez formulée dans votre tête. Et telle qu’elle aurait dû résonner haut et fort. En pratique, c’est un minable gargouillis à peine intelligible qui s’est extirpé de votre gorge à grand renfort de raclements.</p>
 
-<p>Vous lâchez quelques insanités, mais là aussi vos mots tombent sans force. Vous qui vous demandiez comment l’Ordre allait vous empêcher d’exprimer des opinions et des faits peu à leur goût une fois sur scène, vous avez votre réponse.</p>
-
-<p>De même, vous connaissez maintenant les effets de la saleté huileuse que vos cerbères vous ont forcé à avaler peu de temps avant le début de ce cirque. Sur le coup, vous aviez supposé un simple calmant, pour que vous n'offriez pas trop de résistance, mais c'était sous-estimer leur perversité.</p>
+<p>Vous lâchez quelques insanités, mais là aussi vos mots tombent sans force. Vous qui vous demandiez comment l’Ordre allait vous empêcher d’exprimer des opinions et des faits peu à leur goût une fois sur scène, vous avez votre réponse. De même que vous connaissez dorénavant l'effet de la saleté huileuse que vos cerbères vous ont forcée à avaler peu de temps avant le début de ce cirque. Sur le coup, vous aviez supposé qu'il s'agissait d'un simple calmant, pour que vous n'offriez pas trop de résistance, mais c'était sous-estimer leur perversité.</p>
 
 <p>Devant vos pitoyables efforts, pour vous exprimer, Eschyle affiche un large sourire paternaliste, comme si vous étiez un bébé perdu ayant besoin d’aide, expression  éminemment théâtrale, et donc parfaitement à sa place dans cette farce.</p>
 
