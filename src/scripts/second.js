@@ -3,9 +3,9 @@ import {shortener} from "./helpers.js";
 
 const bernardoDescription = (flags, skip) => {
   const description = `
-<p>Vous entendez un froissement de tissu, comme un rideau qu'on écarte. Votre nouvel adversaire se dévoile à grands renforts de mouvements exagérés.</p>
+<p>Vous entendez un froissement de tissu, comme un rideau qu'on écarte.</p>
 
-<p>Il ouvre d'un geste ample son manteau d’un rouge écarlate, exposant une riche armure d’acier damasquiné, rabat sa capuche pour mieux montrer le masque de fer qui cache son visage, fait jaillir de son fourreau sa rapière à la lame ondulante avec un sifflement calculé.</p>
+<p>Votre nouvel adversaire ouvre d'un geste ample son manteau d’un rouge écarlate, exposant une riche armure d’acier damasquiné, rabat sa capuche pour mieux montrer le masque de fer qui cache son visage, fait jaillir de son fourreau sa rapière à la lame ondulante avec un sifflement calculé.</p>
 
 <p>Et de conclure en s’inclinant légèrement pour vous saluer, relevant sa cape d’un mouvement désuet.</p>
 
@@ -17,9 +17,7 @@ const bernardoDescription = (flags, skip) => {
   `;
 
   const summary = `
-<p>Eschyle reste fidèle à son thème d’acier et d’arme blanche, évoluant simplement du péplum au spectacle de cape et d’épée.</p>
-
-<p>Il conclut d’ailleurs son introduction à la pointe de son arme, bien décidé à vous marquer d’une zébrure écarlate.</p>
+<p>Eschyle reste fidèle à son thème d’acier et d’arme blanche, évoluant simplement du péplum au spectacle de cape et d’épée. Il conclut d’ailleurs son introduction à la pointe de son arme, bien décidé à vous marquer d’une zébrure écarlate.</p>
   `;
 
   return shortener(summary, description, skip);
@@ -65,12 +63,12 @@ const second = {
       let summonDescription = `
 <p>Vous décidez de changer de fusil d’épaule, et en appelez à Ionna cette fois-ci. Il vous faut une certaine gymnastique mentale pour réussir à vous plonger dans l’état d’esprit particulier dans lequel celle-ci peut s’épanouir, bien différent de celui de votre précédente alliée.</p>
 
-${shortener(`<p>Vous lui accordez votre confiance, et Ionna s’incarne en vous.</p>`, ionnaFirstSummon, skip)}
+${shortener(`<p>Vous accordez votre confiance à Ionna, et elle vous la rend en répondant à votre appel.</p>`, ionnaFirstSummon, skip)}
       `;
 
       if (flags.ionnaVersusMakabi) {
         summonDescription = `
-<p>Malgré la cuisante défaite qu’elle vient de subir, vous rappelez Ionna, moitié car elle reste l’invocation que vous maîtrisez qui encaisse le mieux, moitié car vous comptez sur le fait qu’Eschyle ne s’attende pas à une telle stratégie. Et comme sa présence est encore toute fraîche dans votre mémoire, il vous est aisée de vous replonger dans le personnage.</p>
+<p>Malgré la cuisante défaite qu’elle vient de subir, vous rappelez Ionna, moitié car elle reste l’invocation qui encaisse le mieux parmi celle que vous maîtrisez, moitié car vous comptez sur le fait qu’Eschyle ne s’attende pas à une telle stratégie. Et comme sa présence est encore toute fraîche dans votre mémoire, il vous est aisée de vous replonger dans le personnage.</p>
         `;
       }
 

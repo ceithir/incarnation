@@ -9,16 +9,16 @@ const musashiboDescription = (flags, skip) => {
   `;
 
   let summary = `
-<p>Eschyle revient aux valeurs sûres, optant pour une invocation guerrière d’avant l’invention de la poudre.</p>
+<p>Eschyle revient aux valeurs sûres, optant pour une invocation guerrière d’avant l’invention de la poudre.
   `;
   if (flags.badlyWounded) {
     summary = `
-<p>Eschyle reste fidèle à sa stratégie à base d’armes tranchantes et d’armures antiques.</p>
+<p>Eschyle reste fidèle à sa stratégie à base d’armes tranchantes et d’armures antiques.
     `;
   }
 
   summary += `
-<p>L’esprit choisi est cependant nettement plus massif et agressif, frappant en guise d’introduction.</p>
+ L’esprit choisi est cependant nettement plus massif et agressif, vous attaquant en guise d’introduction.</p>
   `;
 
   return shortener(summary, description, skip);
@@ -102,7 +102,7 @@ ${ionnaFirstHalf(flags, skip)}
 
 <p>À peine capable de rouler les yeux, vous observez l’absurde masse de la dernière forme qu’a choisie Eschyle se déplacer au-dessus de vous et pointer l’envers de son arme vers votre visage.</p>
 
-<p>Il vous frappe un grand coup en plein nez, et, constatant que vous avez à peine la force de grommeler quelques grossièretés en réponse, reprend son apparence ordinaire pour s’adresser à son public.</p>
+<p>Il vous frappe un grand coup en plein nez, et, constatant que vous avez à peine la force de grommeler en réponse, reprend son apparence ordinaire pour s’adresser à son public.</p>
 
 <p>Vous n’avez plus la patience ni l’énergie ni l’envie d’écouter son discours. Vous vous contentez de dériver dans un état de semi-conscience jusqu’à ce que quelqu’un se donne la peine de vous ramasser, de vous trimbaler jusqu’à un lit et de vous faire boire un médoc à dormir.</p>
 
@@ -418,7 +418,7 @@ ${jailDescription(flags)}
 <p>— Oh, mais je suis toute prête à accepter une joute oratoire plutôt que physique.</p>
 </div>
 
-<p>Votre adversaire reste coi, se demandant sans doute comment vous arrivez à parler. Difficilement il faut dire. Toutefois, vous avez des années, ou plutôt des décennies, d’expérience dans l’art de vous faire entendre dans les pires conditions. Votre carrière avortée dans la chanson aide aussi, vous ayant apporté les clés d’une certaine maîtrise vocale.</p>
+<p>Votre adversaire reste coi, se demandant sans doute comment vous arrivez à prononcer distinctement les mots. Difficilement il faut dire. Toutefois, vous avez des années, ou plutôt des décennies, d’expérience dans l’art de vous faire entendre dans les pires conditions. Votre carrière avortée dans la chanson aide aussi, vous ayant apporté les clés d’une certaine maîtrise vocale.</p>
 
 <div class="conversation">
 <p>— Et bien quoi ? Si on me lance une épée à la figure, je me défends de même. Si on me parle posément, alors j’use de la parole comme arme.</p>
@@ -444,12 +444,12 @@ ${jailDescription(flags)}
 <p>Vous ne sauriez dire si vous incarnez encore Onawa. Vous utilisez ses capacités vocales certes, mais ce discours devient de plus en plus celui de Misty, et d’ailleurs vous pensez déjà à nouveau pleinement comme Misty. Pourtant le lien ne se rompt pas, probablement car votre état d’esprit actuel est parfaitement cohérent avec celui de votre invocation. Irrévérencieux et déterminé.</p>
 
 <div class="conversation">
-<p>— Alors Eschy, la vraie question est : est-ce que tu admets ta défaite, ou est-ce qu’il faut que j’écrase un par un chaque esprit de ton cher manuel avant cela ?</p>
+<p>— Alors Eschy, la vraie question est : est-ce que tu admets ta défaite, ou est-ce qu’il faut que j’écrase un par un chaque fantôme de ton cher manuel avant cela ?</p>
 </div>
 
 <p>Il ne répond pas. Il est évident que ce n’est pas l’envie qui lui manque, mais il n’ose pas. Il a réellement peur de vous. Chacune de ses tentatives pour prouver sa supériorité sur vous s’est soldée par un lamentable échec, et il en est bien conscient. Que vous n’ayez pas hésité à lui tirer dessus doit aussi attiser ses craintes sur les risques physiques qu’il prendrait à continuer.</p>
 
-<p>Vous décidez de l’ignorer, et vous adresser directement à l’audience.</p>
+<p>Vous décidez de l’ignorer, et de vous adresser directement à l’audience.</p>
 
 <div class="conversation">
 <p>— Bon, puisque nous avons apparemment un peu de temps devant nous, j’aimerais vous parler de mon expérience d’invocatrice libre. Tout a commencé alors que…</p>
@@ -478,7 +478,7 @@ ${jailDescription(flags)}
 
 <p>Toute cette affaire a des conséquences politiques et théologiques à n’en pas finir. L’Ordre ne va sans doute pas vous lâcher comme cela, et vous vous attendez à tout moment à une nouvelle intervention musclée de votre part. Votre chauffeur vous a également demandé un moyen de vous recontacter pour vous poser de plus amples questions, et vos coordonnées semblent déjà avoir circulé partout.</p>
 
-<p>Dans les jours qui viennent, vous avez sans doute devoir vous battre, encore et encore, au moins sur le terrain des idées. Votre vie va devenir encore plus compliquée maintenant.</p>
+<p>Dans les jours qui viennent, vous aurez sans doute à vous battre, encore et encore, au moins sur le terrain des idées. Votre vie va devenir encore plus compliquée maintenant.</p>
 
 <p>Mais vous verrez cela demain. Pour l’heure, vous n’avez qu’une seule volonté. Celle de pouvoir dormir tout votre saoul, et de vous réveiller sous la lumière du soleil.</p>
     `,
@@ -532,12 +532,12 @@ ${ionnaFirstHalf(flags, skip)}
 <p>— … Sa… Sacrilège !</p>
 </div>
 
-<p>Vous esquivez son assaut rageur et précipité sans mal. La colère le fait frapper fort, pas juste. Son cri mal maîtrisé fait écho aux nombreuses exclamations du public, pour la plupart plus déroutées par la tournure des événements que comprenant réellement ce qui se passe.</p>
+<p>Vous esquivez son assaut rageur et précipité sans mal. La colère le fait frapper fort, pas juste. Son cri mal maîtrisé fait écho aux nombreuses exclamations du public, lequel exprime surtout sa confusion devant cette évolution de la situation qu'il ne comprend pas.</p>
 
-<p>Mais Eschyle lui a bien réalisé la situation. À son niveau, il peut presque sentir le mélange actif des différentes âmes en vous.</p>
+<p>Mais Eschyle lui a bien compris ce que vous êtes en train de faire. À son niveau, il peut presque sentir le mélange actif des différentes âmes en vous.</p>
 
 <div class="conversation">
-<p>— Qu’est-ce qui t’énerve le plus Eschyle ? Le fait que je sois en train d’invoquer plusieurs esprits en même temps ? Que je puisse le faire ? Que tu ne puisses pas le faire ? Que tu n’es même pas pensé qu’il était possible de le faire ?</p>
+<p>— Qu’est-ce qui t’énerve le plus Eschyle ? Le fait que je sois en train d’invoquer plusieurs esprits en même temps ? Que je puisse le faire ? Que tu ne puisses pas le faire ? Que tu n’aies même pas pensé qu’il était possible de le faire ?</p>
 <p>— Abomination ! Démon !</p>
 </div>
 
@@ -545,15 +545,15 @@ ${ionnaFirstHalf(flags, skip)}
 
 <p>Le coup de grâce vient sous la forme d’une balle de neuf millimètres de diamètre le heurtant en pleine poitrine. Enfin, comme pour le combat précédent, la plupart de la  matière s’évanouit sitôt sortie du canon de l’arme à l’instant matérialisée dans votre main libre. Ce qu’il en reste suffit cependant à briser les dernières résistances du charme d’Eschyle et à l’envoyer voler sous son apparence ordinaire.</p>
 
-<p>Il fait un petit bond d’un mètre, touche le sol le dos en premier, glisse encore un peu le temps d’épuiser l’énergie cinétique, puis s’immobilise. Sa bouche continue à vomir un babil d’imprécations, mais il ne fait pas mine de se relever. En fait, il vous semble même avoir pris un sacré coup de vieux dans cette position peu reluisante.</p>
+<p>Il fait un petit bond d’un mètre, touche le sol le dos en premier, glisse encore un peu, achevant d’épuiser l’énergie cinétique, puis s’immobilise. Sa bouche continue à vomir un babil d’imprécations, mais il ne fait pas mine de se relever. En fait, il vous semble même avoir pris un sacré coup de vieux dans cette position peu reluisante.</p>
 
-<p>Vous pouvez déjà voir et entendre la sécurité du site se ruer vers la scène. Vous leur offrez votre meilleur profil, une épée dans une main, un pistolet dans l’autre, une armure sacrément cabossée sur le dos, une mèche de cheveux colorés qui ne cesse de vous tomber au coin du nez, et un sourire ravageur juste en-dessous. La combinaison fait son petit effet car ils se contentent d’encercler un peu plus près votre tribune au lieu d’y monter, avec des regards inquiets vers leur hiérarchie.</p>
+<p>Vous pouvez déjà voir et entendre la sécurité du site se ruer vers la scène. Vous leur offrez votre meilleur profil, une épée dans une main, un pistolet dans l’autre, une armure sacrément cabossée sur le dos, une mèche de cheveux colorés qui ne cesse de vous tomber au coin du nez, et un sourire ravageur juste en-dessous. La combinaison fait son petit effet car ils se contentent d’encercler d'un peu plus près votre tribune au lieu d’y monter, avec des regards inquiets vers leur hiérarchie.</p>
 
-<p>Eschyle justement se relève, tremblant, les yeux injectés de sang. Il vous contemple encore une fois, puis se met à hurler :</p>
+<p>La présence de ses hommes fournit à Eschyle l'énergie qui lui manquait pour se remettre sur ses jambes, tremblant, les yeux injectés de sang. Il vous contemple encore une fois, puis se met à hurler :</p>
 
 <div class="conversation">
 <p>— Emparez-vous d’elle !</p>
-<p>— Je ne crois pas non, l’interrompez-vous immédiatemment, d’une voix qui reporte aussitôt l’attention de tous sur vous. Nous avons un jugement à finir n’est-ce pas Eschyle ? Vous vouliez démontrer que les esprits que je côtoie n’étaient pas dignes d’être appelées.</p>
+<p>— Je ne crois pas non, l’interrompez-vous immédiatement, d’une voix qui reporte aussitôt l’attention de tous sur vous. Nous avons un jugement à finir n’est-ce pas Eschyle ? Tu voulais démontrer que les esprits que je côtoie n’étaient pas dignes d’être appelés me semble-t-il.</p>
 <p>— Ce jugement n’a plus de raison d’être. Une telle abomination ne saurait être tolérée.</p>
 <p>— Eschy, Eschy, tu nous as cassé les oreilles avec tes histoires de mauvais esprit qui ne sauraient triompher des nobles ancêtres et blablabla, et alors que je t’offre exactement ce que tu veux, le sacrilège sur un plateau, tu te dégonfles ? Comment veux-tu que quiconque te prenne au sérieux après cela ?</p>
 </div>
@@ -582,7 +582,7 @@ ${ionnaFirstHalf(flags, skip)}
 
 <p>Dans les faits, le pire est passé. Vous avez encore quelques nausées, mal de partout, vous n’arrivez pas à dormir plus de quelques heures sans devoir aller vous vider l’estomac, mais rien de comparable à ce que vous avez ressenti lorsque l’invocation multiple s’est interrompue d’elle-même, votre organisme ayant outrepassé ses limites depuis longtemps. Il n’était pas préparé pour ce que vous lui avez fait subir, et il vous l’a bien fait comprendre. Vous avez bien cru que vous alliez rendre l’âme, là, devant tout le monde.</p>
 
-<p>Mais même vos accusateurs n’ont pas osé vous laisser expirer ainsi. Vous avez été transportée à l’infirmerie, et vos blessures ainsi que votre extrême épuisement ont été convenablement traités. Vous avez été placée sous étroite surveillance bien sûr, mais votre garde a aussi la décence de vous laisser tranquille aux toilettes, ce qui vous donne une raison de plus de vous attarder à cet endroit</p>
+<p>Mais même vos accusateurs n’ont pas osé vous laisser expirer ainsi. Vous avez été transportée à l’infirmerie, et vos blessures ainsi que votre extrême épuisement ont été convenablement traités. Vous avez été placée sous étroite surveillance bien sûr, mais votre garde a la décence de vous laisser tranquille aux toilettes, ce qui vous donne une raison de plus de vous attarder à cet endroit</p>
 
 <p>Vous souriez à pleines dents en songeant que votre petit numéro a semé le chaos dans la hiérarchie de l’Ordre. La rumeur est parvenue jusqu’à votre lit de convalescence, et vous savez qu’Eschyle a perdu sa place, coincé entre les ultras, qui veulent vous voir brûler et lui en veulent d’avoir perdu le contrôle de sa chère cérémonie, et les modérés qui lui reprochent l’emploi de cette justice archaïque.</p>
 

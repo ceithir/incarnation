@@ -41,11 +41,6 @@ ${shortener(introSummary("Ionna"), introFull, skip)}
 
 <p>Vous abaissez la visière de votre casque. Faites jouer vos épaules pour vous assurer que vos différentes couches protectrices sont bien agencées. Elles accompagnent votre mouvement sans heurt, se soutenant les unes les autres. La sensation est familière. Depuis que votre quête a commencé, il est devenu bien rare qu’un jour complet ne s’écoule sans que vous ne soyez contrainte de vous harnacher ainsi.</p>
 
-<div class="conversation">
-<p>— J’ai fait ce que j’ai fait car cela était juste, et jamais je ne le renierai.</p>
-<p>— Il est des saints hommes qui auraient pu te montrer tes erreurs par la seule force de leur verbe. Je n’en suis malheureusement pas un, et devrai me contenter de ma colère.</p>
-</div>
-
 <p>La première attaque du prêcheur armé est avant tout un coup de semonce, une frappe brutale destinée à vous effrayer et à jauger votre niveau. Sa lance vole en une trajectoire prévisible, vous l’esquivez sans mal, et dégainez en réponse.</p>
 
 <p>Vous commencez alors à vous tourner autour, silencieusement, chacun guettant une faille dans la garde de l'autre.</p>

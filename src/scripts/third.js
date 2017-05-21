@@ -200,9 +200,9 @@ ${batuoOffer}
 
 <p>La synchronisation avec Ionna s’effectue naturellement. Pas par les sentiments que vous lui prêtez d’habitude, mais par une résonance viscérale.</p>
 
-<p>Vous avez mal. Mal comme jamais. Froid aussi. La terre humide et glacée colle à votre visage. La terre avale le sang coulant lentement de votre cou.</p>
+<p>Vous avez mal. Mal comme jamais. Froid aussi. La terre humide et glacée colle à votre visage, avale le sang coulant lentement de votre cou.</p>
 
-<p>Une flèche chanceuse. Enfin, pas si chanceuse. Vous êtes encore en vie. Enfin, l’êtes-vous vraiment ? Tout votre corps est lourd. Pourrait être la boue. Pourrait être la fatigue des dernières semaines demandant son dû comptant. Pourrait être la vie qui vous quitte.</p>
+<p>Une flèche chanceuse. Pas si chanceuse. Vous êtes encore en vie. L’êtes-vous vraiment ? Tout votre corps est lourd. Pourrait être la boue. Pourrait être la fatigue des dernières semaines demandant son dû comptant. Pourrait être la vie qui vous quitte.</p>
 
 <p>Vous ne pouvez pas entendre les cris. Mais vous les entendez quand même. Le bruit de la panique dans votre camp. La charge de la victoire dans celui d’en face. Toute cette opération ne tient que par le filet d’espoir que vous représentez pour les uns, et la crainte que vous inspirez aux autres. Vous morte, ou supposée morte, cette bataille est perdue.</p>
 
@@ -273,7 +273,7 @@ ${batuoOffer}
     "text": `
 <p>Vous essayez de prononcer une réplique bien sentie, mais n’arrivez qu’à éructer quelques pâteuses syllabes, encore sous l’emprise de la maléfique drogue.</p>
 
-<p>De rage, vous vous signez, et pointez un point accusateur vers votre juge corrompu.</p>
+<p>De rage, vous vous signez, et pointez votre arme vers le juge corrompu.</p>
 
 <p>Celui-ci pousse un profond soupir.</p>
 
