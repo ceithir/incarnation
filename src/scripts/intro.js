@@ -39,7 +39,7 @@ const intro = {
 <div class="conversation">
 <p>— Le prix à payer pour ce don unique est celui de la responsabilité. Il nous revient à nous qui possédons le pouvoir de nous assurer qu’il soit employé justement et respectueusement. Pour cela, le conseil est moi-même avons décidé d’imposer deux règles fondamentales.</p>
 
-<p>« Tout d’abord, aucune invocation ne saurait dorénavant être opérée sans l’accord du conseil. Nous devons tout aux anciens, et la première des politesses consiste à ne pas les importuner pour de triviales raisons. Le conseil seul sera juge si une demande est d’assez d’importance pour le voile de la mort soit soulevé.</p>
+<p>« Tout d’abord, aucune invocation ne saurait dorénavant être opérée sans l’accord du conseil. Nous devons tout aux anciens, et la première des politesses consiste à ne pas les importuner pour de triviales raisons. Le conseil seul sera juge si une demande est d’assez d’importance pour que le voile de la mort soit soulevé.</p>
 
 <p>« Ensuite, seuls les acolytes de plus haut rang seront désormais libres d’invoquer les esprits de leur choix. Les autres devront se limiter à un catalogue d’âmes dont la pureté a déjà été éprouvée et consignée. J’ai confiance en chacun de vous, mes frères et mes sœurs. Je sais qu’aucun de vous n’invoquerait de son plein gré un esprit maléfique. Mais le plus grand talent du mal est de savoir se dissimuler derrière des oripeaux de vertu, et beaucoup d’entre vous sont encore jeunes et inexpérimentés. Pour  que jamais une innocente erreur d’appréciation ne tourne au drame, une stricte discipline est nécessaire.</p>
 
@@ -49,13 +49,13 @@ const intro = {
 <p>L’orateur incline légèrement le buste en un geste de salut. Le frémissement qui le parcourait se meurt alors extrêmement vite, et l’homme retrouve l’apparence qu’il avait au tout début de la cérémonie. Lorsqu'il reprend la parole, c'est d’une voix toute différente :</p>
 
 <div class="conversation">
-<p>— C’est toujours un honneur pour moi d’accueillir en ma chair Cyrille, premier disciple de Porphyre et fondateur de notre ordre. En vertu de la première règle qu’il a énoncée, cette invocation n’a cependant pas seulement pour but de rappeler le miracle qui nous permet encore aujourd’hui d’entendre la voix non déformée de ceux sans qui rien de ceci n’existerait.</p>
+<p>— C’est toujours un honneur pour moi d’accueillir en ma chair Cyrille, premier disciple de Porphyre et fondateur de notre ordre. En vertu de la première règle qu’il a énoncée, cette invocation n’a toutefois été opérée que parce qu'elle était strictement nécessaire. Le conseil a débattu et conclu que, pour le bien de notre communauté, il fallait que tous entendent les règles d'or de la bouche même de celui qui les avait édictées. Pour qu'au travers de son verbe puissant, elles s'impriment profondément en chacun de vous.</p>
 </div>
 
 <p>D’un geste de la main, il englobe la scène sur laquelle il se trouve, les gradins aux rangs parsemés de fidèles qui l’entoure, et le massif bâtiment non loin qui tient lieu de siège à son ordre.</p>
 
 <div class="conversation">
-<p>— Non, si des règles aussi fondamentales ont dû être rappelées, c’est parce qu’elles ont été transgressées.</p>
+<p>— Cela pour que plus jamais une pareille situation ne se reproduise. Car si des règles aussi fondamentales ont dû être rappelées, c’est qu’elles ont été transgressées.</p>
 </div>
       `;
     },
@@ -87,11 +87,11 @@ const intro = {
   },
   "intro-2": {
     "text":`
-<p>Vous avez été libérée de vos entraves, mais c’est bien là la seule liberté qu’on vous offre. Deux malabars sont là pour s’assurer que vous n’empruntiez pas un autre chemin que celui menant à la scène, et l’un d’eux s’avance déjà pour vous y pousser de force. Vous le devancez, fatiguée d’être brinquebalée comme un sac de patates.</p>
+<p>Vous avez été libérée de vos entraves, mais c’est bien là l'unique liberté qu’on vous offre. Deux malabars sont présents pour s’assurer que vous n’empruntiez pas un autre chemin que celui menant à la scène, et l’un d’eux s’avance déjà pour vous y pousser de force. Vous le devancez, fatiguée d’être brinquebalée comme un sac de patates.</p>
 
 <p>La lumière des projecteurs vous éblouit. L’Ordre de Ceux qui Transmettent l’Antique Sagesse a beau être aussi vieux jeu que son nom est suranné, même eux ont franchi, à regret, le cap de l'électricité.</p>
 
-<p>Vous placez une main au-dessus de vos yeux pour vous protéger, profitant de la chaleur du spot pour vous réchauffer quelque peu. Votre tenue n’est pas adaptée à cette fraîche nuit d’automne, mais, là encore, vous n’avez pas eu le choix. Pour que vous puissiez offrir votre plus beau profil de terrible rebelle en ce soir, on vous a forcée à remettre les vêtements (lavés) que vous portiez lors de votre capture.</p>
+<p>Vous placez une main au-dessus de vos yeux pour les protéger. La chaleur du spot est quant à elle plutôt agréable, vous réchauffant un peu. Votre tenue n’est pas adaptée à cette fraîche nuit d’automne, mais, là encore, vous n’avez pas eu le choix. Pour que ce soir vous puissiez offrir votre plus beau profil de terrible rebelle, on vous a forcée à remettre les vêtements (lavés) que vous portiez lors de votre capture.</p>
 
 <p>Enfin, il n’y a vraiment qu’ici, au milieu de toutes ces robes violettes identiques que votre T-shirt peut choquer qui que ce soit.</p>
 
@@ -111,7 +111,7 @@ const intro = {
 
 <p>Vous lâchez quelques insanités, mais là aussi vos mots tombent sans force. Vous qui vous demandiez comment l’Ordre allait vous empêcher d’exprimer des opinions et des faits peu à leur goût une fois sur scène, vous avez votre réponse. De même que vous connaissez dorénavant l'effet de la saleté huileuse que vos cerbères vous ont forcée à avaler peu de temps avant le début de ce cirque. Sur le coup, vous aviez supposé qu'il s'agissait d'un simple calmant, pour que vous n'offriez pas trop de résistance, mais c'était sous-estimer leur perversité.</p>
 
-<p>Devant vos pitoyables efforts, pour vous exprimer, Eschyle affiche un large sourire paternaliste, comme si vous étiez un bébé perdu ayant besoin d’aide, expression  éminemment théâtrale, et donc parfaitement à sa place dans cette farce.</p>
+<p>Devant vos pitoyables efforts, pour vous exprimer, Eschyle affiche un large sourire paternaliste, comme si vous étiez un bébé perdu ayant besoin d’aide. Expression  éminemment théâtrale, et donc parfaitement à sa place dans cette farce.</p>
 
 <p>Il se retourne ensuite vers la foule pour continuer son monologue :</p>
 

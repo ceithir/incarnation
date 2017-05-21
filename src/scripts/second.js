@@ -235,7 +235,7 @@ ${wound}
 <p>— Déjà, si tu pouvais éviter de trop me charcuter, ce serait fantastique. Le sang, c’est vachement dur à nettoyer.</p>
 <p>— Mon enfant, tu devrais te repentir et non rire. Si ce sang a coulé, c’est uniquement en raison de tes péchés.</p>
 <p>— Je sais pas trop. J’ai probablement mangé une religieuse de plus que de raison lors de mon dernier gueuleton, mais même si j’avais alors surmonté ce terrible péché de gourmandise, j'ai l'audace de penser que cela n'aurait rien changé à mes problèmes actuels.</p>
-<p>« En revanche, je suis certaine que si personne ne s’était mis en tête de m’embrocher et de me couper en morceaux aujourd’hui, j’aurais encore toute mon hémoglobine pour moi.</p>
+<p>« En revanche, je suis certaine que si personne ne s’était mis en tête de m’embrocher et de me couper en morceaux aujourd’hui, j’aurais encore toute mon hémoglobine en moi.</p>
 </div>
 
 <p>Nouvelle attaque. Aine. Un coup fort et douloureux, mais surtout tremblant de rage.</p>

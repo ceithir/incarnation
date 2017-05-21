@@ -32,7 +32,7 @@ const jailDescription = (flags) => {
 
 <p>Officiellement, vous avez de vous-même choisi de vous isoler du monde pour purger votre âme de la corruption qui s’y était installée.</p>
 
-<p>Vous ignorez si cette fable pousse le vice jusqu’à expliquer que c’est vous et vous seule qui avez demandé à être enfermée et avait réclamé ce couple caméra/sprinkler qui permet de vous asperger d’eau glacée au moindre signe que vous pourriez peut-être, éventuellement, potentiellement, être en train d’appeler un esprit non déclaré. Vous avez d’ailleurs été réveillée de cette manière aujourd’hui même. Vous ne sauriez dire si vos gesticulations nocturnes étaient réellement suspicieuses ou si votre surveillant s’ennuyait simplement.</p>
+<p>Vous ignorez si cette fable pousse le vice jusqu’à expliquer que c’est vous et vous seule qui avez demandé à être enfermée et avez réclamé ce couple caméra/sprinkler qui permet de vous asperger d’eau glacée au moindre signe que vous pourriez peut-être, éventuellement, potentiellement, être en train d’appeler un esprit non déclaré. Vous avez d’ailleurs été réveillée de cette manière aujourd’hui même. Vous ne sauriez dire si vos gesticulations nocturnes étaient réellement suspicieuses ou si votre surveillant s’ennuyait simplement.</p>
 
 <p>C’est loin d’être la seule chose que vous ignorez. En l’absence de lumière du jour et de montre, votre définition même du temps s’est étiolée. Seuls les repas rythment vos journées. Et encore, vous suspectez qu’ils leur arrivent de vous faire jeûner. Sans doute pour faciliter votre détachement spirituel.</p>
 
@@ -90,7 +90,7 @@ ${ionnaFirstHalf(flags, skip)}
 
 <p>Et vous vous jetez en avant.</p>
 
-<p>Le premier coup vous cueille à l’épaule. Vous ressentez la morsure de la douleur, mais l’armure tient. Vous progressez d’un pas. Le second touche à la hanche, assez fort pour abîmer quelque chose là-dedans. Votre pas suivant est vacillant mais vous rapproche assez de votre adversaire pour que vous puissiez frapper. Vous abattez votre arme. Cognez contre la hampe de la sienne. Êtes repoussée de force. Titubez. Tombez. Le géant cogne votre poignet. Vous lâchez votre épée. Un coup à la tête. Votre conscience clignote.</p>
+<p>Le premier coup vous cueille à l’épaule. Vous ressentez la morsure de la douleur, mais l’armure tient. Vous progressez d’un pas. Le second touche à la hanche, assez fort pour que quelque chose craque à l'intérieur de vous. Votre pas suivant est vacillant mais vous rapproche assez de votre adversaire pour que vous puissiez frapper. Vous abattez votre arme. Ricochez contre la hampe de la sienne. Êtes repoussée de force. Titubez. Tombez. Le géant cogne votre poignet. Vous lâchez votre épée. Un coup à la tête. Votre conscience clignote.</p>
 
 <p>Vous avez perdu. Dieu vous a abandonné. Comme il vous avait abandonné à Margny, lorsque vous vous étiez révélée incapable de vous débarrasser des quelques soudards envoyés vous capturer. Auriez-vous abusé de Sa bienveillance ? S’agit-il d’une leçon, Vous rappelle-t-il que vous ne devez pas dépendre de Lui ? Auriez-vous pêché par orgueil et êtes-vous punie pour cela ?</p>
 
@@ -178,7 +178,7 @@ ${shortener(`<p>Un phénomène récurrent, mais que Rebecca se refuse à intéri
 
 <p>Vous extraire des griffes de l’Ordre n’a pas été très difficile. Ils n’avaient rien de prévu contre une arme à feu moderne. Il n’a même pas dû leur venir à l’idée qu’il était possible d’en invoquer une, ni que vous n’hésiteriez pas à l’utiliser contre ceux qui vous avaient supposément élevée.</p>
 
-<p>C’est après que la situation s’est compliquée. Non seulement vous avez été officiellement déclarée ennemie public numéro 1 de l’Ordre, mais les dégâts que vous avez infligés là-bas vous ont également fait remarquer des autorités séculières de ce pays. Si celles-ci n’avaient pas bronché lorsque vous aviez été enlevée, enfermée et contrainte à combattre pour votre liberté, le meurtre du grand prêtre de l’Ordre les a en revanche pas mal secouées.</p>
+<p>C’est ensuite que la situation s’est compliquée. Non seulement vous avez été officiellement déclarée ennemie public numéro 1 de l’Ordre, mais les dégâts que vous avez infligés là-bas vous ont également fait remarquer des autorités séculières de ce pays. Si celles-ci n’avaient pas bronché lorsque vous aviez été enlevée, enfermée et contrainte à combattre pour votre liberté, le meurtre du grand prêtre de l’Ordre les a en revanche pas mal secouées.</p>
 
 <p>Et vous aussi il faut bien dire. Vous n’arrivez pas encore à bien réaliser. Cela s’est passé dans le feu du moment, sous l’influence de Rebecca, et Eschyle n’est pas vraiment quelqu’un que vous connaissiez en tant que personne. À vos yeux, c’était plutôt une sorte d’incarnation de l’Ordre dans toute sa rigidité.</p>
 
@@ -476,7 +476,7 @@ ${jailDescription(flags)}
 
 <p>Vous avez bien galéré pour parvenir jusqu’ici. L’Ordre n’ayant pas eu la gentillesse de vous rendre vos affaires, dont votre argent et les clés de votre chez-vous, et son siège se trouvant au milieu de nulle part, vous avez dû enchaîner marche et stop. C’est finalement un fidèle impressionné par votre performance mais ne sachant trop quoi faire de vous, un syndrome qu’il n’est apparemment pas le seul à partager, qui vous a repéré sur le bas-côté et ramené dans sa voiture jusque chez des amis à même de vous héberger.</p>
 
-<p>Toute cette affaire a des conséquences politiques et théologiques à n’en pas finir. L’Ordre ne va sans doute pas vous lâcher comme cela, et vous vous attendez à tout moment à une nouvelle intervention musclée de votre part. Votre chauffeur vous a également demandé un moyen de vous recontacter pour vous poser de plus amples questions, et vos coordonnées semblent déjà avoir circulé partout.</p>
+<p>Toute cette affaire a des conséquences politiques et théologiques à n’en pas finir. L’Ordre ne va sans doute pas vous lâcher comme cela, et vous vous attendez à tout moment à une nouvelle intervention musclée de leur part. Votre chauffeur vous a également demandé un moyen de vous recontacter pour vous poser de plus amples questions, et vos coordonnées semblent déjà avoir circulé partout.</p>
 
 <p>Dans les jours qui viennent, vous aurez sans doute à vous battre, encore et encore, au moins sur le terrain des idées. Votre vie va devenir encore plus compliquée maintenant.</p>
 
