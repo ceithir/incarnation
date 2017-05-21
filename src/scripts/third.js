@@ -140,25 +140,25 @@ ${batuoOffer}
     "text": `
 <p>Vous répondez en appuyant sur la gâchette de votre arme.</p>
 
-<p>Il s’y attendait et se met en mouvement alors même que la détonation n'a pas encore retenti, esquivant votre tir avec une souplesse et des réflexes démontrant une pratique avancée des arts martiaux.</p>
+<p>Il s’y attendait et se met en mouvement alors même que la détonation n’a pas encore retenti, esquivant votre tir avec une souplesse et des réflexes démontrant une pratique avancée des arts martiaux.</p>
 
-<p>Le tranchant de sa main s'abat aussitôt sur votre poignet, et vous lâchez votre arme. Elle s'évanouit en fumée avant de toucher le sol, victime de la même loi qui rendait ses projectiles si inefficaces.</p>
+<p>Le tranchant de sa main s’abat aussitôt sur votre poignet, et vous lâchez votre arme. Elle s’évanouit en fumée avant de toucher le sol, victime de la même loi qui rendait ses projectiles si inefficaces.</p>
 
-<p>Évidemment. Après coup, qu'Eschyle ait choisi une forme capable de réchapper à un refus de votre part paraît évident. Il y a être sûr de soi, et il y a se ramener sans défense devant un flingue. Apparemment, aussi bouffi d'orgueil soit-il, il n’a pas encore basculé dans la seconde catégorie.</p>
+<p>Évidemment. Après coup, qu’Eschyle ait choisi une forme capable de réchapper à un refus de votre part paraît évident. Il y a être sûr de soi, et il y a se ramener sans défense devant un flingue. Apparemment, aussi bouffi d’orgueil soit-il, il n’a pas encore basculé dans la seconde catégorie.</p>
 
 <p>Il se met en garde, et vous vous préparez mentalement à encaisser un coup de poing, de pied, une projection ou autre mouvement clé que maîtriserait votre adversaire.</p>
 
 <p>Mais il ne fait rien.</p>
 
-<p>Si, il perd contre lui-même. Vous pouvez lire la confusion, le conflit sur son visage. Vous réalisez qu'Eschyle n'est pas en harmonie avec l'esprit qu'il a invoqué, que son envie de vous faire mordre la poussière ne s'accorde pas forcément avec les sentiments de celui qui lui prête son aspect et ses compétences.</p>
+<p>Si, il perd contre lui-même. Vous pouvez lire la confusion, le conflit sur son visage. Vous réalisez qu’Eschyle n’est pas en harmonie avec l’esprit qu’il a invoqué, que son envie de vous faire mordre la poussière ne s’accorde pas forcément avec les sentiments de celui qui lui prête son aspect et ses compétences.</p>
 
-<p>Vous profitez de ce sursis pour régénérer votre arme. Vous vous concentrez sur son image, sur ce qu'elle représente pour Rebecca. Peu à peu, elle renaît du néant entre vos mains.</p>
+<p>Vous profitez de ce sursis pour régénérer votre arme. Vous vous concentrez sur son image, sur ce qu’elle représente pour Rebecca. Peu à peu, elle renaît du néant entre vos mains.</p>
 
-<p>Voyant cela, Eschyle rompt brutalement son invocation actuelle et en entreprend d'appeler un nouvel esprit.</p>
+<p>Voyant cela, Eschyle rompt brutalement son invocation actuelle et en entreprend d’appeler un nouvel esprit.</p>
     `,
     "next": (goToSection) => {
       return {
-        "text": `Vous récupérez votre Beretta juste à temps pour l'accueillir comme il se doit.`,
+        "text": `Vous récupérez votre Beretta juste à temps pour l’accueillir comme il se doit.`,
         "action": () => {goToSection("final-rebecca");},
       };
     },

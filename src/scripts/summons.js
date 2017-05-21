@@ -25,7 +25,7 @@ export const onawaFirstSummon = `
 <p>— Bonjour le monde !</p>
 </div>
 
-<p>Articuler proprement cette simple phrase vous a demandé beaucoup plus d’efforts que vous ne l’auriez souhaité. En dépit d'années passées à faire entendre votre voix dans les pires conditions, ainsi que de l’entraînement d'une carrière avortée dans la chanson, vous n'arrivez qu'à contourner partiellement le bâillon chimique de vos accusateurs. Assez pour parler distinctement, mais pas assez pour que chacun de vos mots résonne comme un roulement de tonnerre.</p>
+<p>Articuler proprement cette simple phrase vous a demandé beaucoup plus d’efforts que vous ne l’auriez souhaité. En dépit d’années passées à faire entendre votre voix dans les pires conditions, ainsi que de l’entraînement d’une carrière avortée dans la chanson, vous n’arrivez qu’à contourner partiellement le bâillon chimique de vos accusateurs. Assez pour parler distinctement, mais pas assez pour que chacun de vos mots résonne comme un roulement de tonnerre.</p>
 
 <p>Mais même si vous êtes personnellement déçue de la platitude de votre introduction, elle provoque moult grincements de dents dans le public. Votre aparté déplaît. Vous n’êtes pas censée interpeller directement l’assemblée. Ce duel est supposé être un tête-à-tête public entre vous et votre accusateur.</p>
 

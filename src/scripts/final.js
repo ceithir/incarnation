@@ -90,7 +90,7 @@ ${ionnaFirstHalf(flags, skip)}
 
 <p>Et vous vous jetez en avant.</p>
 
-<p>Le premier coup vous cueille à l’épaule. Vous ressentez la morsure de la douleur, mais l’armure tient. Vous progressez d’un pas. Le second touche à la hanche, assez fort pour que quelque chose craque à l'intérieur de vous. Votre pas suivant est vacillant mais vous rapproche assez de votre adversaire pour que vous puissiez frapper. Vous abattez votre arme. Ricochez contre la hampe de la sienne. Êtes repoussée de force. Titubez. Tombez. Le géant cogne votre poignet. Vous lâchez votre épée. Un coup à la tête. Votre conscience clignote.</p>
+<p>Le premier coup vous cueille à l’épaule. Vous ressentez la morsure de la douleur, mais l’armure tient. Vous progressez d’un pas. Le second touche à la hanche, assez fort pour que quelque chose craque à l’intérieur de vous. Votre pas suivant est vacillant mais vous rapproche assez de votre adversaire pour que vous puissiez frapper. Vous abattez votre arme. Ricochez contre la hampe de la sienne. Êtes repoussée de force. Titubez. Tombez. Le géant cogne votre poignet. Vous lâchez votre épée. Un coup à la tête. Votre conscience clignote.</p>
 
 <p>Vous avez perdu. Dieu vous a abandonné. Comme il vous avait abandonné à Margny, lorsque vous vous étiez révélée incapable de vous débarrasser des quelques soudards envoyés vous capturer. Auriez-vous abusé de Sa bienveillance ? S’agit-il d’une leçon, Vous rappelle-t-il que vous ne devez pas dépendre de Lui ? Auriez-vous pêché par orgueil et êtes-vous punie pour cela ?</p>
 
@@ -268,7 +268,7 @@ ${musashiboDescription(flags, skip)}
 
 <p>Ça se met à crier, à courir dans tous les sens, à se rentrer dedans. Un magnifique chaos détournant l’attention de vos propres actions. Vous piquez aussitôt un sprint vers l’arrière de la scène et vous laissez tomber. Vous êtes à deux pas des coulisses, et de gros balourds vous foncent déjà dessus, mais vous repérez ce que vous cherchiez, que Misty avait vu lorsqu’elle était passée par là mais n’avait pas identifié comme important : un gros amas de câbles et de boîtiers. Un nœud vital de la connectique et de l’alimentation de l’éclairage.</p>
 
-<p>Vous mettez une balle dans le genou du garde le plus proche alors qu’il sort un taser. Vous êtes presque à bout portant, et il déguste sec. Cela calme aussitôt les ardeurs de ses potes. Vous en profitez pour mettre la zone dans le matériel électrique qui vous entoure. Vous n’y connaissez rien, mais vous balancez d’un coup de pied bien ciblé un truc dans un autre, en supposant qu'ils ne servent pas qu'à la décoration, et, magie, une partie des lumières s’éteignent dans un grésillement.</p>
+<p>Vous mettez une balle dans le genou du garde le plus proche alors qu’il sort un taser. Vous êtes presque à bout portant, et il déguste sec. Cela calme aussitôt les ardeurs de ses potes. Vous en profitez pour mettre la zone dans le matériel électrique qui vous entoure. Vous n’y connaissez rien, mais vous balancez d’un coup de pied bien ciblé un truc dans un autre, en supposant qu’ils ne servent pas qu’à la décoration, et, magie, une partie des lumières s’éteignent dans un grésillement.</p>
 
 <p>Vous y voyez encore trop bien à votre goût et un nouveau larron s’en mêle avant que vous ne puissiez pousser plus loin votre bricolage, s’interposant d’un bond entre vous et vos victimes de cuivre et de plastique.</p>
 
@@ -532,7 +532,7 @@ ${ionnaFirstHalf(flags, skip)}
 <p>— … Sa… Sacrilège !</p>
 </div>
 
-<p>Vous esquivez son assaut rageur et précipité sans mal. La colère le fait frapper fort, pas juste. Son cri mal maîtrisé fait écho aux nombreuses exclamations du public, lequel exprime surtout sa confusion devant cette évolution de la situation qu'il ne comprend pas.</p>
+<p>Vous esquivez son assaut rageur et précipité sans mal. La colère le fait frapper fort, pas juste. Son cri mal maîtrisé fait écho aux nombreuses exclamations du public, lequel exprime surtout sa confusion devant cette évolution de la situation qu’il ne comprend pas.</p>
 
 <p>Mais Eschyle lui a bien compris ce que vous êtes en train de faire. À son niveau, il peut presque sentir le mélange actif des différentes âmes en vous.</p>
 
@@ -547,9 +547,9 @@ ${ionnaFirstHalf(flags, skip)}
 
 <p>Il fait un petit bond d’un mètre, touche le sol le dos en premier, glisse encore un peu, achevant d’épuiser l’énergie cinétique, puis s’immobilise. Sa bouche continue à vomir un babil d’imprécations, mais il ne fait pas mine de se relever. En fait, il vous semble même avoir pris un sacré coup de vieux dans cette position peu reluisante.</p>
 
-<p>Vous pouvez déjà voir et entendre la sécurité du site se ruer vers la scène. Vous leur offrez votre meilleur profil, une épée dans une main, un pistolet dans l’autre, une armure sacrément cabossée sur le dos, une mèche de cheveux colorés qui ne cesse de vous tomber au coin du nez, et un sourire ravageur juste en-dessous. La combinaison fait son petit effet car ils se contentent d’encercler d'un peu plus près votre tribune au lieu d’y monter, avec des regards inquiets vers leur hiérarchie.</p>
+<p>Vous pouvez déjà voir et entendre la sécurité du site se ruer vers la scène. Vous leur offrez votre meilleur profil, une épée dans une main, un pistolet dans l’autre, une armure sacrément cabossée sur le dos, une mèche de cheveux colorés qui ne cesse de vous tomber au coin du nez, et un sourire ravageur juste en-dessous. La combinaison fait son petit effet car ils se contentent d’encercler d’un peu plus près votre tribune au lieu d’y monter, avec des regards inquiets vers leur hiérarchie.</p>
 
-<p>La présence de ses hommes fournit à Eschyle l'énergie qui lui manquait pour se remettre sur ses jambes, tremblant, les yeux injectés de sang. Il vous contemple encore une fois, puis se met à hurler :</p>
+<p>La présence de ses hommes fournit à Eschyle l’énergie qui lui manquait pour se remettre sur ses jambes, tremblant, les yeux injectés de sang. Il vous contemple encore une fois, puis se met à hurler :</p>
 
 <div class="conversation">
 <p>— Emparez-vous d’elle !</p>

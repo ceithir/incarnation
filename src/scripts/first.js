@@ -7,9 +7,9 @@ const summoningDescription = (summonName) => {
 
 <p>Vous soupçonnez d’ailleurs que vos instructeurs, pour la plupart, ne comprenaient pas non plus la logique derrière ce qu’ils racontaient. Sans doute ne faisaient-ils que répéter ce que leurs parents et professeurs leur avaient enseigné en leur temps.</p>
 
-<p>À votre niveau, la seule véritable difficulté reste d’établir une connexion avec l’esprit. Une fois lié à lui, votre corps adoptera naturellement une forme proche de celle qu'avait la personne appelée de son vivant. Proche, mais pas parfaitement identique, de même que vos pensées ne seront pas totalement chassées par celles de votre invité. Disons qu'une fois l'invocation terminée, vous serez aux trois quarts ${summonName} et à un quart Misty, aussi bien sur le plan physique que moral.</p>
+<p>À votre niveau, la seule véritable difficulté reste d’établir une connexion avec l’esprit. Une fois lié à lui, votre corps adoptera naturellement une forme proche de celle qu’avait la personne appelée de son vivant. Proche, mais pas parfaitement identique, de même que vos pensées ne seront pas totalement chassées par celles de votre invité. Disons qu’une fois l’invocation terminée, vous serez aux trois quarts ${summonName} et à un quart Misty, aussi bien sur le plan physique que moral.</p>
 
-<p>Vous expirez, inspirez, sur un rythme régulier, hypnotique. Vous vous détachez de la situation présente. Vous vous immergez dans les sentiments que vous aviez perçus lors de vos précédents contacts avec ${summonName}. L’état d’esprit est primordial pour une incarnation réussie, bien plus que les souvenirs d’une autre époque, d’une autre vie. Vous fondez votre caractère dans celui de votre alliée, acceptez sa vision du monde. Vous...</p>
+<p>Vous expirez, inspirez, sur un rythme régulier, hypnotique. Vous vous détachez de la situation présente. Vous vous immergez dans les sentiments que vous aviez perçus lors de vos précédents contacts avec ${summonName}. L’état d’esprit est primordial pour une incarnation réussie, bien plus que les souvenirs d’une autre époque, d’une autre vie. Vous fondez votre caractère dans celui de votre alliée, acceptez sa vision du monde. Vous…</p>
   `;
 };
 
@@ -43,7 +43,7 @@ ${shortener(introSummary("Ionna"), introFull, skip)}
 
 <p>La première attaque du prêcheur armé est avant tout un coup de semonce, une frappe brutale destinée à vous effrayer et à jauger votre niveau. Sa lance vole en une trajectoire prévisible, vous l’esquivez sans mal, et dégainez en réponse.</p>
 
-<p>Vous commencez alors à vous tourner autour, silencieusement, chacun guettant une faille dans la garde de l'autre.</p>
+<p>Vous commencez alors à vous tourner autour, silencieusement, chacun guettant une faille dans la garde de l’autre.</p>
 
 <p>Vous êtes la première à tenter une attaque. Il pare de son bouclier. Riposte. La lance glisse sans dommage sur le flanc de votre jambière. Estocade haute. Déviée par son bouclier, encore. Contre en pleine épaule. Votre cuirasse arrête la pointe, l’impact vous secoue, il reprend de la distance.</p>
 
@@ -51,9 +51,9 @@ ${shortener(introSummary("Ionna"), introFull, skip)}
 
 <p>Nouvelle passe d’armes. Nouvel échec. Il vous touche encore à la même épaule, et vous commencez à sentir une douleur sourde quand vous bougez le bras.</p>
 
-<p>Vous réalisez qu'il est meilleur que vous. C’est un combattant professionnel, il ne prend pas de risques, garde ses distances, profite de son allonge supérieure, vous épuise lentement mais sûrement. Les coups qu'il vous porte peuvent sembler peu impressionnants, leur gravité réelle dissimulée sous l'armure, mais ils vous endommagent efficacement et en profondeur.</p>
+<p>Vous réalisez qu’il est meilleur que vous. C’est un combattant professionnel, il ne prend pas de risques, garde ses distances, profite de son allonge supérieure, vous épuise lentement mais sûrement. Les coups qu’il vous porte peuvent sembler peu impressionnants, leur gravité réelle dissimulée sous l’armure, mais ils vous endommagent efficacement et en profondeur.</p>
 
-<p>Votre esprit se coupe en deux. Ionna est persuadée qu’elle peut l’emporter en dépit de ces circonstances défavorables, comme elle est toujours persuadée de tout. Misty est incapable de partager cette ferveur qui s'oppose aux faits.</p>
+<p>Votre esprit se coupe en deux. Ionna est persuadée qu’elle peut l’emporter en dépit de ces circonstances défavorables, comme elle est toujours persuadée de tout. Misty est incapable de partager cette ferveur qui s’oppose aux faits.</p>
 
 <p>Devant ce flagrant conflit, l’incarnation cesse. Vous vous retrouvez avec juste une épaisseur de tissu synthétique et vos petits bras pour votre défendre contre un soldat en armes.</p>
       `;

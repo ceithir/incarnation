@@ -1,7 +1,7 @@
 import React from "react";
 
 const ionnaDescription = `
-<p>De tous les membres de votre limité arsenal, c’est celle qui s’approche le plus des canons recherchés par l’Ordre. Elle a vécu à une époque très éloignée, était dévote, intransigeante, conservatrice, et a laissé des traces dans l’imaginaire collectif. Selon vous, une seule raison explique qu’elle se soit retrouvée du mauvais côté de la liste : une tendance marquée à remettre en place ceux qui s'estimaient être ses supérieurs quand leurs décisions lui déplaisaient.</p>
+<p>De tous les membres de votre limité arsenal, c’est celle qui s’approche le plus des canons recherchés par l’Ordre. Elle a vécu à une époque très éloignée, était dévote, intransigeante, conservatrice, et a laissé des traces dans l’imaginaire collectif. Selon vous, une seule raison explique qu’elle se soit retrouvée du mauvais côté de la liste : une tendance marquée à remettre en place ceux qui s’estimaient être ses supérieurs quand leurs décisions lui déplaisaient.</p>
 
 <p>C’est également une combattante à l’ancienne, habituée à cogner dur avec toutes sortes d’objets métalliques, et à subir de même en retour.</p>
 `;
@@ -11,7 +11,7 @@ const rebeccaDescription = `
 
 <p>C’est sans aucun doute la personnalité la plus discutable avec qui vous vous soyez jamais associée. Si elle a des qualités tout à fait honorables, elle reste avant tout une hors-la-loi avec du sang sur les mains. Ainsi, vous ne vous rachèterez certainement pas une réputation en la révélant au grand jour.</p>
 
-<p>Elle a également une tendance marquée à rejeter l'idée qu'elle ne soit plus qu'un spectre, et ses actions se heurtent régulièrement aux limites de sa condition actuelle.</p>
+<p>Elle a également une tendance marquée à rejeter l’idée qu’elle ne soit plus qu’un spectre, et ses actions se heurtent régulièrement aux limites de sa condition actuelle.</p>
 
 <p>Toutefois, c’est aussi votre alliée la plus acharnée et débrouillarde. Si quelqu’un peut retourner ce duel, c’est bien elle.</p>
 `;
@@ -33,7 +33,7 @@ const roster = {
 
 <p>Et parmi eux, rares sont ceux susceptibles de vous aider dans la présente situation. Vous avez beau adorer les livres de Wisp, ce n’est pas sa plume qui va vous protéger de l’épée d’Eschyle.</p>
 
-<p>Au terme d’intenses réflexions, que vous avez eu tout le temps de mener alors que vous pourrissiez dans votre cellule, vous êtes arrivée à la conclusion que la liste des personnes capables de présentement vous prêter assistance ne comporte en réalité que trois noms :</p>
+<p>Au terme d’intenses réflexions, que vous avez eu tout le temps de mener alors que vous pourrissiez dans votre cellule, vous êtes arrivée à la conclusion que la liste des personnes capables de présentement vous prêter assistance ne comporte en réalité que trois noms :</p>
     `,
     "next": (goToSection) => {
       const buildDl = (name, description, chosen) => {

@@ -46,10 +46,10 @@ const intro = {
 <p>« Et cela suppose des châtiments appropriés si ces règles venaient à être transgressées.</p>
 </div>
 
-<p>L’orateur incline légèrement le buste en un geste de salut. Le frémissement qui le parcourait se meurt alors extrêmement vite, et l’homme retrouve l’apparence qu’il avait au tout début de la cérémonie. Lorsqu'il reprend la parole, c'est d’une voix toute différente :</p>
+<p>L’orateur incline légèrement le buste en un geste de salut. Le frémissement qui le parcourait se meurt alors extrêmement vite, et l’homme retrouve l’apparence qu’il avait au tout début de la cérémonie. Lorsqu’il reprend la parole, c’est d’une voix toute différente :</p>
 
 <div class="conversation">
-<p>— C’est toujours un honneur pour moi d’accueillir en ma chair Cyrille, premier disciple de Porphyre et fondateur de notre ordre. En vertu de la première règle qu’il a énoncée, cette invocation n’a toutefois été opérée que parce qu'elle était strictement nécessaire. Le conseil a débattu et conclu que, pour le bien de notre communauté, il fallait que tous entendent les règles d'or de la bouche même de celui qui les avait édictées. Pour qu'au travers de son verbe puissant, elles s'impriment profondément en chacun de vous.</p>
+<p>— C’est toujours un honneur pour moi d’accueillir en ma chair Cyrille, premier disciple de Porphyre et fondateur de notre ordre. En vertu de la première règle qu’il a énoncée, cette invocation n’a toutefois été opérée que parce qu’elle était strictement nécessaire. Le conseil a débattu et conclu que, pour le bien de notre communauté, il fallait que tous entendent les règles d’or de la bouche même de celui qui les avait édictées. Pour qu’au travers de son verbe puissant, elles s’impriment profondément en chacun de vous.</p>
 </div>
 
 <p>D’un geste de la main, il englobe la scène sur laquelle il se trouve, les gradins aux rangs parsemés de fidèles qui l’entoure, et le massif bâtiment non loin qui tient lieu de siège à son ordre.</p>
@@ -87,9 +87,9 @@ const intro = {
   },
   "intro-2": {
     "text":`
-<p>Vous avez été libérée de vos entraves, mais c’est bien là l'unique liberté qu’on vous offre. Deux malabars sont présents pour s’assurer que vous n’empruntiez pas un autre chemin que celui menant à la scène, et l’un d’eux s’avance déjà pour vous y pousser de force. Vous le devancez, fatiguée d’être brinquebalée comme un sac de patates.</p>
+<p>Vous avez été libérée de vos entraves, mais c’est bien là l’unique liberté qu’on vous offre. Deux malabars sont présents pour s’assurer que vous n’empruntiez pas un autre chemin que celui menant à la scène, et l’un d’eux s’avance déjà pour vous y pousser de force. Vous le devancez, fatiguée d’être brinquebalée comme un sac de patates.</p>
 
-<p>La lumière des projecteurs vous éblouit. L’Ordre de Ceux qui Transmettent l’Antique Sagesse a beau être aussi vieux jeu que son nom est suranné, même eux ont franchi, à regret, le cap de l'électricité.</p>
+<p>La lumière des projecteurs vous éblouit. L’Ordre de Ceux qui Transmettent l’Antique Sagesse a beau être aussi vieux jeu que son nom est suranné, même eux ont franchi, à regret, le cap de l’électricité.</p>
 
 <p>Vous placez une main au-dessus de vos yeux pour les protéger. La chaleur du spot est quant à elle plutôt agréable, vous réchauffant un peu. Votre tenue n’est pas adaptée à cette fraîche nuit d’automne, mais, là encore, vous n’avez pas eu le choix. Pour que ce soir vous puissiez offrir votre plus beau profil de terrible rebelle, on vous a forcée à remettre les vêtements (lavés) que vous portiez lors de votre capture.</p>
 
@@ -109,11 +109,11 @@ const intro = {
 
 <p>Enfin, telle est la phrase que vous aviez formulée dans votre tête. Et telle qu’elle aurait dû résonner haut et fort. En pratique, c’est un minable gargouillis à peine intelligible qui s’est extirpé de votre gorge à grand renfort de raclements.</p>
 
-<p>Vous lâchez quelques insanités, mais là aussi vos mots tombent sans force. Vous qui vous demandiez comment l’Ordre allait vous empêcher d’exprimer des opinions et des faits peu à leur goût une fois sur scène, vous avez votre réponse. De même que vous connaissez dorénavant l'effet de la saleté huileuse que vos cerbères vous ont forcée à avaler peu de temps avant le début de ce cirque. Sur le coup, vous aviez supposé qu'il s'agissait d'un simple calmant, pour que vous n'offriez pas trop de résistance, mais c'était sous-estimer leur perversité.</p>
+<p>Vous lâchez quelques insanités, mais là aussi vos mots tombent sans force. Vous qui vous demandiez comment l’Ordre allait vous empêcher d’exprimer des opinions et des faits peu à leur goût une fois sur scène, vous avez votre réponse. De même que vous connaissez dorénavant l’effet de la saleté huileuse que vos cerbères vous ont forcée à avaler peu de temps avant le début de ce cirque. Sur le coup, vous aviez supposé qu’il s’agissait d’un simple calmant, pour que vous n’offriez pas trop de résistance, mais c’était sous-estimer leur perversité.</p>
 
 <p>Devant vos pitoyables efforts, pour vous exprimer, Eschyle affiche un large sourire paternaliste, comme si vous étiez un bébé perdu ayant besoin d’aide. Expression  éminemment théâtrale, et donc parfaitement à sa place dans cette farce.</p>
 
-<p>Il se retourne ensuite vers la foule pour continuer son monologue :</p>
+<p>Il se retourne ensuite vers la foule pour continuer son monologue :</p>
 
 <div class="conversation">
 <p>— Sœur Iphigénie nous a brutalement quittés voilà plus d’un an, abandonnant son titre, son nom et sa place dans l’Ordre au profit d’un retour à la vie temporelle. Un choix que nous respectons même si nous aurions aimé qu’il se déroule dans de meilleures circonstances.</p>
@@ -156,7 +156,7 @@ const intro = {
 
 <p>Eschyle abandonne enfin son public pour se tourner vers vous. Le silence se fait dans la foule, remplacé par une tension électrique. Ne pouvant plus reculer, vous avancez vers le centre de la scène, bien en vue de tous, faisant face à votre bourreau.</p>
 
-<p>Il joint les mains, dans le geste aussi ritualisé que techniquement inutile indiquant qu’il va à nouveau invoquer un esprit, et déclare officiellement le début des hostilités :</p>
+<p>Il joint les mains, dans le geste aussi ritualisé que techniquement inutile indiquant qu’il va à nouveau invoquer un esprit, et déclare officiellement le début des hostilités :</p>
 
 <div class="conversation">
 <p>— Bien. Les enjeux ont été rappelés, le jugement proprement dit peut commencer.</p>

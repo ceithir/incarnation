@@ -3,9 +3,9 @@ import {shortener} from "./helpers.js";
 
 const bernardoDescription = (flags, skip) => {
   const description = `
-<p>Vous entendez un froissement de tissu, comme un rideau qu'on écarte.</p>
+<p>Vous entendez un froissement de tissu, comme un rideau qu’on écarte.</p>
 
-<p>Votre nouvel adversaire ouvre d'un geste ample son manteau d’un rouge écarlate, exposant une riche armure d’acier damasquiné, rabat sa capuche pour mieux montrer le masque de fer qui cache son visage, fait jaillir de son fourreau sa rapière à la lame ondulante avec un sifflement calculé.</p>
+<p>Votre nouvel adversaire ouvre d’un geste ample son manteau d’un rouge écarlate, exposant une riche armure d’acier damasquiné, rabat sa capuche pour mieux montrer le masque de fer qui cache son visage, fait jaillir de son fourreau sa rapière à la lame ondulante avec un sifflement calculé.</p>
 
 <p>Et de conclure en s’inclinant légèrement pour vous saluer, relevant sa cape d’un mouvement désuet.</p>
 
@@ -28,19 +28,19 @@ const defeatDescription = (flags) => {
 
   if (flags.badlyWounded) {
     text += `
-<p>Il prend un malin plaisir à frapper là où vous avez déjà été touchée lors de l'affrontement précédent, à raviver la douleur que vous employiez à ignorer. Les coups s’enchaînent sans répit, et vos piètres efforts ne parviennent guère à en atténuer l’impact.</p>
+<p>Il prend un malin plaisir à frapper là où vous avez déjà été touchée lors de l’affrontement précédent, à raviver la douleur que vous employiez à ignorer. Les coups s’enchaînent sans répit, et vos piètres efforts ne parviennent guère à en atténuer l’impact.</p>
 
 <p>Une violente estocade à la jambe sonne le glas de votre fébrile résistance. Vous vous effondrez, à genoux, en sang, ayant mal de partout.</p>
 
 <p>Ne pouvant maintenir la concentration nécessaire à l’invocation alors que tous les signaux de votre organisme passent au rouge, vous redevenez Misty.</p>
 
-<p>Vos blessures se résorbent quelque peu avec la fin de l'invocation, s'évanouissant en partie avec les autres changements de votre morphologie, mais l'amélioration reste superficielle, et vous ressentez pleinement leur souffrance maintenant que vos perceptions sont à nouveau pleinement les vôtres.</p>
+<p>Vos blessures se résorbent quelque peu avec la fin de l’invocation, s’évanouissant en partie avec les autres changements de votre morphologie, mais l’amélioration reste superficielle, et vous ressentez pleinement leur souffrance maintenant que vos perceptions sont à nouveau pleinement les vôtres.</p>
 
 <p>Votre adversaire s’extasie devant votre pitoyable résistance.</p>
     `;
   } else {
     text += `
-<p>Il continue à vous aiguillonner prudemment, se refusant à risquer le retour de flamme d'une imparfaite attaque en profondeur. Ce qui n’empêche pas ses frappes d’être nombreuses et sanguinolentes. Vos membres sont rapidement couverts de coupures écarlates. Une lacération à la joue vous fait goûter votre propre sang. Un point rouge en haut à gauche de votre poitrine démontre qu’il aurait pu vous transpercer le cœur eusse-t-il appuyé son geste.</p>
+<p>Il continue à vous aiguillonner prudemment, se refusant à risquer le retour de flamme d’une imparfaite attaque en profondeur. Ce qui n’empêche pas ses frappes d’être nombreuses et sanguinolentes. Vos membres sont rapidement couverts de coupures écarlates. Une lacération à la joue vous fait goûter votre propre sang. Un point rouge en haut à gauche de votre poitrine démontre qu’il aurait pu vous transpercer le cœur eusse-t-il appuyé son geste.</p>
 
 <p>Il se joue de vous comme si vous n’étiez qu’une poupée, contrôlant vos mouvements en vous encageant d’acier, dessinant sur votre corps le symbole de sa victoire.</p>
 
@@ -135,7 +135,7 @@ ${shortener(`<p>Misty comprend ce qui se passe. Rebecca rejette ce rappel à sa 
 
       if (flags.rebeccaVersusMakabi) {
         summonDescription = `
-<p>Vous n'attendez pas qu'il soit prêt et appuyez à nouveau sur la détente. Votre projectile affaibli se perd dans le tourbillon spectral qui entoure Eschyle, sa matière spirituelle subsistante dévorée dans la tempête métamorphique, digérée pour contribuer à la transformation physique liée à l'invocation.</p>
+<p>Vous n’attendez pas qu’il soit prêt et appuyez à nouveau sur la détente. Votre projectile affaibli se perd dans le tourbillon spectral qui entoure Eschyle, sa matière spirituelle subsistante dévorée dans la tempête métamorphique, digérée pour contribuer à la transformation physique liée à l’invocation.</p>
 
 <p>Rebecca fait la sourde oreille à cette savante explication. Elle parvient toutefois à comprendre, péniblement, que si elle se rapproche suffisamment près, ses balles conserveront assez de leur intégrité pour être efficaces.</p>
 
@@ -168,7 +168,7 @@ ${bernardoDescription(flags, skip)}
 
 ${explanation}
 
-<p>Vous essayez de vous rapprocher pour lui mettre une balle de plus près, mais il est parfaitement conscient de votre faiblesse actuelle et s’assure de garder ses distances, ne s'exposant que le temps d'éphémères bottes.</p>
+<p>Vous essayez de vous rapprocher pour lui mettre une balle de plus près, mais il est parfaitement conscient de votre faiblesse actuelle et s’assure de garder ses distances, ne s’exposant que le temps d’éphémères bottes.</p>
 
 ${defeatDescription(flags)}
       `;
@@ -234,7 +234,7 @@ ${wound}
 <div class="conversation">
 <p>— Déjà, si tu pouvais éviter de trop me charcuter, ce serait fantastique. Le sang, c’est vachement dur à nettoyer.</p>
 <p>— Mon enfant, tu devrais te repentir et non rire. Si ce sang a coulé, c’est uniquement en raison de tes péchés.</p>
-<p>— Je sais pas trop. J’ai probablement mangé une religieuse de plus que de raison lors de mon dernier gueuleton, mais même si j’avais alors surmonté ce terrible péché de gourmandise, j'ai l'audace de penser que cela n'aurait rien changé à mes problèmes actuels.</p>
+<p>— Je sais pas trop. J’ai probablement mangé une religieuse de plus que de raison lors de mon dernier gueuleton, mais même si j’avais alors surmonté ce terrible péché de gourmandise, j’ai l’audace de penser que cela n’aurait rien changé à mes problèmes actuels.</p>
 <p>« En revanche, je suis certaine que si personne ne s’était mis en tête de m’embrocher et de me couper en morceaux aujourd’hui, j’aurais encore toute mon hémoglobine en moi.</p>
 </div>
 
